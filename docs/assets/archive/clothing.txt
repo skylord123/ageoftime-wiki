@@ -1,0 +1,222 @@
+***Note: Everything is checked on the server.  Changing this file will just screw up your gui.
+W. Pants|0|3 Cloth|1 Cloth|1 Cloth||
+	base/data/shapes/player/pants.dts|||
+	shirt1 13
+	shirt2 6
+	shirt3 18
+	shirtLiner 7
+	material mappings : mat# for result = component# mat#
+	1 = 0 1
+	2 = 1 1
+	3 = 2 1
+	4 = 2 1
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	3|*|ClothItem|*|*|*|*|
+	1|*|ClothItem|*|*|*|*|
+	1|*|ClothItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: PantsItem 1
+Skirt|0|2 Cloth|1 Cloth|1 Cloth||
+	base/data/shapes/player/skirt.dts|||
+	shirt1 13
+	shirt2 6
+	shirt3 18
+	shirtLiner 7
+	material mappings : mat# for result = component# mat#
+	1 = 0 1
+	2 = 1 1
+	3 = 2 1
+	4 = 2 1
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	2|*|ClothItem|*|*|*|*|
+	1|*|ClothItem|*|*|*|*|
+	1|*|ClothItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: SkirtItem 1
+W. Shorts|0|1 Cloth|1 Cloth|||
+	base/data/shapes/player/shorts.dts|||
+	shirt1 13
+	shirt2 6
+	shirt3 18
+	shirtLiner 7
+	material mappings : mat# for result = component# mat#
+	1 = 0 1
+	2 = 1 1
+	3 = 2 1
+	4 = 3 1
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	1|*|ClothItem|*|*|*|*|
+	1|*|ClothItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ShortsItem 1
+W. Shirt|0|3 Cloth||||
+	base/data/shapes/player/shirt.dts|||
+	shirt1 13
+	shirt2 13
+	shirt3 13
+	shirtLiner 13
+	material mappings : mat# for result = component# mat#
+	1 = 0 1
+	2 = 0 1
+	3 = 0 1
+	4 = 0 1
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	3|*|ClothItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ShirtItem 1
+W. Shirt|0|2 Cloth|1 Cloth|1 Cloth|2 Cloth|
+	base/data/shapes/player/shirt.dts|||
+	shirt1 13
+	shirt2 6
+	shirt3 18
+	shirtLiner 7
+	material mappings : mat# for result = component# mat#
+	1 = 0 1
+	2 = 1 1
+	3 = 2 1
+	4 = 3 1
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	2|*|ClothItem|*|*|*|*|
+	1|*|ClothItem|*|*|*|*|
+	1|*|ClothItem|*|*|*|*|
+	2|*|ClothItem|*|*|*|*|
+	----ResultDB: ShirtItem 1
+W. TankTop|0|2 Cloth||||
+	base/data/shapes/player/tanktop.dts|||
+	shirt1 13
+	shirt2 13
+	shirt3 13
+	shirtLiner 13
+	material mappings : mat# for result = component# mat#
+	1 = 0 1
+	2 = 0 1
+	3 = 0 1
+	4 = 0 1
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	2|*|ClothItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: TankTopItem 1
+W. TankTop|0|1 Cloth|1 Cloth|1 Cloth|1 Cloth|
+	base/data/shapes/player/tanktop.dts|||
+	shirt1 13
+	shirt2 6
+	shirt3 18
+	shirtLiner 7
+	material mappings : mat# for result = component# mat#
+	1 = 0 1
+	2 = 1 1
+	3 = 2 1
+	4 = 3 1
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	1|*|ClothItem|*|*|*|*|
+	1|*|ClothItem|*|*|*|*|
+	1|*|ClothItem|*|*|*|*|
+	1|*|ClothItem|*|*|*|*|
+	----ResultDB: TankTopItem 1
+Bra|0|1 Cloth|1 Cloth|1 Cloth||
+	base/data/shapes/player/bra.dts|||
+	shirt1 13
+	shirt2 6
+	shirt3 18
+	shirtLiner 7
+	material mappings : mat# for result = component# mat#
+	1 = 0 1
+	2 = 1 1
+	3 = 2 1
+	4 = 3 1
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	1|*|ClothItem|*|*|*|*|
+	1|*|ClothItem|*|*|*|*|
+	1|*|ClothItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: BraItem 1
+Panties|0|1 Cloth|1 Cloth|1 Cloth||
+	base/data/shapes/player/panties.dts|||
+	shirt1 13
+	shirt2 6
+	shirt3 18
+	shirtLiner 7
+	material mappings : mat# for result = component# mat#
+	1 = 0 1
+	2 = 1 1
+	3 = 2 1
+	4 = 3 1
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	1|*|ClothItem|*|*|*|*|
+	1|*|ClothItem|*|*|*|*|
+	1|*|ClothItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: PantiesItem 1
+Bikini Top|0|1 Cloth|1 Cloth|||
+	base/data/shapes/player/bikini.dts|||
+	shirt1 13
+	shirt2 6
+	shirt3 18
+	shirtLiner 7
+	material mappings : mat# for result = component# mat#
+	1 = 0 1
+	2 = 1 1
+	3 = 2 1
+	4 = 3 1
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	1|*|ClothItem|*|*|*|*|
+	1|*|ClothItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: BikiniTopItem 1
+Thong|0|1 Cloth|1 Cloth|||
+	base/data/shapes/player/thong.dts|||
+	shirt1 13
+	shirt2 6
+	shirt3 18
+	shirtLiner 7
+	material mappings : mat# for result = component# mat#
+	1 = 0 1
+	2 = 1 1
+	3 = 2 1
+	4 = 3 1
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	1|*|ClothItem|*|*|*|*|
+	1|*|ClothItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ThongItem 1
+W. Shoes|0|1 Cloth|1 Cloth|1 Cloth||
+	base/data/shapes/player/shoes.dts|||
+	shirt1 13
+	shirt2 6
+	shirtLiner 18
+	
+	material mappings : mat# for result = component# mat#
+	1 = 0 1
+	2 = 1 1
+	3 = 2 1
+	4 = 2 1
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	1|*|ClothItem|*|*|*|*|
+	1|*|ClothItem|*|*|*|*|
+	1|*|ClothItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ShoesItem 1
+W. Sandals|0|1 Cloth|1 Cloth|||
+	base/data/shapes/player/sandals.dts|||
+	shirt1 13
+	shirt2 6
+	shirt3 18
+	shirtLiner 7
+	material mappings : mat# for result = component# mat#
+	1 = 0 1
+	2 = 1 1
+	3 = 2 1
+	4 = 3 1
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	1|*|ClothItem|*|*|*|*|
+	1|*|ClothItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: SandalsItem 1

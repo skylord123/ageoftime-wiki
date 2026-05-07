@@ -1,0 +1,52 @@
+***Note: Everything is checked on the server.  Changing this file will just screw up your gui.
+Crossbow|500|5 Wood|2 Metal|1 Metal||
+	base/data/shapes/player/crossbowItem.dts|||
+	wood1 0
+	metal1 0
+	metal2 0
+	metal3 7
+	material mappings : mat# for result = component# mat#
+	1 = 0 1
+	2 = 1 1
+	3 = 2 1
+	
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	5|*|WoodItem|*|*|*|*|
+	2|*|IngotItem|*|*|*|*|
+	1|*|IngotItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: Crossbow 1
+Broadsword|900|5 Metal|2 Metal|1 Wood||
+	base/data/shapes/player/BroadSword.dts|||
+	metal1 7
+	metal2 0
+	wood1 0
+	
+	material mappings : mat# for result = component# mat#
+	1 = 0 1
+	2 = 1 1
+	3 = 2 1
+	
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	5|*|IngotItem|*|*|*|*|
+	2|*|IngotItem|*|*|*|*|
+	1|*|WoodItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: Broadsword 1
+Shield|500|10 Metal|2 Metal|1 Metal||
+	base/data/shapes/player/ShieldItem.dts|||
+	metal1 7
+	metal2 0
+	metal3 0
+	
+	material mappings : mat# for result = component# mat#
+	1 = 0 1
+	2 = 1 1
+	3 = 2 1
+	
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	10|*|IngotItem|*|*|*|*|
+	2|*|IngotItem|*|*|*|*|
+	1|*|IngotItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: Shield 1

@@ -1,0 +1,521 @@
+***Note: Everything is checked on the server.  Changing this file will just screw up your gui.
+Cloth #1|0|||||
+	base/data/shapes/player/cloth.dts|||	//shapename|dyemesh name|dyevalue|
+	shirt1 0
+	wood1 4
+	
+	
+	no material mappings
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Orange Dye|DyeItem|*|*|*|*|
+	1|Black Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #2|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 1
+	wood1 4
+	
+	
+	no material mappings
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Green Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #3|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 2
+	wood1 4
+	
+	
+	no material mappings
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Purple Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #4|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 3
+	wood1 4
+	
+	
+	no material mappings
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Blue Dye|DyeItem|*|*|*|*|
+	1|Yellow Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #5|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 4
+	wood1 4
+	
+	
+	no material mappings
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Blue Dye|DyeItem|*|*|*|*|
+	1|Black Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #6|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 5
+	wood1 4
+	
+	
+	no material mappings
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Ocre Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #7|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 6
+	wood1 4
+	
+	
+	no material mappings
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	10|Fiber|FiberItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #8|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 7
+	wood1 4
+	
+	
+	no material mappings
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Black Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #9|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 8
+	wood1 4
+	
+	
+	no material mappings
+	----Component Requirements: Quantity Name DataBlock mat1 mat2 mat3 mat4
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Ocre Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #10|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 9
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Cyan Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #11|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 10
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Cyan Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #12|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 11
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Cyan Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #13|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 12
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Cyan Dye|DyeItem|*|*|*|*|
+	1|Black Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #14|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 13
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	2|Blue Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #15|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 14
+	wood1 4
+	
+	
+	no material mappings
+	----
+	6|Fiber|FiberItem|*|*|*|*|
+	1|Light Gray Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #16|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 15
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	2|Purple Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #17|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 16
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Bright Red Dye|DyeItem|*|*|*|*|
+	1|Red Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #18|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 17
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Bright Cyan Dye|DyeItem|*|*|*|*|
+	1|Cyan Dye|DyeItem|*|*|*|*|
+	1|Yellow Dye|DyeItem|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #19|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 18
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	2|Bright Red Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #20|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 19
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Ocre Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #21|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 20
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #22|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 21
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Gray Dye|DyeItem|*|*|*|*|
+	1|Light Gray Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #23|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 22
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Red Dye|DyeItem|*|*|*|*|
+	1|Yellow Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #24|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 23
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Red Dye|DyeItem|*|*|*|*|
+	1|Blue Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #25|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 24
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	2|Dark Blue Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #26|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 25
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Black Dye|DyeItem|*|*|*|*|
+	1|Pitch Black Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #27|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 26
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Black Dye|DyeItem|*|*|*|*|
+	1|Brown Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #28|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 27
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Blue Dye|DyeItem|*|*|*|*|
+	1|Brown Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #29|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 28
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Gray Dye|DyeItem|*|*|*|*|
+	1|Black Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #30|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 29
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	2|Bright Blue Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #31|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 30
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Yellow Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #32|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 31
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	2|Red Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #33|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 32
+	wood1 4
+	
+	
+	no material mappings
+	----
+	20|Fiber|FiberItem|*|*|*|*|
+	1|Blue Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #34|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 33
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Orange Dye|DyeItem|*|*|*|*|
+	1|Red Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #35|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 34
+	wood1 4
+	
+	
+	no material mappings
+	----
+	20|Fiber|FiberItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #36|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 35
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Dark Red Dye|DyeItem|*|*|*|*|
+	1|Ocre Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #37|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 36
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Orange Dye|DyeItem|*|*|*|*|
+	1|Blue Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #38|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 37
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #39|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 38
+	wood1 4
+	
+	
+	no material mappings
+	----
+	10|Fiber|FiberItem|*|*|*|*|
+	1|Black Dye|DyeItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5
+Cloth #40|0|||||
+	base/data/shapes/player/cloth.dts|||
+	shirt1 39
+	wood1 4
+	
+	
+	no material mappings
+	----
+	20|Fiber|FiberItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: ClothItem 5

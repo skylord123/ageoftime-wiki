@@ -1,0 +1,131 @@
+***Note: Everything is checked on the server.  Changing this file will just screw up your gui.
+Brass|50|4 Copper|1 Zinc|||
+	base/data/shapes/player/ingot.dts|||
+	metal1 0
+	
+	
+	
+	no material mappings
+	----
+	4|Copper|IngotItem|*|*|*|*|
+	1|Zinc|IngotItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: IngotItem 5
+Copper|10|3 Azurite||||
+	base/data/shapes/player/ingot.dts|||
+	metal1 1
+	
+	
+	
+	no material mappings
+	----
+	3|Azurite|MineralItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: IngotItem 1
+Gold|800|1 Copper||||
+	base/data/shapes/player/ingot.dts|||
+	metal1 2
+	
+	
+	
+	no material mappings
+	----
+	1|Copper|IngotItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: IngotItem 1
+Iron|10|3 Hematite||||
+	base/data/shapes/player/ingot.dts|||
+	metal1 3
+	
+	
+	
+	no material mappings
+	----
+	3|Hematite|MineralItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: IngotItem 1
+Lead|10|3 Cerussite||||
+	base/data/shapes/player/ingot.dts|||
+	metal1 4
+	
+	
+	
+	no material mappings
+	----
+	3|Cerussite|MineralItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: IngotItem 1
+Plutonium|10|3 Autunite||||
+	base/data/shapes/player/ingot.dts|||
+	metal1 5
+	
+	
+	
+	no material mappings
+	----
+	3|Autunite|MineralItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: IngotItem 1
+Rust|10|3 Corprolite||||
+	base/data/shapes/player/ingot.dts|||
+	metal1 6
+	
+	
+	
+	no material mappings
+	----
+	3|Corprolite|MineralItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: IngotItem 1
+Steel|500|50 Iron|1 Carbon|||
+	base/data/shapes/player/ingot.dts|||
+	metal1 7
+	
+	
+	
+	no material mappings
+	----
+	50|Iron|IngotItem|*|*|*|*|
+	1|Carbon|PowderItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: IngotItem 50
+Zinc|10|3 Smithsonite||||
+	base/data/shapes/player/ingot.dts|||
+	metal1 8
+	
+	
+	
+	no material mappings
+	----
+	3|Smithsonite|MineralItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: IngotItem 1
+Carbon|10|5 Wood||||
+	base/data/shapes/player/powder.dts|powder|40 40 40 255|
+	wood1 4
+	
+	
+	
+	no material mappings
+	----
+	3|*|WoodItem|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	0|*|*|*|*|*|*|
+	----ResultDB: PowderItem 1

@@ -1,0 +1,125 @@
+site_name: Age of Time Wiki
+site_description: Community wiki for the game Age of Time
+site_url: https://skylord123.github.io/ageoftime-wiki/
+repo_url: https://github.com/skylord123/ageoftime-wiki
+repo_name: skylord123/ageoftime-wiki
+edit_uri: edit/master/docs/
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+    - content.tabs.link
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Gameplay:
+      - gameplay/index.md
+      - Items: items.md
+      - Magic: magic.md
+      - Voice Menu: voice-menu.md
+      - Slash Commands: commands.md
+      - Death & Respawning: death.md
+  - World:
+      - world/index.md
+      - Areas: areas.md
+      - Enemies: enemies.md
+      - Friendly NPCs:
+          - npcs/index.md
+          - Sword Giver: npcs/sword-giver.md
+          - Blacksmith: npcs/blacksmith.md
+          - Shopkeepers: npcs/shopkeepers.md
+          - Banker: npcs/banker.md
+          - Post Office Clerk: npcs/post-office.md
+          - Police: npcs/police.md
+  - Reference:
+      - reference/index.md
+      - Tips & Secrets: tips.md
+      - About the Game: about.md
+      - Torque Script:
+          - reference/torque-script/index.md
+          - Console Function Dump: reference/torque-script/console-function-dump.md
+          - Console Class Dump: reference/torque-script/console-class-dump.md
+          - Tagged Strings: reference/torque-script/tagged-strings.md
+          - Datablocks: reference/torque-script/datablocks.md
+  - Contributing: contributing.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/skylord123/ageoftime-wiki
