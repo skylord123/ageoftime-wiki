@@ -54,7 +54,8 @@ A condensed version-history pulled from the official site's news posts:
 
 This wiki is a community effort. Most of the gameplay information was first
 documented by the [Neocities community wiki](https://ageoftimewiki.neocities.org/),
-with the world map credited to **Plastiware**. Official-website material is
-the work of **Badspot**. Both sources are reproduced here for preservation and
-ease-of-reference. See [Contributing](contributing.md) if you'd like to help
-expand it.
+with the world map credited to **Plastiware** from the
+[Blockland forum thread](https://forum.blockland.us/index.php?topic=245789.0).
+Official-website material is the work of **Badspot**. Both sources are
+reproduced here for preservation and ease-of-reference. See
+[Contributing](contributing.md) if you'd like to help expand it.

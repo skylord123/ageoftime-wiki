@@ -6,7 +6,9 @@ Locations across the world of *Age of Time*.
 
 ![World map](assets/maps/wiki_map.png){ loading=lazy }
 
-*Map credit: Plastiware (from the [community wiki](https://ageoftimewiki.neocities.org/)).*
+*Map credit: Plastiware, from the [Blockland forum thread](https://forum.blockland.us/index.php?topic=245789.0).*
+
+[Unmarked version](assets/maps/wiki_map_unmarked.png)
 
 The official site also publishes a smaller [town map](assets/maps/townMap.jpg)
 and [overworld map](assets/maps/worldMap.jpg).
