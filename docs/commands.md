@@ -8,7 +8,6 @@ the command, and press <kbd>Enter</kbd>.
 | Command | Effect |
 |---|---|
 | `/logout` | Switch characters without disconnecting from the server. |
-| `/bug <text>` | Logs `<text>` to the server's bug log. Use this to report bugs on the official server. |
 
 ## Actions
 
@@ -41,6 +40,7 @@ See the [Magic](magic.md) page for mana costs and tactics for each spell.
 | `/love` | Hearts swirl around your character's head. |
 | `/hate` | A dark cloud forms above your head. |
 | `/wtf` | Question marks swirl around your head. |
+| `/alarm` | Shows an exclamation mark above your head and plays the alarm sound. |
 | `/sit` | Sit down. |
 | `/lounge` | Lie down. |
 

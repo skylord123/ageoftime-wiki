@@ -63,7 +63,7 @@ This document is subject to magical change without notice.
 
 ## Becoming a police officer
 
-Selecting **"I want to become a police officer."** has three possible
+Selecting **"I want to become a police officer."** has four possible
 outcomes:
 
 | Situation | Marshal's response |
@@ -71,6 +71,7 @@ outcomes:
 | You qualify (1+ hour online, no crimes, not already an officer) | *"Congratulations, you're now on the police force. Please review the 'Police Law Guide' for specifics. Try not to screw up."* |
 | You haven't been online long enough | *"Sorry, we don't take newbies."* |
 | You're already on the force | *"You are already a police officer!"* |
+| You already failed a previous chance | A refusal along the lines of *"You already had a chance. You blew it."* |
 
 On enlistment you receive:
 
@@ -225,6 +226,9 @@ is the maximum total demerits a single crime category can contribute.
 
 Jail time is **1 second per demerit** the perp is carrying when arrested.
 
+Successful arrests also remove **15 demerits** from the arresting officer as
+a kind of community-service credit.
+
 !!! note "Stunning outside towns"
     The Police Law Guide says *"When you are both inside a town area, hit
     the perp with your police baton."* — but in practice the baton works
@@ -237,6 +241,13 @@ Jail time is **1 second per demerit** the perp is carrying when arrested.
     baton, you are automatically jailed for any outstanding crimes the
     moment you next log in.
 
+!!! note "Respawn shortcut to jail"
+    If a wanted player is **dead**, is being **carried by a police officer**,
+    and then chooses **Respawn**, they are jailed immediately. This gives
+    officers a reliable shortcut for finishing arrests without repeatedly
+    re-stunning the body on the trip back. Logging out instead of respawning
+    does **not** trigger this shortcut.
+
 ## Paying fines
 
 If you have **fewer than 150 demerits** you can choose **"I would like to
@@ -244,10 +255,15 @@ pay a fine."** to wipe them.
 
 | Payer | Cost per demerit |
 |---|---:|
-| Civilian | 5 gold |
-| Police officer | 15 gold |
+| Civilian | 1 gold |
+| Police officer | 3 gold |
 
 At 150+ demerits, fines are no longer accepted — you must serve jail time.
+
+!!! note "Law Guide numbers are outdated"
+    The parchment reproduced above still says **5** and **15** gold per
+    demerit. In practice, the actual fine appears to be **1** gold per
+    demerit for civilians and **3** for police.
 
 ## Paychecks
 
@@ -255,7 +271,8 @@ Selecting **"I want my paycheck."** pays out your share of recent fines.
 
 - Officers are **not** paid for making arrests.
 - Whenever someone pays a fine, the gold is split evenly between every
-  officer on-duty at that moment. Collecting it is your paycheck.
+  officer on-duty at that moment. Only the **base fine** is distributed this
+  way; the police surcharge is not.
 - Asking for a paycheck while not on the force gets:
   *"Hey! You're not even a police officer."*
 
@@ -280,4 +297,5 @@ Jail time must be served — there is no skipping it.
     If you log out while jailed and log back in on a different account, the
     new account inherits the remaining sentence. **Anyone else playing from
     the same household / IP** also gets jailed when they next log in until
-    the sentence is served.
+    the sentence is served. Community reports suggest this linkage expires
+    after roughly **30 minutes**.

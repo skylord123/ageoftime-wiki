@@ -14,7 +14,8 @@ Hostile creatures and other dangers found in *Age of Time*.
 
     **Dynamite Orc**
 
-    A red Orc that throws Dynamite. Drops two or three sticks of Dynamite.
+    A red Orc that throws Dynamite. Drops two or three sticks of Dynamite and
+    has a chance to drop lit Dynamite.
 
 - ![Rocket Orc](assets/enemies/1RocketOrc.png){ width=96 }
 
@@ -30,13 +31,18 @@ Hostile creatures and other dangers found in *Age of Time*.
 
 - **Fire Orc**
 
-    A red Orc that uses Fire magic. Only spawns in the Volcano. Drops two or three sticks of Dynamite.
+    A red Orc that uses Fire magic. Only spawns in the Volcano. Drops two or
+    three sticks of Dynamite and has a chance to drop lit Dynamite.
 
 - ![Sea Monster](assets/enemies/1SeaMonster.png){ width=96 }
 
     **Sea Monster**
 
-    A blue Orc that only spawns in water. Extremely tough. Drops Steel Bolts.
+    A blue Orc that only spawns in water. Extremely tough. Drops Steel Bolts
+    and can also drop Blue Potions. Sea Monsters override other spawn tables
+    as long as you're in water, even inside nominally safe zones. They
+    instantly kill players on contact, cannot walk on land, and normally only
+    reach land if a player knocks one there with a shield effect.
 
 - ![Zombie](assets/enemies/1Zombie.png){ width=96 }
 

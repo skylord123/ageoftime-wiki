@@ -20,10 +20,9 @@ player — they will hand out a free starter weapon on request.
 **Reward**
 
 : :material-sword: **Crap Sword** — a basic, no-cost [Sword](../items.md#sword).
-  Functionally identical to any other crafted sword for base damage, but
-  carries no metal effects (see
-  [Blacksmith § Rumored metal effects](blacksmith.md#rumored-metal-effects)).
+  Functionally identical to any other sword: same damage, no special
+  metal-based effect.
 
 !!! tip
-    The Crap Sword is free and unlimited — if you lose yours on death, just
-    head back to the docks and ask again.
+    You keep the Crap Sword when you die. The normal way to lose it is by
+    dropping it, and the Sword Giver only hands out the free sword once.

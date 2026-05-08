@@ -37,8 +37,13 @@ gold from your inventory and produces the listed item.
 | [Broadsword](../items.md#sword) | 900 gold | Broadsword ×1 | 5 Metal, 2 Metal, 1 Wood |
 | [Shield](../items.md#shield) | 500 gold | Shield ×1 | 10 Metal, 2 Metal, 1 Metal |
 
-The metals chosen for each slot determine the weapon's effects — see
-[Rumored metal effects](#rumored-metal-effects) below.
+Material choice matters differently by item type:
+
+- [Swords](../items.md#sword) always deal the same damage and do not gain
+  special metal effects.
+- [Shields](../items.md#shield) can trigger special effects based on their
+  body metal.
+- Crossbow metal behavior remains only partially documented by the community.
 
 ## Clothing
 
@@ -133,22 +138,27 @@ crafting metal; Plutonium is the strongest available.
     component rows in the server data use `3 WoodItem`. The mismatch is
     preserved here as it appears in-game.
 
-## Rumored metal effects
+## Shield metal effects
 
-When used in a [Sword](../items.md#sword) or [Shield](../items.md#shield),
-different metals are believed to produce different effects. These are
-community-reported and not officially documented.
+Shield effects are community-reported and not officially documented.
 
-| Metal | Reported effect |
+- They trigger from **monster contact damage** or from **a player hitting the
+  shield user with a sword**.
+- Only the shield's **body** metal appears to matter. The crest and trim are
+  believed to be cosmetic only.
+
+| Metal | Reported shield effect |
 |---|---|
-| Iron | Causes sparks. |
-| Steel | Deals extra damage to monsters and players. |
-| Copper | Stuns/freezes monsters. |
-| Zinc | Confuses monsters. |
-| Lead | Deflects monsters. |
-| Gold | Blocked monsters drop gold. |
-| Plutonium | Shields: makes enemies non-aggressive. Strongest crossbow metal and strongest shield core. |
+| Copper | Freezes monsters for about 1 second and makes them lose their target. |
+| Zinc | Spins monsters around and makes them lose their target. |
+| Gold | Makes players drop 1 gold; makes monsters spawn 1 gold. |
+| Iron | Spawns a couple of low-damage sparks. |
+| Steel | Spawns more sparks. |
+| Lead | Knocks the attacker back a few feet. |
+| Plutonium | No confirmed effect. |
+| Rust | No confirmed effect. |
+| Brass | No confirmed effect. |
 
 !!! note
-    All metals may also work on players, but only the effects listed above
-    are confirmed by the community.
+    These reports only cover shield behavior. Sword damage/effects do not
+    appear to change with metal.

@@ -35,15 +35,23 @@ You can resist being picked up by pressing jump (default <kbd>Space</kbd>).
 ## Where you respawn
 
 Choosing **Respawn** sends you to your last visited "safe" location. If your
-most recent safe location was one of these areas, you will respawn there:
+most recent persistent respawn location was one of these areas, you will
+respawn there:
 
 - [Port Town](areas.md#port-town)
-- [The Woods](areas.md#major-areas)
 - [Starboard Town](areas.md#starboard-town)
 - [The Tavern](areas.md#tavern)
+- [Arena](areas.md#arena)
+- [Log Challenge](areas.md#log-challenge)
 
 Otherwise (e.g. you died deep in **The Wilderness** without recently passing
 through one of the above), you respawn at **Port Town**.
+
+The [Woods](areas.md#major-areas) and [Level 1](areas.md#level-1) behave
+differently:
+
+- If you die while inside them, you can respawn there or very nearby.
+- If you leave them, they do **not** remain as a persistent respawn point.
 
 !!! tip "Force a Port Town respawn"
     If you die out in The Wilderness and would rather restart at Port Town

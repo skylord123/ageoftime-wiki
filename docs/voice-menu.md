@@ -33,7 +33,13 @@ Visual reactions that appear above your character's head.
 | <kbd>W</kbd> | WTF | Question marks appear around your head. |
 
 Each emote can also be triggered as a [slash command](commands.md#emotes)
-(`/love`, `/hate`, `/wtf`).
+(`/love`, `/hate`, `/wtf`, `/alarm`).
+
+There is also a hidden slash-command-only emote:
+
+| Command | Emote | Effect |
+|---|---|---|
+| `/alarm` | Alarm | Shows an exclamation mark above your head and plays <audio controls preload="none" src="../assets/audio/voice/alarm.wav">alarm.wav</audio>. |
 
 ## Voice
 

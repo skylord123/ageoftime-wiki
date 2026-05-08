@@ -120,6 +120,9 @@ to stop.
 
 A more detailed community-made map is available on the [Areas](areas.md) page.
 
+!!! note
+    This maps section is archaic and due for a fuller refresh.
+
 ## Where to next?
 
 - Browse [Items](items.md) for weapons, armor, and crafting recipes.
