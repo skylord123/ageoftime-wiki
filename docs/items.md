@@ -38,20 +38,19 @@ The standard ranged offensive item.
 
 ## Metals
 
-Metals are crafted from ore at the blacksmith.
+Metals are crafted at the [Blacksmith § Metal](npcs/blacksmith.md#metal)
+page, which documents the recipes and costs.
 
-| Metal | Recipe |
-|---|---|
-| Brass | 4 Copper + 1 Zinc + 50 Gold (yields 5) |
-| Copper | 3 Azurite + 10 Gold |
-| Gold | 1 Copper + 800 Gold |
-| Iron | 3 Hematite + 10 Gold |
-| Lead | 3 Cerussite + 10 Gold |
-| Plutonium | 3 Autunite + 10 Gold |
-| Rust | 3 Corprolite + 10 Gold |
-| Steel | 50 Iron + 1 Carbon + 500 Gold (yields 50) |
-| Zinc | Smithsonite + 10 Gold |
-| Carbon | 5 Wood + 10 Gold |
+- Brass
+- Carbon
+- Copper
+- Gold
+- Iron
+- Lead
+- Plutonium
+- Rust
+- Steel
+- Zinc
 
 ### Ores
 
@@ -143,6 +142,6 @@ area where the crate was found.
 - ![Dye](assets/items/2Dye.png){ width=64 } **Dyes** — used to color cloth and clothing. Dyes can be applied directly to cloth/clothing and combined with other dyes to produce mixed colors. Colored dyes come from breaking crates in specific map areas; crates drop either Gold or the dye color associated with the area where the crate spawned. Dyes are not a normal enemy/NPC drop source.
 - ![Police Baton](assets/items/PoliceBaton.png){ width=64 } **Police Baton** — granted by joining the Police. It briefly stuns players. NPCs still show the stunned visual effect, but are not actually stunned by it.
 - ![Hook](assets/items/Hook.png){ width=64 } **Hook** — reward for completing Level 1. Allows acrobatic grappling around the map.
-- **Golden Hook** — reward for completing the Log Challenge. Same function as the Hook but gold-colored.
+- ![Golden Hook](assets/items/Golden_Hook.png){ width=64 } **Golden Hook** — reward for completing the Log Challenge. Same function as the Hook but gold-colored.
 
 </div>
