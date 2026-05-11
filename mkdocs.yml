@@ -95,9 +95,31 @@ nav:
       - Voice Menu: voice-menu.md
       - Slash Commands: commands.md
       - Death & Respawning: death.md
+      - Police Mechanics: police-mechanics.md
   - World:
       - world/index.md
       - Areas: areas.md
+      - World Objects: world-objects.md
+      - Locations:
+          - Port Town: world/locations/port-town.md
+          - Starboard Town: world/locations/starboard-town.md
+          - Tavern: world/locations/tavern.md
+          - Arena: world/locations/arena.md
+          - Woods: world/locations/woods.md
+          - Swamp: world/locations/swamp.md
+          - Auric Fields: world/locations/auric-fields.md
+          - Red Crater: world/locations/red-crater.md
+          - Blue Hill: world/locations/blue-hill.md
+          - Volcano: world/locations/volcano.md
+          - Fort Bad: world/locations/fort-bad.md
+          - Cave: world/locations/cave.md
+          - Beach House: world/locations/beach-house.md
+          - Distant Forest: world/locations/distant-forest.md
+          - Treehouse Challenge: world/locations/treehouse-challenge.md
+          - Log Challenge: world/locations/log-challenge.md
+          - Level 1: world/locations/level-1.md
+          - Level 2: world/locations/level-2.md
+          - Hook Swing: world/locations/hook-swing.md
       - Enemies: enemies.md
       - Friendly NPCs:
           - npcs/index.md
@@ -106,10 +128,16 @@ nav:
           - Shopkeepers: npcs/shopkeepers.md
           - Banker: npcs/banker.md
           - Post Office Clerk: npcs/post-office.md
-          - Police: npcs/police.md
+          - Police (Marshal): npcs/police.md
   - Reference:
       - reference/index.md
       - Tips & Secrets: tips.md
+      - Tools:
+          - Dye Calculator: dye-calculator.md
+          - Dye Recipe Finder: dye-recipe-finder.md
+      - Exploits:
+          - reference/exploits/index.md
+          - Crash Parchment: reference/exploits/crash-parchment.md
       - About the Game: about.md
       - Torque Script:
           - reference/torque-script/index.md

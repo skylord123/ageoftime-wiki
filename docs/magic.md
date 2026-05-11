@@ -44,8 +44,8 @@ commands.
 | Spell | Mana cost | Best used for |
 |---|---|---|
 | [Ball](#ball) | Very low (~35 shots per full bar) | General-purpose damage and crowd control |
-| [Burn](#burn) | Moderate | Niche — close-range against Imps |
-| [Fireball](#fireball) | High (~3 shots per full bar) | Splash damage on grouped or moving targets |
+| [Burn](#burn) | Moderate | Very niche; generally worse than just using a sword |
+| [Fireball](#fireball) | High (~3 shots per full bar) | Splash damage on grouped or moving targets; strong in PvP |
 | [Light](#light) | Low | Illuminating dark areas, especially at night |
 | [Cloak](#cloak) | Very high (~75% of full bar) | Disengaging or ambushing in PvP |
 
@@ -73,8 +73,7 @@ commonly used spell because of its very low mana cost — you can fire roughly
   Ball excellent for kiting NPCs.
 - **Rocket-jumping:** look straight down, jump, and fire a Ball at the ground.
   The projectile bounces between you and the floor, launching your character
-  upward. Repeating this can build significant air time and is a useful
-  movement tech.
+  upward. This only works reliably while standing still on flat ground.
 
 ---
 
@@ -82,9 +81,10 @@ commonly used spell because of its very low mana cost — you can fire roughly
 
 A short, slow stream of fire emitted in front of the caster.
 
-Burn has poor damage and very limited range, so most players skip it. Its main
-historical use is at point-blank range against [Imps](enemies.md), which are
-otherwise small and fast-moving.
+Burn has poor damage and very limited range, so most players skip it. It is
+sometimes mentioned as an anti-[Imp](enemies.md) spell, but that only really
+works if the Imp is already trapped or pinned down; in most real situations,
+using a sword is better.
 
 ---
 
@@ -97,6 +97,9 @@ Fireball deals **area-of-effect damage** where it lands, which makes it
 forgiving to aim — you don't need a direct hit. Aiming at the ground near a
 target will still inflict significant splash damage, and the AoE makes it
 effective against tightly-grouped enemies or players who are dodging.
+
+Fireball is also one of the better PvP spells because the splash damage makes
+it hard to dodge cleanly.
 
 As with every spell, Fireball can also be triggered from chat with
 `/cast fireball` — see [Casting from chat](#casting-from-chat).
@@ -123,7 +126,10 @@ Renders the caster invisible to other players for a short window.
 
 **Caveats**
 
-- Your **footsteps remain visible**. For example, walking on dirt will still
-  kick up dust that other players can see.
+- Your **footsteps usually remain visible**. For example, walking on dirt will
+  still kick up dust that other players can see. Interior-style surfaces such
+  as [Woods](world/locations/woods.md), [Level 1](world/locations/level-1.md),
+  and [Starboard Town](world/locations/starboard-town.md) do not show that
+  visible-footstep effect.
 - Because NPCs ignore the cloak entirely, this spell is **purely a PvP tool**
-  — useful for setting up ambushes or breaking line of sight to disengage.
+  — useful for setting up ambushes, breaking line of sight, or evading police.

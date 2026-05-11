@@ -30,6 +30,11 @@ For hostile creatures, see [Enemies](../enemies.md).
 
 - :material-police-badge: **[Police](police.md)**
 
-    Enlist after an hour of crime-free playtime to receive a Police Baton.
+    Talk to the Marshal to enlist, collect paychecks, pay fines, and access
+    the police system.
+
+- :material-gavel: **[Police Mechanics](../police-mechanics.md)**
+
+    Laws, demerits, arrests, fines, jail, and throwing-knife theft rules.
 
 </div>

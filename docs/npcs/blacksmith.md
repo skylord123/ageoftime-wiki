@@ -1,6 +1,6 @@
 # Blacksmith
 
-The Blacksmith is located in [Port Town](../areas.md#port-town) and is the
+The Blacksmith is located in [Port Town](../world/locations/port-town.md) and is the
 only NPC who can craft weapons, shields, clothing, cloth, and refined metals
 from raw materials. Almost every piece of player-made gear in *Age of Time*
 passes through the Blacksmith at some point.

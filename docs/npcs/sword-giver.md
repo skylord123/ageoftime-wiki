@@ -24,5 +24,8 @@ player — they will hand out a free starter weapon on request.
   metal-based effect.
 
 !!! tip
-    You keep the Crap Sword when you die. The normal way to lose it is by
-    dropping it, and the Sword Giver only hands out the free sword once.
+    You keep the Crap Sword when you die because death normally drops only
+    Gold, not your inventory. The usual way to lose a normal sword is by
+    dropping it yourself. The **Rusty Sword** is different because it is a
+    quest item and cannot be dropped at all. The Sword Giver only hands out
+    the free Crap Sword once per character.

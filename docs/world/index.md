@@ -7,7 +7,13 @@ the friendly faces you'll meet along the way.
 
 - :material-map: **[Areas](../areas.md)**
 
-    Towns, dungeons, challenges, hidden zones, and the world map.
+    World map plus links to dedicated pages for towns, dungeons, challenges,
+    and wilderness regions.
+
+- :material-cube-outline: **[World Objects](../world-objects.md)**
+
+    Crates, rocks, trees, shrubs, dynamite chests, and other breakable world
+    objects.
 
 - :material-skull: **[Enemies](../enemies.md)**
 

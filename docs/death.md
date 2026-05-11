@@ -38,16 +38,16 @@ Choosing **Respawn** sends you to your last visited "safe" location. If your
 most recent persistent respawn location was one of these areas, you will
 respawn there:
 
-- [Port Town](areas.md#port-town)
-- [Starboard Town](areas.md#starboard-town)
-- [The Tavern](areas.md#tavern)
-- [Arena](areas.md#arena)
-- [Log Challenge](areas.md#log-challenge)
+- [Port Town](world/locations/port-town.md)
+- [Starboard Town](world/locations/starboard-town.md)
+- [The Tavern](world/locations/tavern.md)
+- [Arena](world/locations/arena.md)
+- [Log Challenge](world/locations/log-challenge.md)
 
-Otherwise (e.g. you died deep in **The Wilderness** without recently passing
-through one of the above), you respawn at **Port Town**.
+Otherwise (e.g. you died deep in **The Wilderness** without passing through
+one of the above **since logging in**), you respawn at **Port Town**.
 
-The [Woods](areas.md#major-areas) and [Level 1](areas.md#level-1) behave
+The [Woods](world/locations/woods.md) and [Level 1](world/locations/level-1.md) behave
 differently:
 
 - If you die while inside them, you can respawn there or very nearby.
@@ -65,7 +65,7 @@ differently:
     You'll always end up at Port Town this way.
 
 !!! note "Arena exception"
-    Dying inside the [Arena](areas.md#arena) does **not** cause you to drop
+    Dying inside the [Arena](world/locations/arena.md) does **not** cause you to drop
     gold — it's a designated PvP zone designed for safe duels.
 
 ## Player-vs-player and gold farming
@@ -75,7 +75,7 @@ back to the bank is one of the most reliable ways to make money in PvP.
 
 - The <kbd>F2</kbd> player menu shows **everyone's location** on the server,
   which makes farmers easy to spot.
-- A common pattern: a new player heads to the [Swamp](areas.md#major-areas)
+- A common pattern: a new player heads to the [Swamp](world/locations/swamp.md)
   and grinds Orcs for gold. As soon as they leave Swamp on the way back to
   the bank in Port Town, a watching player intercepts and kills them.
 - Once killed, the loser's only realistic options are to **respawn** (and
@@ -95,7 +95,7 @@ counter-play, killers developed a "body stash" trick that combined two
 quirks of the engine:
 
 1. **The shop interior is a separate space high in the sky.** The shop you
-   see in [Port Town](areas.md#port-town) is just an exterior building. The
+   see in [Port Town](world/locations/port-town.md) is just an exterior building. The
    actual shop interior sits far above the world; entering the door
    teleports you up to it, and leaving teleports you back down. The
    ground-level building itself is therefore an empty shell.

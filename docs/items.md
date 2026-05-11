@@ -14,8 +14,12 @@ The standard offensive item. All swords have the same damage output.
 - **Free starter sword:** new players can obtain a basic **Crap Sword** at no
   cost from the [Sword Giver](npcs/sword-giver.md) NPC near the Port Town
   docks (the spawn point).
-- You keep your Crap Sword when you die. The only normal way to lose it is to
-  drop it, and the free giveaway only happens once per character.
+- The Crap Sword is not weaker than other swords; it has the same damage as
+  every other sword.
+- You keep your Crap Sword when you die, because death normally drops **Gold**
+  rather than your inventory. The one notable exception here is the **Rusty
+  Sword**, which is a quest item and cannot be dropped at all. The free Crap
+  Sword giveaway only happens once per character.
 
 ### Shield
 
@@ -54,17 +58,18 @@ page, which documents the recipes and costs.
 
 ### Ores
 
-Most ores are obtained by breaking **Large Rocks** in the overworld.
+Most ores are obtained by breaking **Large Rocks** in the overworld. See
+[World Objects](world-objects.md) for the node itself.
 Confirmed exceptions:
 
 - **Autunite** comes from [meteor showers](tips.md#meteor-showers), not rocks.
 - **Corprolite** drops from **Orcs** and **Knights**, not rocks.
 
-!!! note "Area-specific ore tables"
-    I could confirm the **drop source type** (rocks vs. meteors), but I could
-    not yet verify a primary source that maps each common ore to a specific
-    named area. Until that is sourced cleanly, the wiki should treat exact
-    per-area common-ore locations as unconfirmed community knowledge.
+!!! note "Common ore drops"
+    There does not appear to be any named-area correlation for the normal rock
+    ores. Breaking a **Large Rock** seems to give each common rock ore an
+    approximately equal chance, with **Autunite** and **Corprolite** excluded
+    because they come from different sources entirely.
 
 <div class="grid cards" markdown>
 
@@ -80,34 +85,36 @@ Confirmed exceptions:
 
 ### Dye sources
 
-Colored dyes are obtained from **crates**, not from enemies. Crates spawn in
-all major areas and drop either **Gold** or the dye color associated with the
-area where the crate was found.
+Colored dyes are obtained from **crates**, not from enemies. Crates do **not**
+spawn in every area; they appear in the specific dye-bearing locations listed
+below and drop either **Gold**, the area's dye color, or occasional
+**Dynamite**.
 
 | Dye color | Source area |
 |---|---|
-| Green Dye | [Woods](areas.md#major-areas) |
-| Cyan Dye | [Swamp](areas.md#major-areas) |
-| Yellow Dye | [Auric Fields](areas.md#major-areas) |
-| Red Dye | [Red Crater](areas.md#major-areas) |
-| Blue Dye | [Blue Hill](areas.md#major-areas) |
-| Orange Dye | [Volcano](areas.md#volcano) |
-| Black Dye | [Volcano](areas.md#volcano) |
-| Magenta Dye | [Volcano](areas.md#volcano) |
+| Green Dye | [Woods](world/locations/woods.md) |
+| Cyan Dye | [Swamp](world/locations/swamp.md) |
+| Yellow Dye | [Auric Fields](world/locations/auric-fields.md) |
+| Red Dye | [Red Crater](world/locations/red-crater.md) |
+| Blue Dye | [Blue Hill](world/locations/blue-hill.md) |
+| Orange Dye | [Volcano](world/locations/volcano.md) |
+| Black Dye | [Volcano](world/locations/volcano.md) |
+| Magenta Dye | [Volcano](world/locations/volcano.md) |
 
 !!! note
     [Bleach](#general-items) acts as a white dye, but it is bought from the
-    [Port Town Shop](areas.md#port-town-shop) rather than dropped from crates.
+    [Port Town Shop](world/locations/port-town.md#shop) rather than dropped
+    from crates.
 
 ## Raw materials
 
+For shrubs and other resource nodes in the overworld, see
+[World Objects](world-objects.md).
+
 <div class="grid cards" markdown>
 
-- ![Cloth](assets/items/3Cloth.png){ width=64 } **Cloth** — crafted from 10 Fibers and up to 3 Dyes. Dyes can be added later for more color.
-- ![Shrub](assets/items/Shrub.png){ width=64 } **Shrubs** — break to drop Fiber.
-- ![Fiber](assets/items/Fibers.png){ width=64 } **Fiber** — dropped by shrubs. Crafts into Cloth. Toss it on a surface to grow a new shrub (good for farming). Planted shrubs start small and slowly grow over about **30 minutes**. They are fully grown when they reach full size and their stalks turn brown.
-- ![Large Rock](assets/items/Large_Rock.png){ width=64 } **Large Rocks** — break to drop Ores.
-- ![Tree](assets/items/Tree.png){ width=64 } **Trees** — blow up with Dynamite to drop Wood.
+- ![Cloth](assets/items/3Cloth.png){ width=64 } **Cloth** — crafted from 10 Fibers plus any recipe-specific Dyes. Cloth itself is not directly dyed afterward; you use dyes either while crafting cloth patterns or when coloring finished clothing.
+- ![Fiber](assets/items/Fibers.png){ width=64 } **Fiber** — dropped by [Shrubs](world-objects.md). Crafts into Cloth. Toss it on a surface to grow a new shrub (good for farming). Planted shrubs start small and slowly grow over about **30 minutes**. They are fully grown when they reach full size and their stalks turn brown.
 
 </div>
 
@@ -115,31 +122,34 @@ area where the crate was found.
 
 <div class="grid cards" markdown>
 
-- ![Cork](assets/items/3Cork.png){ width=64 } **Cork**
-- ![Flakeboard](assets/items/3Flakeboard.png){ width=64 } **Flakeboard**
-- ![Oak](assets/items/3Oak.png){ width=64 } **Oak**
-- ![Pine](assets/items/3Pine.png){ width=64 } **Pine**
-- ![Walnut](assets/items/3Walnut.png){ width=64 } **Walnut**
+- ![Cork](assets/items/3Cork.png){ width=64 } **Cork** — dropped from Cork trees.
+- ![Flakeboard](assets/items/3Flakeboard.png){ width=64 } **Flakeboard** — dropped from Flakeboard trees.
+- ![Oak](assets/items/3Oak.png){ width=64 } **Oak** — dropped from Oak trees.
+- ![Pine](assets/items/3Pine.png){ width=64 } **Pine** — dropped from Pine trees.
+- ![Walnut](assets/items/3Walnut.png){ width=64 } **Walnut** — dropped from Walnut trees.
 
 </div>
 
 ## General items
 
+For crates, dynamite chests, and other breakable overworld objects, see
+[World Objects](world-objects.md).
+
 <div class="grid cards" markdown>
 
-- ![Crate](assets/items/Crate.png){ width=64 } **Crate** — found in all areas, drops Gold or Dyes.
-- ![Dynamite Chest](assets/items/Dynamite_Chest.png){ width=64 } **Dynamite Chest** — very rare, found near Port Town. Drops ~5 active sticks of Dynamite. Historically these used to drop large amounts of Gold, but the reward was changed after players began using scripts to locate and farm them too efficiently.
 - ![Dynamite](assets/items/Dynamite.png){ width=64 } **Dynamite** — dropped by Dynamite Orcs and by Fire Orcs in the Volcano; explodes in a medium radius where dropped. It is the only weapon that can deal damage inside Port Town, and it can instantly kill players. A shield can block the direct damage, but the blast will still launch the defender, with stronger knockback the closer they are to the explosion; the launch itself can still be lethal from the speed or the impact.
 - ![Exploding Bolts](assets/items/Exploding_Bolts.png){ width=64 } **Exploding Bolts** — dropped by Imps or sold in the Port Town shop. Crossbow ammo.
 - ![Steel Bolts](assets/items/Steel_Bolts.png){ width=64 } **Steel Bolts** — dropped by Imps and Sea Monsters or sold in the Port Town shop. Standard crossbow ammo.
 - ![Parchment](assets/items/Parchment.png){ width=64 } **Parchment** — sold in the Port Town shop. Write a message and leave it for other players to read.
 - ![Expensive Parchment](assets/items/ExpensiveParchment.png){ width=64 } **Expensive Parchment** — fancy version of parchment, sold in Starboard Town.
-- ![Throwing Knives](assets/items/Throwing_Knives.png){ width=64 } **Throwing Knives** — sold in the Port Town shop. Projectile weapon.
+- ![Throwing Knives](assets/items/Throwing_Knives.png){ width=64 } **Throwing Knives** — sold in the Port Town shop. Projectile weapon. After a knife is thrown or dropped, its owner can usually auto-collect it for about a minute by touching it. Once it shows a `V` above it, that protection has expired and anyone can take it without triggering [Throwing Knife Theft](police-mechanics.md#throwing-knife-theft).
 - ![Blue Vial](assets/items/Blue_Vial.png){ width=64 } **Blue Vial** — restores 30% health. Sold in the Port Town shop or found in Level 1.
 - ![Blue Potion](assets/items/Blue_Potion.png){ width=64 } **Blue Potion** — restores 100% health. Sold at the Tavern and in Starboard Town, found in Level 1, and can also drop from Sea Monsters.
 - ![Bleach](assets/items/Bleach.png){ width=64 } **Bleach** — functions as a white dye. Sold in the Port Town shop and not found as a world drop.
 - ![Insta-Horse](assets/items/Insta-Horse.png){ width=64 } **Insta-Horse** — sold in the Port Town shop. Spawns a Horse, but can only be used outside of safe zones.
-- ![Dye](assets/items/2Dye.png){ width=64 } **Dyes** — used to color cloth and clothing. Dyes can be applied directly to cloth/clothing and combined with other dyes to produce mixed colors. Colored dyes come from breaking crates in specific map areas; crates drop either Gold or the dye color associated with the area where the crate spawned. Dyes are not a normal enemy/NPC drop source.
+- ![Dye](assets/items/2Dye.png){ width=64 } **Dyes** — used for hair color, cloth recipes, and clothing color. Using a dye directly applies it to your hair. To use dye on clothing, you must combine it into the clothing item instead. Dyes can also be combined with each other to produce mixed colors. Colored dyes come from crates in specific map areas; those crates drop Gold, the local dye color, or occasional Dynamite. Dyes are not a normal enemy or NPC drop source.
+
+See also: [Dye Calculator](dye-calculator.md) and [Dye Recipe Finder](dye-recipe-finder.md).
 - ![Police Baton](assets/items/PoliceBaton.png){ width=64 } **Police Baton** — granted by joining the Police. It briefly stuns players. NPCs still show the stunned visual effect, but are not actually stunned by it.
 - ![Hook](assets/items/Hook.png){ width=64 } **Hook** — reward for completing Level 1. Allows acrobatic grappling around the map.
 - ![Golden Hook](assets/items/Golden_Hook.png){ width=64 } **Golden Hook** — reward for completing the Log Challenge. Same function as the Hook but gold-colored.
