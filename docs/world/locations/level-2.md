@@ -1,5 +1,7 @@
 # Level 2
 
+![Place Holder](../../assets/npcs/aot_placeholder.png){ width=360 loading=lazy }
+
 A level near [Fort Bad](fort-bad.md).
 
 ## Current reward status

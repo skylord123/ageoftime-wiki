@@ -1,8 +1,17 @@
 # Sword Giver
 
+<div markdown="1" style="display: flex; align-items: flex-start; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
+
+![Sword Giver](../assets/npcs/aot_sword_giver.png){ width=100 loading=lazy }
+
+<div markdown="1" style="flex: 1; min-width: 240px;">
+
 A friendly NPC stationed near the spawn point in **Port Town**, on the docks.
 Speaking with the Sword Giver is the recommended first stop for any new
 player — they will hand out a free starter weapon on request.
+
+</div>
+</div>
 
 **Location**
 
@@ -19,7 +28,7 @@ player — they will hand out a free starter weapon on request.
 
 **Reward**
 
-: :material-sword: **Crap Sword** — a basic, no-cost [Sword](../items.md#sword).
+: :material-sword: **Crap Sword** — a basic, no-cost [Sword](../weapons.md#sword).
   Functionally identical to any other sword: same damage, no special
   metal-based effect.
 

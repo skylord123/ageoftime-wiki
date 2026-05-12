@@ -26,6 +26,9 @@ The Starboard Shop is the building where you **buy** items. It contains
 | Thong | 80 gold |
 | Bikini Top | 80 gold |
 
+See also: [Clothing](../../clothing.md) for the full combined crafting and
+shop list.
+
 ## Marketplace building
 
 The area where you **list items for sale** in Starboard Town is in a separate

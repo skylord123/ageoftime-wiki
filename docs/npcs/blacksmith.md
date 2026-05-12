@@ -1,9 +1,18 @@
 # Blacksmith
 
+<div markdown="1" style="display: flex; align-items: flex-start; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
+
+![Blacksmith](../assets/npcs/aot_blacksmith.png){ width=100 loading=lazy }
+
+<div markdown="1" style="flex: 1; min-width: 240px;">
+
 The Blacksmith is located in [Port Town](../world/locations/port-town.md) and is the
 only NPC who can craft weapons, shields, clothing, cloth, and refined metals
 from raw materials. Almost every piece of player-made gear in *Age of Time*
 passes through the Blacksmith at some point.
+
+</div>
+</div>
 
 ## Using the Blacksmith
 
@@ -33,15 +42,15 @@ gold from your inventory and produces the listed item.
 
 | Item | Cost | Produces | Requirements |
 |---|---:|---|---|
-| [Crossbow](../items.md#crossbow) | 500 gold | Crossbow ×1 | 5 Wood, 2 Metal, 1 Metal |
-| [Broadsword](../items.md#sword) | 900 gold | Broadsword ×1 | 5 Metal, 2 Metal, 1 Wood |
-| [Shield](../items.md#shield) | 500 gold | Shield ×1 | 10 Metal, 2 Metal, 1 Metal |
+| [Crossbow](../weapons.md#crossbow) | 500 gold | Crossbow ×1 | 5 Wood, 2 Metal, 1 Metal |
+| [Broadsword](../weapons.md#sword) | 900 gold | Broadsword ×1 | 5 Metal, 2 Metal, 1 Wood |
+| [Shield](../weapons.md#shield) | 500 gold | Shield ×1 | 10 Metal, 2 Metal, 1 Metal |
 
 Material choice matters differently by item type:
 
-- [Swords](../items.md#sword) always deal the same damage and do not gain
+- [Swords](../weapons.md#sword) always deal the same damage and do not gain
   special metal effects.
-- [Shields](../items.md#shield) can trigger special effects based on their
+- [Shields](../weapons.md#shield) can trigger special effects based on their
   body metal.
 - Crossbow metal behavior remains only partially documented by the community.
 
@@ -49,7 +58,8 @@ Material choice matters differently by item type:
 
 All clothing recipes are free (0 gold). Multiple cloth slots let you mix
 different colors/patterns; the visual result depends on which Cloth you feed
-into each slot.
+into each slot. For shop locations and screenshots of the wearable items, see
+[Clothing](../clothing.md).
 
 | Item | Produces | Requirements |
 |---|---|---|

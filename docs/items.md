@@ -1,44 +1,27 @@
 # Items
 
-Items, materials, and equipment found in *Age of Time*.
+Item-related reference in *Age of Time* is split by role so that crafting,
+equipment, dyes, and utility items are easier to find.
 
-## Weapons
+<div class="grid cards" markdown>
 
-### Sword
+- :material-sword: **[Weapons](weapons.md)**
 
-The standard offensive item. All swords have the same damage output.
+    Swords, shields, crossbows, bolts, throwing knives, and the Police Baton.
 
-- **Crafted from:** 5 Metal, 2 other Metal, 1 Wood, 900 Gold
-- No matter what Metal or Wood is used, all swords deal the same damage and
-  do not gain special metal effects.
-- **Free starter sword:** new players can obtain a basic **Crap Sword** at no
-  cost from the [Sword Giver](npcs/sword-giver.md) NPC near the Port Town
-  docks (the spawn point).
-- The Crap Sword is not weaker than other swords; it has the same damage as
-  every other sword.
-- You keep your Crap Sword when you die, because death normally drops **Gold**
-  rather than your inventory. The one notable exception here is the **Rusty
-  Sword**, which is a quest item and cannot be dropped at all. The free Crap
-  Sword giveaway only happens once per character.
+- :material-hanger: **[Clothing](clothing.md)**
 
-### Shield
+    Wearable clothing items, where they are sold, and how they are crafted.
 
-The standard defensive item.
+- :material-palette: **[Dyes](dyes.md)**
 
-- **Crafted from:** 10 Metal, 2 other Metal, 1 Wood, 500 Gold
-- Special shield effects trigger when a monster deals contact damage to the
-  shield user, or when a player attacks the shield user with a sword.
-- Only the shield's body metal matters for these effects; the crest and trim
-  are cosmetic.
-- See [Blacksmith § Shield metal effects](npcs/blacksmith.md#shield-metal-effects)
-  for the community-reported per-metal behavior.
+    Dye sources, the full named dye list, and links to the dye tools.
 
-### Crossbow
+- :material-horse-variant-fast: **[Movement Items](movement-items.md)**
 
-The standard ranged offensive item.
+    Hook, Golden Hook, and Insta-Horse.
 
-- **Crafted from:** 5 Metal, 2 other Metal, 1 Wood, 500 Gold
-- Plutonium is the strongest crossbow metal.
+</div>
 
 ## Metals
 
@@ -56,7 +39,7 @@ page, which documents the recipes and costs.
 - Steel
 - Zinc
 
-### Ores
+## Ores
 
 Most ores are obtained by breaking **Large Rocks** in the overworld. See
 [World Objects](world-objects.md) for the node itself.
@@ -83,29 +66,6 @@ Confirmed exceptions:
 
 </div>
 
-### Dye sources
-
-Colored dyes are obtained from **crates**, not from enemies. Crates do **not**
-spawn in every area; they appear in the specific dye-bearing locations listed
-below and drop either **Gold**, the area's dye color, or occasional
-**Dynamite**.
-
-| Dye color | Source area |
-|---|---|
-| Green Dye | [Woods](world/locations/woods.md) |
-| Cyan Dye | [Swamp](world/locations/swamp.md) |
-| Yellow Dye | [Auric Fields](world/locations/auric-fields.md) |
-| Red Dye | [Red Crater](world/locations/red-crater.md) |
-| Blue Dye | [Blue Hill](world/locations/blue-hill.md) |
-| Orange Dye | [Volcano](world/locations/volcano.md) |
-| Black Dye | [Volcano](world/locations/volcano.md) |
-| Magenta Dye | [Volcano](world/locations/volcano.md) |
-
-!!! note
-    [Bleach](#general-items) acts as a white dye, but it is bought from the
-    [Port Town Shop](world/locations/port-town.md#shop) rather than dropped
-    from crates.
-
 ## Raw materials
 
 For shrubs and other resource nodes in the overworld, see
@@ -120,17 +80,27 @@ For shrubs and other resource nodes in the overworld, see
 
 ### Wood types
 
-<div class="grid cards" markdown>
+Tree sources have now been checked directly in-game. See
+[World Objects](world-objects.md#tree) for screenshots of the tree
+models.
 
-- ![Cork](assets/items/3Cork.png){ width=64 } **Cork** — dropped from Cork trees.
-- ![Flakeboard](assets/items/3Flakeboard.png){ width=64 } **Flakeboard** — dropped from Flakeboard trees.
-- ![Oak](assets/items/3Oak.png){ width=64 } **Oak** — dropped from Oak trees.
-- ![Pine](assets/items/3Pine.png){ width=64 } **Pine** — dropped from Pine trees.
-- ![Walnut](assets/items/3Walnut.png){ width=64 } **Walnut** — dropped from Walnut trees.
-
-</div>
+| Wood | Source tree model(s) |
+|---|---|
+| Cork | MonkeyPod `sharp_mp04` |
+| Flakeboard | MonkeyPod `sharp_mp04` |
+| Oak | Oak `Sharp_Oak02` |
+| Pine | White Pine `Sharp_WhitePine01` |
+| Walnut | Maple `Sharp_Maple05` |
+| Maple | Maple `Sharp_Maple01` |
+| Beech | Poplar `Sharp_Poplar10` |
+| Teak | Poplar `Sharp_Poplar10` |
+| Cherry | Pear `Sharp_Pear05` |
 
 ## General items
+
+General items covers inventory objects that do not fit better under
+[Weapons](weapons.md), [Dyes](dyes.md), or
+[Movement Items](movement-items.md).
 
 For crates, dynamite chests, and other breakable overworld objects, see
 [World Objects](world-objects.md).
@@ -138,20 +108,9 @@ For crates, dynamite chests, and other breakable overworld objects, see
 <div class="grid cards" markdown>
 
 - ![Dynamite](assets/items/Dynamite.png){ width=64 } **Dynamite** — dropped by Dynamite Orcs and by Fire Orcs in the Volcano; explodes in a medium radius where dropped. It is the only weapon that can deal damage inside Port Town, and it can instantly kill players. A shield can block the direct damage, but the blast will still launch the defender, with stronger knockback the closer they are to the explosion; the launch itself can still be lethal from the speed or the impact.
-- ![Exploding Bolts](assets/items/Exploding_Bolts.png){ width=64 } **Exploding Bolts** — dropped by Imps or sold in the Port Town shop. Crossbow ammo.
-- ![Steel Bolts](assets/items/Steel_Bolts.png){ width=64 } **Steel Bolts** — dropped by Imps and Sea Monsters or sold in the Port Town shop. Standard crossbow ammo.
 - ![Parchment](assets/items/Parchment.png){ width=64 } **Parchment** — sold in the Port Town shop. Write a message and leave it for other players to read.
 - ![Expensive Parchment](assets/items/ExpensiveParchment.png){ width=64 } **Expensive Parchment** — fancy version of parchment, sold in Starboard Town.
-- ![Throwing Knives](assets/items/Throwing_Knives.png){ width=64 } **Throwing Knives** — sold in the Port Town shop. Projectile weapon. After a knife is thrown or dropped, its owner can usually auto-collect it for about a minute by touching it. Once it shows a `V` above it, that protection has expired and anyone can take it without triggering [Throwing Knife Theft](police-mechanics.md#throwing-knife-theft).
 - ![Blue Vial](assets/items/Blue_Vial.png){ width=64 } **Blue Vial** — restores 30% health. Sold in the Port Town shop or found in Level 1.
 - ![Blue Potion](assets/items/Blue_Potion.png){ width=64 } **Blue Potion** — restores 100% health. Sold at the Tavern and in Starboard Town, found in Level 1, and can also drop from Sea Monsters.
-- ![Bleach](assets/items/Bleach.png){ width=64 } **Bleach** — functions as a white dye. Sold in the Port Town shop and not found as a world drop.
-- ![Insta-Horse](assets/items/Insta-Horse.png){ width=64 } **Insta-Horse** — sold in the Port Town shop. Spawns a Horse, but can only be used outside of safe zones.
-- ![Dye](assets/items/2Dye.png){ width=64 } **Dyes** — used for hair color, cloth recipes, and clothing color. Using a dye directly applies it to your hair. To use dye on clothing, you must combine it into the clothing item instead. Dyes can also be combined with each other to produce mixed colors. Colored dyes come from crates in specific map areas; those crates drop Gold, the local dye color, or occasional Dynamite. Dyes are not a normal enemy or NPC drop source.
-
-See also: [Dye Calculator](dye-calculator.md) and [Dye Recipe Finder](dye-recipe-finder.md).
-- ![Police Baton](assets/items/PoliceBaton.png){ width=64 } **Police Baton** — granted by joining the Police. It briefly stuns players. NPCs still show the stunned visual effect, but are not actually stunned by it.
-- ![Hook](assets/items/Hook.png){ width=64 } **Hook** — reward for completing Level 1. Allows acrobatic grappling around the map.
-- ![Golden Hook](assets/items/Golden_Hook.png){ width=64 } **Golden Hook** — reward for completing the Log Challenge. Same function as the Hook but gold-colored.
 
 </div>

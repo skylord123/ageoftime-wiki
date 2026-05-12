@@ -1,5 +1,11 @@
 # Post Office Clerk
 
+<div markdown="1" style="display: flex; align-items: flex-start; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
+
+![Post Office Clerk](../assets/npcs/aot_postmaster.png){ width=100 loading=lazy }
+
+<div markdown="1" style="flex: 1; min-width: 240px;">
+
 Runs the post office in [Port Town](../world/locations/port-town.md) and handles
 in-game mail. Players receive mail from the
 [player marketplace](../world/locations/port-town.md#player-marketplace) here:
@@ -14,3 +20,6 @@ Sending an item through the mail costs **1 gold**.
 Community reports also suggest that mailed items may persist even if a player
 recreates their account, making mail a possible long-term handoff/storage
 workaround.
+
+</div>
+</div>

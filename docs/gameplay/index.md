@@ -7,7 +7,7 @@ how to control them, and how the world responds.
 
 - :material-package-variant: **[Items](../items.md)**
 
-    Weapons, metals, raw materials, and crafting recipes.
+    Weapons, dyes, movement items, materials, and utility items.
 
 - :material-fire: **[Magic](../magic.md)**
 

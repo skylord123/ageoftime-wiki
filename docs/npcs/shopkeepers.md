@@ -1,8 +1,17 @@
 # Shopkeepers
 
+<div markdown="1" style="display: flex; align-items: flex-start; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
+
+![Shopkeeper](../assets/npcs/aot_shop_keeper.png){ width=100 loading=lazy }
+
+<div markdown="1" style="flex: 1; min-width: 240px;">
+
 The static stores in *Age of Time* do not all have visible NPC shopkeepers.
 Their full inventories and prices are documented on the relevant location
 pages linked below.
+
+</div>
+</div>
 
 ## Port Town Shopkeeper
 

@@ -24,8 +24,130 @@ player's inventory.
 - ![Large Rock](assets/items/Large_Rock.png){ width=64 } **Large Rock** —
   break to drop [Ores](items.md#ores).
 
-- ![Tree](assets/items/Tree.png){ width=64 } **Tree** — blow it up with
-  [Dynamite](items.md#general-items) to drop one of the [Wood types](items.md#wood-types).
+</div>
+
+## Tree
+
+Trees are world objects that you blow up with [Dynamite](items.md#general-items)
+to get wood plank types. Only tree objects that show a visible **health bar**
+when targeted are valid resource trees and will drop wood. Different tree
+models do **not** all share the same wood drop table.
+
+<div markdown="1" style="border: 1px solid var(--md-default-fg-color--lightest, #d0d7de); border-radius: 12px; padding: 1rem; margin: 1rem 0;">
+
+### Maple `Sharp_Maple01`
+
+![Maple `Sharp_Maple01`](assets/trees/aot_maple.png){ width=260 loading=lazy }
+
+Shape file:
+`base/data/shapes/Sharp_Trees/Trees/Maples/Sharp_Maple01.dts`
+
+Wood drops: Maple
+
+</div>
+
+<div markdown="1" style="border: 1px solid var(--md-default-fg-color--lightest, #d0d7de); border-radius: 12px; padding: 1rem; margin: 1rem 0;">
+
+### Maple `Sharp_Maple05`
+
+![Maple `Sharp_Maple05`](assets/trees/aot_maple2.png){ width=260 loading=lazy }
+
+Shape file:
+`base/data/shapes/Sharp_Trees/Trees/Maples/Sharp_Maple05.dts`
+
+Wood drops: Walnut
+
+</div>
+
+<div markdown="1" style="border: 1px solid var(--md-default-fg-color--lightest, #d0d7de); border-radius: 12px; padding: 1rem; margin: 1rem 0;">
+
+### MonkeyPod `sharp_mp04`
+
+![MonkeyPod `sharp_mp04`](assets/trees/aot_mp04.png){ width=260 loading=lazy }
+
+Shape file:
+`base/data/shapes/Sharp_Trees/Trees/MonkeyPod/sharp_mp04.dts`
+
+Wood drops: Cork, Flakeboard
+
+</div>
+
+<div markdown="1" style="border: 1px solid var(--md-default-fg-color--lightest, #d0d7de); border-radius: 12px; padding: 1rem; margin: 1rem 0;">
+
+### Poplar `Sharp_Poplar10`
+
+![Poplar `Sharp_Poplar10`](assets/trees/aot_sharp_poplar10.png){ width=260 loading=lazy }
+
+Shape file:
+`base/data/shapes/Sharp_Trees/Trees/Poplar/Sharp_Poplar10.dts`
+
+Wood drops: Beech, Teak
+
+</div>
+
+<div markdown="1" style="border: 1px solid var(--md-default-fg-color--lightest, #d0d7de); border-radius: 12px; padding: 1rem; margin: 1rem 0;">
+
+### White Pine `Sharp_WhitePine01`
+
+![White Pine `Sharp_WhitePine01`](assets/trees/aot_sharp_whitepine01.png){ width=260 loading=lazy }
+
+Shape file:
+`base/data/shapes/Sharp_Trees/Trees/White_Pine/Sharp_WhitePine01.dts`
+
+Wood drops: Pine
+
+</div>
+
+<div markdown="1" style="border: 1px solid var(--md-default-fg-color--lightest, #d0d7de); border-radius: 12px; padding: 1rem; margin: 1rem 0;">
+
+### Pear `Sharp_Pear05`
+
+![Pear `Sharp_Pear05`](assets/trees/aot_pear05.png){ width=260 loading=lazy }
+
+Shape file:
+`base/data/shapes/Sharp_Trees/Trees/Pears/Sharp_Pear05.dts`
+
+Wood drops: Cherry
+
+</div>
+
+<div markdown="1" style="border: 1px solid var(--md-default-fg-color--lightest, #d0d7de); border-radius: 12px; padding: 1rem; margin: 1rem 0;">
+
+### Oak `Sharp_Oak02`
+
+![Oak `Sharp_Oak02`](assets/trees/aot_oak2.png){ width=260 loading=lazy }
+
+Shape file:
+`base/data/shapes/Sharp_Trees/Trees/Oaks/Sharp_Oak02.dts`
+
+Wood drops: Oak
+
+</div>
+
+<div markdown="1" style="border: 1px solid var(--md-default-fg-color--lightest, #d0d7de); border-radius: 12px; padding: 1rem; margin: 1rem 0;">
+
+### Cedar-family tree
+
+![Cedar-family tree](assets/trees/aot_cedar.png){ width=260 loading=lazy }
+
+Shape files:
+`base/data/shapes/Sharp_Trees/Trees/Cedar_Cypruss/Sharp_Cedar08.dts`
+`base/data/shapes/Sharp_Trees/Trees/Cedar_Cypruss/Sharp_Cedar09.dts`
+
+Wood drops: Not yet documented
+
+</div>
+
+<div markdown="1" style="border: 1px solid var(--md-default-fg-color--lightest, #d0d7de); border-radius: 12px; padding: 1rem; margin: 1rem 0;">
+
+### Swamp Cyprus `Sharp_SwampCyprus02`
+
+![Swamp Cyprus `Sharp_SwampCyprus02`](assets/trees/aot_swampcyprus02.png){ width=260 loading=lazy }
+
+Shape file:
+`base/data/shapes/Sharp_Trees/Trees/Cedar_Cypruss/Sharp_SwampCyprus02.dts`
+
+Wood drops: Not yet documented
 
 </div>
 

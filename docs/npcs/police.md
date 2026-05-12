@@ -1,11 +1,20 @@
 # Police (Marshal)
 
+<div markdown="1" style="display: flex; align-items: flex-start; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
+
+![Marshal](../assets/npcs/aot_marshal.png){ width=100 loading=lazy }
+
+<div markdown="1" style="flex: 1; min-width: 240px;">
+
 The friendly NPC inside the [Police Station](../world/locations/port-town.md#police-station)
 is the **Marshal**. They run the police force, hand out paychecks, accept
 fines, publish the wanted list, and recruit new officers.
 
 For the actual law system, crime definitions, arrests, jail, and demerits,
 see [Police Mechanics](../police-mechanics.md).
+
+</div>
+</div>
 
 ## Talking to the Marshal
 
@@ -34,7 +43,7 @@ outcomes:
 
 On enlistment you receive:
 
-- :material-baseball-bat: A **Police Baton** for stuns and arrests.
+- :material-baseball-bat: A **[Police Baton](../weapons.md#other-weapon-items)** for stuns and arrests.
 - :material-file-document: A **Police Law Guide** parchment. The full text and
   current practical notes are documented on [Police Mechanics](../police-mechanics.md#police-law-guide).
 

@@ -6,6 +6,8 @@ this page documents the mechanics themselves.
 
 ## Citizen's Law Guide
 
+![Citizen's Law Guide](assets/captures/guides/item_citizen_law_guide.png){ width=220 loading=lazy }
+
 Selecting **"What are the laws?"** from the Marshal prompts:
 
 > There are many laws. Please take a complementary Law Guide from the stand
@@ -40,6 +42,8 @@ This document is subject to magical change without notice.
 ```
 
 ## Police Law Guide
+
+![Police Law Guide](assets/captures/guides/item_police_law_guide.png){ width=220 loading=lazy }
 
 On enlistment you receive a second parchment with arrest instructions and
 crime definitions:

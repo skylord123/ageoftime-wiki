@@ -20,7 +20,7 @@ Hartman's 2005 multiplayer action/RPG, [still updated as of 2024](about.md#relea
 
 - :material-package-variant: **[Items](items.md)**
 
-    Weapons, metals, raw materials, and crafting recipes.
+    Weapons, dyes, movement items, materials, and utility items.
 
 - :material-fire: **[Magic](magic.md)**
 
