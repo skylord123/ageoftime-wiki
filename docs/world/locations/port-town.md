@@ -47,15 +47,15 @@ sign with an arrow pointing at the entrance.
 | Item | Price | Notes |
 |---|---:|---|
 | Quality Crossbow | 2,500 gold | Usually a bad deal; it costs more and performs worse than crafting a plutonium crossbow. |
-| Steel Broadsword | 1,000 gold | A pre-made [Sword](../../weapons.md#sword); skips the blacksmith. |
-| Rusty Shield | 300 gold | A pre-made [Shield](../../weapons.md#shield). |
-| [Steel Bolts](../../weapons.md#other-weapon-items) | 5 gold per 10 | Standard crossbow ammunition. |
-| [Exploding Bolts](../../weapons.md#other-weapon-items) | 25 gold per 10 | Explosive crossbow ammunition. |
-| [Throwing Knife](../../weapons.md#other-weapon-items) | 10 gold | Projectile weapon. |
-| [Parchment](../../items.md#general-items) | 25 gold | Write a message and leave it for other players. |
-| [Blue Vial](../../items.md#general-items) | 50 gold | Heals a small amount of HP. Cheaper than at the [Tavern](tavern.md). |
-| [Bleach](../../dyes.md) | 300 gold | Functions as a white dye. |
-| [Insta-Horse](../../movement-items.md) | 300 gold | Spawns a Horse. |
+| Steel Broadsword | 1,000 gold | A pre-made [Sword](../../items/weapons.md#sword); skips the blacksmith. |
+| Rusty Shield | 300 gold | A pre-made [Shield](../../items/weapons.md#shield). |
+| [Steel Bolts](../../items/weapons.md#other-weapon-items) | 5 gold per 10 | Standard crossbow ammunition. |
+| [Exploding Bolts](../../items/weapons.md#other-weapon-items) | 25 gold per 10 | Explosive crossbow ammunition. |
+| [Throwing Knife](../../items/weapons.md#other-weapon-items) | 10 gold | Projectile weapon. |
+| [Parchment](../../items/index.md#general-items) | 25 gold | Write a message and leave it for other players. |
+| [Blue Vial](../../items/index.md#general-items) | 50 gold | Heals a small amount of HP. Cheaper than at the [Tavern](tavern.md). |
+| [Bleach](../../items/dyes.md) | 300 gold | Functions as a white dye. |
+| [Insta-Horse](../../items/movement-items.md) | 300 gold | Spawns a Horse. |
 
 <div class="grid cards" markdown>
 
@@ -63,7 +63,7 @@ sign with an arrow pointing at the entrance.
 - ![Steel Broadsword](../../assets/captures/items/sword_Steel_Broadsword.png){ width=96 loading=lazy } **Steel Broadsword**
 - ![Rusty Shield](../../assets/captures/items/shield_rusty_shield.png){ width=96 loading=lazy } **Rusty Shield**
 - ![Throwing Knife](../../assets/captures/items/item_throwing_knife.png){ width=96 loading=lazy } **Throwing Knife**
-- ![Blue Vial](../../assets/captures/items/item_blue_vial.png){ width=96 loading=lazy } **Blue Vial**
+- ![Blue Vial](../../assets/captures/items/item_blue_vial.png){ width=68 loading=lazy } **Blue Vial**
 - ![Bleach](../../assets/captures/items/item_bleach.png){ width=96 loading=lazy } **Bleach**
 - ![Insta-Horse](../../assets/captures/items/item_Insta-Horse.png){ width=96 loading=lazy } **Insta-Horse**
 
@@ -82,7 +82,7 @@ shop versions use cleaner-looking textures than the default starter clothes.
 | Panties | 25 gold |
 | Bra | 25 gold |
 
-See also: [Clothing](../../clothing.md) for the full combined crafting and
+See also: [Clothing](../../items/clothing.md) for the full combined crafting and
 shop list.
 
 !!! note "Male section"

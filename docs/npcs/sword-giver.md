@@ -28,7 +28,7 @@ player — they will hand out a free starter weapon on request.
 
 **Reward**
 
-: :material-sword: **Crap Sword** — a basic, no-cost [Sword](../weapons.md#sword).
+: :material-sword: **Crap Sword** — a basic, no-cost [Sword](../items/weapons.md#sword).
   Functionally identical to any other sword: same damage, no special
   metal-based effect.
 

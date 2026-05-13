@@ -18,20 +18,21 @@ player's inventory.
   too efficiently.
 
 - ![Shrub](assets/items/Shrub.png){ width=64 } **Shrub** — break to drop
-  [Fiber](items.md#raw-materials). Toss Fiber on a surface to plant a new
+  [Fiber](items/index.md#raw-materials). Toss Fiber on a surface to plant a new
   shrub for later harvesting.
 
 - ![Large Rock](assets/items/Large_Rock.png){ width=64 } **Large Rock** —
-  break to drop [Ores](items.md#ores).
+  break to drop [Ores](items/ores.md).
 
 </div>
 
 ## Tree
 
-Trees are world objects that you blow up with [Dynamite](items.md#general-items)
+Trees are world objects that you blow up with [Dynamite](items/index.md#general-items)
 to get wood plank types. Only tree objects that show a visible **health bar**
 when targeted are valid resource trees and will drop wood. Different tree
-models do **not** all share the same wood drop table.
+models do **not** all share the same wood drop table. For the resulting wood
+items, see [Wood Types](items/wood-types.md).
 
 <div markdown="1" style="border: 1px solid var(--md-default-fg-color--lightest, #d0d7de); border-radius: 12px; padding: 1rem; margin: 1rem 0;">
 

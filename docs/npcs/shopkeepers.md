@@ -22,7 +22,7 @@ game. Sells equipment, consumables, and clothing, and hosts the
 ## Starboard Shop
 
 The [Starboard Shop](../world/locations/starboard-town.md#shop) in Starboard Town sells
-clothing, healing items, and [Expensive Parchment](../items.md#general-items).
+clothing, healing items, and [Expensive Parchment](../items/index.md#general-items).
 The upstairs rooms contain three beds. The Starboard **selling** area is a
 separate building behind the shop; see
 [Marketplace building](../world/locations/starboard-town.md#marketplace-building). The shop itself does

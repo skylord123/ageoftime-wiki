@@ -9,8 +9,8 @@ visually recycled as the Starboard Shop interior.
 
 | Item | Price | Notes |
 |---|---:|---|
-| [Blue Vial](../../items.md#general-items) | 55 gold | Heals a small amount of HP. |
-| [Blue Potion](../../items.md#general-items) | 160 gold | Heals a large amount of HP. Also sold in [Starboard Town](starboard-town.md). |
+| [Blue Vial](../../items/index.md#general-items) | 55 gold | Heals a small amount of HP. |
+| [Blue Potion](../../items/index.md#general-items) | 160 gold | Heals a large amount of HP. Also sold in [Starboard Town](starboard-town.md). |
 
 ## Respawn behavior
 

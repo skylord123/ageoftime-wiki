@@ -18,7 +18,7 @@ Hartman's 2005 multiplayer action/RPG, [still updated as of 2024](about.md#relea
 
     Download the game, install it, and learn the controls.
 
-- :material-package-variant: **[Items](items.md)**
+- :material-package-variant: **[Items](items/index.md)**
 
     Weapons, dyes, movement items, materials, and utility items.
 

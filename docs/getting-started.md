@@ -112,7 +112,7 @@ to stop.
 
     **Port Town** — the starting town and central hub.
 
-- ![World map](assets/maps/worldMap.jpg){ loading=lazy }
+- ![World map](assets/maps/wiki_map.png){ loading=lazy }
 
     **Overworld** — the world surrounding Port Town.
 
@@ -125,7 +125,7 @@ A more detailed community-made map is available on the [Areas](areas.md) page.
 
 ## Where to next?
 
-- Browse [Items](items.md) for weapons, dyes, materials, and utility items.
+- Browse [Items](items/index.md) for weapons, dyes, materials, and utility items.
 - Check the [Magic](magic.md) menu and [Slash Commands](commands.md).
 - Tour the world on the [Areas](areas.md) page.
 - Read up on [Enemies](enemies.md) you'll run into.

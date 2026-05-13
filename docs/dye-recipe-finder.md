@@ -152,7 +152,7 @@ the current target color only.
   </style>
 
   <h2>Age of Time Dye Recipe Finder</h2>
-  <p class="aot-subtitle">Search for a shortest named-dye recipe for a target color. If the target is itself a named dye, the direct dye is excluded so the tool finds how to make it from other dyes.</p>
+  <p class="aot-subtitle">Search for a shortest exact named-dye recipe for a target color. If the target is itself a named dye, the direct dye is excluded so the tool finds how to make it from other dyes instead of just returning the dye itself.</p>
 
   <div class="aot-section" aria-labelledby="aot-path-title">
     <h3 id="aot-path-title">Recipe Finder</h3>
@@ -224,8 +224,10 @@ the current target color only.
         { name: "Light Pink Dye", rgb: [255, 192, 192] }
       ];
       const OTHER_VALUE = "__other__";
-      const MAX_RECIPE_STATES = 500000;
-      const MAX_RECIPE_DEPTH = 24;
+      const ACQUISITION_ONLY_NAMES = new Set(["Bleach", "Pitch Black Dye"]);
+      const FORWARD_SEARCH_DEPTH = 4;
+      const BACKWARD_SEARCH_DEPTH = 4;
+      const MAX_TOTAL_MIXES = FORWARD_SEARCH_DEPTH + BACKWARD_SEARCH_DEPTH;
       const SHARE_PARAM = "state";
       const shareStatus = document.getElementById("aot-share-status");
       const shareUrlField = document.getElementById("aot-share-url");
@@ -439,81 +441,132 @@ the current target color only.
         const bb = normalizeRgb(b);
         return Math.abs(aa[0] - bb[0]) + Math.abs(aa[1] - bb[1]) + Math.abs(aa[2] - bb[2]);
       }
-      function buildRecipeFromReverseSearch(startKey, targetKey, parents, baseRecipeByKey) {
-        let currentKey = startKey;
-        let recipe = baseRecipeByKey.get(startKey);
-        while (currentKey !== targetKey) {
-          const parent = parents.get(currentKey);
+      function precomputeForwardLevels(baseRecipes, maxDepth) {
+        const levels = [new Map()];
+        baseRecipes.forEach(function (recipe) {
+          const key = rgbKey(recipe.rgb);
+          if (!levels[0].has(key)) levels[0].set(key, recipe);
+        });
+        for (let depth = 1; depth <= maxDepth; depth++) {
+          const level = new Map();
+          levels[depth - 1].forEach(function (previousRecipe) {
+            baseRecipes.forEach(function (ingredientRecipe) {
+              const mixed = mixRgb(previousRecipe.rgb, ingredientRecipe.rgb);
+              const key = rgbKey(mixed);
+              if (level.has(key)) return;
+              level.set(key, {
+                type: "mix",
+                rgb: mixed,
+                left: previousRecipe,
+                right: ingredientRecipe
+              });
+            });
+          });
+          levels.push(level);
+        }
+        return levels;
+      }
+      function precomputeBackwardLevels(targetRgb, baseRecipes, maxDepth) {
+        const target = normalizeRgb(targetRgb);
+        const levels = [new Map([[rgbKey(target), { rgb: target }]])];
+        const parents = [new Map()];
+        for (let depth = 1; depth <= maxDepth; depth++) {
+          const previousLevel = levels[depth - 1];
+          const level = new Map();
+          const parentMap = new Map();
+          previousLevel.forEach(function (state) {
+            baseRecipes.forEach(function (ingredientRecipe) {
+              inverseMixCandidates(state.rgb, ingredientRecipe.rgb).forEach(function (previousRgb) {
+                const key = rgbKey(previousRgb);
+                if (level.has(key)) return;
+                level.set(key, { rgb: previousRgb });
+                parentMap.set(key, {
+                  nextRgb: state.rgb,
+                  ingredientRecipe: ingredientRecipe
+                });
+              });
+            });
+          });
+          levels.push(level);
+          parents.push(parentMap);
+        }
+        return { levels: levels, parents: parents };
+      }
+      function buildRecipeFromMeetingPoint(startRgb, backwardDepth, parents, forwardRecipe) {
+        let recipe = forwardRecipe;
+        let currentKey = rgbKey(startRgb);
+        for (let depth = backwardDepth; depth >= 1; depth--) {
+          const parent = parents[depth].get(currentKey);
           if (!parent) return null;
-          recipe = { type: "mix", rgb: parent.nextRgb, left: recipe, right: parent.ingredientRecipe };
-          currentKey = parent.nextKey;
+          recipe = {
+            type: "mix",
+            rgb: normalizeRgb(parent.nextRgb),
+            left: recipe,
+            right: parent.ingredientRecipe
+          };
+          currentKey = rgbKey(parent.nextRgb);
         }
         return recipe;
+      }
+      function countLevelStates(levels) {
+        return levels.reduce(function (sum, level) { return sum + level.size; }, 0);
       }
       function findShortestRecipe(targetRgb) {
         const target = normalizeRgb(targetRgb);
         const targetKey = rgbKey(target);
         const exactTargetDye = findNamedDyeByRgb(target);
         const excludedName = exactTargetDye ? exactTargetDye.name : null;
+        if (exactTargetDye && ACQUISITION_ONLY_NAMES.has(exactTargetDye.name)) {
+          return {
+            recipe: null,
+            exact: false,
+            excludedName: excludedName,
+            searchedStates: 0,
+            acquisitionOnly: true
+          };
+        }
         const baseRecipes = NAMED_DYES.filter(function (dye) {
           return dye.name !== excludedName;
         }).map(function (dye) {
           return { type: "base", name: dye.name, rgb: normalizeRgb(dye.rgb) };
         });
-        const baseRecipeByKey = new Map();
-        baseRecipes.forEach(function (recipe) {
-          const key = rgbKey(recipe.rgb);
-          if (!baseRecipeByKey.has(key)) baseRecipeByKey.set(key, recipe);
-        });
-        if (!excludedName && baseRecipeByKey.has(targetKey)) {
-          return { recipe: baseRecipeByKey.get(targetKey), exact: true, excludedName: excludedName, searchedStates: 1 };
-        }
-        const queue = [{ rgb: target, depth: 0 }];
-        const parents = new Map();
-        const seen = new Set([targetKey]);
-        let bestBaseKey = null;
-        let bestBaseDistance = Infinity;
-        let stoppedEarly = false;
-        for (let index = 0; index < queue.length; index++) {
-          const current = queue[index];
-          const currentKey = rgbKey(current.rgb);
-          if (baseRecipeByKey.has(currentKey)) {
-            const recipe = buildRecipeFromReverseSearch(currentKey, targetKey, parents, baseRecipeByKey);
-            return { recipe: recipe, exact: true, excludedName: excludedName, searchedStates: seen.size };
-          }
-          baseRecipeByKey.forEach(function (baseRecipe, baseKey) {
-            const distance = colorDistance(current.rgb, baseRecipe.rgb);
-            if (distance < bestBaseDistance) { bestBaseDistance = distance; bestBaseKey = baseKey; }
-          });
-          if (current.depth >= MAX_RECIPE_DEPTH) continue;
-          for (const ingredientRecipe of baseRecipes) {
-            const previousColors = inverseMixCandidates(current.rgb, ingredientRecipe.rgb);
-            for (const previousRgb of previousColors) {
-              const previousKey = rgbKey(previousRgb);
-              if (seen.has(previousKey)) continue;
-              seen.add(previousKey);
-              parents.set(previousKey, { nextKey: currentKey, nextRgb: current.rgb, ingredientRecipe: ingredientRecipe });
-              queue.push({ rgb: previousRgb, depth: current.depth + 1 });
-              if (seen.size >= MAX_RECIPE_STATES) {
-                stoppedEarly = true;
-                index = queue.length;
-                break;
+        const forwardLevels = precomputeForwardLevels(baseRecipes, FORWARD_SEARCH_DEPTH);
+        const backward = precomputeBackwardLevels(target, baseRecipes, BACKWARD_SEARCH_DEPTH);
+        const searchedStates = countLevelStates(forwardLevels) + countLevelStates(backward.levels);
+
+        for (let totalDepth = 0; totalDepth <= MAX_TOTAL_MIXES; totalDepth++) {
+          const minForwardDepth = Math.max(0, totalDepth - BACKWARD_SEARCH_DEPTH);
+          const maxForwardDepth = Math.min(FORWARD_SEARCH_DEPTH, totalDepth);
+          for (let forwardDepth = minForwardDepth; forwardDepth <= maxForwardDepth; forwardDepth++) {
+            const backwardDepth = totalDepth - forwardDepth;
+            const forwardLevel = forwardLevels[forwardDepth];
+            const backwardLevel = backward.levels[backwardDepth];
+            const iterateForward = forwardLevel.size <= backwardLevel.size;
+            const source = iterateForward ? forwardLevel : backwardLevel;
+            for (const entry of source) {
+              const currentKey = entry[0];
+              if (!(iterateForward ? backwardLevel.has(currentKey) : forwardLevel.has(currentKey))) continue;
+              const forwardRecipe = iterateForward ? entry[1] : forwardLevel.get(currentKey);
+              const joinRgb = normalizeRgb(forwardRecipe.rgb);
+              const recipe = buildRecipeFromMeetingPoint(joinRgb, backwardDepth, backward.parents, forwardRecipe);
+              if (recipe) {
+                return {
+                  recipe: recipe,
+                  exact: true,
+                  excludedName: excludedName,
+                  searchedStates: searchedStates
+                };
               }
             }
-            if (stoppedEarly) break;
           }
         }
-        if (bestBaseKey && baseRecipeByKey.has(bestBaseKey)) {
-          return {
-            recipe: baseRecipeByKey.get(bestBaseKey),
-            exact: false,
-            excludedName: excludedName,
-            searchedStates: seen.size,
-            stoppedEarly: stoppedEarly,
-            distance: bestBaseDistance
-          };
-        }
-        return { recipe: null, exact: false, excludedName: excludedName, searchedStates: seen.size, stoppedEarly: stoppedEarly };
+        return {
+          recipe: null,
+          exact: false,
+          excludedName: excludedName,
+          searchedStates: searchedStates,
+          maxMixDepth: MAX_TOTAL_MIXES
+        };
       }
 
       document.getElementById("aot-find-recipe").addEventListener("click", function () {
@@ -522,11 +575,15 @@ the current target color only.
         window.setTimeout(function () {
           const result = findShortestRecipe(target);
           if (!result.recipe) {
-            recipeResult.innerHTML = "<span class=\"aot-warning\">No exact recipe found.</span>\n" +
+            let message = "<span class=\"aot-warning\">No exact recipe found.</span>\n" +
               "Target: " + rgbText(target) + "\n" +
-              "Searched states: " + result.searchedStates + "\n" +
-              (result.stoppedEarly ? "Stopped early at the configured search limit of " + MAX_RECIPE_STATES + " states.\n" : "") +
-              "Tip: some RGB values may not be reachable exactly from the named dyes using floor-average mixing.";
+              "Searched states: " + result.searchedStates + "\n";
+            if (result.acquisitionOnly) {
+              message += "This dye is treated as acquisition-only in the tool, rather than something you can make by mixing.\n";
+            } else {
+              message += "No exact result was found within " + result.maxMixDepth + " mixes.";
+            }
+            recipeResult.innerHTML = message;
             return;
           }
           const lines = [];

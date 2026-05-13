@@ -7,7 +7,7 @@ A tall stack of logs near [Red Crater](red-crater.md). Scale it to obtain the
 
 ## Reward
 
-- [Golden Hook](../../movement-items.md)
+- [Golden Hook](../../items/movement-items.md)
 
 ## Respawn behavior
 

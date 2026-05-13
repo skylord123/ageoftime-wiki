@@ -6,7 +6,7 @@ A level hidden in the [Woods](woods.md).
 
 ## Reward
 
-Completing Level 1 awards the [Hook](../../movement-items.md).
+Completing Level 1 awards the [Hook](../../items/movement-items.md).
 
 ## Respawn behavior
 

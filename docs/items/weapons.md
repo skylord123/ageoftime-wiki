@@ -7,7 +7,7 @@ a few special-purpose combat items.
 
 <div markdown="1" style="display: flex; align-items: flex-start; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
 
-![Steel Broadsword](assets/captures/items/sword_Steel_Broadsword.png){ width=100 loading=lazy }
+![Steel Broadsword](../assets/captures/items/sword_Steel_Broadsword.png){ width=100 loading=lazy }
 
 <div markdown="1" style="flex: 1; min-width: 240px;">
 
@@ -17,7 +17,7 @@ The standard offensive item. All swords have the same damage output.
 - No matter what Metal or Wood is used, all swords deal the same damage and
   do not gain special metal effects.
 - **Free starter sword:** new players can obtain a basic **Crap Sword** at no
-  cost from the [Sword Giver](npcs/sword-giver.md) NPC near the Port Town
+  cost from the [Sword Giver](../npcs/sword-giver.md) NPC near the Port Town
   docks (the spawn point).
 - The Crap Sword is not weaker than other swords; it has the same damage as
   every other sword.
@@ -33,7 +33,7 @@ The standard offensive item. All swords have the same damage output.
 
 <div markdown="1" style="display: flex; align-items: flex-start; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
 
-![Rusty Shield](assets/captures/items/shield_rusty_shield.png){ width=100 loading=lazy }
+![Rusty Shield](../assets/captures/items/shield_rusty_shield.png){ width=100 loading=lazy }
 
 <div markdown="1" style="flex: 1; min-width: 240px;">
 
@@ -44,7 +44,7 @@ The standard defensive item.
   shield user, or when a player attacks the shield user with a sword.
 - Only the shield's body metal matters for these effects; the crest and trim
   are cosmetic.
-- See [Blacksmith § Shield metal effects](npcs/blacksmith.md#shield-metal-effects)
+- See [Blacksmith § Shield metal effects](../npcs/blacksmith.md#shield-metal-effects)
   for the community-reported per-metal behavior.
 
 </div>
@@ -54,7 +54,7 @@ The standard defensive item.
 
 <div markdown="1" style="display: flex; align-items: flex-start; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
 
-![Quality Crossbow](assets/captures/items/item_quality_crossbow.png){ width=100 loading=lazy }
+![Quality Crossbow](../assets/captures/items/item_quality_crossbow.png){ width=100 loading=lazy }
 
 <div markdown="1" style="flex: 1; min-width: 240px;">
 
@@ -72,9 +72,10 @@ The standard ranged offensive item.
 
 <div class="grid cards" markdown>
 
-- ![Steel Bolts](assets/items/Steel_Bolts.png){ width=64 } **Steel Bolts** — dropped by Imps and Sea Monsters or sold in the [Port Town Shop](world/locations/port-town.md#shop). Standard crossbow ammunition.
-- ![Exploding Bolts](assets/items/Exploding_Bolts.png){ width=64 } **Exploding Bolts** — dropped by Imps or sold in the [Port Town Shop](world/locations/port-town.md#shop). Explosive crossbow ammunition.
-- ![Throwing Knives](assets/items/Throwing_Knives.png){ width=64 } **Throwing Knives** — sold in the [Port Town Shop](world/locations/port-town.md#shop). Projectile weapon. After a knife is thrown or dropped, its owner can usually auto-collect it for about a minute by touching it. Once it shows a `V` above it, that protection has expired and anyone can take it without triggering [Throwing Knife Theft](police-mechanics.md#throwing-knife-theft).
-- ![Police Baton](assets/items/PoliceBaton.png){ width=64 } **Police Baton** — granted by joining the Police. It briefly stuns players. NPCs still show the stunned visual effect, but are not actually stunned by it.
+- ![Dynamite](../assets/items/Dynamite.png){ width=64 } **Dynamite** — dropped by Dynamite Orcs and by Fire Orcs in the Volcano; explodes in a medium radius where dropped. It is the only weapon that can deal damage inside Port Town, and it can instantly kill players. A shield can block the direct damage, but the blast will still launch the defender, with stronger knockback the closer they are to the explosion; the launch itself can still be lethal from the speed or the impact.
+- ![Steel Bolts](../assets/items/Steel_Bolts.png){ width=64 } **Steel Bolts** — dropped by Imps and Sea Monsters or sold in the [Port Town Shop](../world/locations/port-town.md#shop). Standard crossbow ammunition.
+- ![Exploding Bolts](../assets/items/Exploding_Bolts.png){ width=64 } **Exploding Bolts** — dropped by Imps or sold in the [Port Town Shop](../world/locations/port-town.md#shop). Explosive crossbow ammunition.
+- ![Throwing Knives](../assets/items/Throwing_Knives.png){ width=64 } **Throwing Knives** — sold in the [Port Town Shop](../world/locations/port-town.md#shop). Projectile weapon. After a knife is thrown or dropped, its owner can usually auto-collect it for about a minute by touching it. Once it shows a `V` above it, that protection has expired and anyone can take it without triggering [Throwing Knife Theft](../police-mechanics.md#throwing-knife-theft).
+- ![Police Baton](../assets/items/PoliceBaton.png){ width=64 } **Police Baton** — granted by joining the Police. It briefly stuns players. NPCs still show the stunned visual effect, but are not actually stunned by it.
 
 </div>

@@ -7,11 +7,13 @@ eggs, world events, and known workarounds.
 
 ### Meteor showers
 
-Occasionally, meteors will fall from the sky carrying [Autunite](items.md#ores).
+Occasionally, meteors will fall from the sky carrying [Autunite](items/ores.md).
 This is the only way to obtain Autunite — and therefore the only way to
 ultimately produce Plutonium.
 
 ### Boats
+
+![Boat](assets/captures/items/vehicle_boat.png){ width=220 loading=lazy }
 
 Boats used to appear in the game, but only when **Badspot** spawned them
 manually. They were never a normal player-accessible feature, and it has been

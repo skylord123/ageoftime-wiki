@@ -43,7 +43,7 @@ outcomes:
 
 On enlistment you receive:
 
-- :material-baseball-bat: A **[Police Baton](../weapons.md#other-weapon-items)** for stuns and arrests.
+- :material-baseball-bat: A **[Police Baton](../items/weapons.md#other-weapon-items)** for stuns and arrests.
 - :material-file-document: A **Police Law Guide** parchment. The full text and
   current practical notes are documented on [Police Mechanics](../police-mechanics.md#police-law-guide).
 

@@ -17,8 +17,8 @@ The Starboard Shop is the building where you **buy** items. It contains
 
 | Item | Price |
 |---|---:|
-| [Expensive Parchment](../../items.md#general-items) | 50 gold |
-| [Blue Potion](../../items.md#general-items) | 90 gold |
+| [Expensive Parchment](../../items/index.md#general-items) | 50 gold |
+| [Blue Potion](../../items/index.md#general-items) | 90 gold |
 | Skirt | 80 gold |
 | W. Shorts | 70 gold |
 | W. Tank Top | 40 gold |
@@ -26,7 +26,7 @@ The Starboard Shop is the building where you **buy** items. It contains
 | Thong | 80 gold |
 | Bikini Top | 80 gold |
 
-See also: [Clothing](../../clothing.md) for the full combined crafting and
+See also: [Clothing](../../items/clothing.md) for the full combined crafting and
 shop list.
 
 ## Marketplace building

@@ -5,7 +5,7 @@ how to control them, and how the world responds.
 
 <div class="grid cards" markdown>
 
-- :material-package-variant: **[Items](../items.md)**
+- :material-package-variant: **[Items](../items/index.md)**
 
     Weapons, dyes, movement items, materials, and utility items.
 

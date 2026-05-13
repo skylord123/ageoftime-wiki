@@ -91,11 +91,15 @@ nav:
   - Gameplay:
       - gameplay/index.md
       - Items:
-          - items.md
-          - Weapons: weapons.md
-          - Clothing: clothing.md
-          - Dyes: dyes.md
-          - Movement Items: movement-items.md
+          - items/index.md
+          - Weapons: items/weapons.md
+          - Clothing: items/clothing.md
+          - Cloth: items/cloth.md
+          - Metals: items/metals.md
+          - Ores: items/ores.md
+          - Wood Types: items/wood-types.md
+          - Dyes: items/dyes.md
+          - Movement Items: items/movement-items.md
       - Magic: magic.md
       - Voice Menu: voice-menu.md
       - Slash Commands: commands.md
