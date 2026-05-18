@@ -1,5 +1,7 @@
 # Treehouse Challenge
 
+![Treehouse Challenge](../../assets/captures/treehouse-challenge/view-from-above.png){ width=400 loading=lazy }
+
 Climb up the base of a tree to reach the top.
 
 ## Reward status

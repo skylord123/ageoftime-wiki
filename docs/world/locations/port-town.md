@@ -1,6 +1,6 @@
 # Port Town
 
-![Port Town](../../assets/areas/5PortTown.png){ width=400 loading=lazy }
+![Port Town](../../assets/captures/port-town/view-from-above-docks.png){ width=400 loading=lazy }
 
 The starting town and main hub of *Age of Time*. Port Town contains the
 [Sword Giver](../../npcs/sword-giver.md), [Banker](../../npcs/banker.md),
@@ -16,7 +16,7 @@ main shop, and one half of the player marketplace.
 
 ## Police Station
 
-![Police Station](../../assets/areas/5Police.png){ width=400 loading=lazy }
+![Police Station](../../assets/captures/port-town/police-station-outside.png){ width=400 loading=lazy }
 
 A brick building near spawn. After being online for an hour without committing
 any crimes, you can enlist with the [Marshal](../../npcs/police.md) here.
@@ -25,6 +25,8 @@ For laws, demerits, arrests, jail, and fines, see
 [Police Mechanics](../../police-mechanics.md).
 
 ## Driftwood Inn
+
+![Driftwood Inn](../../assets/captures/port-town/driftwood-inn-outside.png){ width=400 loading=lazy }
 
 An inn in Port Town and one of the few places where you can be naked without
 getting demerits. Contains **three beds**.
@@ -35,7 +37,7 @@ A small house near the Port Town spawn area. Contains **one bed upstairs**.
 
 ## Shop
 
-![Port Town Shop](../../assets/areas/5PortTownShop.png){ width=400 loading=lazy }
+![Port Town Shop](../../assets/captures/port-town/shop-outside.png){ width=400 loading=lazy }
 
 The main shop in Port Town. Sells equipment, consumables, and clothing, and
 also hosts the [player marketplace](#player-marketplace). Signs on the
@@ -103,3 +105,48 @@ building for listing items.
   [Post Office Clerk](../../npcs/post-office.md).
 - **If your item does not sell** for an extended period: the unsold item is
   returned by mail.
+
+## Screenshots
+
+<div class="grid cards" markdown>
+
+- ![Port Town top-down view from above](../../assets/captures/port-town/top-down-view.png){ loading=lazy data-gallery="port-town" }
+
+    **Top-down view** - the full town seen straight down from above.
+
+- ![Port Town viewed from above](../../assets/captures/port-town/view-from-above-2.png){ loading=lazy data-gallery="port-town" }
+
+    **View from above** - an angled overhead view of the town.
+
+- ![Port Town viewed from above at another angle](../../assets/captures/port-town/view-from-above-3.png){ loading=lazy data-gallery="port-town" }
+
+    **Another view from above** - a different overhead angle of the town.
+
+- ![Outside the Port Town blacksmith](../../assets/captures/port-town/blacksmith-outside.png){ loading=lazy data-gallery="port-town" }
+
+    **Blacksmith exterior** - view of the outside of the
+    [Blacksmith](../../npcs/blacksmith.md).
+
+- ![Inside the Port Town blacksmith](../../assets/captures/port-town/blacksmith-inside.png){ loading=lazy data-gallery="port-town" }
+
+    **Blacksmith interior** - view from inside the Blacksmith.
+
+- ![Marshal inside the Port Town police station](../../assets/captures/port-town/police-station-marshal.png){ loading=lazy data-gallery="port-town" }
+
+    **Marshal** - talking to the [Marshal](../../npcs/police.md) inside the
+    police station.
+
+- ![Looking into the Port Town police station jail cells](../../assets/captures/port-town/police-station-jail-cells.png){ loading=lazy data-gallery="port-town" }
+
+    **Jail cells** - looking into the jail cells.
+
+- ![Inside a Port Town jail cell looking out](../../assets/captures/port-town/police-station-cell-inside.png){ loading=lazy data-gallery="port-town" }
+
+    **Inside a cell** - view from inside a jail cell looking out.
+
+- ![Port Town police station jail box](../../assets/captures/port-town/police-station-jail-box.png){ loading=lazy data-gallery="port-town" }
+
+    **Jail box** - throw a criminal inside to jail them. Walking into it as a
+    criminal jails you.
+
+</div>

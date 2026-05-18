@@ -1,6 +1,6 @@
 # Woods
 
-![Woods](../../assets/areas/5Woods.png){ width=400 loading=lazy }
+![Woods](../../assets/captures/woods/entrance-outside-2.png){ width=400 loading=lazy }
 
 A large wooded area near [Port Town](port-town.md). It contains Green Dye
 crates, [Level 1](level-1.md), and the Woods tunnels.
@@ -23,3 +23,13 @@ $200 bill and some Gold.
 
 Interior-style ground here does **not** show the visible-footstep effect from
 [Cloak](../../magic.md#cloak).
+
+## Screenshots
+
+<div class="grid cards" markdown>
+
+- ![Outside the Woods entrance](../../assets/captures/woods/entrance-outside.png){ loading=lazy data-gallery="woods" }
+
+    **Entrance** - looking at the outside of the Woods entrance.
+
+</div>

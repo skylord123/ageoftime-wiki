@@ -1,6 +1,6 @@
 # Tavern
 
-![Tavern](../../assets/areas/5Tavern.png){ width=400 loading=lazy }
+![Tavern](../../assets/captures/tavern/view-from-outside.png){ width=400 loading=lazy }
 
 Located near [Fort Bad](fort-bad.md). The Tavern sells healing potions and is
 visually recycled as the Starboard Shop interior.
@@ -15,3 +15,4 @@ visually recycled as the Starboard Shop interior.
 ## Respawn behavior
 
 Visiting the Tavern sets it as a persistent respawn point.
+
