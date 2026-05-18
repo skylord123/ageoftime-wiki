@@ -35,6 +35,16 @@ getting demerits. Contains **three beds**.
 
 A small house near the Port Town spawn area. Contains **one bed upstairs**.
 
+## Blacksmith
+
+![Blacksmith](../../assets/captures/port-town/blacksmith-outside.png){ width=400 loading=lazy }
+
+Home of the [Blacksmith](../../npcs/blacksmith.md), the only NPC who can craft
+[Weapons](../../items/weapons.md), [Clothing](../../items/clothing.md),
+[Cloth](../../items/cloth.md), and refined [Metals](../../items/metals.md)
+from raw materials. Almost every piece of player-made gear in *Age of Time*
+passes through this building at some point.
+
 ## Shop
 
 ![Port Town Shop](../../assets/captures/port-town/shop-outside.png){ width=400 loading=lazy }
@@ -121,11 +131,6 @@ building for listing items.
 - ![Port Town viewed from above at another angle](../../assets/captures/port-town/view-from-above-3.png){ loading=lazy data-gallery="port-town" }
 
     **Another view from above** - a different overhead angle of the town.
-
-- ![Outside the Port Town blacksmith](../../assets/captures/port-town/blacksmith-outside.png){ loading=lazy data-gallery="port-town" }
-
-    **Blacksmith exterior** - view of the outside of the
-    [Blacksmith](../../npcs/blacksmith.md).
 
 - ![Inside the Port Town blacksmith](../../assets/captures/port-town/blacksmith-inside.png){ loading=lazy data-gallery="port-town" }
 
