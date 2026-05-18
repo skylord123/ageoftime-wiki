@@ -40,8 +40,20 @@ A condensed version-history pulled from the official site's news posts:
 | 2005-08-27 | v0006 | Two patches to fix the auto-updater. |
 | 2005-11-13 | v0010 | Auto-updater fixes; standalone installer recommended for some users. |
 | 2006-02-13 | v0017 | Basic stats system, improved AI/spawning, Dynamite, Bank, Post Office. |
-| 2006-04-03 | v0024 | Player shop selling, blacksmith crafting. Updated installer. |
-| 2024-05-03 | v0030 | Maintenance update — works around an HTTP/1.0 dependency in the Torque TCP object so blacksmith crafting functions on modern web servers. |
+| 2006-04-03 | [v0024](assets/downloads/AgeOfTime-24.exe) | Player shop selling, blacksmith crafting. Updated installer. |
+| — | [v0028](assets/downloads/AgeOfTime-28.exe) | Installer archive. Release notes not documented here. |
+| — | [v0029](assets/downloads/AgeOfTime-29.exe) | Installer archive. Release notes not documented here. |
+| 2024-05-03 | [v0030](assets/downloads/AgeOfTime-30.exe) | Maintenance update — works around an HTTP/1.0 dependency in the Torque TCP object so blacksmith crafting functions on modern web servers. |
+
+## Installer archives
+
+Mirrored copies of the official Windows installer for preservation. Each file
+is the unmodified `AgeOfTime-<version>.exe` originally distributed by Badspot.
+
+- [`AgeOfTime-24.exe`](assets/downloads/AgeOfTime-24.exe) (~33 MB)
+- [`AgeOfTime-28.exe`](assets/downloads/AgeOfTime-28.exe) (~34 MB)
+- [`AgeOfTime-29.exe`](assets/downloads/AgeOfTime-29.exe) (~34 MB)
+- [`AgeOfTime-30.exe`](assets/downloads/AgeOfTime-30.exe) (~34 MB)
 
 ## Useful links
 
