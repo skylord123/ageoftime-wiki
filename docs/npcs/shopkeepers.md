@@ -26,7 +26,7 @@ clothing, healing items, and [Expensive Parchment](../items/index.md#general-ite
 The upstairs rooms contain three beds. The Starboard **selling** area is a
 separate building behind the shop; see
 [Marketplace building](../world/locations/starboard-town.md#marketplace-building). The shop itself does
-not appear to have its own visible shopkeeper NPC.
+not have its own visible shopkeeper NPC.
 
 ## Tavern
 
