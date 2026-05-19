@@ -6,6 +6,9 @@ This tool mixes two colors using floor averaging per RGB channel:
 <code>floor((A + B) / 2)</code>. The share link below the result preserves the
 current two inputs.
 
+For dye sources, named dye RGB values, and mixing guidance, see
+[Dyes](items/dyes.md).
+
 <div id="aot-dye-calculator">
   <style>
     #aot-dye-calculator {

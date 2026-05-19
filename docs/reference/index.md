@@ -9,9 +9,13 @@ gameplay or world sections.
 
     Rumored metal effects, easter eggs, world events, and known workarounds.
 
-- :material-tools: **[Tools](../dye-tools.md)**
+- :material-calculator: **[Dye Calculator](../dye-calculator.md)**
 
-    Interactive utilities such as the dye calculator and dye recipe finder.
+    Test two-input dye mixes and share exact calculator states.
+
+- :material-palette: **[Dye Recipe Finder](../dye-recipe-finder.md)**
+
+    Search for shortest exact named-dye recipes for target RGB colors.
 
 - :material-information: **[About the Game](../about.md)**
 

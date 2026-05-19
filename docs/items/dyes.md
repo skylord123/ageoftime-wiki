@@ -12,6 +12,29 @@ Time*.
 For interactive tools, see [Dye Calculator](../dye-calculator.md) and
 [Dye Recipe Finder](../dye-recipe-finder.md).
 
+## Mixing dyes
+
+Mixing two dyes creates a new dye color by averaging each RGB channel. For
+example, mixing **Bleach** (`255 255 255`) with **Pitch Black Dye** (`0 0 0`)
+produces **Gray Dye** (`127 127 127`).
+
+The game rounds each channel down after averaging:
+
+```text
+result R = floor((first dye R + second dye R) / 2)
+result G = floor((first dye G + second dye G) / 2)
+result B = floor((first dye B + second dye B) / 2)
+```
+
+Use the [Dye Calculator](../dye-calculator.md) to test a two-dye mix, check
+whether the result matches a named dye, and reuse the output as one side of
+the next mix. Reusing the output is useful for chained recipes, where a color
+is made by mixing a dye, then mixing the result again with another dye.
+
+If you already know the final RGB color you want, use the
+[Dye Recipe Finder](../dye-recipe-finder.md) instead. It searches for a
+shortest exact recipe using named dyes.
+
 ## Dye sources
 
 Colored dyes are obtained from **crates**, not from enemies. Crates do **not**

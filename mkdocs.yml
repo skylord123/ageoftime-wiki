@@ -151,7 +151,6 @@ nav:
       - reference/index.md
       - Tips & Secrets: tips.md
       - Tools:
-          - dye-tools.md
           - Dye Calculator: dye-calculator.md
           - Dye Recipe Finder: dye-recipe-finder.md
       - Exploits:

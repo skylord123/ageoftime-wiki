@@ -6,6 +6,9 @@ Enter a target RGB color or choose a named dye, and this tool searches for a
 shortest recipe using named dyes. The share link below the result preserves
 the current target color only.
 
+For dye sources, named dye RGB values, and mixing guidance, see
+[Dyes](items/dyes.md).
+
 <div id="aot-dye-recipe-finder">
   <style>
     #aot-dye-recipe-finder {
