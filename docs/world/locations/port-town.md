@@ -33,6 +33,8 @@ getting demerits. Contains **three beds**.
 
 ## House near spawn
 
+![House near spawn](../../assets/captures/port-town/house-near-spawn.png){ width=400 loading=lazy }
+
 A small house near the Port Town spawn area. Contains **one bed upstairs**.
 
 ## Blacksmith
@@ -153,5 +155,30 @@ building for listing items.
 
     **Jail box** - throw a criminal inside to jail them. Walking into it as a
     criminal jails you.
+
+- ![Inside the Port Town shop](../../assets/captures/port-town/shop-inside-interior.png){ loading=lazy data-gallery="port-town" }
+
+    **Shop interior** - view from inside the Harbor Trading Company shop.
+
+- ![Port Town shop entrance door from inside](../../assets/captures/port-town/shop-inside-entrance-door.png){ loading=lazy data-gallery="port-town" }
+
+    **Shop entrance** - view of the exit and entrance door from inside the
+    shop.
+
+- ![Port Town shopkeeper with items for sale](../../assets/captures/port-town/shop-inside-shopkeeper.png){ loading=lazy data-gallery="port-town" }
+
+    **Shopkeeper** - the shopkeeper with items for sale around them.
+
+- ![Port Town shop clothing for sale](../../assets/captures/port-town/shop-inside-clothing.png){ loading=lazy data-gallery="port-town" }
+
+    **Clothing section** - clothing for sale inside the shop.
+
+- ![Mirror on the Port Town shop main floor](../../assets/captures/port-town/shop-inside-mirror.png){ loading=lazy data-gallery="port-town" }
+
+    **Main floor mirror** - the mirror on the shop's main floor.
+
+- ![Port Town shop second floor](../../assets/captures/port-town/shop-inside-second-floor.png){ loading=lazy data-gallery="port-town" }
+
+    **Second floor** - the upper level of the shop.
 
 </div>
