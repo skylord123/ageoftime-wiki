@@ -25,6 +25,11 @@ reverse-engineering the build.
     inherited methods and exposed fields — captured with
     `dumpConsoleClasses();`. Hand-annotated where useful.
 
+- :material-variable: **[Global Variables Dump](global-variables.md)**
+
+    A snapshot of the client's global `$` variables, captured with
+    `export("$*")`.
+
 - :material-tag-text: **[Tagged Strings](tagged-strings.md)**
 
     How Torque's `netStringTable`, `addMessageCallback`/`$MSGCB`, and the
@@ -35,6 +40,11 @@ reverse-engineering the build.
 
     What datablocks are, why their IDs are stable across restarts, and a
     running list of identified IDs.
+
+- :material-file-code: **[DSO Decompiler](dso-decompiler.md)**
+
+    A Python tool that reconstructs readable `.cs` source from compiled
+    `.dso` TorqueScript bytecode.
 
 </div>
 

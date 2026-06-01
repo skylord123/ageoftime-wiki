@@ -9,6 +9,16 @@ gameplay or world sections.
 
     Rumored metal effects, easter eggs, world events, and known workarounds.
 
+- :material-bag-personal: **[Inventory](inventory.md)**
+
+    How `$clientInv` and `ClientInventorySO` work, plus TorqueScript helpers
+    for finding, equipping, and dropping items.
+
+- :material-message-arrow-right: **[Server Commands](server-commands.md)**
+
+    The `commandToServer` commands behind every slash command — their
+    arguments, and which ones chat can't reach.
+
 - :material-calculator: **[Dye Calculator](../dye-calculator.md)**
 
     Test two-input dye mixes and share exact calculator states.

@@ -14,8 +14,12 @@ the command, and press <kbd>Enter</kbd>.
 | Command | Effect |
 |---|---|
 | `/suicide` | Kills your character. Useful if you get stuck or trapped, and a step in the [force-respawn-at-Port-Town trick](death.md#where-you-respawn). (Same as <kbd>Ctrl</kbd>+<kbd>K</kbd>.) |
+| `/action` | Interact with what you're looking at — pick up items, open doors, talk to NPCs, etc. (Same as <kbd>E</kbd>.) |
+| `/stopaction` | Drop a player you're carrying, or boot the passenger off if you're driving a horse. (Same as <kbd>Ctrl</kbd>+<kbd>E</kbd>.) |
+| `/respawn` | Respawn after death. See [Death & Respawning](death.md). |
 | `/sleep` | Sleep anywhere. Sleeping in a bed regenerates your health. |
 | `/dropgold <number>` | Drops `<number>` gold coins. Example: `/dropgold 12`. |
+| `/bankdeposit <number>` | Deposits `<number>` gold at the [bank](npcs/banker.md) without opening the menu. A 5 gold fee comes out of the amount (so `/bankdeposit 100` banks 95). Works through walls within 5 m of the Banker. |
 
 ## Casting spells
 
@@ -55,3 +59,9 @@ See the [Magic](magic.md) page for mana costs and tactics for each spell.
 | `/cast boobs` | Gradually grows the caster's bust from minimum to maximum size. |
 
 See [Tips & Secrets](tips.md#easter-eggs) for the full list of easter eggs.
+
+## See also
+
+- [Server Commands](reference/server-commands.md) — the `commandToServer`
+  layer behind every slash command, including commands that can't be typed in
+  chat (and why).

@@ -29,35 +29,6 @@ class  SimObject {
    virtual void clearTaggedFields() {}
 };
 
-class  ScriptObject : public SimObject {
-  public:
-
-   /*! @name Classes
-   
-   Script objects have the ability to inherit and have class information.
-   @{ */
-   /*!
-   Class of object.
-   
-    */
-   string class;
-   /*!
-   Superclass of object.
-   
-    */shapeFile
-   string superClass;
-   /// @}
-
-};
-
-/// Stub class
-/// 
-/// @note This is a stub class to ensure a proper class hierarchy. No 
-///       information was available for this class.
-class  ClientInventorySO : public ScriptObject {
-  public:
-};
-
 class  SimSet : public SimObject {
   public:
    virtual void listObjects() {}
@@ -137,823 +108,6 @@ class  GuiControl : public SimGroup {
    string accelerator;
    /// @}
 
-};
-
-class  GuiTextCtrl : public GuiControl {
-  public:
-   virtual void setText() {}
-
-   /*! @name Parent
-   @{ */
-   /*!
-    */
-   GuiProfile profile;
-   /*!
-    */
-   enumval horizSizing;
-   /*!
-    */
-   enumval vertSizing;
-   /*!
-    */
-   Point2I position;
-   /*!
-    */
-   Point2I extent;
-   /*!
-    */
-   Point2I minExtent;
-   /*!
-    */
-   bool visible;
-   /*!
-   @deprecated This member is deprecated, which means that its value is always undefined.
-    */
-   deprecated modal;
-   /*!
-   @deprecated This member is deprecated, which means that its value is always undefined.
-    */
-   deprecated setFirstResponder;
-   /*!
-    */
-   string variable;
-   /*!
-    */
-   string command;
-   /*!
-    */
-   string altCommand;
-   /*!
-    */
-   string accelerator;
-   /// @}
-
-   /*!
-    */
-   caseString text;
-   /*!
-    */
-   int maxLength;
-};
-
-class  GuiPopUpMenuCtrl : public GuiTextCtrl {
-  public:
-   virtual void add() {}
-   virtual void addScheme() {}
-   virtual void setText() {}
-   virtual string getText() {}
-   virtual void clear() {}
-   virtual void sort() {}
-   virtual void forceOnAction() {}
-   virtual void forceClose() {}
-   virtual int getSelected() {}
-   virtual void setSelected() {}
-   virtual string getTextById() {}
-   virtual void setEnumContent() {}
-   virtual int findText() {}
-   virtual int size() {}
-   virtual void replaceText() {}
-
-   /*! @name Parent
-   @{ */
-   /*!
-    */
-   GuiProfile profile;
-   /*!
-    */
-   enumval horizSizing;
-   /*!
-    */
-   enumval vertSizing;
-   /*!
-    */
-   Point2I position;
-   /*!
-    */
-   Point2I extent;
-   /*!
-    */
-   Point2I minExtent;
-   /*!
-    */
-   bool visible;
-   /*!
-   @deprecated This member is deprecated, which means that its value is always undefined.
-    */
-   deprecated modal;
-   /*!
-   @deprecated This member is deprecated, which means that its value is always undefined.
-    */
-   deprecated setFirstResponder;
-   /*!
-    */
-   string variable;
-   /*!
-    */
-   string command;
-   /*!
-    */
-   string altCommand;
-   /*!
-    */
-   string accelerator;
-   /// @}
-
-   /*!
-    */
-   caseString text;
-   /*!
-    */
-   int maxLength;
-   /*!
-    */
-   int maxPopupHeight;
-};
-
-class  GuiControlListPopUp : public GuiPopUpMenuCtrl {
-  public:
-
-   /*! @name Parent
-   @{ */
-   /*!
-    */
-   GuiProfile profile;
-   /*!
-    */
-   enumval horizSizing;
-   /*!
-    */
-   enumval vertSizing;
-   /*!
-    */
-   Point2I position;
-   /*!
-    */
-   Point2I extent;
-   /*!
-    */
-   Point2I minExtent;
-   /*!
-    */
-   bool visible;
-   /*!
-   @deprecated This member is deprecated, which means that its value is always undefined.
-    */
-   deprecated modal;
-   /*!
-   @deprecated This member is deprecated, which means that its value is always undefined.
-    */
-   deprecated setFirstResponder;
-   /*!
-    */
-   string variable;
-   /*!
-    */
-   string command;
-   /*!
-    */
-   string altCommand;
-   /*!
-    */
-   string accelerator;
-   /// @}
-
-   /*!
-    */
-   caseString text;
-   /*!
-    */
-   int maxLength;
-   /*!
-    */
-   int maxPopupHeight;
-};
-
-/// Stub class
-/// 
-/// @note This is a stub class to ensure a proper class hierarchy. No 
-///       information was available for this class.
-class  NewGuiDialogClass : public GuiControlListPopUp {
-  public:
-};
-
-class  GuiTextEditCtrl : public GuiTextCtrl {
-  public:
-   virtual int getCursorPos() {}
-   virtual void setCursorPos() {}
-
-   /*! @name Parent
-   @{ */
-   /*!
-    */
-   GuiProfile profile;
-   /*!
-    */
-   enumval horizSizing;
-   /*!
-    */
-   enumval vertSizing;
-   /*!
-    */
-   Point2I position;
-   /*!
-    */
-   Point2I extent;
-   /*!
-    */
-   Point2I minExtent;
-   /*!
-    */
-   bool visible;
-   /*!
-   @deprecated This member is deprecated, which means that its value is always undefined.
-    */
-   deprecated modal;
-   /*!
-   @deprecated This member is deprecated, which means that its value is always undefined.
-    */
-   deprecated setFirstResponder;
-   /*!
-    */
-   string variable;
-   /*!
-    */
-   string command;
-   /*!
-    */
-   string altCommand;
-   /*!
-    */
-   string accelerator;
-   /// @}
-
-   /*!
-    */
-   caseString text;
-   /*!
-    */
-   int maxLength;
-   /*!
-    */
-   string validate;
-   /*!
-    */
-   string escapeCommand;
-   /*!
-    */
-   int historySize;
-   /*!
-    */
-   bool password;
-   /*!
-    */
-   bool tabComplete;
-   /*!
-    */
-   AudioProfilePtr deniedSound;
-   /*!
-    */
-   bool sinkAllKeyEvents;
-};
-
-/// Stub class
-/// 
-/// @note This is a stub class to ensure a proper class hierarchy. No 
-///       information was available for this class.
-class  NewGuiDialogName : public GuiTextEditCtrl {
-  public:
-};
-
-/// Stub class
-/// 
-/// @note This is a stub class to ensure a proper class hierarchy. No 
-///       information was available for this class.
-class  NewGuiDialog : public GuiControl {
-  public:
-};
-
-class  GuiInspector : public GuiControl {
-  public:
-   virtual Script addDynamicField() {}
-   virtual Script setAllGroupStateScript() {}
-   virtual Script toggleGroupScript() {}
-   virtual Script toggleDynamicGroupScript() {}
-   virtual void inspect() {}
-   virtual void apply() {}
-   virtual void toggleGroupExpand() {}
-   virtual void toggleDynamicGroupExpand() {}
-   virtual void setAllGroupState() {}
-
-   /*! @name Parent
-   @{ */
-   /*!
-    */
-   GuiProfile profile;
-   /*!
-    */
-   enumval horizSizing;
-   /*!
-    */
-   enumval vertSizing;
-   /*!
-    */
-   Point2I position;
-   /*!
-    */
-   Point2I extent;
-   /*!
-    */
-   Point2I minExtent;
-   /*!
-    */
-   bool visible;
-   /*!
-   @deprecated This member is deprecated, which means that its value is always undefined.
-    */
-   deprecated modal;
-   /*!
-   @deprecated This member is deprecated, which means that its value is always undefined.
-    */
-   deprecated setFirstResponder;
-   /*!
-    */
-   string variable;
-   /*!
-    */
-   string command;
-   /*!
-    */
-   string altCommand;
-   /*!
-    */
-   string accelerator;
-   /// @}
-
-   /*!
-    */
-   int editControlOffset;
-   /*!
-    */
-   int entryHeight;
-   /*!
-    */
-   int textExtent;
-   /*!
-    */
-   int entrySpacing;
-   /*!
-    */
-   int maxMenuExtent;
-   /*!
-    */
-   bool useFieldGrouping;
-};
-
-/// Stub class
-/// 
-/// @note This is a stub class to ensure a proper class hierarchy. No 
-///       information was available for this class.
-class  GuiEditorInspectFields : public GuiInspector {
-  public:
-};
-
-/// Stub class
-/// 
-/// @note This is a stub class to ensure a proper class hierarchy. No 
-///       information was available for this class.
-class  GuiEditorInspectName : public GuiTextEditCtrl {
-  public:
-};
-
-class  GuiArrayCtrl : public GuiControl {
-  public:
-
-   /*! @name Parent
-   @{ */
-   /*!
-    */
-   GuiProfile profile;
-   /*!
-    */
-   enumval horizSizing;
-   /*!
-    */
-   enumval vertSizing;
-   /*!
-    */
-   Point2I position;
-   /*!
-    */
-   Point2I extent;
-   /*!
-    */
-   Point2I minExtent;
-   /*!
-    */
-   bool visible;
-   /*!
-   @deprecated This member is deprecated, which means that its value is always undefined.
-    */
-   deprecated modal;
-   /*!
-   @deprecated This member is deprecated, which means that its value is always undefined.
-    */
-   deprecated setFirstResponder;
-   /*!
-    */
-   string variable;
-   /*!
-    */
-   string command;
-   /*!
-    */
-   string altCommand;
-   /*!
-    */
-   string accelerator;
-   /// @}
-
-};
-
-class  GuiTreeViewCtrl : public GuiArrayCtrl {
-  public:
-   virtual void open() {}
-
-   /*! @name Parent
-   @{ */
-   /*!
-    */
-   GuiProfile profile;
-   /*!
-    */
-   enumval horizSizing;
-   /*!
-    */
-   enumval vertSizing;
-   /*!
-    */
-   Point2I position;
-   /*!
-    */
-   Point2I extent;
-   /*!
-    */
-   Point2I minExtent;
-   /*!
-    */
-   bool visible;
-   /*!
-   @deprecated This member is deprecated, which means that its value is always undefined.
-    */
-   deprecated modal;
-   /*!
-   @deprecated This member is deprecated, which means that its value is always undefined.
-    */
-   deprecated setFirstResponder;
-   /*!
-    */
-   string variable;
-   /*!
-    */
-   string command;
-   /*!
-    */
-   string altCommand;
-   /*!
-    */
-   string accelerator;
-   /// @}
-
-   /*!
-    */
-   bool allowMultipleSelections;
-   /*!
-    */
-   bool recurseSets;
-};
-
-class  GuiEditorTreeView : public GuiTreeViewCtrl {
-  public:
-   virtual Script onSelect() {}
-};
-
-class  GuiEditCtrl : public GuiControl {
-  public:
-   virtual void setRoot() {}
-   virtual void addNewCtrl() {}
-   virtual void select() {}
-   virtual void setCurrentAddSet() {}
-   virtual void toggle() {}
-   virtual void justify() {}
-   virtual void bringToFront() {}
-   virtual void pushToBack() {}
-   virtual void deleteSelection() {}
-   virtual void moveSelection() {}
-   virtual void saveSelection() {}
-   virtual void loadSelection() {}
-   virtual void selectAll() {}
-
-   /*! @name Parent
-   @{ */
-   /*!
-    */
-   GuiProfile profile;
-   /*!
-    */
-   enumval horizSizing;
-   /*!
-    */
-   enumval vertSizing;
-   /*!
-    */
-   Point2I position;
-   /*!
-    */
-   Point2I extent;
-   /*!
-    */
-   Point2I minExtent;
-   /*!
-    */
-   bool visible;
-   /*!
-   @deprecated This member is deprecated, which means that its value is always undefined.
-    */
-   deprecated modal;
-   /*!
-   @deprecated This member is deprecated, which means that its value is always undefined.
-    */
-   deprecated setFirstResponder;
-   /*!
-    */
-   string variable;
-   /*!
-    */
-   string command;
-   /*!
-    */
-   string altCommand;
-   /*!
-    */
-   string accelerator;
-   /// @}
-
-};
-
-class  GuiEditor : public GuiEditCtrl {
-  public:
-   virtual Script onSelect() {}
-};
-
-/// Stub class
-/// 
-/// @note This is a stub class to ensure a proper class hierarchy. No 
-///       information was available for this class.
-class  GuiEditorContent : public GuiControl {
-  public:
-};
-
-/// Stub class
-/// 
-/// @note This is a stub class to ensure a proper class hierarchy. No 
-///       information was available for this class.
-class  GuiEditorRegion : public GuiControl {
-  public:
-};
-
-class  GuiScrollCtrl : public GuiControl {
-  public:
-   virtual void scrollToTop() {}
-   virtual void scrollToBottom() {}
-
-   /*! @name Parent
-   @{ */
-   /*!
-    */
-   GuiProfile profile;
-   /*!
-    */
-   enumval horizSizing;
-   /*!
-    */
-   enumval vertSizing;
-   /*!
-    */
-   Point2I position;
-   /*!
-    */
-   Point2I extent;
-   /*!
-    */
-   Point2I minExtent;
-   /*!
-    */
-   bool visible;
-   /*!
-   @deprecated This member is deprecated, which means that its value is always undefined.
-    */
-   deprecated modal;
-   /*!
-   @deprecated This member is deprecated, which means that its value is always undefined.
-    */
-   deprecated setFirstResponder;
-   /*!
-    */
-   string variable;
-   /*!
-    */
-   string command;
-   /*!
-    */
-   string altCommand;
-   /*!
-    */
-   string accelerator;
-   /// @}
-
-   /*!
-    */
-   bool willFirstRespond;
-   /*!
-    */
-   enumval hScrollBar;
-   /*!
-    */
-   enumval vScrollBar;
-   /*!
-    */
-   bool constantThumbHeight;
-   /*!
-    */
-   Point2I childMargin;
-};
-
-/// Stub class
-/// 
-/// @note This is a stub class to ensure a proper class hierarchy. No 
-///       information was available for this class.
-class  GuiEditorScroll : public GuiScrollCtrl {
-  public:
-};
-
-class  GuiEditorRuler : public GuiControl {
-  public:
-
-   /*! @name Parent
-   @{ */
-   /*!
-    */
-   GuiProfile profile;
-   /*!
-    */
-   enumval horizSizing;
-   /*!
-    */
-   enumval vertSizing;
-   /*!
-    */
-   Point2I position;
-   /*!
-    */
-   Point2I extent;
-   /*!
-    */
-   Point2I minExtent;
-   /*!
-    */
-   bool visible;
-   /*!
-   @deprecated This member is deprecated, which means that its value is always undefined.
-    */
-   deprecated modal;
-   /*!
-   @deprecated This member is deprecated, which means that its value is always undefined.
-    */
-   deprecated setFirstResponder;
-   /*!
-    */
-   string variable;
-   /*!
-    */
-   string command;
-   /*!
-    */
-   string altCommand;
-   /*!
-    */
-   string accelerator;
-   /// @}
-
-   /*!
-    */
-   string refCtrl;
-};
-
-/// Stub class
-/// 
-/// @note This is a stub class to ensure a proper class hierarchy. No 
-///       information was available for this class.
-class  GuiEditorLeftRuler : public GuiEditorRuler {
-  public:
-};
-
-/// Stub class
-/// 
-/// @note This is a stub class to ensure a proper class hierarchy. No 
-///       information was available for this class.
-class  GuiEditorTopRuler : public GuiEditorRuler {
-  public:
-};
-
-class  GuiEditorResList : public GuiPopUpMenuCtrl {
-  public:
-   virtual Script onSelect() {}
-};
-
-class  GuiEditorContentList : public GuiPopUpMenuCtrl {
-  public:
-   virtual Script onSelect() {}
-};
-
-class  GuiEditorClassPopup : public GuiControlListPopUp {
-  public:
-   virtual Script onSelect() {}
-};
-
-class  GuiMenuBar : public GuiControl {
-  public:
-   virtual void clearMenus() {}
-   virtual void addMenu() {}
-   virtual void addMenuItem() {}
-   virtual void setMenuItemEnable() {}
-   virtual void setMenuItemChecked() {}
-   virtual void setMenuText() {}
-   virtual void setMenuVisible() {}
-   virtual void setMenuItemText() {}
-   virtual void setMenuItemVisible() {}
-   virtual void setMenuItemBitmap() {}
-   virtual void removeMenuItem() {}
-   virtual void clearMenuItems() {}
-   virtual void removeMenu() {}
-
-   /*! @name Parent
-   @{ */
-   /*!
-    */
-   GuiProfile profile;
-   /*!
-    */
-   enumval horizSizing;
-   /*!
-    */
-   enumval vertSizing;
-   /*!
-    */
-   Point2I position;
-   /*!
-    */
-   Point2I extent;
-   /*!
-    */
-   Point2I minExtent;
-   /*!
-    */
-   bool visible;
-   /*!
-   @deprecated This member is deprecated, which means that its value is always undefined.
-    */
-   deprecated modal;
-   /*!
-   @deprecated This member is deprecated, which means that its value is always undefined.
-    */
-   deprecated setFirstResponder;
-   /*!
-    */
-   string variable;
-   /*!
-    */
-   string command;
-   /*!
-    */
-   string altCommand;
-   /*!
-    */
-   string accelerator;
-   /// @}
-
-};
-
-class  GuiEditorMenuBar : public GuiMenuBar {
-  public:
-   virtual Script onMenuItemSelect() {}
-};
-
-/// Stub class
-/// 
-/// @note This is a stub class to ensure a proper class hierarchy. No 
-///       information was available for this class.
-class  GuiEditorGui : public GuiControl {
-  public:
 };
 
 class  GuiTSCtrl : public GuiControl {
@@ -1087,6 +241,63 @@ class  escapeMenuGui : public GuiControl {
 class  BSD_category {
   public:
    virtual Script onRemove() {}
+};
+
+class  GuiTextCtrl : public GuiControl {
+  public:
+   virtual void setText() {}
+
+   /*! @name Parent
+   @{ */
+   /*!
+    */
+   GuiProfile profile;
+   /*!
+    */
+   enumval horizSizing;
+   /*!
+    */
+   enumval vertSizing;
+   /*!
+    */
+   Point2I position;
+   /*!
+    */
+   Point2I extent;
+   /*!
+    */
+   Point2I minExtent;
+   /*!
+    */
+   bool visible;
+   /*!
+   @deprecated This member is deprecated, which means that its value is always undefined.
+    */
+   deprecated modal;
+   /*!
+   @deprecated This member is deprecated, which means that its value is always undefined.
+    */
+   deprecated setFirstResponder;
+   /*!
+    */
+   string variable;
+   /*!
+    */
+   string command;
+   /*!
+    */
+   string altCommand;
+   /*!
+    */
+   string accelerator;
+   /// @}
+
+   /*!
+    */
+   caseString text;
+   /*!
+    */
+   int maxLength;
 };
 
 /// Stub class
@@ -1285,6 +496,56 @@ class  GuiWindowCtrl : public GuiTextCtrl {
 ///       information was available for this class.
 class  BSD_CombineWindow : public GuiWindowCtrl {
   public:
+};
+
+class  GuiArrayCtrl : public GuiControl {
+  public:
+
+   /*! @name Parent
+   @{ */
+   /*!
+    */
+   GuiProfile profile;
+   /*!
+    */
+   enumval horizSizing;
+   /*!
+    */
+   enumval vertSizing;
+   /*!
+    */
+   Point2I position;
+   /*!
+    */
+   Point2I extent;
+   /*!
+    */
+   Point2I minExtent;
+   /*!
+    */
+   bool visible;
+   /*!
+   @deprecated This member is deprecated, which means that its value is always undefined.
+    */
+   deprecated modal;
+   /*!
+   @deprecated This member is deprecated, which means that its value is always undefined.
+    */
+   deprecated setFirstResponder;
+   /*!
+    */
+   string variable;
+   /*!
+    */
+   string command;
+   /*!
+    */
+   string altCommand;
+   /*!
+    */
+   string accelerator;
+   /// @}
+
 };
 
 class  GuiTextListCtrl : public GuiArrayCtrl {
@@ -1641,6 +902,85 @@ class  WriteParchment_BodyText : public GuiMLTextEditCtrl {
   public:
 };
 
+class  GuiTextEditCtrl : public GuiTextCtrl {
+  public:
+   virtual int getCursorPos() {}
+   virtual void setCursorPos() {}
+
+   /*! @name Parent
+   @{ */
+   /*!
+    */
+   GuiProfile profile;
+   /*!
+    */
+   enumval horizSizing;
+   /*!
+    */
+   enumval vertSizing;
+   /*!
+    */
+   Point2I position;
+   /*!
+    */
+   Point2I extent;
+   /*!
+    */
+   Point2I minExtent;
+   /*!
+    */
+   bool visible;
+   /*!
+   @deprecated This member is deprecated, which means that its value is always undefined.
+    */
+   deprecated modal;
+   /*!
+   @deprecated This member is deprecated, which means that its value is always undefined.
+    */
+   deprecated setFirstResponder;
+   /*!
+    */
+   string variable;
+   /*!
+    */
+   string command;
+   /*!
+    */
+   string altCommand;
+   /*!
+    */
+   string accelerator;
+   /// @}
+
+   /*!
+    */
+   caseString text;
+   /*!
+    */
+   int maxLength;
+   /*!
+    */
+   string validate;
+   /*!
+    */
+   string escapeCommand;
+   /*!
+    */
+   int historySize;
+   /*!
+    */
+   bool password;
+   /*!
+    */
+   bool tabComplete;
+   /*!
+    */
+   AudioProfilePtr deniedSound;
+   /*!
+    */
+   bool sinkAllKeyEvents;
+};
+
 /// Stub class
 /// 
 /// @note This is a stub class to ensure a proper class hierarchy. No 
@@ -1669,6 +1009,73 @@ class  ParchmentTextAppend : public GuiMLTextEditCtrl {
 ///       information was available for this class.
 class  ParchmentText : public GuiMLTextCtrl {
   public:
+};
+
+class  GuiScrollCtrl : public GuiControl {
+  public:
+   virtual void scrollToTop() {}
+   virtual void scrollToBottom() {}
+
+   /*! @name Parent
+   @{ */
+   /*!
+    */
+   GuiProfile profile;
+   /*!
+    */
+   enumval horizSizing;
+   /*!
+    */
+   enumval vertSizing;
+   /*!
+    */
+   Point2I position;
+   /*!
+    */
+   Point2I extent;
+   /*!
+    */
+   Point2I minExtent;
+   /*!
+    */
+   bool visible;
+   /*!
+   @deprecated This member is deprecated, which means that its value is always undefined.
+    */
+   deprecated modal;
+   /*!
+   @deprecated This member is deprecated, which means that its value is always undefined.
+    */
+   deprecated setFirstResponder;
+   /*!
+    */
+   string variable;
+   /*!
+    */
+   string command;
+   /*!
+    */
+   string altCommand;
+   /*!
+    */
+   string accelerator;
+   /// @}
+
+   /*!
+    */
+   bool willFirstRespond;
+   /*!
+    */
+   enumval hScrollBar;
+   /*!
+    */
+   enumval vScrollBar;
+   /*!
+    */
+   bool constantThumbHeight;
+   /*!
+    */
+   Point2I childMargin;
 };
 
 /// Stub class
@@ -3059,6 +2466,80 @@ class  HairColorBlocker2 : public GuiSwatchCtrl {
 ///       information was available for this class.
 class  CheckGlasses : public GuiCheckBoxCtrl {
   public:
+};
+
+class  GuiPopUpMenuCtrl : public GuiTextCtrl {
+  public:
+   virtual void add() {}
+   virtual void addScheme() {}
+   virtual void setText() {}
+   virtual string getText() {}
+   virtual void clear() {}
+   virtual void sort() {}
+   virtual void forceOnAction() {}
+   virtual void forceClose() {}
+   virtual int getSelected() {}
+   virtual void setSelected() {}
+   virtual string getTextById() {}
+   virtual void setEnumContent() {}
+   virtual int findText() {}
+   virtual int size() {}
+   virtual void replaceText() {}
+
+   /*! @name Parent
+   @{ */
+   /*!
+    */
+   GuiProfile profile;
+   /*!
+    */
+   enumval horizSizing;
+   /*!
+    */
+   enumval vertSizing;
+   /*!
+    */
+   Point2I position;
+   /*!
+    */
+   Point2I extent;
+   /*!
+    */
+   Point2I minExtent;
+   /*!
+    */
+   bool visible;
+   /*!
+   @deprecated This member is deprecated, which means that its value is always undefined.
+    */
+   deprecated modal;
+   /*!
+   @deprecated This member is deprecated, which means that its value is always undefined.
+    */
+   deprecated setFirstResponder;
+   /*!
+    */
+   string variable;
+   /*!
+    */
+   string command;
+   /*!
+    */
+   string altCommand;
+   /*!
+    */
+   string accelerator;
+   /// @}
+
+   /*!
+    */
+   caseString text;
+   /*!
+    */
+   int maxLength;
+   /*!
+    */
+   int maxPopupHeight;
 };
 
 /// Stub class
@@ -4751,7 +4232,7 @@ class  GuiConsoleTextCtrl : public GuiControl {
    enumval horizSizing;
    /*!
     */
-   enumval vertSizing;relo
+   enumval vertSizing;
    /*!
     */
    Point2I position;
@@ -5128,6 +4609,63 @@ class  InspectAddFieldDlg : public GuiControl {
    virtual Script doAction() {}
 };
 
+class  GuiTreeViewCtrl : public GuiArrayCtrl {
+  public:
+   virtual void open() {}
+
+   /*! @name Parent
+   @{ */
+   /*!
+    */
+   GuiProfile profile;
+   /*!
+    */
+   enumval horizSizing;
+   /*!
+    */
+   enumval vertSizing;
+   /*!
+    */
+   Point2I position;
+   /*!
+    */
+   Point2I extent;
+   /*!
+    */
+   Point2I minExtent;
+   /*!
+    */
+   bool visible;
+   /*!
+   @deprecated This member is deprecated, which means that its value is always undefined.
+    */
+   deprecated modal;
+   /*!
+   @deprecated This member is deprecated, which means that its value is always undefined.
+    */
+   deprecated setFirstResponder;
+   /*!
+    */
+   string variable;
+   /*!
+    */
+   string command;
+   /*!
+    */
+   string altCommand;
+   /*!
+    */
+   string accelerator;
+   /// @}
+
+   /*!
+    */
+   bool allowMultipleSelections;
+   /*!
+    */
+   bool recurseSets;
+};
+
 class  InspectTreeView : public GuiTreeViewCtrl {
   public:
    virtual Script onSelect() {}
@@ -5139,6 +4677,83 @@ class  InspectTreeView : public GuiTreeViewCtrl {
 ///       information was available for this class.
 class  InspectTreeTitle : public GuiWindowCtrl {
   public:
+};
+
+class  GuiInspector : public GuiControl {
+  public:
+   virtual Script addDynamicField() {}
+   virtual Script setAllGroupStateScript() {}
+   virtual Script toggleGroupScript() {}
+   virtual Script toggleDynamicGroupScript() {}
+   virtual void inspect() {}
+   virtual void apply() {}
+   virtual void toggleGroupExpand() {}
+   virtual void toggleDynamicGroupExpand() {}
+   virtual void setAllGroupState() {}
+
+   /*! @name Parent
+   @{ */
+   /*!
+    */
+   GuiProfile profile;
+   /*!
+    */
+   enumval horizSizing;
+   /*!
+    */
+   enumval vertSizing;
+   /*!
+    */
+   Point2I position;
+   /*!
+    */
+   Point2I extent;
+   /*!
+    */
+   Point2I minExtent;
+   /*!
+    */
+   bool visible;
+   /*!
+   @deprecated This member is deprecated, which means that its value is always undefined.
+    */
+   deprecated modal;
+   /*!
+   @deprecated This member is deprecated, which means that its value is always undefined.
+    */
+   deprecated setFirstResponder;
+   /*!
+    */
+   string variable;
+   /*!
+    */
+   string command;
+   /*!
+    */
+   string altCommand;
+   /*!
+    */
+   string accelerator;
+   /// @}
+
+   /*!
+    */
+   int editControlOffset;
+   /*!
+    */
+   int entryHeight;
+   /*!
+    */
+   int textExtent;
+   /*!
+    */
+   int entrySpacing;
+   /*!
+    */
+   int maxMenuExtent;
+   /*!
+    */
+   bool useFieldGrouping;
 };
 
 /// Stub class
@@ -5392,11 +5007,33 @@ class  Canvas : public GuiCanvas {
   public:
 };
 
-class  editor {
+class  ScriptObject : public SimObject {
   public:
-   virtual Script checkActiveLoadDone() {}
-   virtual Script onAdd() {}
-   virtual Script create() {}
+
+   /*! @name Classes
+   
+   Script objects have the ability to inherit and have class information.
+   @{ */
+   /*!
+   Class of object.
+   
+    */
+   string class;
+   /*!
+   Superclass of object.
+   
+    */
+   string superClass;
+   /// @}
+
+};
+
+/// Stub class
+/// 
+/// @note This is a stub class to ensure a proper class hierarchy. No 
+///       information was available for this class.
+class  ClientInventorySO : public ScriptObject {
+  public:
 };
 
 class  ScriptGroup : public SimGroup {
@@ -11746,6 +11383,118 @@ class  GuiTextEditSliderCtrl : public GuiTextEditCtrl {
    float increment;
 };
 
+class  GuiControlListPopUp : public GuiPopUpMenuCtrl {
+  public:
+
+   /*! @name Parent
+   @{ */
+   /*!
+    */
+   GuiProfile profile;
+   /*!
+    */
+   enumval horizSizing;
+   /*!
+    */
+   enumval vertSizing;
+   /*!
+    */
+   Point2I position;
+   /*!
+    */
+   Point2I extent;
+   /*!
+    */
+   Point2I minExtent;
+   /*!
+    */
+   bool visible;
+   /*!
+   @deprecated This member is deprecated, which means that its value is always undefined.
+    */
+   deprecated modal;
+   /*!
+   @deprecated This member is deprecated, which means that its value is always undefined.
+    */
+   deprecated setFirstResponder;
+   /*!
+    */
+   string variable;
+   /*!
+    */
+   string command;
+   /*!
+    */
+   string altCommand;
+   /*!
+    */
+   string accelerator;
+   /// @}
+
+   /*!
+    */
+   caseString text;
+   /*!
+    */
+   int maxLength;
+   /*!
+    */
+   int maxPopupHeight;
+};
+
+class  GuiEditorRuler : public GuiControl {
+  public:
+
+   /*! @name Parent
+   @{ */
+   /*!
+    */
+   GuiProfile profile;
+   /*!
+    */
+   enumval horizSizing;
+   /*!
+    */
+   enumval vertSizing;
+   /*!
+    */
+   Point2I position;
+   /*!
+    */
+   Point2I extent;
+   /*!
+    */
+   Point2I minExtent;
+   /*!
+    */
+   bool visible;
+   /*!
+   @deprecated This member is deprecated, which means that its value is always undefined.
+    */
+   deprecated modal;
+   /*!
+   @deprecated This member is deprecated, which means that its value is always undefined.
+    */
+   deprecated setFirstResponder;
+   /*!
+    */
+   string variable;
+   /*!
+    */
+   string command;
+   /*!
+    */
+   string altCommand;
+   /*!
+    */
+   string accelerator;
+   /// @}
+
+   /*!
+    */
+   string refCtrl;
+};
+
 class  GuiMouseEventCtrl : public GuiControl {
   public:
 
@@ -14707,6 +14456,69 @@ class  DbgFileView : public GuiArrayCtrl {
 
 };
 
+class  GuiEditCtrl : public GuiControl {
+  public:
+   virtual void setRoot() {}
+   virtual void addNewCtrl() {}
+   virtual void select() {}
+   virtual void setCurrentAddSet() {}
+   virtual void toggle() {}
+   virtual void justify() {}
+   virtual void bringToFront() {}
+   virtual void pushToBack() {}
+   virtual void deleteSelection() {}
+   virtual void moveSelection() {}
+   virtual void saveSelection() {}
+   virtual void loadSelection() {}
+   virtual void selectAll() {}
+
+   /*! @name Parent
+   @{ */
+   /*!
+    */
+   GuiProfile profile;
+   /*!
+    */
+   enumval horizSizing;
+   /*!
+    */
+   enumval vertSizing;
+   /*!
+    */
+   Point2I position;
+   /*!
+    */
+   Point2I extent;
+   /*!
+    */
+   Point2I minExtent;
+   /*!
+    */
+   bool visible;
+   /*!
+   @deprecated This member is deprecated, which means that its value is always undefined.
+    */
+   deprecated modal;
+   /*!
+   @deprecated This member is deprecated, which means that its value is always undefined.
+    */
+   deprecated setFirstResponder;
+   /*!
+    */
+   string variable;
+   /*!
+    */
+   string command;
+   /*!
+    */
+   string altCommand;
+   /*!
+    */
+   string accelerator;
+   /// @}
+
+};
+
 class  GuiFilterCtrl : public GuiControl {
   public:
    virtual string getValue() {}
@@ -14851,6 +14663,69 @@ class  GuiFrameSetCtrl : public GuiControl {
    /*!
     */
    int fudgeFactor;
+};
+
+class  GuiMenuBar : public GuiControl {
+  public:
+   virtual void clearMenus() {}
+   virtual void addMenu() {}
+   virtual void addMenuItem() {}
+   virtual void setMenuItemEnable() {}
+   virtual void setMenuItemChecked() {}
+   virtual void setMenuText() {}
+   virtual void setMenuVisible() {}
+   virtual void setMenuItemText() {}
+   virtual void setMenuItemVisible() {}
+   virtual void setMenuItemBitmap() {}
+   virtual void removeMenuItem() {}
+   virtual void clearMenuItems() {}
+   virtual void removeMenu() {}
+
+   /*! @name Parent
+   @{ */
+   /*!
+    */
+   GuiProfile profile;
+   /*!
+    */
+   enumval horizSizing;
+   /*!
+    */
+   enumval vertSizing;
+   /*!
+    */
+   Point2I position;
+   /*!
+    */
+   Point2I extent;
+   /*!
+    */
+   Point2I minExtent;
+   /*!
+    */
+   bool visible;
+   /*!
+   @deprecated This member is deprecated, which means that its value is always undefined.
+    */
+   deprecated modal;
+   /*!
+   @deprecated This member is deprecated, which means that its value is always undefined.
+    */
+   deprecated setFirstResponder;
+   /*!
+    */
+   string variable;
+   /*!
+    */
+   string command;
+   /*!
+    */
+   string altCommand;
+   /*!
+    */
+   string accelerator;
+   /// @}
+
 };
 
 class  MessageVector : public SimObject {
@@ -15324,6 +15199,4 @@ class  WaterBlock : public SceneObject {
    /// @}
 
 };
-
-
 ```

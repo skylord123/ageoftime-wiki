@@ -26,72 +26,6 @@ built-in `dumpConsoleFunctions();` from the in-game console.
 ```torquescript
 ==>dumpConsoleFunctions();
 namespace Global {
-   virtual Script turnRight() {}
-   virtual Script turnLeft() {}
-   virtual Script getMouseAdjustAmount2() {}
-   virtual Script pitch() {}
-   virtual Script yaw() {}
-   virtual Script getMax() {}
-   virtual Script getMin() {}
-   virtual Script keepOnlineLoop() {}
-   virtual Script closestPlayer() {}
-   virtual Script Login() {}
-   virtual Script botLogout() {}
-   virtual Script botLogin() {}
-   virtual Script autoBotLogin() {}
-   virtual Script strReverse() {}
-   virtual Script isAllCaps() {}
-   virtual Script strListToArray() {}
-   virtual Script CleanString() {}
-   virtual Script say() {}
-   virtual Script TrackServerMessage() {}
-   virtual Script TrackPlayerZoneChange() {}
-   virtual Script playerTrackerClientJoin() {}
-   virtual Script playerTrackerClientZoneChange() {}
-   virtual Script TrackPlayerMessage() {}
-   virtual Script sendServerData() {}
-   virtual Script serverStatsJsonString() {}
-   virtual Script playerLocationFromId() {}
-   virtual Script playerNameFromId() {}
-   virtual Script listPlayers() {}
-   virtual Script socket_data_in() {}
-   virtual Script ds_connect_loop() {}
-   virtual Script ds_contains_receive_callback() {}
-   virtual Script ds_add_receive_callback() {}
-   virtual Script ds_send() {}
-   virtual Script ds_disconnect() {}
-   virtual Script ds_connect() {}
-   virtual Script is_ds_connected() {}
-   virtual Script jettisonWriteFile() {}
-   virtual Script jettisonReadFile() {}
-   virtual Script JettisonArray() {}
-   virtual Script JettisonObject() {}
-   virtual Script __jettisonParse() {}
-   virtual Script jettisonStringify() {}
-   virtual Script jettisonParse() {}
-   virtual Script lookWestFinish() {}
-   virtual Script lookWest() {}
-   virtual Script calibrateDirectionObjectFinish() {}
-   virtual Script calibrateDirectionObject() {}
-   virtual Script aimAtPlayer() {}
-   virtual Script moveToPos() {}
-   virtual Script stopFollowingPlayer() {}
-   virtual Script followPlayer() {}
-   virtual Script followClosestPlayer() {}
-   virtual Script trackObj() {}
-   virtual Script targetObj() {}
-   virtual Script endCamFly() {}
-   virtual Script camFly() {}
-   virtual Script startCameraFly() {}
-   virtual Script getCamera() {}
-   virtual Script GuiEditorDeleteSelected() {}
-   virtual Script GuiEditorInspectApply() {}
-   virtual Script GuiEditorOpen() {}
-   virtual Script GuiEdit() {}
-   virtual Script GuiEditorSaveGuiCallback() {}
-   virtual Script GuiEditorSaveGui() {}
-   virtual Script GuiEditorCreate() {}
-   virtual Script GuiEditorStartCreate() {}
    virtual Script cycleDebugRenderMode() {}
    virtual Script bringUpOptions() {}
    virtual Script dropPlayerAtCamera() {}
@@ -395,7 +329,6 @@ namespace Global {
    virtual Script OpenALInit() {}
    virtual Script resetCanvas() {}
    virtual Script initCanvas() {}
-   virtual Script toggleEditor() {}
    virtual Script loadMainMenu() {}
    virtual Script initClient() {}
    virtual Script loadMods() {}
@@ -649,7 +582,25 @@ namespace Global {
    virtual void showTurnLeft() {}
    virtual void showTurnRight() {}
    virtual void showSetLightDirection() {}
-   virtual void clientCmdSyncStartTime() {}
+   // clientCmdSyncStartTime(%time)
+   // Set %time from 0 to 3599999 (one full daylight cycle = 3,600,000 ms = 1 hr real-time).
+   // Sweeps the fxSunLight elevation linearly: elevation = (70 + 360 * %time/3600000), wrapped to (-180, 180].
+   // Azimuth tracks non-linearly because the engine derives it via atan2 on the rotating sun vector
+   // (see fxSunLight::interpolateTick -> MathUtils::getAnglesFromVector) and discontinuously flips when
+   // elevation crosses zenith/nadir.
+   //
+   // Times of day (assuming this mission's StartElevation=70 and RotationTime=3600s):
+   //   %time = 200000   -> elev =  90    NOON     (sun directly overhead, brightest)
+   //   %time = 1100000  -> elev = 180    SUNSET   (sun at horizon, descending)
+   //   %time = 2000000  -> elev = -90    MIDNIGHT (sun directly below, darkest)
+   //   %time = 2900000  -> elev =   0    SUNRISE  (sun at horizon, ascending)
+   //
+   // Sampled:
+   //   %time = 0        SunAzimuth=40 SunElevation=70       (mid-morning)
+   //   %time = 900000   SunAzimuth=60 SunElevation=160.018  (mid-afternoon, descending)
+   //   %time = 1800000  SunAzimuth=0  SunElevation=-109.984 (deep night, past midnight)
+   //   %time = 2700000  SunAzimuth=20 SunElevation=-19.9835 (pre-dawn)
+   virtual void clientCmdSyncStartTime(%time) {}
    virtual void getDayFraction() {}
    virtual float calcExplosionCoverage() {}
    virtual void setColorTable() {}

@@ -1,0 +1,79 @@
+/* In-browser DSO decompiler widget */
+
+.dso-tool {
+  margin: 1rem 0;
+}
+
+.dso-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.dso-tool .dso-file-label {
+  margin: 0;
+  cursor: pointer;
+}
+
+.dso-opt {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dso-status {
+  font-size: 0.8rem;
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 0.5rem;
+}
+
+.dso-status.dso-error {
+  color: var(--md-typeset-del-color, #e53935);
+}
+
+.dso-status.dso-busy::after {
+  content: "";
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.4em;
+  vertical-align: -0.1em;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: dso-spin 0.7s linear infinite;
+}
+
+@keyframes dso-spin { to { transform: rotate(360deg); } }
+
+/* Output area: reuse the theme's code styling, cap the height. */
+.dso-tool .highlight {
+  display: none;
+}
+
+.dso-tool.dso-has-output .highlight {
+  display: block;
+}
+
+.dso-tool .dso-output {
+  display: block;
+  max-height: 32rem;
+  overflow: auto;
+  white-space: pre;
+}
+
+/* TorqueScript token colors — mapped to Material's syntax-highlight
+   variables so they track the active light/dark color scheme. */
+.dso-output .tsc { color: var(--md-code-hl-comment-color); font-style: italic; }
+.dso-output .tss { color: var(--md-code-hl-string-color); }
+.dso-output .tst { color: var(--md-code-hl-special-color); }
+.dso-output .tsn { color: var(--md-code-hl-number-color); }
+.dso-output .tsk { color: var(--md-code-hl-keyword-color); font-weight: 600; }
+.dso-output .tsf { color: var(--md-code-hl-function-color); }
+.dso-output .tsv { color: var(--md-code-hl-variable-color); }
+.dso-output .tsl { color: var(--md-code-hl-variable-color); }

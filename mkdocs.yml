@@ -110,6 +110,7 @@ nav:
           - Dyes: items/dyes.md
           - Movement Items: items/movement-items.md
       - Magic: magic.md
+      - Gold: gold.md
       - Voice Menu: voice-menu.md
       - Slash Commands: commands.md
       - Death & Respawning: death.md
@@ -150,6 +151,8 @@ nav:
   - Reference:
       - reference/index.md
       - Tips & Secrets: tips.md
+      - Inventory: reference/inventory.md
+      - Server Commands: reference/server-commands.md
       - Tools:
           - Dye Calculator: dye-calculator.md
           - Dye Recipe Finder: dye-recipe-finder.md
@@ -161,9 +164,17 @@ nav:
           - reference/torque-script/index.md
           - Console Function Dump: reference/torque-script/console-function-dump.md
           - Console Class Dump: reference/torque-script/console-class-dump.md
+          - Global Variables Dump: reference/torque-script/global-variables.md
           - Tagged Strings: reference/torque-script/tagged-strings.md
           - Datablocks: reference/torque-script/datablocks.md
+          - DSO Decompiler: reference/torque-script/dso-decompiler.md
   - Contributing: contributing.md
+
+extra_css:
+  - assets/dso/dso-tool.css
+
+extra_javascript:
+  - assets/dso/dso-tool.js
 
 extra:
   social:

@@ -13,6 +13,11 @@ how to control them, and how the world responds.
 
     The five spells, their mana costs, and tactics for each.
 
+- :material-cash-multiple: **[Gold](../gold.md)**
+
+    The game's currency, pile sizes by amount, and how gold is dropped and
+    picked up.
+
 - :material-microphone: **[Voice Menu](../voice-menu.md)**
 
     Emotes, voice lines, animations, and spell hotkeys (<kbd>V</kbd> menu).
