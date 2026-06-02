@@ -15,7 +15,7 @@ built-in `dumpConsoleClasses();` from the in-game console.
 
     The engine will print the same listing shown below.
 
-```torquescript
+```cpp
 ==>dumpConsoleClasses();
 class  SimObject {
   public:

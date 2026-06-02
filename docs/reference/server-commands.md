@@ -3,7 +3,7 @@
 Many of the things your client asks the server to do — chatting, using items,
 banking, mailing — go through the TorqueScript function **`commandToServer`**:
 
-```cpp
+```torquescript
 commandToServer('CommandName', %arg1, %arg2, ...);
 ```
 
@@ -23,7 +23,7 @@ client **splits the line on spaces**: the first word (minus the `/`) becomes
 the command name, and **each remaining word is passed as a separate
 argument**:
 
-```cpp
+```torquescript
 // typing:  /CommandName the rest of the line
 commandToServer('CommandName', "the", "rest", "of", "the", "line");
 ```
@@ -37,7 +37,7 @@ This has an important consequence:
 
     For example, `MailItem` takes three arguments:
 
-    ```cpp
+    ```torquescript
     commandToServer('MailItem', "34020", "Some Player", "0");
     ```
 
@@ -63,24 +63,24 @@ for the player-facing list, including emotes like `/love`, `/sit`, and the
 
 | Command & arguments | Effect |
 |---|---|
-| `commandToServer('Talk', %message)`<br>• `%message` — text (spaces allowed) | Local / proximity chat. This is what the chat box sends in local mode. |
-| `commandToServer('MessageSent', %message)`<br>• `%message` — text (spaces allowed) | Global chat. This is what the chat box sends in global mode. |
-| `commandToServer('cast', %spell)`<br>• `%spell` — `ball`, `burn`, `fireball`, `light`, `cloak` (also the `sandwich` / `boobs` easter eggs) | Equips the named spell. Backing command for [`/cast`](../commands.md#casting-spells). |
-| `commandToServer('use', %serverID)`<br>• `%serverID` — an item's [`serverID`](inventory.md#clientinventoryso-fields) | Equips / uses the inventory item with that server ID (toggles equipped items). |
-| `commandToServer('Discard', %serverID)`<br>• `%serverID` — an item's `serverID` | Drops (discards) the inventory item onto the ground. See [Inventory](inventory.md). |
-| `commandToServer('Combine', %serverID1, %serverID2)`<br>• `%serverID1` — first item's `serverID`<br>• `%serverID2` — second item's `serverID` | Combines two inventory items into one — e.g. mixing two [Dyes](../items/dyes.md) together. |
-| `commandToServer('BankDeposit', %amount)`<br>• `%amount` — gold (negative withdraws) | Deposits gold at the [bank](../npcs/banker.md); a negative amount withdraws. Backs [`/bankdeposit`](../npcs/banker.md#depositing-with-bankdeposit). |
-| `commandToServer('action')`<br>• *(no arguments)* | Interact with what you're looking at — pick up items, open doors, talk to NPCs, etc. Same as pressing <kbd>E</kbd>. |
-| `commandToServer('respawn')`<br>• *(no arguments)* | Respawn after death. See [Death & Respawning](../death.md). |
-| `commandToServer('suicide')`<br>• *(no arguments)* | Kill your own character. Backs [`/suicide`](../commands.md#actions). |
-| `commandToServer('logout')`<br>• *(no arguments)* | Return to the character select without disconnecting. Backs [`/logout`](../commands.md#system). |
-| `commandToServer('ToggleCamera')`<br>• *(no arguments)* | Toggle between player control and a free-flying camera. |
-| `commandToServer('dropCameraAtPlayer', %atPlayer)`<br>• `%atPlayer` — optional bool | Leave a camera at the player's position. |
-| `commandToServer('DropPlayerAtCamera')`<br>• *(no arguments)* | Teleport the player to the free camera's position. |
-| `commandToServer('stopAction')`<br>• *(no arguments)* | Same as pressing <kbd>Ctrl</kbd>+<kbd>E</kbd>. Despite the name it does not "stop an action" — it **drops a player you are carrying**, or, if you are driving a horse, **boots the passenger off**. |
-| `commandToServer('SetQuickSlot', %serverID, %idx)`<br>• `%serverID` — an item's `serverID`<br>• `%idx` — quick-slot number (`0`–`9`) | Assign an inventory item to a quick slot (`$QuickSlot[%idx]`). |
-| `commandToServer('voice', %line)`<br>• `%line` — `greet1`, `greet2`, `greet3`, `yes`, `no`, `Help`, `stop` | Plays a [Voice Menu](../voice-menu.md) line / emote. |
-| `commandToServer('SelectBotChatOption', %index)`<br>• `%index` — option number | Choose a dialogue option when talking to an NPC. |
+| `#!torquescript commandToServer('Talk', %message)`<br>• `%message` — text (spaces allowed) | Local / proximity chat. This is what the chat box sends in local mode. |
+| `#!torquescript commandToServer('MessageSent', %message)`<br>• `%message` — text (spaces allowed) | Global chat. This is what the chat box sends in global mode. |
+| `#!torquescript commandToServer('cast', %spell)`<br>• `%spell` — `ball`, `burn`, `fireball`, `light`, `cloak` (also the `sandwich` / `boobs` easter eggs) | Equips the named spell. Backing command for [`/cast`](../commands.md#casting-spells). |
+| `#!torquescript commandToServer('use', %serverID)`<br>• `%serverID` — an item's [`serverID`](inventory.md#clientinventoryso-fields) | Equips / uses the inventory item with that server ID (toggles equipped items). |
+| `#!torquescript commandToServer('Discard', %serverID)`<br>• `%serverID` — an item's `serverID` | Drops (discards) the inventory item onto the ground. See [Inventory](inventory.md). |
+| `#!torquescript commandToServer('Combine', %serverID1, %serverID2)`<br>• `%serverID1` — first item's `serverID`<br>• `%serverID2` — second item's `serverID` | Combines two inventory items into one — e.g. mixing two [Dyes](../items/dyes.md) together. |
+| `#!torquescript commandToServer('BankDeposit', %amount)`<br>• `%amount` — gold (negative withdraws) | Deposits gold at the [bank](../npcs/banker.md); a negative amount withdraws. Backs [`/bankdeposit`](../npcs/banker.md#depositing-with-bankdeposit). |
+| `#!torquescript commandToServer('action')`<br>• *(no arguments)* | Interact with what you're looking at — pick up items, open doors, talk to NPCs, etc. Same as pressing <kbd>E</kbd>. |
+| `#!torquescript commandToServer('respawn')`<br>• *(no arguments)* | Respawn after death. See [Death & Respawning](../death.md). |
+| `#!torquescript commandToServer('suicide')`<br>• *(no arguments)* | Kill your own character. Backs [`/suicide`](../commands.md#actions). |
+| `#!torquescript commandToServer('logout')`<br>• *(no arguments)* | Return to the character select without disconnecting. Backs [`/logout`](../commands.md#system). |
+| `#!torquescript commandToServer('ToggleCamera')`<br>• *(no arguments)* | Toggle between player control and a free-flying camera. |
+| `#!torquescript commandToServer('dropCameraAtPlayer', %atPlayer)`<br>• `%atPlayer` — optional bool | Leave a camera at the player's position. |
+| `#!torquescript commandToServer('DropPlayerAtCamera')`<br>• *(no arguments)* | Teleport the player to the free camera's position. |
+| `#!torquescript commandToServer('stopAction')`<br>• *(no arguments)* | Same as pressing <kbd>Ctrl</kbd>+<kbd>E</kbd>. Despite the name it does not "stop an action" — it **drops a player you are carrying**, or, if you are driving a horse, **boots the passenger off**. |
+| `#!torquescript commandToServer('SetQuickSlot', %serverID, %idx)`<br>• `%serverID` — an item's `serverID`<br>• `%idx` — quick-slot number (`0`–`9`) | Assign an inventory item to a quick slot (`$QuickSlot[%idx]`). |
+| `#!torquescript commandToServer('voice', %line)`<br>• `%line` — `greet1`, `greet2`, `greet3`, `yes`, `no`, `Help`, `stop` | Plays a [Voice Menu](../voice-menu.md) line / emote. |
+| `#!torquescript commandToServer('SelectBotChatOption', %index)`<br>• `%index` — option number | Choose a dialogue option when talking to an NPC. |
 
 !!! note "`use` and `Discard` still need a `serverID`"
     Although these accept a single argument, that argument is an item's server
@@ -97,7 +97,7 @@ directly rather than from chat.
 
 ### `MailItem`
 
-```cpp
+```torquescript
 commandToServer('MailItem', %itemServerID, %recipient, %anonymous);
 ```
 
@@ -116,7 +116,7 @@ arguments. Send it directly to mail anyone reliably.
 
 ### `login`
 
-```cpp
+```torquescript
 commandToServer('login', %user, %passwordHash);
 ```
 
@@ -125,7 +125,7 @@ Authenticates at the login screen. `%passwordHash` is the password run through
 
 ### `newCharacter`
 
-```cpp
+```torquescript
 commandToServer('newCharacter', %name, %passwordHash, %gender, %posture,
     %chest, %xScale, %yScale, %zScale, %skinTone, %lipTone, %hairStyle,
     %hairColor, %eyeColor, %face, %ears, %glasses, %abilities, %overwrite);
@@ -159,7 +159,7 @@ These are sent by the blacksmith / shop GUIs. Their arguments are item
 
 ### `Craft`
 
-```cpp
+```torquescript
 commandToServer('Craft', %recipeIndex, %ingredient1, %ingredient2, %ingredient3, %ingredient4);
 ```
 
@@ -169,7 +169,7 @@ of each ingredient placed in the four material slots.
 
 ### `SellItem`
 
-```cpp
+```torquescript
 commandToServer('SellItem', %serverID, %amount, %price);
 ```
 
@@ -183,7 +183,7 @@ free text containing spaces, so these are sent directly rather than from chat.
 
 ### `WriteParchment`
 
-```cpp
+```torquescript
 commandToServer('WriteParchment', %serverID, %title, %body);
 ```
 
@@ -192,7 +192,7 @@ Writes a parchment's title and body. `%serverID` is the parchment item; pass
 
 ### `WriteParchmentAppend`
 
-```cpp
+```torquescript
 commandToServer('WriteParchmentAppend', %serverID, %text);
 ```
 
@@ -202,7 +202,7 @@ Appends a line of text to an existing parchment.
 
 ### `changePassword`
 
-```cpp
+```torquescript
 commandToServer('changePassword', %oldPassword, %newPassword);
 ```
 
@@ -210,7 +210,7 @@ Changes your account password.
 
 ### `SAD` / `SADSetPassword`
 
-```cpp
+```torquescript
 commandToServer('SAD', %password);            // authenticate as server admin
 commandToServer('SADSetPassword', %password); // set the server-admin password
 ```

@@ -18,7 +18,7 @@ A typical loop over the whole inventory looks like this — guard each slot with
 `isObject()` and a class check, since the engine briefly parks placeholder
 objects in slots while an inventory is still streaming in:
 
-```cpp
+```torquescript
 for(%i = 0; %i < $numClientInvSlots; %i++)
 {
     %item = $clientInv[%i];
@@ -43,7 +43,7 @@ The slot the player last clicked in the inventory UI is stored in
 `$BSD_CurrClickIndex`. To read the currently selected item's server ID from
 the console:
 
-```text
+```torquescript
 echo($clientInv[$BSD_CurrClickIndex].serverID);
 ```
 
@@ -127,7 +127,7 @@ it, or copy the functions you need.
 | `dropInventoryItemById(%id)` | Discards (drops) the item with the given `serverID`. |
 | `dropInventoryItemByName(%name)` | Discards the named item. |
 
-```cpp title="inventory.cs"
+```torquescript title="inventory.cs"
 --8<-- "docs/assets/downloads/inventory.cs"
 ```
 </content>

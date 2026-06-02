@@ -1,2 +1,5 @@
 mkdocs-material==9.7.6
 mkdocs-glightbox==0.5.2
+
+# Local Pygments lexer that adds the `torquescript` fence language.
+./tools/pygments-torquescript

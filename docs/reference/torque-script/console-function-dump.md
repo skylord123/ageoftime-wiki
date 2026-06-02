@@ -23,7 +23,7 @@ built-in `dumpConsoleFunctions();` from the in-game console.
 
     The engine will print the same listing shown below.
 
-```torquescript
+```cpp
 ==>dumpConsoleFunctions();
 namespace Global {
    virtual Script cycleDebugRenderMode() {}
@@ -319,7 +319,7 @@ namespace Global {
    virtual Script clientCmdMissionStartPhase2() {}
    virtual Script onDataBlockObjectReceived() {}
    virtual Script clientCmdMissionStartPhase1() {}
-   virtual Script clientCmdMissionEnd() {}``
+   virtual Script clientCmdMissionEnd() {}
    virtual Script clientCmdMissionStart() {}
    virtual Script defaultMessageCallback() {}
    virtual Script addMessageCallback() {}
