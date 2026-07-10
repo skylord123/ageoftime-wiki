@@ -35,7 +35,7 @@ A condensed version-history pulled from the official site's news posts:
 | 2004-12-07 | — | Site construction begins. |
 | 2005-04-26 | v0001 | First public release — "not much more than 3D chat." |
 | 2005-04-30 | v0002 | Required upgrade. Adds local chat (<kbd>Y</kbd>), resist-rescue, named-zone respawns. |
-| 2005-05-04 | v0003 | Speeds up mission lighting. Horse model added (not yet usable). |
+| 2005-05-04 | [v0003](assets/downloads/AgeOfTime-0003.exe) | Speeds up mission lighting. Horse model added (not yet usable). |
 | 2005-08-26 | v0004 | Auto-updater introduced. Lightmap rework. |
 | 2005-08-27 | v0006 | Two patches to fix the auto-updater. |
 | 2005-11-13 | v0010 | Auto-updater fixes; standalone installer recommended for some users. |
@@ -50,6 +50,7 @@ A condensed version-history pulled from the official site's news posts:
 Mirrored copies of the official Windows installer for preservation. Each file
 is the unmodified `AgeOfTime-<version>.exe` originally distributed by Badspot.
 
+- [`AgeOfTime-0003.exe`](assets/downloads/AgeOfTime-0003.exe) (~32 MB)
 - [`AgeOfTime-24.exe`](assets/downloads/AgeOfTime-24.exe) (~33 MB)
 - [`AgeOfTime-28.exe`](assets/downloads/AgeOfTime-28.exe) (~34 MB)
 - [`AgeOfTime-29.exe`](assets/downloads/AgeOfTime-29.exe) (~34 MB)
