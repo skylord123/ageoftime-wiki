@@ -117,6 +117,8 @@ nav:
       - Police Mechanics: police-mechanics.md
   - World:
       - world/index.md
+      - Interactive Map: https://skylord123.github.io/ageoftime-wiki/map/
+      - 3D Map: https://skylord123.github.io/ageoftime-wiki/map/3d/
       - Areas: areas.md
       - World Objects: world-objects.md
       - Crate Rates: crate-rates.md

@@ -5,6 +5,13 @@ the friendly faces you'll meet along the way.
 
 <div class="grid cards" markdown>
 
+- :material-map-search: **[Interactive World Map](../map/index.html)**
+
+    Explorable map of the entire world, rendered from the game's terrain
+    data, with every named location marked — also available as a
+    [3D world view](../map/3d/index.html) with the real buildings and
+    lighting.
+
 - :material-map: **[Areas](../areas.md)**
 
     World map plus links to dedicated pages for towns, dungeons, challenges,

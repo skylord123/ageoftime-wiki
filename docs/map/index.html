@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Age of Time &mdash; World Map</title>
+<style>
+  html, body {
+    margin: 0; padding: 0; width: 100%; height: 100%;
+    overflow: hidden; background: #1a1e24;
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+  #map {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    cursor: grab; touch-action: none; display: block;
+  }
+  #map.dragging { cursor: grabbing; }
+
+  /* Compass: base disc under the rotating card. The card is rotated -45deg
+     because game direction 0 is north-east and this map draws NE at the top. */
+  #compass {
+    position: absolute; top: 12px; left: 12px;
+    width: 92px; height: 92px; pointer-events: none;
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,.45));
+  }
+  #compass img {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+  }
+  #compass .card { transform: rotate(-45deg); }
+
+  .hud {
+    position: absolute; padding: 5px 10px;
+    background: rgba(20, 24, 30, .78); color: #f0e6c8;
+    border: 1px solid rgba(240, 230, 200, .25); border-radius: 4px;
+    font-size: 14px; line-height: 1.35; pointer-events: none;
+    user-select: none;
+  }
+  #coords {
+    right: 12px; bottom: 12px;
+    font-variant-numeric: tabular-nums;
+    min-width: 132px; text-align: left;
+  }
+  #title {
+    top: 12px; left: 50%; transform: translateX(-50%);
+    font-size: 17px; letter-spacing: 2px;
+  }
+  #zoomctl {
+    right: 12px; top: 12px; padding: 0;
+    pointer-events: auto; overflow: hidden;
+  }
+  #zoomctl button {
+    display: block; width: 34px; height: 34px; border: 0;
+    background: transparent; color: #f0e6c8; font-size: 20px;
+    font-family: inherit; cursor: pointer;
+  }
+  #zoomctl button:hover { background: rgba(240, 230, 200, .15); }
+  #zoomctl button + button { border-top: 1px solid rgba(240, 230, 200, .25); }
+
+  /* Marker / pin popup (Leaflet-style bubble anchored above its target). */
+  #popup {
+    position: absolute; z-index: 5; display: none;
+    min-width: 170px; max-width: 260px;
+    background: rgba(24, 28, 35, .96); color: #f0e6c8;
+    border: 1px solid rgba(240, 230, 200, .3); border-radius: 6px;
+    padding: 10px 14px; font-size: 13px; line-height: 1.4;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .5);
+    transform: translate(-50%, -100%);
+  }
+  #popup.open { display: block; }
+  #popup::after {
+    content: ''; position: absolute; left: 50%; bottom: -8px;
+    margin-left: -8px; border: 8px solid transparent; border-bottom: 0;
+    border-top: 8px solid rgba(24, 28, 35, .96);
+  }
+  #popup h3 { margin: 0 18px 4px 0; font-size: 15px; color: #fff; }
+  #popup .coords {
+    margin: 0 0 6px; color: rgba(240, 230, 200, .75);
+    font-variant-numeric: tabular-nums;
+  }
+  #popup a { color: #7fc4ff; }
+  #popup .actions { display: flex; gap: 8px; margin-top: 8px; }
+  #popup .actions button {
+    border: 1px solid rgba(240, 230, 200, .3); border-radius: 4px;
+    background: rgba(240, 230, 200, .08); color: #f0e6c8;
+    font: 12px Georgia, serif; padding: 4px 9px; cursor: pointer;
+  }
+  #popup .actions button:hover { background: rgba(240, 230, 200, .2); }
+  #popupclose {
+    position: absolute; top: 3px; right: 5px; border: 0; background: none;
+    color: rgba(240, 230, 200, .6); font-size: 16px; cursor: pointer;
+    padding: 2px 5px;
+  }
+  #popupclose:hover { color: #fff; }
+
+  /* Right-click context menu. */
+  #ctxmenu {
+    position: absolute; z-index: 6; display: none; min-width: 180px;
+    background: rgba(24, 28, 35, .97); border: 1px solid rgba(240, 230, 200, .3);
+    border-radius: 6px; padding: 4px 0; font-size: 13px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .5);
+  }
+  #ctxmenu.open { display: block; }
+  #ctxmenu .item { padding: 7px 14px; color: #f0e6c8; cursor: pointer; }
+  #ctxmenu .item:hover { background: rgba(240, 230, 200, .14); }
+  #ctxmenu .sep { border-top: 1px solid rgba(240, 230, 200, .18); margin: 4px 0; }
+
+  #toast {
+    position: absolute; z-index: 7; left: 50%; bottom: 56px;
+    transform: translateX(-50%); padding: 7px 14px;
+    background: rgba(24, 28, 35, .95); color: #f0e6c8;
+    border: 1px solid rgba(240, 230, 200, .3); border-radius: 5px;
+    font-size: 13px; opacity: 0; transition: opacity .2s; pointer-events: none;
+  }
+  #toast.show { opacity: 1; }
+</style>
+</head>
+<body>
+<canvas id="map"></canvas>
+
+<div id="compass">
+  <img src="assets/CompassBase.png" alt="">
+  <img src="assets/CompassCard.png" class="card" alt="Compass (north-east is up)">
+</div>
+
+<div id="title" class="hud">AGE OF TIME &mdash; WORLD MAP</div>
+<div id="coords" class="hud">X: &mdash; &nbsp;Y: &mdash;</div>
+<div id="zoomctl" class="hud">
+  <button id="zin"  title="Zoom in">+</button>
+  <button id="zout" title="Zoom out">&minus;</button>
+</div>
+
+<div id="popup"></div>
+<div id="ctxmenu">
+  <div class="item" data-action="pin">Add a pin</div>
+  <div class="sep"></div>
+  <div class="item" data-action="copycoords">Copy coordinates</div>
+  <div class="item" data-action="copylink">Copy link to this view</div>
+</div>
+<div id="toast"></div>
+
+<script>
+'use strict';
+
+// ---------------------------------------------------------------------------
+// World model
+//
+// The Age of Time terrain is a single 256x256-square TGE terrain block with
+// 8 m squares (2048 m per side) that tiles infinitely in X and Y. The map
+// image (assets/map_tile.png) is one seamless tile rendered at 1 px/m,
+// covering world X,Y in [-1024, 1024). World +X is right, world +Y is up on
+// this map (game direction 0 / "north-east" points up).
+// ---------------------------------------------------------------------------
+const TILE_METERS = 2048;          // world meters covered by one tile image
+const TILE_ORIGIN = -1024;         // world coord of the tile's left/bottom edge
+
+// Locations to label on the map (absolute world coordinates, meters). The
+// terrain repeats every 2048 m, but these places exist only at their real
+// position, so each marker is drawn exactly once.
+//
+// A marker is either a point ({ name, x, y }) or a region ({ name, area }),
+// where `area` is a polygon of [x, y] world corners — use these for places
+// whose extent is defined by an in-game trigger volume. Regions draw as a
+// translucent overlay with the label centered inside; `color` (an "r,g,b"
+// string) optionally tints the overlay.
+const MARKERS = [
+  // Port Town trigger volume (surveyed in game; SW corner reconstructed from
+  // the other three, shared edges averaged).
+  { name: 'Port Town', color: '130,85,40',
+    area: [[250.875, 92.071], [419.886, 92.071],
+           [419.886, 253.767], [250.875, 253.767]] },
+  { name: 'Cave',                x:  575.877563, y:   72.446983 },
+  // Tavern trigger volume (surveyed in game). Not axis-aligned: the trigger
+  // is a parallelogram tilted ~12 degrees; the surveyed corners B and C are
+  // the diagonal, so the fourth corner is B + C - A.
+  { name: 'Tavern', color: '130,85,40',
+    area: [[-17.602, 136.909], [11.551, 143.208],
+           [11.646, 128.194], [-17.507, 121.895]] },
+  // Beach House trigger volume (surveyed in game, all four corners; shared
+  // edges averaged).
+  { name: 'Beach House', color: '130,85,40',
+    area: [[-180.629, 924.275], [-50.580, 924.275],
+           [-50.580, 1051.370], [-180.629, 1051.370]] },
+  { name: 'Woods',               x:  402.584167, y:  562.195740 },
+  // Swamp trigger volume corners (surveyed in game; NE corner reconstructed
+  // from the other three since the survey point there was off).
+  { name: 'Swamp', color: '45,80,40',
+    area: [[674.305, 633.031], [1066.910, 633.031],
+           [1066.910, 965.992], [674.305, 965.992]] },
+  { name: 'Volcano',             x: 1022.960388, y: 1021.273804 },
+  // Starboard Town trigger volume (exact world box read from the trigger in
+  // game, so no corner reconstruction needed).
+  { name: 'Starboard Town', color: '130,85,40',
+    area: [[1339.160, 1147.800], [1504.830, 1147.800],
+           [1504.830, 1341.000], [1339.160, 1341.000]] },
+  { name: 'Red Crater',          x: 1897.456421, y:  136.555298 },
+  // Log Challenge trigger volume (surveyed in game: NW + SW corners plus one
+  // point on the north edge and one on the east edge, which pin the NE corner
+  // at their intersection).
+  { name: 'Log Challenge', color: '130,85,40',
+    area: [[1121.815, -319.141], [1253.070, -319.141],
+           [1253.070, -161.493], [1121.815, -161.493]] },
+  { name: 'Level 2',             x: -229.009140, y: -201.670181 },
+  // Fort Bad trigger volume (surveyed in game, all four corners; shared
+  // edges averaged).
+  { name: 'Fort Bad', color: '130,85,40',
+    area: [[-344.766, 95.450], [-256.389, 95.450],
+           [-256.389, 197.143], [-344.766, 197.143]] },
+  { name: 'Auric Fields',        x: -1277.749390, y: 586.522400 },
+  // Treehouse Challenge trigger volume (surveyed in game; NW corner
+  // reconstructed from the other three, shared edges averaged).
+  { name: 'Treehouse Challenge', color: '130,85,40',
+    area: [[158.444, 1147.735], [288.825, 1147.735],
+           [288.825, 1275.050], [158.444, 1275.050]] },
+  // Distant Forest trigger volume (surveyed in game; NW corner reconstructed
+  // as A + C - B). Like the Tavern, the surveyed corners are ~7 degrees off
+  // square, so this is the exact parallelogram through the three points.
+  { name: 'Distant Forest', color: '45,80,40',
+    area: [[582.153, 2364.800], [900.423, 2378.900],
+           [934.880, 2853.080], [616.610, 2838.980]] },
+  { name: 'Blue Hill',           x:  237.294,    y: -454.543 },
+  { name: 'Arena',               x:  299.852539, y:  408.476624 },
+];
+
+// Wiki article for a marker: every map location has a page at
+// world/locations/<slug>/ where the slug is the kebab-cased name. A marker
+// can override with an explicit `wiki` slug if a future name doesn't match.
+const WIKI_BASE = 'https://skylord123.github.io/ageoftime-wiki/world/locations/';
+function wikiUrl(mk) {
+  const slug = mk.wiki || mk.name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  return WIKI_BASE + slug + '/';
+}
+
+const MIN_SCALE = 0.04;            // px per meter, fully zoomed out
+const MAX_SCALE = 8;               // px per meter, fully zoomed in
+
+const canvas = document.getElementById('map');
+const ctx = canvas.getContext('2d');
+const coordsEl = document.getElementById('coords');
+const popupEl = document.getElementById('popup');
+const ctxmenuEl = document.getElementById('ctxmenu');
+const toastEl = document.getElementById('toast');
+
+// View state: world point at the canvas center, and px-per-meter scale.
+// Starts centered on the populated area around Port Town.
+const view = { x: 320, y: 450, scale: 0.35 };
+
+const tile = new Image();
+let tilePattern = null;            // repeating pattern: seamless across tiles
+tile.src = 'assets/map_tile.png';
+tile.onload = () => {
+  tilePattern = ctx.createPattern(tile, 'repeat');
+  draw();
+};
+
+// --- URL hash deep-linking: #x,y,scale[&pin=x,y]... --------------------------
+// The view plus any dropped pins live in the hash, so the URL is always a
+// shareable link to exactly what's on screen.
+let pins = [];                     // dropped pins: { x, y } world coords
+
+function parseHash() {
+  const parts = location.hash.replace(/^#/, '').split('&');
+  const m = parts[0].match(/^(-?[\d.]+),(-?[\d.]+)(?:,([\d.]+))?$/);
+  if (m) {
+    view.x = parseFloat(m[1]);
+    view.y = parseFloat(m[2]);
+    if (m[3]) view.scale = clamp(parseFloat(m[3]), MIN_SCALE, MAX_SCALE);
+  }
+  pins = [];
+  for (const part of parts.slice(1)) {
+    const p = part.match(/^pin=(-?[\d.]+),(-?[\d.]+)$/);
+    if (p) pins.push({ x: parseFloat(p[1]), y: parseFloat(p[2]) });
+  }
+}
+parseHash();
+
+// Re-apply if the user pastes a new hash into the address bar. Our own
+// history.replaceState() calls don't fire this event, so there is no loop.
+window.addEventListener('hashchange', () => {
+  parseHash();
+  closePopup();
+  draw();
+});
+
+function currentHash() {
+  let h = '#' + view.x.toFixed(0) + ',' + view.y.toFixed(0) +
+          ',' + view.scale.toFixed(3);
+  for (const p of pins)
+    h += '&pin=' + p.x.toFixed(1) + ',' + p.y.toFixed(1);
+  return h;
+}
+
+function updateHashNow() {
+  history.replaceState(null, '', currentHash());
+}
+
+let hashTimer = 0;
+function scheduleHashUpdate() {
+  clearTimeout(hashTimer);
+  hashTimer = setTimeout(updateHashNow, 250);
+}
+
+function clamp(v, lo, hi) { return v < lo ? lo : (v > hi ? hi : v); }
+
+// --- Coordinate transforms ---------------------------------------------------
+// Screen origin is the canvas top-left in CSS pixels; world +Y maps to
+// screen -Y.
+function worldToScreen(wx, wy) {
+  return [
+    (wx - view.x) * view.scale + canvas.clientWidth / 2,
+    (view.y - wy) * view.scale + canvas.clientHeight / 2,
+  ];
+}
+function screenToWorld(sx, sy) {
+  return [
+    (sx - canvas.clientWidth / 2) / view.scale + view.x,
+    view.y - (sy - canvas.clientHeight / 2) / view.scale,
+  ];
+}
+
+// --- Rendering ---------------------------------------------------------------
+function resize() {
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = Math.round(canvas.clientWidth * dpr);
+  canvas.height = Math.round(canvas.clientHeight * dpr);
+  draw();
+}
+
+function draw() {
+  if (!tilePattern) return;
+  const dpr = window.devicePixelRatio || 1;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  const w = canvas.clientWidth, h = canvas.clientHeight;
+  ctx.clearRect(0, 0, w, h);
+  ctx.imageSmoothingEnabled = view.scale < 1;
+
+  // Fill the viewport with the repeating tile pattern. Pattern space is tile
+  // image pixels: (0,0) = world (TILE_ORIGIN, TILE_ORIGIN + TILE_METERS),
+  // +u = world +X, +v = world -Y, at metersPerPx meters per pattern pixel.
+  const mpp = TILE_METERS / tile.naturalWidth;
+  const k = view.scale * mpp;                        // pattern px -> screen px
+  const ox = w / 2 - (view.x - TILE_ORIGIN) * view.scale;
+  const oy = h / 2 + (view.y - (TILE_ORIGIN + TILE_METERS)) * view.scale;
+  ctx.save();
+  ctx.translate(ox, oy);
+  ctx.scale(k, k);
+  ctx.fillStyle = tilePattern;
+  ctx.fillRect(-ox / k, -oy / k, w / k, h / k);
+  ctx.restore();
+
+  drawMarkers(w, h);
+  drawPins();
+  positionPopup();
+}
+
+function markerAnchor(mk) {
+  if (mk.area) {
+    let cx = 0, cy = 0;
+    for (const [px, py] of mk.area) { cx += px; cy += py; }
+    return [cx / mk.area.length, cy / mk.area.length];
+  }
+  return [mk.x, mk.y];
+}
+
+function drawMarkers(w, h) {
+  if (!MARKERS.length) return;
+  const showLabels = view.scale >= 0.12;
+  ctx.font = '13px Georgia, serif';
+  ctx.textBaseline = 'middle';
+  const pad = 120;                 // skip markers well outside the viewport
+
+  // Region overlays first, so point markers and labels draw on top of them.
+  for (const mk of MARKERS) {
+    if (!mk.area) continue;
+    const rgb = mk.color || '50,50,30';
+    ctx.beginPath();
+    mk.area.forEach(([px, py], i) => {
+      const [sx, sy] = worldToScreen(px, py);
+      i ? ctx.lineTo(sx, sy) : ctx.moveTo(sx, sy);
+    });
+    ctx.closePath();
+    ctx.fillStyle = 'rgba(' + rgb + ',.16)';
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(' + rgb + ',.55)';
+    ctx.lineWidth = 1.5;
+    ctx.setLineDash([6, 4]);
+    ctx.stroke();
+    ctx.setLineDash([]);
+  }
+
+  for (const mk of MARKERS) {
+    const [wx, wy] = markerAnchor(mk);
+    const [sx, sy] = worldToScreen(wx, wy);
+    if (sx < -pad || sx > w + pad || sy < -pad || sy > h + pad) continue;
+
+    if (!mk.area) {
+      ctx.fillStyle = '#111';
+      ctx.beginPath();
+      ctx.arc(sx, sy, 3.5, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.strokeStyle = 'rgba(255,255,255,.8)';
+      ctx.lineWidth = 1;
+      ctx.stroke();
+    }
+    if (showLabels) {
+      const alignCenter = !!mk.area;   // region labels center on the region
+      ctx.textAlign = alignCenter ? 'center' : 'left';
+      const tx = alignCenter ? sx : sx + 7;
+      ctx.strokeStyle = 'rgba(245,238,214,.85)';
+      ctx.lineWidth = 3;
+      ctx.strokeText(mk.name, tx, sy);
+      ctx.fillStyle = '#111';
+      ctx.fillText(mk.name, tx, sy);
+    }
+  }
+  ctx.textAlign = 'left';
+}
+
+// Dropped pins: classic red teardrop, fixed screen size, tip on the spot.
+function drawPins() {
+  for (const p of pins) {
+    const [sx, sy] = worldToScreen(p.x, p.y);
+    ctx.beginPath();
+    ctx.moveTo(sx, sy);
+    ctx.bezierCurveTo(sx - 2, sy - 7, sx - 9, sy - 10, sx - 9, sy - 17);
+    ctx.arc(sx, sy - 17, 9, Math.PI, 0);
+    ctx.bezierCurveTo(sx + 9, sy - 10, sx + 2, sy - 7, sx, sy);
+    ctx.closePath();
+    ctx.fillStyle = '#d33627';
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(60, 0, 0, .6)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(sx, sy - 17, 3.5, 0, Math.PI * 2);
+    ctx.fillStyle = 'rgba(255, 255, 255, .92)';
+    ctx.fill();
+  }
+}
+
+// --- Hit testing --------------------------------------------------------------
+function pointInPoly(wx, wy, poly) {
+  let inside = false;
+  for (let i = 0, j = poly.length - 1; i < poly.length; j = i++) {
+    const [xi, yi] = poly[i], [xj, yj] = poly[j];
+    if ((yi > wy) !== (yj > wy) &&
+        wx < (xj - xi) * (wy - yi) / (yj - yi) + xi)
+      inside = !inside;
+  }
+  return inside;
+}
+
+// Is (sx, sy) on a marker's label text? Labels are part of the click target —
+// the dot alone is a tiny mark, and people naturally click the name.
+function labelHit(sx, sy, mk) {
+  if (view.scale < 0.12) return false;      // labels hidden at far zoom
+  const [ax, ay] = markerAnchor(mk);
+  const [mx, my] = worldToScreen(ax, ay);
+  ctx.font = '13px Georgia, serif';
+  const w = ctx.measureText(mk.name).width;
+  if (sy < my - 9 || sy > my + 9) return false;
+  if (mk.area)                               // centered on the region
+    return sx >= mx - w / 2 - 4 && sx <= mx + w / 2 + 4;
+  return sx >= mx + 3 && sx <= mx + 11 + w;  // right of the dot
+}
+
+// What's under a screen point: pins beat point markers beat region overlays.
+function hitTest(sx, sy) {
+  for (let i = pins.length - 1; i >= 0; i--) {
+    const [px, py] = worldToScreen(pins[i].x, pins[i].y);
+    const dx = sx - px, dy = sy - py;
+    if (dx * dx + (dy + 17) * (dy + 17) <= 121 ||
+        (Math.abs(dx) <= 5 && dy <= 0 && dy >= -17))
+      return { type: 'pin', index: i };
+  }
+  for (const mk of MARKERS) {
+    if (mk.area) continue;
+    const [mx, my] = worldToScreen(mk.x, mk.y);
+    if ((sx - mx) ** 2 + (sy - my) ** 2 <= 10 * 10 || labelHit(sx, sy, mk))
+      return { type: 'marker', marker: mk };
+  }
+  const [wx, wy] = screenToWorld(sx, sy);
+  for (const mk of MARKERS) {
+    if (mk.area && (pointInPoly(wx, wy, mk.area) || labelHit(sx, sy, mk)))
+      return { type: 'marker', marker: mk };
+  }
+  return null;
+}
+
+// --- Popup --------------------------------------------------------------------
+// One reusable bubble anchored to a world point; draw() repositions it so it
+// rides along with pan/zoom.
+let popup = null;                  // { ax, ay, lift, pinIndex? }
+
+function positionPopup() {
+  if (!popup) return;
+  const [sx, sy] = worldToScreen(popup.ax, popup.ay);
+  popupEl.style.left = sx + 'px';
+  popupEl.style.top = (sy - popup.lift) + 'px';
+}
+
+function closePopup() {
+  popup = null;
+  popupEl.classList.remove('open');
+}
+
+function fmt(v) { return v.toFixed(1).replace(/\.0$/, ''); }
+
+function openMarkerPopup(mk) {
+  const [ax, ay] = markerAnchor(mk);
+  let coords;
+  if (mk.area) {
+    const xs = mk.area.map(p => p[0]), ys = mk.area.map(p => p[1]);
+    coords = 'X ' + fmt(Math.min(...xs)) + ' to ' + fmt(Math.max(...xs)) +
+             '<br>Y ' + fmt(Math.min(...ys)) + ' to ' + fmt(Math.max(...ys));
+  } else {
+    coords = 'X ' + fmt(mk.x) + ', Y ' + fmt(mk.y);
+  }
+  popupEl.innerHTML =
+    '<button id="popupclose" title="Close">&times;</button>' +
+    '<h3></h3>' +
+    '<p class="coords">' + coords + '</p>' +
+    '<a href="' + wikiUrl(mk) + '" target="_blank" rel="noopener">' +
+    'View wiki article &#8599;</a>';
+  popupEl.querySelector('h3').textContent = mk.name;
+  popup = { ax, ay, lift: mk.area ? 10 : 12 };
+  popupEl.classList.add('open');
+  positionPopup();
+}
+
+function openPinPopup(index) {
+  const p = pins[index];
+  popupEl.innerHTML =
+    '<button id="popupclose" title="Close">&times;</button>' +
+    '<h3>Dropped pin</h3>' +
+    '<p class="coords">X ' + fmt(p.x) + ', Y ' + fmt(p.y) + '</p>' +
+    '<div class="actions">' +
+    '<button id="pincopy">Copy link</button>' +
+    '<button id="pinremove">Remove pin</button></div>';
+  popup = { ax: p.x, ay: p.y, lift: 32, pinIndex: index };
+  popupEl.classList.add('open');
+  positionPopup();
+}
+
+popupEl.addEventListener('click', (e) => {
+  if (e.target.id === 'popupclose') {
+    closePopup();
+  } else if (e.target.id === 'pincopy') {
+    updateHashNow();
+    copyText(location.href, 'Link copied — share it to show this pin');
+  } else if (e.target.id === 'pinremove' && popup && popup.pinIndex != null) {
+    pins.splice(popup.pinIndex, 1);
+    updateHashNow();
+    closePopup();
+    draw();
+  }
+});
+
+// --- Clipboard + toast ---------------------------------------------------------
+let toastTimer = 0;
+function toast(msg) {
+  toastEl.textContent = msg;
+  toastEl.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toastEl.classList.remove('show'), 1800);
+}
+
+function copyText(text, msg) {
+  const done = () => toast(msg || 'Copied');
+  const fallback = () => {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); done(); }
+    catch (err) { prompt('Copy this:', text); }
+    ta.remove();
+  };
+  if (navigator.clipboard && window.isSecureContext)
+    navigator.clipboard.writeText(text).then(done, fallback);
+  else
+    fallback();
+}
+
+// --- Context menu ---------------------------------------------------------------
+let ctxWorld = null;               // world point the menu was opened on
+
+function closeMenu() {
+  ctxmenuEl.classList.remove('open');
+}
+
+canvas.addEventListener('contextmenu', (e) => {
+  e.preventDefault();
+  closePopup();
+  ctxWorld = screenToWorld(e.clientX, e.clientY);
+  ctxmenuEl.classList.add('open');
+  // Clamp inside the window.
+  const mw = ctxmenuEl.offsetWidth, mh = ctxmenuEl.offsetHeight;
+  ctxmenuEl.style.left = Math.min(e.clientX, window.innerWidth - mw - 4) + 'px';
+  ctxmenuEl.style.top = Math.min(e.clientY, window.innerHeight - mh - 4) + 'px';
+});
+
+ctxmenuEl.addEventListener('click', (e) => {
+  const action = e.target.dataset && e.target.dataset.action;
+  closeMenu();
+  if (!action || !ctxWorld) return;
+  const [wx, wy] = ctxWorld;
+  if (action === 'pin') {
+    pins.push({ x: Math.round(wx * 10) / 10, y: Math.round(wy * 10) / 10 });
+    updateHashNow();
+    draw();
+    openPinPopup(pins.length - 1);
+  } else if (action === 'copycoords') {
+    copyText(fmt(wx) + ' ' + fmt(wy), 'Coordinates copied');
+  } else if (action === 'copylink') {
+    updateHashNow();
+    copyText(location.href, 'Link copied');
+  }
+});
+
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') { closeMenu(); closePopup(); }
+});
+window.addEventListener('blur', closeMenu);
+
+// --- Interaction -------------------------------------------------------------
+const pointers = new Map();        // active pointers, for drag + pinch
+let pinchDist = 0;
+let pressMoved = false;            // did the pointer move since pointerdown?
+let pressPos = null;               // pointerdown position, for the move check
+
+function zoomAt(sx, sy, factor) {
+  const ns = clamp(view.scale * factor, MIN_SCALE, MAX_SCALE);
+  if (ns === view.scale) return;
+  const [wx, wy] = screenToWorld(sx, sy);
+  view.scale = ns;
+  // Keep the world point under (sx, sy) fixed while zooming.
+  view.x = wx - (sx - canvas.clientWidth / 2) / ns;
+  view.y = wy + (sy - canvas.clientHeight / 2) / ns;
+  draw();
+  scheduleHashUpdate();
+}
+
+canvas.addEventListener('wheel', (e) => {
+  e.preventDefault();
+  zoomAt(e.clientX, e.clientY, Math.pow(1.0015, -e.deltaY));
+}, { passive: false });
+
+canvas.addEventListener('pointerdown', (e) => {
+  closeMenu();
+  if (e.button === 2) return;      // right-click is the context menu
+  canvas.setPointerCapture(e.pointerId);
+  pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+  pressMoved = false;
+  pressPos = { x: e.clientX, y: e.clientY };
+  if (pointers.size === 2) {
+    const [a, b] = [...pointers.values()];
+    pinchDist = Math.hypot(a.x - b.x, a.y - b.y);
+    pressMoved = true;             // a pinch is never a click
+  }
+  canvas.classList.add('dragging');
+});
+
+canvas.addEventListener('pointermove', (e) => {
+  updateCoords(e.clientX, e.clientY);
+  if (pointers.size === 0) {
+    canvas.style.cursor = hitTest(e.clientX, e.clientY) ? 'pointer' : '';
+    return;
+  }
+  if (!pointers.has(e.pointerId)) return;
+  if (pressPos && Math.hypot(e.clientX - pressPos.x, e.clientY - pressPos.y) > 4)
+    pressMoved = true;
+  const prev = pointers.get(e.pointerId);
+  pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+
+  if (pointers.size === 1) {
+    view.x -= (e.clientX - prev.x) / view.scale;
+    view.y += (e.clientY - prev.y) / view.scale;
+    draw();
+    scheduleHashUpdate();
+  } else if (pointers.size === 2) {
+    const [a, b] = [...pointers.values()];
+    const d = Math.hypot(a.x - b.x, a.y - b.y);
+    if (pinchDist > 0 && d > 0) {
+      zoomAt((a.x + b.x) / 2, (a.y + b.y) / 2, d / pinchDist);
+    }
+    pinchDist = d;
+  }
+});
+
+function endPointer(e) {
+  pointers.delete(e.pointerId);
+  if (pointers.size < 2) pinchDist = 0;
+  if (pointers.size === 0) canvas.classList.remove('dragging');
+}
+
+canvas.addEventListener('pointerup', (e) => {
+  const wasClick = pointers.has(e.pointerId) && !pressMoved && e.button === 0;
+  endPointer(e);
+  if (!wasClick) return;
+  // A stationary left click: open whatever is under it, or close the popup.
+  const hit = hitTest(e.clientX, e.clientY);
+  if (!hit) closePopup();
+  else if (hit.type === 'pin') openPinPopup(hit.index);
+  else openMarkerPopup(hit.marker);
+});
+canvas.addEventListener('pointercancel', endPointer);
+
+document.getElementById('zin').addEventListener('click', () =>
+  zoomAt(canvas.clientWidth / 2, canvas.clientHeight / 2, 1.5));
+document.getElementById('zout').addEventListener('click', () =>
+  zoomAt(canvas.clientWidth / 2, canvas.clientHeight / 2, 1 / 1.5));
+
+function updateCoords(sx, sy) {
+  const [wx, wy] = screenToWorld(sx, sy);
+  coordsEl.textContent = 'X: ' + wx.toFixed(0) + '  Y: ' + wy.toFixed(0);
+}
+canvas.addEventListener('pointerleave', () => {
+  coordsEl.innerHTML = 'X: &mdash; &nbsp;Y: &mdash;';
+});
+
+window.addEventListener('resize', resize);
+resize();
+</script>
+</body>
+</html>

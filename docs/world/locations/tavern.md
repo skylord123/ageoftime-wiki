@@ -5,6 +5,9 @@
 Located near [Fort Bad](fort-bad.md). The Tavern sells healing potions and is
 visually recycled as the Starboard Shop interior.
 
+[:material-map-search: View on the world map](../../map/index.html#-3,132.6,3){ .md-button }
+[:material-video-3d: Explore in 3D](../../map/3d/index.html?zones=1#-148,-99,453,-3,132.6,250){ .md-button }
+
 ## Shop inventory
 
 | Item | Price | Notes |

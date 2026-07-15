@@ -4,6 +4,9 @@
 
 A crater full of red grass containing Red Dye crates.
 
+[:material-map-search: View on the world map](../../map/index.html#1897.5,136.6,1.2){ .md-button }
+[:material-video-3d: Explore in 3D](../../map/3d/index.html#1753,-95,420,1897.5,136.6,218){ .md-button }
+
 ## Notes
 
 - Red Crater uses a completely different crate loot table from every other

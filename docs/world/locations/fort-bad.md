@@ -9,6 +9,9 @@ Nearby points of interest:
 - [Tavern](tavern.md)
 - [Level 2](level-2.md)
 
+[:material-map-search: View on the world map](../../map/index.html#-300.6,146.3,3){ .md-button }
+[:material-video-3d: Explore in 3D](../../map/3d/index.html?zones=1#-445,-85,445,-300.6,146.3,243){ .md-button }
+
 ## Interior
 
 The fort has a **main floor** and a **second floor** reachable inside.

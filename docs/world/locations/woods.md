@@ -5,6 +5,9 @@
 A large wooded area near [Port Town](port-town.md). It contains Green Dye
 crates, [Level 1](level-1.md), and the Woods tunnels.
 
+[:material-map-search: View on the world map](../../map/index.html#402.6,562.2,1.2){ .md-button }
+[:material-video-3d: Explore in 3D](../../map/3d/index.html#258,331,429,402.6,562.2,227){ .md-button }
+
 ## Respawn behavior
 
 - If you die inside the Woods, you respawn right outside the exterior of

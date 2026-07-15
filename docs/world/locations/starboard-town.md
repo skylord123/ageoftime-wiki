@@ -5,6 +5,9 @@
 A near-identical copy of Port Town with minor aesthetic differences. It sits
 above a lake and has its own shop, beds, and marketplace building.
 
+[:material-map-search: View on the world map](../../map/index.html#1428.4,1241.8,3){ .md-button }
+[:material-video-3d: Explore in 3D](../../map/3d/index.html?zones=1#1284,1010,389,1428.4,1241.8,186){ .md-button }
+
 ## Overview
 
 - Visiting Starboard Town sets it as a persistent respawn point.

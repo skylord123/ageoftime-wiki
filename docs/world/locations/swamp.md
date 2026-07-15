@@ -5,6 +5,9 @@
 The main low-water-level grinding area. It contains Cyan Dye crates and
 Zombies.
 
+[:material-map-search: View on the world map](../../map/index.html#870.6,799.5,1.53){ .md-button }
+[:material-video-3d: Explore in 3D](../../map/3d/index.html?zones=1#645,438,527,870.6,799.5,211){ .md-button }
+
 ## Notes
 
 - A large white orb-like object here has very high HP. It can be destroyed,

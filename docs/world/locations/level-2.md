@@ -7,6 +7,9 @@ to [Level 1](level-1.md): rooms connected by short hallways, each room
 starting a monster encounter that has to be cleared before the doors reopen.
 The main difference is that Level 2's maze is **longer** than Level 1's.
 
+[:material-map-search: View on the world map](../../map/index.html#-229,-201.7,1.2){ .md-button }
+[:material-video-3d: Explore in 3D](../../map/3d/index.html#-374,-433,433,-229,-201.7,231){ .md-button }
+
 ## Differences from Level 1
 
 - The start and end rooms reuse the Level 1 interior but do **not** have the

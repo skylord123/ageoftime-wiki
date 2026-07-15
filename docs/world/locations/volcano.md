@@ -5,6 +5,9 @@
 A long tube you jump down inside of, with a room at the bottom. It contains
 Black, Magenta, and Pitch Black dye crates and is home to Fire Orcs.
 
+[:material-map-search: View on the world map](../../map/index.html#1023,1021.3,1.2){ .md-button }
+[:material-video-3d: Explore in 3D](../../map/3d/index.html#878,790,440,1023,1021.3,237){ .md-button }
+
 ## Notes
 
 - You will die instantly to fall damage unless you have a Horse or a Hook.

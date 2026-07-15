@@ -5,6 +5,9 @@
 A tall stack of logs near [Red Crater](red-crater.md). Scale it to obtain the
 **Golden Hook**.
 
+[:material-map-search: View on the world map](../../map/index.html#1187.4,-240.3,3){ .md-button }
+[:material-video-3d: Explore in 3D](../../map/3d/index.html?zones=1#1043,-472,420,1187.4,-240.3,217){ .md-button }
+
 ## Reward
 
 - [Golden Hook](../../items/movement-items.md)
@@ -12,6 +15,15 @@ A tall stack of logs near [Red Crater](red-crater.md). Scale it to obtain the
 ## Respawn behavior
 
 Visiting the Log Challenge sets it as a persistent respawn point.
+
+## Log placement data
+
+The challenge is built from **150** log shapes
+(`base/data/shapes/Sharp_Trees/Trees/deadwood/Sharp_log03.dts`), placed by an
+`fxShapeReplicator`. The full dump of every log's position, rotation, and scale
+is available as a download:
+
+- [Log placement dump (`log-challenge-logs.txt`)](../../assets/downloads/log-challenge-logs.txt)
 
 ## Screenshots
 

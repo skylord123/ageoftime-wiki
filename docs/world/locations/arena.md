@@ -5,6 +5,9 @@
 Near [Port Town](port-town.md). A proper PvP arena designed for fighting
 without the normal gold-loss penalty.
 
+[:material-map-search: View on the world map](../../map/index.html#299.9,408.5,1.2){ .md-button }
+[:material-video-3d: Explore in 3D](../../map/3d/index.html#155,177,431,299.9,408.5,229){ .md-button }
+
 ## Rules and mechanics
 
 - Dying here does **not** cause you to drop gold.

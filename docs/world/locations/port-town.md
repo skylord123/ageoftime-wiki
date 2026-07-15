@@ -7,6 +7,9 @@ The starting town and main hub of *Age of Time*. Port Town contains the
 [Blacksmith](../../npcs/blacksmith.md), [Marshal](../../npcs/police.md), the
 main shop, and one half of the player marketplace.
 
+[:material-map-search: View on the world map](../../map/index.html#333.3,197.4,3){ .md-button }
+[:material-video-3d: Explore in 3D](../../map/3d/index.html?zones=1#189,-34,404,333.3,197.4,202){ .md-button }
+
 ## Overview
 
 - New characters spawn here.

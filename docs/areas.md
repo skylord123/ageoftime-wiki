@@ -6,14 +6,33 @@ can expand without overloading a single document.
 
 ## World map
 
-![World map](assets/maps/wiki_map.png){ loading=lazy }
+An interactive map of the whole world, rendered directly from the game's
+terrain data. Drag to pan, scroll to zoom, and click any marked location for
+a summary and a link to its article.
 
-*Map credit: Plastiware, from the [Blockland forum thread](https://forum.blockland.us/index.php?topic=245789.0).*
+<iframe src="../map/" title="Age of Time interactive world map"
+        loading="lazy" allowfullscreen
+        style="width: 100%; aspect-ratio: 16 / 10; border: 1px solid
+               var(--md-default-fg-color--lightest); border-radius: 6px;">
+</iframe>
 
-[Unmarked version](assets/maps/wiki_map_unmarked.png)
+[:material-arrow-expand-all: Open the full world map](map/index.html){ .md-button .md-button--primary }
+[:material-video-3d: Explore the world in 3D](map/3d/index.html){ .md-button }
 
-The official site also publishes a smaller [town map](assets/maps/townMap.jpg)
-and [overworld map](assets/maps/worldMap.jpg).
+The [3D world view](map/3d/index.html) renders the real terrain, buildings,
+and lighting from the game files — use its menu to toggle location labels and
+in-game zone boundaries, or to fly straight to any location.
+
+??? note "Static maps (community and official)"
+
+    ![World map](assets/maps/wiki_map.png){ loading=lazy }
+
+    *Map credit: Plastiware, from the [Blockland forum thread](https://forum.blockland.us/index.php?topic=245789.0).*
+
+    [Unmarked version](assets/maps/wiki_map_unmarked.png)
+
+    The official site also publishes a smaller [town map](assets/maps/townMap.jpg)
+    and [overworld map](assets/maps/worldMap.jpg).
 
 ## Towns
 

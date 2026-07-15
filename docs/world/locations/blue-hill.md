@@ -4,6 +4,9 @@
 
 An underwater crater full of Sea Monsters and Blue Dye crates.
 
+[:material-map-search: View on the world map](../../map/index.html#237.3,-454.5,1.2){ .md-button }
+[:material-video-3d: Explore in 3D](../../map/3d/index.html#93,-686,329,237.3,-454.5,126){ .md-button }
+
 ## Notes
 
 - While you are in water, Sea Monster spawns override other local spawn
