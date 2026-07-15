@@ -111,5 +111,5 @@ to keep it safe — see [Death & Respawning](death.md) and the
 - [Banker](npcs/banker.md) — deposit gold so it survives death.
 - [Death & Respawning](death.md) — how carried gold is lost when you die.
 - [World Objects](world-objects.md) — Crates and other sources of gold.
-</content>
-</invoke>
+- [Crate Rates](crate-rates.md) — measured crate drop rates and the best
+  zones to farm.

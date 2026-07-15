@@ -12,7 +12,10 @@ Zombies.
   drop gold or serve a gameplay purpose.
 - Players sometimes hide inside the orb by breaking it and waiting for it to
   respawn over them.
-- Crates here can drop Gold, Cyan Dye, or occasional Dynamite.
+- The Swamp holds **10 crates on 1-second individual respawns**. Crates drop
+  Gold or Cyan/Bright Cyan Dye (no dynamite — that is exclusive to
+  [Auric Fields](auric-fields.md)). See [Crate Rates](../../crate-rates.md)
+  for the full measured drop table.
 
 ## Screenshots
 

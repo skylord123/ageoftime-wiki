@@ -38,6 +38,12 @@ want to exit through when the last monster dies. If you are too far away, the
 doors may close before you can cross the room, causing the monster encounter
 to begin again.
 
+## Crates
+
+Level 1 also contains loot crates. Their drop rates have **not** been logged
+yet — the [Crate Rates](../../crate-rates.md) page will be updated once data
+is gathered here.
+
 ## Race timer
 
 The tree entrance to Level 1 has a green light coming from the ground behind

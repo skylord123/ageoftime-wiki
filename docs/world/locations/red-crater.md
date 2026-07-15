@@ -6,8 +6,13 @@ A crater full of red grass containing Red Dye crates.
 
 ## Notes
 
-- Its gold drop rate appears noticeably worse than most other grinding areas.
-- Crates here can drop Gold, Red Dye, or occasional Dynamite.
+- Red Crater uses a completely different crate loot table from every other
+  area: it averages only **~3 gold per crate**, less than half of any other
+  zone, making it the worst gold grind in the game.
+- Its **8 crates** respawn slowly (**30 seconds** each), but it is the only
+  crate source of **Red and Bright Red Dye** — the dyes come in crates with
+  *no* gold (~1.6% each). No dynamite drops here. See
+  [Crate Rates](../../crate-rates.md) for the full measured drop table.
 - Nearby challenge: [Log Challenge](log-challenge.md)
 
 ## Screenshots

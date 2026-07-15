@@ -39,19 +39,21 @@ shortest exact recipe using named dyes.
 
 Colored dyes are obtained from **crates**, not from enemies. Crates do **not**
 spawn in every area; they appear in the specific dye-bearing locations listed
-below and drop either **Gold**, the area's dye color, or occasional
-**Dynamite**.
+below. Each standard zone drops both the normal dye and its **Bright**
+variant (at roughly a 2:1 normal-to-bright ratio). For the measured per-zone
+drop chances, see [Crate Rates](../crate-rates.md).
 
 | Dye color | Source area |
 |---|---|
-| Green Dye | [Woods](../world/locations/woods.md) |
-| Cyan Dye | [Swamp](../world/locations/swamp.md) |
-| Yellow Dye | [Auric Fields](../world/locations/auric-fields.md) |
-| Red Dye | [Red Crater](../world/locations/red-crater.md) |
-| Blue Dye | [Blue Hill](../world/locations/blue-hill.md) |
-| Orange Dye | [Volcano](../world/locations/volcano.md) |
+| Green / Bright Green Dye | [Woods](../world/locations/woods.md) |
+| Cyan / Bright Cyan Dye | [Swamp](../world/locations/swamp.md) |
+| Yellow / Bright Yellow Dye | [Auric Fields](../world/locations/auric-fields.md) |
+| Red / Bright Red Dye | [Red Crater](../world/locations/red-crater.md) |
+| Blue / Bright Blue Dye | [Blue Hill](../world/locations/blue-hill.md) |
 | Black Dye | [Volcano](../world/locations/volcano.md) |
 | Magenta Dye | [Volcano](../world/locations/volcano.md) |
+| Pitch Black Dye | [Volcano](../world/locations/volcano.md) — rare (~1 in 123 crates) |
+| Orange Dye | **Unknown** — does *not* drop from [Volcano](../world/locations/volcano.md) crates despite older reports (never seen in 26k+ logged breaks); possibly the unlogged [Level 1](../world/locations/level-1.md) crates |
 
 !!! note
     **Bleach** acts as a white dye, but it is bought from the

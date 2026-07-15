@@ -8,8 +8,10 @@ player's inventory.
 <div class="grid cards" markdown>
 
 - ![Crate](assets/items/Crate.png){ width=64 } **Crate** — found in
-  dye-bearing locations rather than all areas. Drops Gold, the area's Dye
-  color, or occasional Dynamite.
+  dye-bearing locations rather than all areas. Drops Gold and the area's Dye
+  colors; in [Auric Fields](world/locations/auric-fields.md) (only) about 1 in
+  111 crates spawns lit Dynamite instead. See [Crate Rates](crate-rates.md)
+  for measured counts, respawn times, and per-zone drop rates.
 
 - ![Dynamite Chest](assets/items/Dynamite_Chest.png){ width=64 } **Dynamite
   Chest** — very rare, found near Port Town. Drops about 5 active sticks of

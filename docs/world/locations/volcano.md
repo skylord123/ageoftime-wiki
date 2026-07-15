@@ -3,12 +3,21 @@
 ![Volcano](../../assets/captures/volcano/view-from-outside.png){ width=400 loading=lazy }
 
 A long tube you jump down inside of, with a room at the bottom. It contains
-Orange, Black, and Magenta dye crates and is home to Fire Orcs.
+Black, Magenta, and Pitch Black dye crates and is home to Fire Orcs.
 
 ## Notes
 
 - You will die instantly to fall damage unless you have a Horse or a Hook.
-- Crates here can drop Gold, the local dye colors, or occasional Dynamite.
+- The Volcano is the only area whose crates drop **three dye types**: Black
+  and Magenta on the 11-gold crate, plus rare **Pitch Black Dye** (~1 in 123
+  crates) in its own gold-less crate — the rarest crate dye in the game.
+  Despite older reports, **Orange Dye does not drop here** (never seen in
+  26k+ logged breaks). No dynamite drops here either, and the Volcano is
+  the only zone with **no 100-gold jackpot**. See
+  [Crate Rates](../../crate-rates.md) for the full measured drop table.
+- The Volcano starts with **5 crates** on 20-second respawns, but a bug can
+  make broken crates **permanently disappear** — after enough farming, none
+  may be left at all.
 
 ## Tips
 

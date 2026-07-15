@@ -119,6 +119,7 @@ nav:
       - world/index.md
       - Areas: areas.md
       - World Objects: world-objects.md
+      - Crate Rates: crate-rates.md
       - Locations:
           - Port Town: world/locations/port-town.md
           - Starboard Town: world/locations/starboard-town.md

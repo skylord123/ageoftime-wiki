@@ -4,7 +4,11 @@
 
 A field of yellow grass containing Yellow Dye crates.
 
-Crates here can drop Gold, Yellow Dye, or occasional Dynamite.
+The field holds **20 crates on 1-second individual respawns** — tied with the
+[Woods](woods.md) for the best gold farming in the game. Crates drop Gold,
+Yellow or Bright Yellow Dye, or occasionally lit Dynamite (~1 in 111 crates —
+Auric Fields is the **only** area whose crates spawn dynamite). See
+[Crate Rates](../../crate-rates.md) for the full measured drop table.
 
 ## Screenshots
 
