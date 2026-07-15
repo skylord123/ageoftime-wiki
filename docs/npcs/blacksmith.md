@@ -52,7 +52,9 @@ Material choice matters differently by item type:
   special metal effects.
 - [Shields](../items/weapons.md#shield) can trigger special effects based on their
   body metal.
-- Crossbow metal behavior remains only partially documented by the community.
+- [Crossbows](../items/weapons.md#crossbow) fire bolts faster or slower depending
+  on a single metal slot — see
+  [Crossbow metals and bolt speed](#crossbow-metals-and-bolt-speed).
 
 ## Clothing
 
@@ -99,3 +101,40 @@ Shield effects are community-reported and not officially documented.
 !!! note
     These reports only cover shield behavior. Sword damage/effects do not
     appear to change with metal.
+
+## Crossbow metals and bolt speed
+
+Unlike the shield effects above, this data was measured directly by logging
+bolt spawn velocities in-game for the same crossbow crafted from every metal
+(tested **2026-07**).
+
+- Only the metal supplied for the **2 Metal** ingredient matters. The
+  **1 Metal** ingredient and the **Wood** are purely cosmetic.
+- The metal changes **only** the bolt's muzzle velocity — and therefore how
+  far the crossbow shoots. Damage and reload time are identical for all
+  materials.
+- Ammo type does not affect speed or range: Steel Bolts and Exploding Bolts
+  fire at identical speeds for a given crossbow. The ammo only changes what
+  the bolt does on impact.
+
+| Metal (2 Metal slot) | Bolt muzzle velocity |
+|---|---:|
+| Plutonium | 200 |
+| Steel | 100 |
+| Gold | 75 |
+| Iron | 50 |
+| Brass | 35 |
+| Copper | 35 |
+| Rust | 20 |
+| Zinc | 20 |
+| Lead | 5 |
+
+Muzzle velocity spans **40×** from lead (5) to plutonium (200), and range
+grows at least linearly with velocity, so a plutonium crossbow shoots
+dramatically farther than anything else — twice as fast as steel, the next
+best. Rust/zinc and brass/copper tie exactly.
+
+!!! note
+    Pick your ammo for the on-impact effect (plain vs. explosive) and your
+    **2 Metal** ingredient for the range — the two are completely
+    independent.

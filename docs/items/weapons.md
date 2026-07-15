@@ -60,8 +60,13 @@ The standard defensive item.
 
 The standard ranged offensive item.
 
-- **Crafted from:** 5 Metal, 2 other Metal, 1 Wood, 500 Gold
-- Plutonium is the strongest crossbow metal.
+- **Crafted from:** 5 Wood, 2 Metal, 1 other Metal, 500 Gold
+- Bolt speed — and therefore range — is set solely by the metal supplied for
+  the **2 Metal** ingredient; the other metal and the wood are cosmetic.
+  Damage and reload time are the same for all materials.
+- Plutonium is the fastest crossbow metal (2× steel, 40× lead).
+- See [Blacksmith § Crossbow metals and bolt speed](../npcs/blacksmith.md#crossbow-metals-and-bolt-speed)
+  for the measured per-metal bolt velocities.
 - The pre-made **Quality Crossbow** sold in Port Town is generally a bad deal:
   it costs more and performs worse than simply crafting a plutonium crossbow.
 
