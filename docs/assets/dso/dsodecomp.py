@@ -737,6 +737,7 @@ class Scope:
             self.cur_var = Expr(self.ste(ins.ip + 1))
         elif op in ("OP_SETCURVAR_ARRAY", "OP_SETCURVAR_ARRAY_CREATE"):
             self.cur_var = self._array_var(self.cur)
+            self.cur = None      # the index string was consumed into the var name
         elif op in ("OP_LOADVAR_UINT", "OP_LOADVAR_FLT"):
             self.nstack.append(self.cur_var)
         elif op == "OP_LOADVAR_STR":
@@ -751,7 +752,13 @@ class Scope:
                             P_ASSIGN)
 
         elif op == "OP_SETCUROBJECT":
+            # The engine moves the string register into the object register;
+            # the value is consumed, so clear `cur`. Failing to clear it left a
+            # stale bare-object expr that hijacked the next conditional/loop test
+            # (the P1/P2/P3 defects), pushing the real `obj.field` comparison out
+            # as a stray trailing statement.
             self.cur_obj = self.cur
+            self.cur = None
         elif op == "OP_SETCUROBJECT_NEW":
             self.cur_obj = "NEW"
         elif op == "OP_SETCURFIELD":
@@ -759,6 +766,7 @@ class Scope:
             self.cur_field_array = None
         elif op == "OP_SETCURFIELD_ARRAY":
             self.cur_field_array = self.cur
+            self.cur = None      # the index string was consumed into the field
         elif op in ("OP_LOADFIELD_UINT", "OP_LOADFIELD_FLT"):
             self.nstack.append(self._field_expr())
         elif op == "OP_LOADFIELD_STR":
