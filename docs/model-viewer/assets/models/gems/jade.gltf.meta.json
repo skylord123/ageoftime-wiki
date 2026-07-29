@@ -1,0 +1,22 @@
+{
+  "sourceShape": "base/data/shapes/gems/jade.dts",
+  "materials": [
+    "skins\\gem1"
+  ],
+  "objects": [
+    "jade"
+  ],
+  "materialDefaults": {},
+  "materialWrap": {
+    "skins\\gem1": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "jade": [
+      "skins\\gem1"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "sourceDif": "base/data/interiors/vectrexis/caveA.dif",
+  "interior": true,
+  "materials": [
+    "MISC002.0",
+    "MISC002.1"
+  ],
+  "objects": [],
+  "materialDefaults": {},
+  "iflSlots": {},
+  "textureFiles": {
+    "MISC002": "textures/base__data__interiors__vectrexis__misc002.jpg"
+  },
+  "missingTextures": [],
+  "lightmapped": true,
+  "lightmapSheets": 2
+}

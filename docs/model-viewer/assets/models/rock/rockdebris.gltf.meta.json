@@ -1,0 +1,24 @@
+{
+  "sourceShape": "base/data/shapes/rock/rockdebris.dts",
+  "materials": [
+    "misc002"
+  ],
+  "objects": [
+    "rock"
+  ],
+  "materialDefaults": {
+    "misc002": "textures/rock__misc002.jpg"
+  },
+  "materialWrap": {
+    "misc002": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "rock": [
+      "misc002"
+    ]
+  }
+}

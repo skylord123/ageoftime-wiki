@@ -1,0 +1,20 @@
+{
+  "sourceDif": "base/data/interiors/vectrexis/woodsTrimCorner.dif",
+  "interior": true,
+  "materials": [
+    "BARK",
+    "GRASS",
+    "T12"
+  ],
+  "objects": [],
+  "materialDefaults": {},
+  "iflSlots": {},
+  "textureFiles": {
+    "BARK": "textures/base__data__interiors__vectrexis__bark.jpg",
+    "GRASS": "textures/base__data__interiors__vectrexis__grass.jpg",
+    "T12": "textures/base__data__interiors__vectrexis__t12.jpg"
+  },
+  "missingTextures": [],
+  "lightmapped": false,
+  "lightmapSheets": 0
+}

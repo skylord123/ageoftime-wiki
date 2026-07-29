@@ -1,0 +1,22 @@
+{
+  "sourceShape": "base/data/shapes/player/stoneknife.dts",
+  "materials": [
+    "skins\\stoneKnife"
+  ],
+  "objects": [
+    "stone"
+  ],
+  "materialDefaults": {},
+  "materialWrap": {
+    "skins\\stoneKnife": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "stone": [
+      "skins\\stoneKnife"
+    ]
+  }
+}

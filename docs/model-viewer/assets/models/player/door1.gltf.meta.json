@@ -1,0 +1,24 @@
+{
+  "sourceShape": "base/data/shapes/player/door1.dts",
+  "materials": [
+    "door1"
+  ],
+  "objects": [
+    "door"
+  ],
+  "materialDefaults": {
+    "door1": "textures/player__door1.jpg"
+  },
+  "materialWrap": {
+    "door1": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "door": [
+      "door1"
+    ]
+  }
+}

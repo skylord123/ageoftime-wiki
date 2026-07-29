@@ -1,0 +1,34 @@
+{
+  "sourceShape": "base/data/shapes/rock/bush1.dts",
+  "materials": [
+    "t12",
+    "misc002"
+  ],
+  "objects": [
+    "bush",
+    "trunk"
+  ],
+  "materialDefaults": {
+    "t12": "textures/rock__t12.jpg",
+    "misc002": "textures/rock__misc002.jpg"
+  },
+  "materialWrap": {
+    "t12": {
+      "s": true,
+      "t": true
+    },
+    "misc002": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "bush": [
+      "t12"
+    ],
+    "trunk": [
+      "misc002"
+    ]
+  }
+}

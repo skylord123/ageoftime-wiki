@@ -1,0 +1,53 @@
+{
+  "sourceShape": "base/data/shapes/Sharp_Trees/Trees/White_Pine/Sharp_WhitePine01.dts",
+  "materials": [
+    "WhitPine_Main",
+    "WhitPine_Main"
+  ],
+  "objects": [
+    "Trunk",
+    "Hfol",
+    "Ffol",
+    "Efol",
+    "Dfol",
+    "Cfol",
+    "Bfol",
+    "Afol"
+  ],
+  "materialDefaults": {
+    "WhitPine_Main": "textures/Sharp_Trees__Trees__WhitPine_Main.png"
+  },
+  "materialWrap": {
+    "WhitPine_Main": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "Trunk": [
+      "WhitPine_Main"
+    ],
+    "Hfol": [
+      "WhitPine_Main"
+    ],
+    "Ffol": [
+      "WhitPine_Main"
+    ],
+    "Efol": [
+      "WhitPine_Main"
+    ],
+    "Dfol": [
+      "WhitPine_Main"
+    ],
+    "Cfol": [
+      "WhitPine_Main"
+    ],
+    "Bfol": [
+      "WhitPine_Main"
+    ],
+    "Afol": [
+      "WhitPine_Main"
+    ]
+  }
+}

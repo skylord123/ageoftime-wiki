@@ -1,0 +1,41 @@
+{
+  "sourceShape": "base/data/shapes/Sharp_Trees/Trees/Pears/Sharp_Pear05.dts",
+  "materials": [
+    "Pear_Main",
+    "Pear_Main"
+  ],
+  "objects": [
+    "Trunk",
+    "Dfol",
+    "Cfol",
+    "Bfol",
+    "Afol"
+  ],
+  "materialDefaults": {
+    "Pear_Main": "textures/Sharp_Trees__Trees__Pear_Main.png"
+  },
+  "materialWrap": {
+    "Pear_Main": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "Trunk": [
+      "Pear_Main"
+    ],
+    "Dfol": [
+      "Pear_Main"
+    ],
+    "Cfol": [
+      "Pear_Main"
+    ],
+    "Bfol": [
+      "Pear_Main"
+    ],
+    "Afol": [
+      "Pear_Main"
+    ]
+  }
+}

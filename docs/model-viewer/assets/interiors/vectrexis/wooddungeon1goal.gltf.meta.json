@@ -1,0 +1,29 @@
+{
+  "sourceDif": "base/data/interiors/vectrexis/wooddungeon1goal.dif",
+  "interior": true,
+  "materials": [
+    "MISC002.0",
+    "MISC002.1",
+    "MISC004.0",
+    "MISC004.1",
+    "TILE003.0",
+    "TILE003.1",
+    "TILE004.0",
+    "WATER2.0",
+    "WOODMOSS1.0"
+  ],
+  "objects": [],
+  "materialDefaults": {},
+  "iflSlots": {},
+  "textureFiles": {
+    "MISC002": "textures/base__data__interiors__vectrexis__misc002.jpg",
+    "MISC004": "textures/base__data__interiors__vectrexis__misc004.jpg",
+    "TILE003": "textures/base__data__interiors__vectrexis__tile003.jpg",
+    "TILE004": "textures/base__data__interiors__vectrexis__tile004.jpg",
+    "WATER2": "textures/base__data__interiors__vectrexis__water2.jpg",
+    "WOODMOSS1": "textures/base__data__interiors__vectrexis__woodmoss1.jpg"
+  },
+  "missingTextures": [],
+  "lightmapped": true,
+  "lightmapSheets": 2
+}

@@ -1,0 +1,24 @@
+{
+  "sourceShape": "base/data/shapes/horse/horse.dts",
+  "materials": [
+    "horse01"
+  ],
+  "objects": [
+    "horse"
+  ],
+  "materialDefaults": {
+    "horse01": "textures/horse__horse01.jpg"
+  },
+  "materialWrap": {
+    "horse01": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "horse": [
+      "horse01"
+    ]
+  }
+}

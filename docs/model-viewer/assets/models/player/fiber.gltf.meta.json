@@ -1,0 +1,24 @@
+{
+  "sourceShape": "base/data/shapes/player/fiber.dts",
+  "materials": [
+    "Powder"
+  ],
+  "objects": [
+    "Fiber"
+  ],
+  "materialDefaults": {
+    "Powder": "textures/player__Powder.png"
+  },
+  "materialWrap": {
+    "Powder": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "Fiber": [
+      "Powder"
+    ]
+  }
+}

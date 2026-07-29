@@ -1,0 +1,24 @@
+{
+  "sourceShape": "base/data/shapes/cratea/cratea1.dts",
+  "materials": [
+    "cratea1"
+  ],
+  "objects": [
+    "cratea"
+  ],
+  "materialDefaults": {
+    "cratea1": "textures/cratea__cratea1.png"
+  },
+  "materialWrap": {
+    "cratea1": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "cratea": [
+      "cratea1"
+    ]
+  }
+}

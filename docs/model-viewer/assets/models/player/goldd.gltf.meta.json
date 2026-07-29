@@ -1,0 +1,44 @@
+{
+  "sourceShape": "base/data/shapes/player/goldd.dts",
+  "materials": [
+    "gold"
+  ],
+  "objects": [
+    "golda",
+    "goldc",
+    "goldb",
+    "goldd",
+    "golde",
+    "goldf"
+  ],
+  "materialDefaults": {
+    "gold": "textures/player__gold.png"
+  },
+  "materialWrap": {
+    "gold": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "golda": [
+      "gold"
+    ],
+    "goldc": [
+      "gold"
+    ],
+    "goldb": [
+      "gold"
+    ],
+    "goldd": [
+      "gold"
+    ],
+    "golde": [
+      "gold"
+    ],
+    "goldf": [
+      "gold"
+    ]
+  }
+}

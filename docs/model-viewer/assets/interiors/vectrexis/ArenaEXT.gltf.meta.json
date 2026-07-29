@@ -1,0 +1,30 @@
+{
+  "sourceDif": "base/data/interiors/vectrexis/ArenaEXT.dif",
+  "interior": true,
+  "materials": [
+    "BLACK",
+    "GRASS",
+    "MISC004",
+    "OUTWALL00",
+    "TILE007",
+    "TILE015",
+    "WALL5",
+    "WOODGRAIN_DARK"
+  ],
+  "objects": [],
+  "materialDefaults": {},
+  "iflSlots": {},
+  "textureFiles": {
+    "BLACK": "textures/base__data__interiors__vectrexis__black.jpg",
+    "GRASS": "textures/base__data__interiors__vectrexis__grass.jpg",
+    "MISC004": "textures/base__data__interiors__vectrexis__misc004.jpg",
+    "OUTWALL00": "textures/base__data__interiors__vectrexis__outwall00.jpg",
+    "TILE007": "textures/base__data__interiors__vectrexis__tile007.jpg",
+    "TILE015": "textures/base__data__interiors__vectrexis__tile015.jpg",
+    "WALL5": "textures/base__data__interiors__vectrexis__wall5.jpg",
+    "WOODGRAIN_DARK": "textures/base__data__interiors__vectrexis__woodgrain_dark.jpg"
+  },
+  "missingTextures": [],
+  "lightmapped": true,
+  "lightmapSheets": 1
+}

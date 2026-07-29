@@ -1,0 +1,24 @@
+{
+  "sourceShape": "base/data/shapes/crated/crated1.dts",
+  "materials": [
+    "crated1"
+  ],
+  "objects": [
+    "crated"
+  ],
+  "materialDefaults": {
+    "crated1": "textures/crated__crated1.png"
+  },
+  "materialWrap": {
+    "crated1": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "crated": [
+      "crated1"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "sourceShape": "base/data/shapes/player/bill.dts",
+  "materials": [
+    "bushBill"
+  ],
+  "objects": [
+    "bill"
+  ],
+  "materialDefaults": {
+    "bushBill": "textures/player__bushBill.jpg"
+  },
+  "materialWrap": {
+    "bushBill": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "bill": [
+      "bushBill"
+    ]
+  }
+}

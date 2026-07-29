@@ -1,0 +1,24 @@
+{
+  "sourceShape": "base/data/shapes/items/blueVial.dts",
+  "materials": [
+    "potion"
+  ],
+  "objects": [
+    "vial"
+  ],
+  "materialDefaults": {
+    "potion": "textures/items__potion.png"
+  },
+  "materialWrap": {
+    "potion": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "vial": [
+      "potion"
+    ]
+  }
+}

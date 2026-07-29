@@ -1,0 +1,34 @@
+{
+  "sourceShape": "base/data/shapes/weapons/halo.dts",
+  "materials": [
+    "gold",
+    "mana"
+  ],
+  "objects": [
+    "halo",
+    "mana"
+  ],
+  "materialDefaults": {
+    "gold": "textures/weapons__gold.png",
+    "mana": "textures/weapons__mana.png"
+  },
+  "materialWrap": {
+    "gold": {
+      "s": true,
+      "t": true
+    },
+    "mana": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "halo": [
+      "gold"
+    ],
+    "mana": [
+      "mana"
+    ]
+  }
+}

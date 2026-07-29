@@ -1,0 +1,49 @@
+{
+  "sourceShape": "base/data/shapes/Sharp_Trees/Trees/poplar/Sharp_Poplar07.dts",
+  "materials": [
+    "Poplar_Main",
+    "Poplar_Main"
+  ],
+  "objects": [
+    "Trunk",
+    "top",
+    "A",
+    "Bfol",
+    "Dfol",
+    "Efol",
+    "Ffol"
+  ],
+  "materialDefaults": {
+    "Poplar_Main": "textures/Sharp_Trees__Trees__Poplar_Main.png"
+  },
+  "materialWrap": {
+    "Poplar_Main": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "Trunk": [
+      "Poplar_Main"
+    ],
+    "top": [
+      "Poplar_Main"
+    ],
+    "A": [
+      "Poplar_Main"
+    ],
+    "Bfol": [
+      "Poplar_Main"
+    ],
+    "Dfol": [
+      "Poplar_Main"
+    ],
+    "Efol": [
+      "Poplar_Main"
+    ],
+    "Ffol": [
+      "Poplar_Main"
+    ]
+  }
+}

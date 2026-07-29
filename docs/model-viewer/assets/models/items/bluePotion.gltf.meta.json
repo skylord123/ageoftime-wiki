@@ -1,0 +1,24 @@
+{
+  "sourceShape": "base/data/shapes/items/bluePotion.dts",
+  "materials": [
+    "potion"
+  ],
+  "objects": [
+    "potion"
+  ],
+  "materialDefaults": {
+    "potion": "textures/items__potion.png"
+  },
+  "materialWrap": {
+    "potion": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "potion": [
+      "potion"
+    ]
+  }
+}

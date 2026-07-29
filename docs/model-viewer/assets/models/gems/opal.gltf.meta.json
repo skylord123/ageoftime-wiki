@@ -1,0 +1,22 @@
+{
+  "sourceShape": "base/data/shapes/gems/opal.dts",
+  "materials": [
+    "skins\\gem1"
+  ],
+  "objects": [
+    "opal"
+  ],
+  "materialDefaults": {},
+  "materialWrap": {
+    "skins\\gem1": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "opal": [
+      "skins\\gem1"
+    ]
+  }
+}

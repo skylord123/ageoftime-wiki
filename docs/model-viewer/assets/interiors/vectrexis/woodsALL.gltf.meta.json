@@ -1,0 +1,22 @@
+{
+  "sourceDif": "base/data/interiors/vectrexis/woodsALL.dif",
+  "interior": true,
+  "materials": [
+    "BARK",
+    "BLACK",
+    "GRASS",
+    "T12"
+  ],
+  "objects": [],
+  "materialDefaults": {},
+  "iflSlots": {},
+  "textureFiles": {
+    "BARK": "textures/base__data__interiors__vectrexis__bark.jpg",
+    "BLACK": "textures/base__data__interiors__vectrexis__black.jpg",
+    "GRASS": "textures/base__data__interiors__vectrexis__grass.jpg",
+    "T12": "textures/base__data__interiors__vectrexis__t12.jpg"
+  },
+  "missingTextures": [],
+  "lightmapped": true,
+  "lightmapSheets": 1
+}

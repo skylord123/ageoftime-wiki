@@ -1,0 +1,20 @@
+{
+  "sourceDif": "base/data/interiors/vectrexis/townDungeonInt1.dif",
+  "interior": true,
+  "materials": [
+    "INSIDEWALL",
+    "OAK6",
+    "WOODGRAIN_DARK"
+  ],
+  "objects": [],
+  "materialDefaults": {},
+  "iflSlots": {},
+  "textureFiles": {
+    "INSIDEWALL": "textures/base__data__interiors__vectrexis__insidewall.jpg",
+    "OAK6": "textures/base__data__interiors__vectrexis__oak6.jpg",
+    "WOODGRAIN_DARK": "textures/base__data__interiors__vectrexis__woodgrain_dark.jpg"
+  },
+  "missingTextures": [],
+  "lightmapped": false,
+  "lightmapSheets": 0
+}

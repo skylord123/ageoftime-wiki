@@ -1,0 +1,24 @@
+{
+  "sourceDif": "base/data/interiors/vectrexis/chartres.dif",
+  "interior": true,
+  "materials": [
+    "BOARDS03",
+    "GRASS",
+    "GRASS_BASE",
+    "MOSSBRICK001",
+    "WATER1"
+  ],
+  "objects": [],
+  "materialDefaults": {},
+  "iflSlots": {},
+  "textureFiles": {
+    "BOARDS03": "textures/base__data__interiors__vectrexis__boards03.jpg",
+    "GRASS": "textures/base__data__interiors__vectrexis__grass.jpg",
+    "GRASS_BASE": "textures/base__data__interiors__vectrexis__grass_base.jpg",
+    "MOSSBRICK001": "textures/base__data__interiors__vectrexis__mossbrick001.jpg",
+    "WATER1": "textures/base__data__interiors__vectrexis__water1.jpg"
+  },
+  "missingTextures": [],
+  "lightmapped": false,
+  "lightmapSheets": 0
+}

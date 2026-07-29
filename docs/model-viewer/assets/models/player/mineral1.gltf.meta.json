@@ -1,0 +1,24 @@
+{
+  "sourceShape": "base/data/shapes/player/mineral1.dts",
+  "materials": [
+    "Powder"
+  ],
+  "objects": [
+    "rock"
+  ],
+  "materialDefaults": {
+    "Powder": "textures/player__Powder.png"
+  },
+  "materialWrap": {
+    "Powder": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "rock": [
+      "Powder"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "sourceDif": "base/data/interiors/vectrexis/townDungeonInt3.dif",
+  "interior": true,
+  "materials": [
+    "WOODGRAIN_DARK"
+  ],
+  "objects": [],
+  "materialDefaults": {},
+  "iflSlots": {},
+  "textureFiles": {
+    "WOODGRAIN_DARK": "textures/base__data__interiors__vectrexis__woodgrain_dark.jpg"
+  },
+  "missingTextures": [],
+  "lightmapped": false,
+  "lightmapSheets": 0
+}

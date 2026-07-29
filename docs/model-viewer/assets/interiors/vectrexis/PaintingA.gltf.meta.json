@@ -1,0 +1,18 @@
+{
+  "sourceDif": "base/data/interiors/vectrexis/PaintingA.dif",
+  "interior": true,
+  "materials": [
+    "INSIDEWALL",
+    "MISC008"
+  ],
+  "objects": [],
+  "materialDefaults": {},
+  "iflSlots": {},
+  "textureFiles": {
+    "INSIDEWALL": "textures/base__data__interiors__vectrexis__insidewall.jpg",
+    "MISC008": "textures/base__data__interiors__vectrexis__misc008.jpg"
+  },
+  "missingTextures": [],
+  "lightmapped": false,
+  "lightmapSheets": 0
+}

@@ -1,0 +1,317 @@
+{
+  "convertedCount": 62,
+  "failedCount": 0,
+  "converted": [
+    {
+      "sourceDif": "base/data/interiors/JLDavies/gallows.dif",
+      "convertedModel": "/assets/interiors/JLDavies/gallows.gltf",
+      "label": "JLDavies/gallows"
+    },
+    {
+      "sourceDif": "base/data/interiors/JLDavies/shed.dif",
+      "convertedModel": "/assets/interiors/JLDavies/shed.gltf",
+      "label": "JLDavies/shed"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/ArenaEXT.dif",
+      "convertedModel": "/assets/interiors/vectrexis/ArenaEXT.gltf",
+      "label": "vectrexis/ArenaEXT"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/ArenaINT.dif",
+      "convertedModel": "/assets/interiors/vectrexis/ArenaINT.gltf",
+      "label": "vectrexis/ArenaINT"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/BadCastle.dif",
+      "convertedModel": "/assets/interiors/vectrexis/BadCastle.gltf",
+      "label": "vectrexis/BadCastle"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/Easel.dif",
+      "convertedModel": "/assets/interiors/vectrexis/Easel.gltf",
+      "label": "vectrexis/Easel"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/PaintingA.dif",
+      "convertedModel": "/assets/interiors/vectrexis/PaintingA.gltf",
+      "label": "vectrexis/PaintingA"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/PaintingB.dif",
+      "convertedModel": "/assets/interiors/vectrexis/PaintingB.gltf",
+      "label": "vectrexis/PaintingB"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/Rope.dif",
+      "convertedModel": "/assets/interiors/vectrexis/Rope.gltf",
+      "label": "vectrexis/Rope"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/bank.dif",
+      "convertedModel": "/assets/interiors/vectrexis/bank.gltf",
+      "label": "vectrexis/bank"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/blacksmith.dif",
+      "convertedModel": "/assets/interiors/vectrexis/blacksmith.gltf",
+      "label": "vectrexis/blacksmith"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/blacksmithSign.dif",
+      "convertedModel": "/assets/interiors/vectrexis/blacksmithSign.gltf",
+      "label": "vectrexis/blacksmithSign"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/caveA.dif",
+      "convertedModel": "/assets/interiors/vectrexis/caveA.gltf",
+      "label": "vectrexis/caveA"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/chartres.dif",
+      "convertedModel": "/assets/interiors/vectrexis/chartres.gltf",
+      "label": "vectrexis/chartres"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/driftwoodInn.dif",
+      "convertedModel": "/assets/interiors/vectrexis/driftwoodInn.gltf",
+      "label": "vectrexis/driftwoodInn"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/fishShack.dif",
+      "convertedModel": "/assets/interiors/vectrexis/fishShack.gltf",
+      "label": "vectrexis/fishShack"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/houseA.dif",
+      "convertedModel": "/assets/interiors/vectrexis/houseA.gltf",
+      "label": "vectrexis/houseA"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/houseB.dif",
+      "convertedModel": "/assets/interiors/vectrexis/houseB.gltf",
+      "label": "vectrexis/houseB"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/jail.dif",
+      "convertedModel": "/assets/interiors/vectrexis/jail.gltf",
+      "label": "vectrexis/jail"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/newtav.dif",
+      "convertedModel": "/assets/interiors/vectrexis/newtav.gltf",
+      "label": "vectrexis/newtav"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/policestation.dif",
+      "convertedModel": "/assets/interiors/vectrexis/policestation.gltf",
+      "label": "vectrexis/policestation"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/portg.dif",
+      "convertedModel": "/assets/interiors/vectrexis/portg.gltf",
+      "label": "vectrexis/portg"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/townDungeon0cell.dif",
+      "convertedModel": "/assets/interiors/vectrexis/townDungeon0cell.gltf",
+      "label": "vectrexis/townDungeon0cell"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/townDungeon1cell.dif",
+      "convertedModel": "/assets/interiors/vectrexis/townDungeon1cell.gltf",
+      "label": "vectrexis/townDungeon1cell"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/townDungeon3cell.dif",
+      "convertedModel": "/assets/interiors/vectrexis/townDungeon3cell.gltf",
+      "label": "vectrexis/townDungeon3cell"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/townDungeon5cell.dif",
+      "convertedModel": "/assets/interiors/vectrexis/townDungeon5cell.gltf",
+      "label": "vectrexis/townDungeon5cell"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/townDungeon7cell.dif",
+      "convertedModel": "/assets/interiors/vectrexis/townDungeon7cell.gltf",
+      "label": "vectrexis/townDungeon7cell"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/townDungeonInt1.dif",
+      "convertedModel": "/assets/interiors/vectrexis/townDungeonInt1.gltf",
+      "label": "vectrexis/townDungeonInt1"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/townDungeonInt2.dif",
+      "convertedModel": "/assets/interiors/vectrexis/townDungeonInt2.gltf",
+      "label": "vectrexis/townDungeonInt2"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/townDungeonInt3.dif",
+      "convertedModel": "/assets/interiors/vectrexis/townDungeonInt3.gltf",
+      "label": "vectrexis/townDungeonInt3"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/tradingCompany.dif",
+      "convertedModel": "/assets/interiors/vectrexis/tradingCompany.gltf",
+      "label": "vectrexis/tradingCompany"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/tradingCompanyEXT.dif",
+      "convertedModel": "/assets/interiors/vectrexis/tradingCompanyEXT.gltf",
+      "label": "vectrexis/tradingCompanyEXT"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/tradingCompanyINT.dif",
+      "convertedModel": "/assets/interiors/vectrexis/tradingCompanyINT.gltf",
+      "label": "vectrexis/tradingCompanyINT"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/volcanoA.dif",
+      "convertedModel": "/assets/interiors/vectrexis/volcanoA.gltf",
+      "label": "vectrexis/volcanoA"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/wooddungeon interior.dif",
+      "convertedModel": "/assets/interiors/vectrexis/wooddungeon interior.gltf",
+      "label": "vectrexis/wooddungeon interior"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/wooddungeon0cell.dif",
+      "convertedModel": "/assets/interiors/vectrexis/wooddungeon0cell.gltf",
+      "label": "vectrexis/wooddungeon0cell"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/wooddungeon1cell.dif",
+      "convertedModel": "/assets/interiors/vectrexis/wooddungeon1cell.gltf",
+      "label": "vectrexis/wooddungeon1cell"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/wooddungeon1entrance.dif",
+      "convertedModel": "/assets/interiors/vectrexis/wooddungeon1entrance.gltf",
+      "label": "vectrexis/wooddungeon1entrance"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/wooddungeon1goal.dif",
+      "convertedModel": "/assets/interiors/vectrexis/wooddungeon1goal.gltf",
+      "label": "vectrexis/wooddungeon1goal"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/wooddungeon3cell.dif",
+      "convertedModel": "/assets/interiors/vectrexis/wooddungeon3cell.gltf",
+      "label": "vectrexis/wooddungeon3cell"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/wooddungeon5cell.dif",
+      "convertedModel": "/assets/interiors/vectrexis/wooddungeon5cell.gltf",
+      "label": "vectrexis/wooddungeon5cell"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/wooddungeon7cell.dif",
+      "convertedModel": "/assets/interiors/vectrexis/wooddungeon7cell.gltf",
+      "label": "vectrexis/wooddungeon7cell"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/wooddungeonInt1.dif",
+      "convertedModel": "/assets/interiors/vectrexis/wooddungeonInt1.gltf",
+      "label": "vectrexis/wooddungeonInt1"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/wooddungeonInt2.dif",
+      "convertedModel": "/assets/interiors/vectrexis/wooddungeonInt2.gltf",
+      "label": "vectrexis/wooddungeonInt2"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/wooddungeonInt3.dif",
+      "convertedModel": "/assets/interiors/vectrexis/wooddungeonInt3.gltf",
+      "label": "vectrexis/wooddungeonInt3"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/wooddungeonInt4.dif",
+      "convertedModel": "/assets/interiors/vectrexis/wooddungeonInt4.gltf",
+      "label": "vectrexis/wooddungeonInt4"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/woods0cell.dif",
+      "convertedModel": "/assets/interiors/vectrexis/woods0cell.gltf",
+      "label": "vectrexis/woods0cell"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/woods1Entrance.dif",
+      "convertedModel": "/assets/interiors/vectrexis/woods1Entrance.gltf",
+      "label": "vectrexis/woods1Entrance"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/woods1Trim.dif",
+      "convertedModel": "/assets/interiors/vectrexis/woods1Trim.gltf",
+      "label": "vectrexis/woods1Trim"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/woods1cell.dif",
+      "convertedModel": "/assets/interiors/vectrexis/woods1cell.gltf",
+      "label": "vectrexis/woods1cell"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/woods1goal.dif",
+      "convertedModel": "/assets/interiors/vectrexis/woods1goal.gltf",
+      "label": "vectrexis/woods1goal"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/woods3Trim.dif",
+      "convertedModel": "/assets/interiors/vectrexis/woods3Trim.gltf",
+      "label": "vectrexis/woods3Trim"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/woods3cell.dif",
+      "convertedModel": "/assets/interiors/vectrexis/woods3cell.gltf",
+      "label": "vectrexis/woods3cell"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/woods5Trim.dif",
+      "convertedModel": "/assets/interiors/vectrexis/woods5Trim.gltf",
+      "label": "vectrexis/woods5Trim"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/woods5TrimCorner.dif",
+      "convertedModel": "/assets/interiors/vectrexis/woods5TrimCorner.gltf",
+      "label": "vectrexis/woods5TrimCorner"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/woods5cell.dif",
+      "convertedModel": "/assets/interiors/vectrexis/woods5cell.gltf",
+      "label": "vectrexis/woods5cell"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/woods7Trim.dif",
+      "convertedModel": "/assets/interiors/vectrexis/woods7Trim.gltf",
+      "label": "vectrexis/woods7Trim"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/woods7TrimCorner.dif",
+      "convertedModel": "/assets/interiors/vectrexis/woods7TrimCorner.gltf",
+      "label": "vectrexis/woods7TrimCorner"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/woods7cell.dif",
+      "convertedModel": "/assets/interiors/vectrexis/woods7cell.gltf",
+      "label": "vectrexis/woods7cell"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/woodsALL.dif",
+      "convertedModel": "/assets/interiors/vectrexis/woodsALL.gltf",
+      "label": "vectrexis/woodsALL"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/woodsTrimCorner.dif",
+      "convertedModel": "/assets/interiors/vectrexis/woodsTrimCorner.gltf",
+      "label": "vectrexis/woodsTrimCorner"
+    },
+    {
+      "sourceDif": "base/data/interiors/vectrexis/woodsTrimEdge.dif",
+      "convertedModel": "/assets/interiors/vectrexis/woodsTrimEdge.gltf",
+      "label": "vectrexis/woodsTrimEdge"
+    }
+  ],
+  "failures": []
+}

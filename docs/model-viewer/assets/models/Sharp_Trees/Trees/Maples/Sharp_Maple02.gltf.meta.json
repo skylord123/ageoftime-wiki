@@ -1,0 +1,45 @@
+{
+  "sourceShape": "base/data/shapes/Sharp_Trees/Trees/Maples/Sharp_Maple02.dts",
+  "materials": [
+    "Main_Maple",
+    "Main_Maple"
+  ],
+  "objects": [
+    "Trunk",
+    "AAFol",
+    "Bfol",
+    "AFol",
+    "Cfol",
+    "Dfol"
+  ],
+  "materialDefaults": {
+    "Main_Maple": "textures/Sharp_Trees__Trees__Main_Maple.png"
+  },
+  "materialWrap": {
+    "Main_Maple": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "Trunk": [
+      "Main_Maple"
+    ],
+    "AAFol": [
+      "Main_Maple"
+    ],
+    "Bfol": [
+      "Main_Maple"
+    ],
+    "AFol": [
+      "Main_Maple"
+    ],
+    "Cfol": [
+      "Main_Maple"
+    ],
+    "Dfol": [
+      "Main_Maple"
+    ]
+  }
+}

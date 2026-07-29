@@ -1,0 +1,45 @@
+{
+  "sourceShape": "base/data/shapes/Sharp_Trees/Trees/Oaks/Sharp_Oak02.dts",
+  "materials": [
+    "Oak_Main",
+    "Oak_Main"
+  ],
+  "objects": [
+    "Trunk",
+    "Efol",
+    "Dfol",
+    "Cfol",
+    "Bfol",
+    "Afol"
+  ],
+  "materialDefaults": {
+    "Oak_Main": "textures/Sharp_Trees__Trees__Oak_Main.png"
+  },
+  "materialWrap": {
+    "Oak_Main": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "Trunk": [
+      "Oak_Main"
+    ],
+    "Efol": [
+      "Oak_Main"
+    ],
+    "Dfol": [
+      "Oak_Main"
+    ],
+    "Cfol": [
+      "Oak_Main"
+    ],
+    "Bfol": [
+      "Oak_Main"
+    ],
+    "Afol": [
+      "Oak_Main"
+    ]
+  }
+}

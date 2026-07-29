@@ -1,0 +1,41 @@
+{
+  "sourceShape": "base/data/shapes/Sharp_Trees/Trees/MonkeyPod/sharp_mp05.dts",
+  "materials": [
+    "MonkeyPod_Main",
+    "MonkeyPod_Main"
+  ],
+  "objects": [
+    "Trunk",
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "materialDefaults": {
+    "MonkeyPod_Main": "textures/Sharp_Trees__Trees__MonkeyPod_Main.png"
+  },
+  "materialWrap": {
+    "MonkeyPod_Main": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "Trunk": [
+      "MonkeyPod_Main"
+    ],
+    "A": [
+      "MonkeyPod_Main"
+    ],
+    "B": [
+      "MonkeyPod_Main"
+    ],
+    "C": [
+      "MonkeyPod_Main"
+    ],
+    "D": [
+      "MonkeyPod_Main"
+    ]
+  }
+}

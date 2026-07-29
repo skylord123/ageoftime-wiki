@@ -1,0 +1,37 @@
+{
+  "sourceShape": "base/data/shapes/player/shark.dts",
+  "materials": [
+    "Powder",
+    "black"
+  ],
+  "objects": [
+    "shark",
+    "LEye",
+    "REye"
+  ],
+  "materialDefaults": {
+    "Powder": "textures/player__Powder.png"
+  },
+  "materialWrap": {
+    "Powder": {
+      "s": true,
+      "t": true
+    },
+    "black": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "shark": [
+      "Powder"
+    ],
+    "LEye": [
+      "black"
+    ],
+    "REye": [
+      "black"
+    ]
+  }
+}

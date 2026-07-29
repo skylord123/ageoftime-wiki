@@ -1,0 +1,22 @@
+{
+  "sourceShape": "base/data/shapes/items/phalanxshield.dts",
+  "materials": [
+    "skins\\phalanxshield"
+  ],
+  "objects": [
+    "phalanx"
+  ],
+  "materialDefaults": {},
+  "materialWrap": {
+    "skins\\phalanxshield": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "phalanx": [
+      "skins\\phalanxshield"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "sourceDif": "base/data/interiors/vectrexis/BadCastle.dif",
+  "interior": true,
+  "materials": [
+    "CEM1.1",
+    "CONC02.0",
+    "CONC02.1",
+    "E7BRICKS01.0",
+    "E7BRICKS01.1",
+    "E7DIMFLOOR.0",
+    "E7DIMFLOOR.1",
+    "E7WALLDESIGN01B.0",
+    "E7WALLDESIGN01B.1",
+    "GRASS.1",
+    "MARMOR02.0",
+    "MARMOR02.1",
+    "WOODGRAIN_DARK.1"
+  ],
+  "objects": [],
+  "materialDefaults": {},
+  "iflSlots": {},
+  "textureFiles": {
+    "CEM1": "textures/base__data__interiors__vectrexis__cem1.jpg",
+    "CONC02": "textures/base__data__interiors__vectrexis__conc02.png",
+    "E7BRICKS01": "textures/base__data__interiors__vectrexis__e7bricks01.jpg",
+    "E7DIMFLOOR": "textures/base__data__interiors__vectrexis__e7dimfloor.jpg",
+    "E7WALLDESIGN01B": "textures/base__data__interiors__vectrexis__e7walldesign01b.jpg",
+    "GRASS": "textures/base__data__interiors__vectrexis__grass.jpg",
+    "MARMOR02": "textures/base__data__interiors__vectrexis__marmor02.png",
+    "WOODGRAIN_DARK": "textures/base__data__interiors__vectrexis__woodgrain_dark.jpg"
+  },
+  "missingTextures": [],
+  "lightmapped": true,
+  "lightmapSheets": 2
+}

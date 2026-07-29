@@ -1,0 +1,18 @@
+{
+  "id": "sample-chest",
+  "label": "Sample Chest",
+  "kind": "object",
+  "sourceShape": "base/data/shapes/player/chest.dts",
+  "convertedModel": "/assets/models/player/chest.gltf",
+  "scale": [1, 1, 1],
+  "sequences": {},
+  "iflFrames": {
+    "wood1": 0,
+    "metal1": 1
+  },
+  "hiddenNodes": [],
+  "nodeColors": {
+    "ALL": [196, 146, 88, 255]
+  },
+  "mountedObjects": []
+}

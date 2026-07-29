@@ -1,0 +1,28 @@
+{
+  "sourceDif": "base/data/interiors/vectrexis/policestation.dif",
+  "interior": true,
+  "materials": [
+    "BRICKWALLGRY.0",
+    "BRICKWALLGRY.1",
+    "CEM1.0",
+    "CEM1.1",
+    "POLICESIGN.1",
+    "TILE003.0",
+    "WOODGRAIN_DARK.0",
+    "WRITING.0"
+  ],
+  "objects": [],
+  "materialDefaults": {},
+  "iflSlots": {},
+  "textureFiles": {
+    "BRICKWALLGRY": "textures/base__data__interiors__vectrexis__brickwallGry.jpg",
+    "CEM1": "textures/base__data__interiors__vectrexis__cem1.jpg",
+    "POLICESIGN": "textures/base__data__interiors__vectrexis__PoliceSign.jpg",
+    "TILE003": "textures/base__data__interiors__vectrexis__tile003.jpg",
+    "WOODGRAIN_DARK": "textures/base__data__interiors__vectrexis__woodgrain_dark.jpg",
+    "WRITING": "textures/base__data__interiors__vectrexis__writing.jpg"
+  },
+  "missingTextures": [],
+  "lightmapped": true,
+  "lightmapSheets": 2
+}

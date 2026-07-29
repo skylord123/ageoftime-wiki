@@ -1,0 +1,24 @@
+{
+  "sourceShape": "base/data/shapes/player/goldb.dts",
+  "materials": [
+    "gold"
+  ],
+  "objects": [
+    "goldb"
+  ],
+  "materialDefaults": {
+    "gold": "textures/player__gold.png"
+  },
+  "materialWrap": {
+    "gold": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "goldb": [
+      "gold"
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "sample-player",
+  "label": "Sample Player",
+  "kind": "player",
+  "sourceShape": "base/data/shapes/player/female.dts",
+  "convertedModel": "/assets/models/player/female.gltf",
+  "scale": [1, 1, 1],
+  "sequences": {
+    "bscale": 0.42,
+    "posture": 0.18,
+    "pose": "root"
+  },
+  "iflFrames": {
+    "skin": 4,
+    "lip": 6,
+    "hair": 2,
+    "eye": 1,
+    "Shirt1": 13,
+    "Shirt2": 6,
+    "Shirt3": 18,
+    "ShirtLiner": 7
+  },
+  "hiddenNodes": [
+    "Skirt",
+    "SkirtLiner",
+    "SkinSkirt",
+    "Stockings",
+    "shorts",
+    "stringTop",
+    "stringTopLiner",
+    "Panties",
+    "Thong",
+    "glasses",
+    "HairUp",
+    "HairExotic",
+    "HairRetro",
+    "FaceB",
+    "FaceC",
+    "earsElf"
+  ],
+  "nodeColors": {
+    "HairUp": [82, 47, 24, 255],
+    "HairPart": [82, 47, 24, 255],
+    "HairRetro": [82, 47, 24, 255],
+    "EarsHuman": [221, 134, 107, 255],
+    "SkinFullNude": [221, 134, 107, 255]
+  },
+  "mountedObjects": []
+}

@@ -1,0 +1,69 @@
+{
+  "sourceShape": "base/data/shapes/lanterns/lantern.dts",
+  "materials": [
+    "Mtl",
+    "stone"
+  ],
+  "objects": [
+    "Box03",
+    "Regroup01",
+    "Regroup02",
+    "Box01",
+    "Duplicate01",
+    "Duplicate02",
+    "Duplicate03",
+    "Box02",
+    "Duplicate04",
+    "Duplicate05",
+    "Duplicate06"
+  ],
+  "materialDefaults": {
+    "stone": "textures/lanterns__stone.jpg"
+  },
+  "materialWrap": {
+    "Mtl": {
+      "s": true,
+      "t": true
+    },
+    "stone": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "Box03": [
+      "stone"
+    ],
+    "Regroup01": [
+      "stone"
+    ],
+    "Regroup02": [
+      "stone"
+    ],
+    "Box01": [
+      "stone"
+    ],
+    "Duplicate01": [
+      "stone"
+    ],
+    "Duplicate02": [
+      "stone"
+    ],
+    "Duplicate03": [
+      "stone"
+    ],
+    "Box02": [
+      "stone"
+    ],
+    "Duplicate04": [
+      "stone"
+    ],
+    "Duplicate05": [
+      "stone"
+    ],
+    "Duplicate06": [
+      "stone"
+    ]
+  }
+}

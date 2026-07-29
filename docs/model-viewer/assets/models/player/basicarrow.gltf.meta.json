@@ -1,0 +1,22 @@
+{
+  "sourceShape": "base/data/shapes/player/basicarrow.dts",
+  "materials": [
+    "skins\\source\\basicarrow"
+  ],
+  "objects": [
+    "basicarrow"
+  ],
+  "materialDefaults": {},
+  "materialWrap": {
+    "skins\\source\\basicarrow": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "basicarrow": [
+      "skins\\source\\basicarrow"
+    ]
+  }
+}

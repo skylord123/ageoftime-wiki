@@ -1,0 +1,24 @@
+{
+  "sourceShape": "base/data/shapes/items/mana.dts",
+  "materials": [
+    "mana"
+  ],
+  "objects": [
+    "mana"
+  ],
+  "materialDefaults": {
+    "mana": "textures/items__mana.png"
+  },
+  "materialWrap": {
+    "mana": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "mana": [
+      "mana"
+    ]
+  }
+}

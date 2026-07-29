@@ -1,0 +1,72 @@
+{
+  "sourceShape": "base/data/shapes/player/dagger.dts",
+  "materials": [
+    "metal2",
+    "wood1",
+    "metal1"
+  ],
+  "objects": [
+    "Dagger"
+  ],
+  "materialDefaults": {
+    "metal2": "textures/player__metal__brass.png",
+    "wood1": "textures/player__wood__beech.jpg",
+    "metal1": "textures/player__metal__brass.png"
+  },
+  "materialWrap": {
+    "metal2": {
+      "s": true,
+      "t": true
+    },
+    "wood1": {
+      "s": true,
+      "t": true
+    },
+    "metal1": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {
+    "metal2": [
+      "textures/player__metal__brass.png",
+      "textures/player__metal__copper.png",
+      "textures/player__metal__gold.png",
+      "textures/player__metal__iron.png",
+      "textures/player__metal__lead.png",
+      "textures/player__metal__plutonium.png",
+      "textures/player__metal__rust.png",
+      "textures/player__metal__steel.png",
+      "textures/player__metal__zinc.png"
+    ],
+    "wood1": [
+      "textures/player__wood__beech.jpg",
+      "textures/player__wood__cherry.jpg",
+      "textures/player__wood__flake.jpg",
+      "textures/player__wood__kork.jpg",
+      "textures/player__wood__maple.jpg",
+      "textures/player__wood__oak.jpg",
+      "textures/player__wood__pine.jpg",
+      "textures/player__wood__teak.jpg",
+      "textures/player__wood__walnut.jpg"
+    ],
+    "metal1": [
+      "textures/player__metal__brass.png",
+      "textures/player__metal__copper.png",
+      "textures/player__metal__gold.png",
+      "textures/player__metal__iron.png",
+      "textures/player__metal__lead.png",
+      "textures/player__metal__plutonium.png",
+      "textures/player__metal__rust.png",
+      "textures/player__metal__steel.png",
+      "textures/player__metal__zinc.png"
+    ]
+  },
+  "objectMaterials": {
+    "Dagger": [
+      "metal2",
+      "wood1",
+      "metal1"
+    ]
+  }
+}

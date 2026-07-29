@@ -1,0 +1,72 @@
+{
+  "sourceShape": "base/data/shapes/weapons/boat.dts",
+  "materials": [
+    "wood2",
+    "wood1",
+    "metal1"
+  ],
+  "objects": [
+    "Boat"
+  ],
+  "materialDefaults": {
+    "wood2": "textures/weapons__beech.png",
+    "wood1": "textures/weapons__beech.png",
+    "metal1": "textures/weapons__brass.png"
+  },
+  "materialWrap": {
+    "wood2": {
+      "s": true,
+      "t": true
+    },
+    "wood1": {
+      "s": true,
+      "t": true
+    },
+    "metal1": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {
+    "wood2": [
+      "textures/weapons__beech.png",
+      "textures/weapons__cherry.png",
+      "textures/weapons__flake.png",
+      "textures/weapons__kork.png",
+      "textures/weapons__maple.png",
+      "textures/weapons__oak.png",
+      "textures/weapons__pine.png",
+      "textures/weapons__teak.png",
+      "textures/weapons__walnut.png"
+    ],
+    "wood1": [
+      "textures/weapons__beech.png",
+      "textures/weapons__cherry.png",
+      "textures/weapons__flake.png",
+      "textures/weapons__kork.png",
+      "textures/weapons__maple.png",
+      "textures/weapons__oak.png",
+      "textures/weapons__pine.png",
+      "textures/weapons__teak.png",
+      "textures/weapons__walnut.png"
+    ],
+    "metal1": [
+      "textures/weapons__brass.png",
+      "textures/weapons__copper.png",
+      "textures/weapons__gold.png",
+      "textures/weapons__iron.png",
+      "textures/weapons__lead.png",
+      "textures/weapons__plutonium.png",
+      "textures/weapons__rust.png",
+      "textures/weapons__steel.png",
+      "textures/weapons__zinc.png"
+    ]
+  },
+  "objectMaterials": {
+    "Boat": [
+      "wood2",
+      "wood1",
+      "metal1"
+    ]
+  }
+}

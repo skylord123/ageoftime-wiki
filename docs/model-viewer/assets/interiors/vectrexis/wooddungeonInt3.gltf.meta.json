@@ -1,0 +1,18 @@
+{
+  "sourceDif": "base/data/interiors/vectrexis/wooddungeonInt3.dif",
+  "interior": true,
+  "materials": [
+    "WALL5",
+    "WOODMOSS1"
+  ],
+  "objects": [],
+  "materialDefaults": {},
+  "iflSlots": {},
+  "textureFiles": {
+    "WALL5": "textures/base__data__interiors__vectrexis__wall5.jpg",
+    "WOODMOSS1": "textures/base__data__interiors__vectrexis__woodmoss1.jpg"
+  },
+  "missingTextures": [],
+  "lightmapped": true,
+  "lightmapSheets": 1
+}

@@ -1,0 +1,24 @@
+{
+  "sourceShape": "base/data/shapes/weapons/copperbolt.dts",
+  "materials": [
+    "copper"
+  ],
+  "objects": [
+    "bolt"
+  ],
+  "materialDefaults": {
+    "copper": "textures/weapons__copper.png"
+  },
+  "materialWrap": {
+    "copper": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "bolt": [
+      "copper"
+    ]
+  }
+}

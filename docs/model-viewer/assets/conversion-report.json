@@ -1,0 +1,778 @@
+{
+  "convertedCount": 150,
+  "failedCount": 5,
+  "converted": [
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/Cedar_Cypruss/Sharp_Cedar08.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/Cedar_Cypruss/Sharp_Cedar08.gltf",
+      "label": "Sharp_Trees/Trees/Cedar_Cypruss/Sharp_Cedar08"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/Cedar_Cypruss/Sharp_Cedar09.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/Cedar_Cypruss/Sharp_Cedar09.gltf",
+      "label": "Sharp_Trees/Trees/Cedar_Cypruss/Sharp_Cedar09"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/Cedar_Cypruss/Sharp_SwampCyprus02.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/Cedar_Cypruss/Sharp_SwampCyprus02.gltf",
+      "label": "Sharp_Trees/Trees/Cedar_Cypruss/Sharp_SwampCyprus02"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/Maples/Sharp_Maple01.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/Maples/Sharp_Maple01.gltf",
+      "label": "Sharp_Trees/Trees/Maples/Sharp_Maple01"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/Maples/Sharp_Maple02.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/Maples/Sharp_Maple02.gltf",
+      "label": "Sharp_Trees/Trees/Maples/Sharp_Maple02"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/Maples/Sharp_Maple03.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/Maples/Sharp_Maple03.gltf",
+      "label": "Sharp_Trees/Trees/Maples/Sharp_Maple03"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/Maples/Sharp_Maple04.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/Maples/Sharp_Maple04.gltf",
+      "label": "Sharp_Trees/Trees/Maples/Sharp_Maple04"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/Maples/Sharp_Maple05.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/Maples/Sharp_Maple05.gltf",
+      "label": "Sharp_Trees/Trees/Maples/Sharp_Maple05"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/Maples/Sharp_Maple06.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/Maples/Sharp_Maple06.gltf",
+      "label": "Sharp_Trees/Trees/Maples/Sharp_Maple06"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/Maples/Sharp_Maple07.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/Maples/Sharp_Maple07.gltf",
+      "label": "Sharp_Trees/Trees/Maples/Sharp_Maple07"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/Maples/Sharp_Maple08.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/Maples/Sharp_Maple08.gltf",
+      "label": "Sharp_Trees/Trees/Maples/Sharp_Maple08"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/Maples/Sharp_Maple09.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/Maples/Sharp_Maple09.gltf",
+      "label": "Sharp_Trees/Trees/Maples/Sharp_Maple09"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/Maples/Sharp_Maple10.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/Maples/Sharp_Maple10.gltf",
+      "label": "Sharp_Trees/Trees/Maples/Sharp_Maple10"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/MonkeyPod/sharp_mp05.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/MonkeyPod/sharp_mp05.gltf",
+      "label": "Sharp_Trees/Trees/MonkeyPod/sharp_mp05"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/Oaks/Sharp_Oak01.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/Oaks/Sharp_Oak01.gltf",
+      "label": "Sharp_Trees/Trees/Oaks/Sharp_Oak01"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/Oaks/Sharp_Oak02.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/Oaks/Sharp_Oak02.gltf",
+      "label": "Sharp_Trees/Trees/Oaks/Sharp_Oak02"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/Pears/Sharp_Pear05.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/Pears/Sharp_Pear05.gltf",
+      "label": "Sharp_Trees/Trees/Pears/Sharp_Pear05"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/White_Pine/Sharp_WhitePine01.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/White_Pine/Sharp_WhitePine01.gltf",
+      "label": "Sharp_Trees/Trees/White_Pine/Sharp_WhitePine01"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/deadwood/Sharp_Stump07.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/deadwood/Sharp_Stump07.gltf",
+      "label": "Sharp_Trees/Trees/deadwood/Sharp_Stump07"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/deadwood/Sharp_log03.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/deadwood/Sharp_log03.gltf",
+      "label": "Sharp_Trees/Trees/deadwood/Sharp_log03"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/poplar/Sharp_Poplar01.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/poplar/Sharp_Poplar01.gltf",
+      "label": "Sharp_Trees/Trees/poplar/Sharp_Poplar01"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/poplar/Sharp_Poplar02.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/poplar/Sharp_Poplar02.gltf",
+      "label": "Sharp_Trees/Trees/poplar/Sharp_Poplar02"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/poplar/Sharp_Poplar03.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/poplar/Sharp_Poplar03.gltf",
+      "label": "Sharp_Trees/Trees/poplar/Sharp_Poplar03"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/poplar/Sharp_Poplar04.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/poplar/Sharp_Poplar04.gltf",
+      "label": "Sharp_Trees/Trees/poplar/Sharp_Poplar04"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/poplar/Sharp_Poplar05.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/poplar/Sharp_Poplar05.gltf",
+      "label": "Sharp_Trees/Trees/poplar/Sharp_Poplar05"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/poplar/Sharp_Poplar06.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/poplar/Sharp_Poplar06.gltf",
+      "label": "Sharp_Trees/Trees/poplar/Sharp_Poplar06"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/poplar/Sharp_Poplar07.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/poplar/Sharp_Poplar07.gltf",
+      "label": "Sharp_Trees/Trees/poplar/Sharp_Poplar07"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/poplar/Sharp_Poplar08.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/poplar/Sharp_Poplar08.gltf",
+      "label": "Sharp_Trees/Trees/poplar/Sharp_Poplar08"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/poplar/Sharp_Poplar09.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/poplar/Sharp_Poplar09.gltf",
+      "label": "Sharp_Trees/Trees/poplar/Sharp_Poplar09"
+    },
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/poplar/Sharp_Poplar10.dts",
+      "convertedModel": "/assets/models/Sharp_Trees/Trees/poplar/Sharp_Poplar10.gltf",
+      "label": "Sharp_Trees/Trees/poplar/Sharp_Poplar10"
+    },
+    {
+      "sourceShape": "base/data/shapes/campfires/campfire.dts",
+      "convertedModel": "/assets/models/campfires/campfire.gltf",
+      "label": "campfires/campfire"
+    },
+    {
+      "sourceShape": "base/data/shapes/crate/crate.dts",
+      "convertedModel": "/assets/models/crate/crate.gltf",
+      "label": "crate/crate"
+    },
+    {
+      "sourceShape": "base/data/shapes/crate/cratedebris.dts",
+      "convertedModel": "/assets/models/crate/cratedebris.gltf",
+      "label": "crate/cratedebris"
+    },
+    {
+      "sourceShape": "base/data/shapes/cratea/cratea1.dts",
+      "convertedModel": "/assets/models/cratea/cratea1.gltf",
+      "label": "cratea/cratea1"
+    },
+    {
+      "sourceShape": "base/data/shapes/cratea/cratea2.dts",
+      "convertedModel": "/assets/models/cratea/cratea2.gltf",
+      "label": "cratea/cratea2"
+    },
+    {
+      "sourceShape": "base/data/shapes/cratea/cratea3.dts",
+      "convertedModel": "/assets/models/cratea/cratea3.gltf",
+      "label": "cratea/cratea3"
+    },
+    {
+      "sourceShape": "base/data/shapes/cratea/cratea4.dts",
+      "convertedModel": "/assets/models/cratea/cratea4.gltf",
+      "label": "cratea/cratea4"
+    },
+    {
+      "sourceShape": "base/data/shapes/crateb/crateb1.dts",
+      "convertedModel": "/assets/models/crateb/crateb1.gltf",
+      "label": "crateb/crateb1"
+    },
+    {
+      "sourceShape": "base/data/shapes/crateb/crateb2.dts",
+      "convertedModel": "/assets/models/crateb/crateb2.gltf",
+      "label": "crateb/crateb2"
+    },
+    {
+      "sourceShape": "base/data/shapes/cratec/cratec1.dts",
+      "convertedModel": "/assets/models/cratec/cratec1.gltf",
+      "label": "cratec/cratec1"
+    },
+    {
+      "sourceShape": "base/data/shapes/cratec/cratec2.dts",
+      "convertedModel": "/assets/models/cratec/cratec2.gltf",
+      "label": "cratec/cratec2"
+    },
+    {
+      "sourceShape": "base/data/shapes/crated/crated1.dts",
+      "convertedModel": "/assets/models/crated/crated1.gltf",
+      "label": "crated/crated1"
+    },
+    {
+      "sourceShape": "base/data/shapes/crated/crated2.dts",
+      "convertedModel": "/assets/models/crated/crated2.gltf",
+      "label": "crated/crated2"
+    },
+    {
+      "sourceShape": "base/data/shapes/gems/gold.dts",
+      "convertedModel": "/assets/models/gems/gold.gltf",
+      "label": "gems/gold"
+    },
+    {
+      "sourceShape": "base/data/shapes/gems/granite.dts",
+      "convertedModel": "/assets/models/gems/granite.gltf",
+      "label": "gems/granite"
+    },
+    {
+      "sourceShape": "base/data/shapes/gems/jade.dts",
+      "convertedModel": "/assets/models/gems/jade.gltf",
+      "label": "gems/jade"
+    },
+    {
+      "sourceShape": "base/data/shapes/gems/opal.dts",
+      "convertedModel": "/assets/models/gems/opal.gltf",
+      "label": "gems/opal"
+    },
+    {
+      "sourceShape": "base/data/shapes/horse/horse.dts",
+      "convertedModel": "/assets/models/horse/horse.gltf",
+      "label": "horse/horse"
+    },
+    {
+      "sourceShape": "base/data/shapes/items/bluePotion.dts",
+      "convertedModel": "/assets/models/items/bluePotion.gltf",
+      "label": "items/bluePotion"
+    },
+    {
+      "sourceShape": "base/data/shapes/items/blueVial.dts",
+      "convertedModel": "/assets/models/items/blueVial.gltf",
+      "label": "items/blueVial"
+    },
+    {
+      "sourceShape": "base/data/shapes/items/cookie.dts",
+      "convertedModel": "/assets/models/items/cookie.gltf",
+      "label": "items/cookie"
+    },
+    {
+      "sourceShape": "base/data/shapes/items/girl.dts",
+      "convertedModel": "/assets/models/items/girl.gltf",
+      "label": "items/girl"
+    },
+    {
+      "sourceShape": "base/data/shapes/items/mana.dts",
+      "convertedModel": "/assets/models/items/mana.gltf",
+      "label": "items/mana"
+    },
+    {
+      "sourceShape": "base/data/shapes/items/phalanxshield.dts",
+      "convertedModel": "/assets/models/items/phalanxshield.gltf",
+      "label": "items/phalanxshield"
+    },
+    {
+      "sourceShape": "base/data/shapes/items/saletag.dts",
+      "convertedModel": "/assets/models/items/saletag.gltf",
+      "label": "items/saletag"
+    },
+    {
+      "sourceShape": "base/data/shapes/lanterns/lantern.dts",
+      "convertedModel": "/assets/models/lanterns/lantern.gltf",
+      "label": "lanterns/lantern"
+    },
+    {
+      "sourceShape": "base/data/shapes/markers/octahedron.dts",
+      "convertedModel": "/assets/models/markers/octahedron.gltf",
+      "label": "markers/octahedron"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/basicarrow.dts",
+      "convertedModel": "/assets/models/player/basicarrow.gltf",
+      "label": "player/basicarrow"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/bed.dts",
+      "convertedModel": "/assets/models/player/bed.gltf",
+      "label": "player/bed"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/bikini.dts",
+      "convertedModel": "/assets/models/player/bikini.gltf",
+      "label": "player/bikini"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/bill.dts",
+      "convertedModel": "/assets/models/player/bill.gltf",
+      "label": "player/bill"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/boat.dts",
+      "convertedModel": "/assets/models/player/boat.gltf",
+      "label": "player/boat"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/bolt.dts",
+      "convertedModel": "/assets/models/player/bolt.gltf",
+      "label": "player/bolt"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/boltitem.dts",
+      "convertedModel": "/assets/models/player/boltitem.gltf",
+      "label": "player/boltitem"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/bottlea.dts",
+      "convertedModel": "/assets/models/player/bottlea.gltf",
+      "label": "player/bottlea"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/bra.dts",
+      "convertedModel": "/assets/models/player/bra.gltf",
+      "label": "player/bra"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/broadsword.dts",
+      "convertedModel": "/assets/models/player/broadsword.gltf",
+      "label": "player/broadsword"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/chest.dts",
+      "convertedModel": "/assets/models/player/chest.gltf",
+      "label": "player/chest"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/cloth.dts",
+      "convertedModel": "/assets/models/player/cloth.gltf",
+      "label": "player/cloth"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/copperbolt.dts",
+      "convertedModel": "/assets/models/player/copperbolt.gltf",
+      "label": "player/copperbolt"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/crossbow.dts",
+      "convertedModel": "/assets/models/player/crossbow.gltf",
+      "label": "player/crossbow"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/crossbowitem.dts",
+      "convertedModel": "/assets/models/player/crossbowitem.gltf",
+      "label": "player/crossbowitem"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/dagger.dts",
+      "convertedModel": "/assets/models/player/dagger.gltf",
+      "label": "player/dagger"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/door1.dts",
+      "convertedModel": "/assets/models/player/door1.gltf",
+      "label": "player/door1"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/dynamitedrop.dts",
+      "convertedModel": "/assets/models/player/dynamitedrop.gltf",
+      "label": "player/dynamitedrop"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/empty.dts",
+      "convertedModel": "/assets/models/player/empty.gltf",
+      "label": "player/empty"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/female.dts",
+      "convertedModel": "/assets/models/player/female.gltf",
+      "label": "player/female"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/fiber.dts",
+      "convertedModel": "/assets/models/player/fiber.gltf",
+      "label": "player/fiber"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/golda.dts",
+      "convertedModel": "/assets/models/player/golda.gltf",
+      "label": "player/golda"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/goldb.dts",
+      "convertedModel": "/assets/models/player/goldb.gltf",
+      "label": "player/goldb"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/goldc.dts",
+      "convertedModel": "/assets/models/player/goldc.gltf",
+      "label": "player/goldc"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/goldd.dts",
+      "convertedModel": "/assets/models/player/goldd.gltf",
+      "label": "player/goldd"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/golde.dts",
+      "convertedModel": "/assets/models/player/golde.gltf",
+      "label": "player/golde"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/halo.dts",
+      "convertedModel": "/assets/models/player/halo.gltf",
+      "label": "player/halo"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/hook.dts",
+      "convertedModel": "/assets/models/player/hook.gltf",
+      "label": "player/hook"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/hookgold.dts",
+      "convertedModel": "/assets/models/player/hookgold.gltf",
+      "label": "player/hookgold"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/hooksteel.dts",
+      "convertedModel": "/assets/models/player/hooksteel.gltf",
+      "label": "player/hooksteel"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/ibmace.dts",
+      "convertedModel": "/assets/models/player/ibmace.gltf",
+      "label": "player/ibmace"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/ingot.dts",
+      "convertedModel": "/assets/models/player/ingot.gltf",
+      "label": "player/ingot"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/meatcube.dts",
+      "convertedModel": "/assets/models/player/meatcube.gltf",
+      "label": "player/meatcube"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/mineral1.dts",
+      "convertedModel": "/assets/models/player/mineral1.gltf",
+      "label": "player/mineral1"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/panties.dts",
+      "convertedModel": "/assets/models/player/panties.gltf",
+      "label": "player/panties"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/pants.dts",
+      "convertedModel": "/assets/models/player/pants.gltf",
+      "label": "player/pants"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/parchment.dts",
+      "convertedModel": "/assets/models/player/parchment.gltf",
+      "label": "player/parchment"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/parchmentunused.dts",
+      "convertedModel": "/assets/models/player/parchmentunused.gltf",
+      "label": "player/parchmentunused"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/powder.dts",
+      "convertedModel": "/assets/models/player/powder.gltf",
+      "label": "player/powder"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/sandals.dts",
+      "convertedModel": "/assets/models/player/sandals.gltf",
+      "label": "player/sandals"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/shark.dts",
+      "convertedModel": "/assets/models/player/shark.gltf",
+      "label": "player/shark"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/shield.dts",
+      "convertedModel": "/assets/models/player/shield.gltf",
+      "label": "player/shield"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/shielditem.dts",
+      "convertedModel": "/assets/models/player/shielditem.gltf",
+      "label": "player/shielditem"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/shirt.dts",
+      "convertedModel": "/assets/models/player/shirt.gltf",
+      "label": "player/shirt"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/shoes.dts",
+      "convertedModel": "/assets/models/player/shoes.gltf",
+      "label": "player/shoes"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/shorts.dts",
+      "convertedModel": "/assets/models/player/shorts.gltf",
+      "label": "player/shorts"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/skirt.dts",
+      "convertedModel": "/assets/models/player/skirt.gltf",
+      "label": "player/skirt"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/sphere.dts",
+      "convertedModel": "/assets/models/player/sphere.gltf",
+      "label": "player/sphere"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/steelBolt.dts",
+      "convertedModel": "/assets/models/player/steelBolt.gltf",
+      "label": "player/steelBolt"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/stoneknife.dts",
+      "convertedModel": "/assets/models/player/stoneknife.gltf",
+      "label": "player/stoneknife"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/tanktop.dts",
+      "convertedModel": "/assets/models/player/tanktop.gltf",
+      "label": "player/tanktop"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/targ.dts",
+      "convertedModel": "/assets/models/player/targ.gltf",
+      "label": "player/targ"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/tent.dts",
+      "convertedModel": "/assets/models/player/tent.gltf",
+      "label": "player/tent"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/thong.dts",
+      "convertedModel": "/assets/models/player/thong.gltf",
+      "label": "player/thong"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/throwingdagger.dts",
+      "convertedModel": "/assets/models/player/throwingdagger.gltf",
+      "label": "player/throwingdagger"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/throwingdaggerp.dts",
+      "convertedModel": "/assets/models/player/throwingdaggerp.gltf",
+      "label": "player/throwingdaggerp"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/wdungeondoor.dts",
+      "convertedModel": "/assets/models/player/wdungeondoor.gltf",
+      "label": "player/wdungeondoor"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/wood.dts",
+      "convertedModel": "/assets/models/player/wood.gltf",
+      "label": "player/wood"
+    },
+    {
+      "sourceShape": "base/data/shapes/rock/bush1.dts",
+      "convertedModel": "/assets/models/rock/bush1.gltf",
+      "label": "rock/bush1"
+    },
+    {
+      "sourceShape": "base/data/shapes/rock/rock1.dts",
+      "convertedModel": "/assets/models/rock/rock1.gltf",
+      "label": "rock/rock1"
+    },
+    {
+      "sourceShape": "base/data/shapes/rock/rockdebris.dts",
+      "convertedModel": "/assets/models/rock/rockdebris.gltf",
+      "label": "rock/rockdebris"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/basicarrow.dts",
+      "convertedModel": "/assets/models/weapons/basicarrow.gltf",
+      "label": "weapons/basicarrow"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/bill.dts",
+      "convertedModel": "/assets/models/weapons/bill.gltf",
+      "label": "weapons/bill"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/boat.dts",
+      "convertedModel": "/assets/models/weapons/boat.gltf",
+      "label": "weapons/boat"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/bolt.dts",
+      "convertedModel": "/assets/models/weapons/bolt.gltf",
+      "label": "weapons/bolt"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/boltitem.dts",
+      "convertedModel": "/assets/models/weapons/boltitem.gltf",
+      "label": "weapons/boltitem"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/bottlea.dts",
+      "convertedModel": "/assets/models/weapons/bottlea.gltf",
+      "label": "weapons/bottlea"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/broadsword.dts",
+      "convertedModel": "/assets/models/weapons/broadsword.gltf",
+      "label": "weapons/broadsword"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/chest.dts",
+      "convertedModel": "/assets/models/weapons/chest.gltf",
+      "label": "weapons/chest"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/copperbolt.dts",
+      "convertedModel": "/assets/models/weapons/copperbolt.gltf",
+      "label": "weapons/copperbolt"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/crossbow.dts",
+      "convertedModel": "/assets/models/weapons/crossbow.gltf",
+      "label": "weapons/crossbow"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/dagger.dts",
+      "convertedModel": "/assets/models/weapons/dagger.gltf",
+      "label": "weapons/dagger"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/door1.dts",
+      "convertedModel": "/assets/models/weapons/door1.gltf",
+      "label": "weapons/door1"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/empty.dts",
+      "convertedModel": "/assets/models/weapons/empty.gltf",
+      "label": "weapons/empty"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/golda.dts",
+      "convertedModel": "/assets/models/weapons/golda.gltf",
+      "label": "weapons/golda"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/goldb.dts",
+      "convertedModel": "/assets/models/weapons/goldb.gltf",
+      "label": "weapons/goldb"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/goldc.dts",
+      "convertedModel": "/assets/models/weapons/goldc.gltf",
+      "label": "weapons/goldc"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/goldd.dts",
+      "convertedModel": "/assets/models/weapons/goldd.gltf",
+      "label": "weapons/goldd"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/golde.dts",
+      "convertedModel": "/assets/models/weapons/golde.gltf",
+      "label": "weapons/golde"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/halo.dts",
+      "convertedModel": "/assets/models/weapons/halo.gltf",
+      "label": "weapons/halo"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/hook.dts",
+      "convertedModel": "/assets/models/weapons/hook.gltf",
+      "label": "weapons/hook"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/hookgold.dts",
+      "convertedModel": "/assets/models/weapons/hookgold.gltf",
+      "label": "weapons/hookgold"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/hooksteel.dts",
+      "convertedModel": "/assets/models/weapons/hooksteel.gltf",
+      "label": "weapons/hooksteel"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/ibmace.dts",
+      "convertedModel": "/assets/models/weapons/ibmace.gltf",
+      "label": "weapons/ibmace"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/ingot.dts",
+      "convertedModel": "/assets/models/weapons/ingot.gltf",
+      "label": "weapons/ingot"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/parchment.dts",
+      "convertedModel": "/assets/models/weapons/parchment.gltf",
+      "label": "weapons/parchment"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/parchmentunused.dts",
+      "convertedModel": "/assets/models/weapons/parchmentunused.gltf",
+      "label": "weapons/parchmentunused"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/shield.dts",
+      "convertedModel": "/assets/models/weapons/shield.gltf",
+      "label": "weapons/shield"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/steelBolt.dts",
+      "convertedModel": "/assets/models/weapons/steelBolt.gltf",
+      "label": "weapons/steelBolt"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/stoneknife.dts",
+      "convertedModel": "/assets/models/weapons/stoneknife.gltf",
+      "label": "weapons/stoneknife"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/throwingdagger.dts",
+      "convertedModel": "/assets/models/weapons/throwingdagger.gltf",
+      "label": "weapons/throwingdagger"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/throwingdaggerp.dts",
+      "convertedModel": "/assets/models/weapons/throwingdaggerp.gltf",
+      "label": "weapons/throwingdaggerp"
+    },
+    {
+      "sourceShape": "base/data/shapes/weapons/wdungeondoor.dts",
+      "convertedModel": "/assets/models/weapons/wdungeondoor.gltf",
+      "label": "weapons/wdungeondoor"
+    }
+  ],
+  "failures": [
+    {
+      "sourceShape": "base/data/shapes/Sharp_Trees/Trees/MonkeyPod/sharp_mp04.dts",
+      "error": "ValueError(\"don't know how to read 3 mesh\")"
+    },
+    {
+      "sourceShape": "base/data/shapes/blueguy/blueGuy.dts",
+      "error": "EOFError()"
+    },
+    {
+      "sourceShape": "base/data/shapes/orc/orc.dts",
+      "error": "EOFError()"
+    },
+    {
+      "sourceShape": "base/data/shapes/player/debris_player.dts",
+      "error": "EOFError()"
+    },
+    {
+      "sourceShape": "base/data/shapes/trees/tree3b.dts",
+      "error": "EOFError()"
+    }
+  ]
+}

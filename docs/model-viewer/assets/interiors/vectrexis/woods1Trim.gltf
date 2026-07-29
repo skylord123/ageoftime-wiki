@@ -1,0 +1,179 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "ageoftime-web-model-viewer/scripts/convert-dif.py"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "woods1Trim",
+      "mesh": 0
+    }
+  ],
+  "meshes": [
+    {
+      "name": "woods1Trim",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2,
+            "TEXCOORD_1": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "MISC002",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "roughnessFactor": 1.0,
+        "metallicFactor": 0.0,
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        }
+      },
+      "occlusionTexture": {
+        "index": 1,
+        "texCoord": 1
+      }
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    },
+    {
+      "magFilter": 9729,
+      "minFilter": 9729,
+      "wrapS": 33071,
+      "wrapT": 33071
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/base__data__interiors__vectrexis__misc002.jpg"
+    },
+    {
+      "uri": "woods1Trim.lm0.png"
+    }
+  ],
+  "textures": [
+    {
+      "source": 0,
+      "sampler": 0
+    },
+    {
+      "source": 1,
+      "sampler": 1
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "data:application/octet-stream;base64,AABIQQAAAMAAAEjBAABIQQAAsMAAAEjBAAAYQQAAAMAAAEjBAAAYQQAAsMAAAEjBAAAYwQAAAMAAAEjBAAAYwQAAsMAAAEjBAABIwQAAAMAAAEjBAABIwQAAsMAAAEjBAAAYwQAAsMAAAITBAAAYwQAAAMAAAITBAABIwQAAsMAAAITBAABIwQAAAMAAAITBAABIQQAAsMAAAITBAABIQQAAAMAAAITBAAAYQQAAsMAAAITBAAAYQQAAAMAAAITBAAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIC/AAAAgAAAAIAAAIC/AAAAgAAAAIAAAIC/AAAAgAAAAIAAAIC/AAAAgAAAAIAAAIC/AAAAgAAAAIAAAIC/AAAAgAAAAIAAAIC/AAAAgAAAAIAAAIC/AACgPwAAoD8AAKA/AADYPwAAYD8AAKA/AABgPwAA2D8AAEC/AACgPwAAQL8AANg/AACQvwAAoD8AAJC/AADYPwAAsL8AAIA+AACwvwAAQL4AAOC/AACAPgAA4L8AAEC+AAAgPwAAgD4AACA/AABAvgAAgD4AAIA+AACAPgAAQL4AAIA+AADwPgAAAD0AAPA+AACAPgAAkD4AAAA9AACQPgAAgD4AAGA+AAAAPQAAYD4AAIA+AAAAPQAAAD0AAAA9AACgPgAAYD4AAAg/AABgPgAAoD4AAAA9AAAIPwAAAD0AABg/AABgPgAAUD8AAGA+AAAYPwAAAD0AAFA/AAAAPQAAAQACAAIAAQADAAQABQAGAAYABQAHAAgACQAKAAoACQALAAwADQAOAA4ADQAPAA==",
+      "byteLength": 688
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 192,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 192,
+      "byteLength": 192,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 384,
+      "byteLength": 128,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 512,
+      "byteLength": 128,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 640,
+      "byteLength": 48,
+      "target": 34963
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 16,
+      "type": "VEC3",
+      "min": [
+        -12.5,
+        -5.5,
+        -16.5
+      ],
+      "max": [
+        12.5,
+        -2.0,
+        -12.5
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 16,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 16,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 16,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 0,
+      "componentType": 5123,
+      "count": 24,
+      "type": "SCALAR"
+    }
+  ]
+}

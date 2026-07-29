@@ -1,0 +1,42 @@
+{
+  "sourceShape": "base/data/shapes/weapons/wdungeondoor.dts",
+  "materials": [
+    "oak",
+    "rust"
+  ],
+  "objects": [
+    "door",
+    "tooth",
+    "trim",
+    "trimb"
+  ],
+  "materialDefaults": {
+    "oak": "textures/weapons__oak.png",
+    "rust": "textures/weapons__rust.png"
+  },
+  "materialWrap": {
+    "oak": {
+      "s": true,
+      "t": true
+    },
+    "rust": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "door": [
+      "oak"
+    ],
+    "tooth": [
+      "oak"
+    ],
+    "trim": [
+      "rust"
+    ],
+    "trimb": [
+      "rust"
+    ]
+  }
+}

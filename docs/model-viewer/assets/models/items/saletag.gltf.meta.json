@@ -1,0 +1,30 @@
+{
+  "sourceShape": "base/data/shapes/items/saletag.dts",
+  "materials": [
+    "sale"
+  ],
+  "objects": [
+    "LOScol",
+    "Tag",
+    "TagInside"
+  ],
+  "materialDefaults": {
+    "sale": "textures/items__sale.jpg"
+  },
+  "materialWrap": {
+    "sale": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "LOScol": [],
+    "Tag": [
+      "sale"
+    ],
+    "TagInside": [
+      "sale"
+    ]
+  }
+}

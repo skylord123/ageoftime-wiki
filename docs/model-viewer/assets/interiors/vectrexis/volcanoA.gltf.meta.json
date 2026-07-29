@@ -1,0 +1,17 @@
+{
+  "sourceDif": "base/data/interiors/vectrexis/volcanoA.dif",
+  "interior": true,
+  "materials": [
+    "DROCK003.0",
+    "DROCK003.1"
+  ],
+  "objects": [],
+  "materialDefaults": {},
+  "iflSlots": {},
+  "textureFiles": {
+    "DROCK003": "textures/base__data__interiors__vectrexis__drock003.jpg"
+  },
+  "missingTextures": [],
+  "lightmapped": true,
+  "lightmapSheets": 2
+}

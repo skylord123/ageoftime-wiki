@@ -1,0 +1,24 @@
+{
+  "sourceShape": "base/data/shapes/cratec/cratec2.dts",
+  "materials": [
+    "cratec2"
+  ],
+  "objects": [
+    "cratec"
+  ],
+  "materialDefaults": {
+    "cratec2": "textures/cratec__cratec2.png"
+  },
+  "materialWrap": {
+    "cratec2": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "cratec": [
+      "cratec2"
+    ]
+  }
+}

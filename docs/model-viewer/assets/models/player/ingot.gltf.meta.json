@@ -1,0 +1,36 @@
+{
+  "sourceShape": "base/data/shapes/player/ingot.dts",
+  "materials": [
+    "metal1"
+  ],
+  "objects": [
+    "ingot"
+  ],
+  "materialDefaults": {
+    "metal1": "textures/player__metal__brass.png"
+  },
+  "materialWrap": {
+    "metal1": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {
+    "metal1": [
+      "textures/player__metal__brass.png",
+      "textures/player__metal__copper.png",
+      "textures/player__metal__gold.png",
+      "textures/player__metal__iron.png",
+      "textures/player__metal__lead.png",
+      "textures/player__metal__plutonium.png",
+      "textures/player__metal__rust.png",
+      "textures/player__metal__steel.png",
+      "textures/player__metal__zinc.png"
+    ]
+  },
+  "objectMaterials": {
+    "ingot": [
+      "metal1"
+    ]
+  }
+}

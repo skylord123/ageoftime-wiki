@@ -1,0 +1,13 @@
+{
+  "sourceShape": "base/data/shapes/markers/octahedron.dts",
+  "materials": [],
+  "objects": [
+    "Hedra"
+  ],
+  "materialDefaults": {},
+  "materialWrap": {},
+  "iflSlots": {},
+  "objectMaterials": {
+    "Hedra": []
+  }
+}

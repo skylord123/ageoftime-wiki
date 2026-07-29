@@ -1,0 +1,13 @@
+{
+  "sourceShape": "base/data/shapes/items/girl.dts",
+  "materials": [],
+  "objects": [
+    "girl"
+  ],
+  "materialDefaults": {},
+  "materialWrap": {},
+  "iflSlots": {},
+  "objectMaterials": {
+    "girl": []
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "sourceDif": "base/data/interiors/vectrexis/tradingCompanyINT.dif",
+  "interior": true,
+  "materials": [
+    "BLACK.0",
+    "BLACK.1",
+    "FLOOR03.0",
+    "INSIDEWALL.0",
+    "OAK6.0",
+    "PANE.0",
+    "WOOD1_GOOP_PINK.0",
+    "WOOD1_ORANGE_BA.0",
+    "WOODGRAIN_DARK.0",
+    "WOODPLANK.0",
+    "WOODWALL3.0"
+  ],
+  "objects": [],
+  "materialDefaults": {},
+  "iflSlots": {},
+  "textureFiles": {
+    "BLACK": "textures/base__data__interiors__vectrexis__black.jpg",
+    "FLOOR03": "textures/base__data__interiors__vectrexis__Floor03.jpg",
+    "INSIDEWALL": "textures/base__data__interiors__vectrexis__insidewall.jpg",
+    "OAK6": "textures/base__data__interiors__vectrexis__oak6.jpg",
+    "PANE": "textures/base__data__interiors__vectrexis__pane.jpg",
+    "WOOD1_GOOP_PINK": "textures/base__data__interiors__vectrexis__wood1_goop_pink.jpg",
+    "WOOD1_ORANGE_BA": "textures/base__data__interiors__vectrexis__wood1_orange_ba.jpg",
+    "WOODGRAIN_DARK": "textures/base__data__interiors__vectrexis__woodgrain_dark.jpg",
+    "WOODPLANK": "textures/base__data__interiors__vectrexis__woodplank.jpg",
+    "WOODWALL3": "textures/base__data__interiors__vectrexis__woodwall3.jpg"
+  },
+  "missingTextures": [],
+  "lightmapped": true,
+  "lightmapSheets": 2
+}

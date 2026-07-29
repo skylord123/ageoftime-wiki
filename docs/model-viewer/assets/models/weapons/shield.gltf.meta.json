@@ -1,0 +1,72 @@
+{
+  "sourceShape": "base/data/shapes/weapons/shield.dts",
+  "materials": [
+    "metal3",
+    "metal1",
+    "metal2"
+  ],
+  "objects": [
+    "shield"
+  ],
+  "materialDefaults": {
+    "metal3": "textures/weapons__brass.png",
+    "metal1": "textures/weapons__brass.png",
+    "metal2": "textures/weapons__brass.png"
+  },
+  "materialWrap": {
+    "metal3": {
+      "s": true,
+      "t": true
+    },
+    "metal1": {
+      "s": true,
+      "t": true
+    },
+    "metal2": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {
+    "metal3": [
+      "textures/weapons__brass.png",
+      "textures/weapons__copper.png",
+      "textures/weapons__gold.png",
+      "textures/weapons__iron.png",
+      "textures/weapons__lead.png",
+      "textures/weapons__plutonium.png",
+      "textures/weapons__rust.png",
+      "textures/weapons__steel.png",
+      "textures/weapons__zinc.png"
+    ],
+    "metal1": [
+      "textures/weapons__brass.png",
+      "textures/weapons__copper.png",
+      "textures/weapons__gold.png",
+      "textures/weapons__iron.png",
+      "textures/weapons__lead.png",
+      "textures/weapons__plutonium.png",
+      "textures/weapons__rust.png",
+      "textures/weapons__steel.png",
+      "textures/weapons__zinc.png"
+    ],
+    "metal2": [
+      "textures/weapons__brass.png",
+      "textures/weapons__copper.png",
+      "textures/weapons__gold.png",
+      "textures/weapons__iron.png",
+      "textures/weapons__lead.png",
+      "textures/weapons__plutonium.png",
+      "textures/weapons__rust.png",
+      "textures/weapons__steel.png",
+      "textures/weapons__zinc.png"
+    ]
+  },
+  "objectMaterials": {
+    "shield": [
+      "metal3",
+      "metal1",
+      "metal2"
+    ]
+  }
+}

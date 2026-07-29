@@ -1,0 +1,16 @@
+{
+  "sourceDif": "base/data/interiors/vectrexis/wooddungeonInt2.dif",
+  "interior": true,
+  "materials": [
+    "TILE003"
+  ],
+  "objects": [],
+  "materialDefaults": {},
+  "iflSlots": {},
+  "textureFiles": {
+    "TILE003": "textures/base__data__interiors__vectrexis__tile003.jpg"
+  },
+  "missingTextures": [],
+  "lightmapped": true,
+  "lightmapSheets": 1
+}

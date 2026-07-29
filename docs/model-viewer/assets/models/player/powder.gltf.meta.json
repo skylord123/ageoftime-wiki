@@ -1,0 +1,46 @@
+{
+  "sourceShape": "base/data/shapes/player/powder.dts",
+  "materials": [
+    "wood1",
+    "Powder"
+  ],
+  "objects": [
+    "paper",
+    "Powder"
+  ],
+  "materialDefaults": {
+    "wood1": "textures/player__wood__beech.jpg",
+    "Powder": "textures/player__Powder.png"
+  },
+  "materialWrap": {
+    "wood1": {
+      "s": true,
+      "t": true
+    },
+    "Powder": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {
+    "wood1": [
+      "textures/player__wood__beech.jpg",
+      "textures/player__wood__cherry.jpg",
+      "textures/player__wood__flake.jpg",
+      "textures/player__wood__kork.jpg",
+      "textures/player__wood__maple.jpg",
+      "textures/player__wood__oak.jpg",
+      "textures/player__wood__pine.jpg",
+      "textures/player__wood__teak.jpg",
+      "textures/player__wood__walnut.jpg"
+    ]
+  },
+  "objectMaterials": {
+    "paper": [
+      "wood1"
+    ],
+    "Powder": [
+      "Powder"
+    ]
+  }
+}

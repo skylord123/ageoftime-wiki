@@ -1,0 +1,55 @@
+{
+  "sourceShape": "base/data/shapes/player/bottlea.dts",
+  "materials": [
+    "glass",
+    "white",
+    "wood1"
+  ],
+  "objects": [
+    "Liquid",
+    "Cork",
+    "potion"
+  ],
+  "materialDefaults": {
+    "glass": "textures/player__glass.png",
+    "wood1": "textures/player__wood__beech.jpg"
+  },
+  "materialWrap": {
+    "glass": {
+      "s": true,
+      "t": true
+    },
+    "white": {
+      "s": true,
+      "t": true
+    },
+    "wood1": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {
+    "wood1": [
+      "textures/player__wood__beech.jpg",
+      "textures/player__wood__cherry.jpg",
+      "textures/player__wood__flake.jpg",
+      "textures/player__wood__kork.jpg",
+      "textures/player__wood__maple.jpg",
+      "textures/player__wood__oak.jpg",
+      "textures/player__wood__pine.jpg",
+      "textures/player__wood__teak.jpg",
+      "textures/player__wood__walnut.jpg"
+    ]
+  },
+  "objectMaterials": {
+    "Liquid": [
+      "white"
+    ],
+    "Cork": [
+      "wood1"
+    ],
+    "potion": [
+      "glass"
+    ]
+  }
+}

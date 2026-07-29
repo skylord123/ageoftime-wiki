@@ -1,0 +1,34 @@
+{
+  "sourceShape": "base/data/shapes/campfires/campfire.dts",
+  "materials": [
+    "stone",
+    "ash"
+  ],
+  "objects": [
+    "Regroup01",
+    "Regroup02"
+  ],
+  "materialDefaults": {
+    "stone": "textures/campfires__stone.jpg",
+    "ash": "textures/campfires__ash.jpg"
+  },
+  "materialWrap": {
+    "stone": {
+      "s": true,
+      "t": true
+    },
+    "ash": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "Regroup01": [
+      "stone"
+    ],
+    "Regroup02": [
+      "ash"
+    ]
+  }
+}

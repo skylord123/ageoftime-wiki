@@ -1,0 +1,22 @@
+{
+  "sourceShape": "base/data/shapes/gems/gold.dts",
+  "materials": [
+    "skins\\gem1"
+  ],
+  "objects": [
+    "gold"
+  ],
+  "materialDefaults": {},
+  "materialWrap": {
+    "skins\\gem1": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "gold": [
+      "skins\\gem1"
+    ]
+  }
+}

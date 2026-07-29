@@ -1,0 +1,13 @@
+{
+  "sourceShape": "base/data/shapes/weapons/empty.dts",
+  "materials": [],
+  "objects": [
+    "box"
+  ],
+  "materialDefaults": {},
+  "materialWrap": {},
+  "iflSlots": {},
+  "objectMaterials": {
+    "box": []
+  }
+}

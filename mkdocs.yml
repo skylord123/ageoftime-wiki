@@ -161,6 +161,7 @@ nav:
       - Tools:
           - Dye Calculator: dye-calculator.md
           - Dye Recipe Finder: dye-recipe-finder.md
+          - 3D Model Viewer: reference/model-viewer.md
       - Exploits:
           - reference/exploits/index.md
           - Crash Parchment: reference/exploits/crash-parchment.md

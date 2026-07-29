@@ -1,0 +1,18 @@
+{
+  "sourceDif": "base/data/interiors/vectrexis/Easel.dif",
+  "interior": true,
+  "materials": [
+    "INSIDEWALL",
+    "WOODGRAIN_DARK"
+  ],
+  "objects": [],
+  "materialDefaults": {},
+  "iflSlots": {},
+  "textureFiles": {
+    "INSIDEWALL": "textures/base__data__interiors__vectrexis__insidewall.jpg",
+    "WOODGRAIN_DARK": "textures/base__data__interiors__vectrexis__woodgrain_dark.jpg"
+  },
+  "missingTextures": [],
+  "lightmapped": true,
+  "lightmapSheets": 1
+}

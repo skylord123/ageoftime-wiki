@@ -27,6 +27,11 @@ gameplay or world sections.
 
     Search for shortest exact named-dye recipes for target RGB colors.
 
+- :material-cube-scan: **[3D Model Viewer](model-viewer.md)**
+
+    Explore the game's 3D assets in your browser — players, clothing, items,
+    and interiors, rendered from the real converted shapes.
+
 - :material-information: **[About the Game](../about.md)**
 
     History, the Torque Engine, the release timeline, and community links.

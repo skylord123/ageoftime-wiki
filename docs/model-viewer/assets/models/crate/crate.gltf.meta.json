@@ -1,0 +1,24 @@
+{
+  "sourceShape": "base/data/shapes/crate/crate.dts",
+  "materials": [
+    "crate"
+  ],
+  "objects": [
+    "crate"
+  ],
+  "materialDefaults": {
+    "crate": "textures/crate__crate.jpg"
+  },
+  "materialWrap": {
+    "crate": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "crate": [
+      "crate"
+    ]
+  }
+}

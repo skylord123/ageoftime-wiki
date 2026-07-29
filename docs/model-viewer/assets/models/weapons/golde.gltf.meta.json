@@ -1,0 +1,52 @@
+{
+  "sourceShape": "base/data/shapes/weapons/golde.dts",
+  "materials": [
+    "gold"
+  ],
+  "objects": [
+    "golda",
+    "goldc",
+    "goldb",
+    "goldd",
+    "golde",
+    "goldf",
+    "goldg",
+    "goldh"
+  ],
+  "materialDefaults": {
+    "gold": "textures/weapons__gold.png"
+  },
+  "materialWrap": {
+    "gold": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "golda": [
+      "gold"
+    ],
+    "goldc": [
+      "gold"
+    ],
+    "goldb": [
+      "gold"
+    ],
+    "goldd": [
+      "gold"
+    ],
+    "golde": [
+      "gold"
+    ],
+    "goldf": [
+      "gold"
+    ],
+    "goldg": [
+      "gold"
+    ],
+    "goldh": [
+      "gold"
+    ]
+  }
+}

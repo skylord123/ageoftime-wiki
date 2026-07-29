@@ -1,0 +1,32 @@
+{
+  "sourceShape": "base/data/shapes/weapons/goldc.dts",
+  "materials": [
+    "gold"
+  ],
+  "objects": [
+    "golda",
+    "goldc",
+    "goldb"
+  ],
+  "materialDefaults": {
+    "gold": "textures/weapons__gold.png"
+  },
+  "materialWrap": {
+    "gold": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "golda": [
+      "gold"
+    ],
+    "goldc": [
+      "gold"
+    ],
+    "goldb": [
+      "gold"
+    ]
+  }
+}

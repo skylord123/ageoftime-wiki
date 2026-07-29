@@ -1,0 +1,32 @@
+{
+  "sourceDif": "base/data/interiors/JLDavies/shed.dif",
+  "interior": true,
+  "materials": [
+    "5PlanksMoss256",
+    "BlueSquares",
+    "MossPlank1",
+    "MossPlank2",
+    "MossPlank4",
+    "PlanksLight256",
+    "Ruf-wood",
+    "plank1",
+    "plank2"
+  ],
+  "objects": [],
+  "materialDefaults": {},
+  "iflSlots": {},
+  "textureFiles": {
+    "5PlanksMoss256": "textures/base__data__interiors__JLDavies__5PlanksMoss256.jpg",
+    "BlueSquares": "textures/base__data__interiors__JLDavies__BlueSquares.jpg",
+    "MossPlank1": "textures/base__data__interiors__JLDavies__MossPlank1.jpg",
+    "MossPlank2": "textures/base__data__interiors__JLDavies__MossPlank2.jpg",
+    "MossPlank4": "textures/base__data__interiors__JLDavies__MossPlank4.jpg",
+    "PlanksLight256": "textures/base__data__interiors__JLDavies__PlanksLight256.jpg",
+    "Ruf-wood": "textures/base__data__interiors__JLDavies__Ruf-wood.jpg",
+    "plank1": "textures/base__data__interiors__JLDavies__plank1.jpg",
+    "plank2": "textures/base__data__interiors__JLDavies__plank2.jpg"
+  },
+  "missingTextures": [],
+  "lightmapped": true,
+  "lightmapSheets": 1
+}

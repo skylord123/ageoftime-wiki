@@ -1,0 +1,40 @@
+{
+  "sourceShape": "base/data/shapes/weapons/chest.dts",
+  "materials": [
+    "brass01",
+    "iron05",
+    "engwal2"
+  ],
+  "objects": [
+    "box",
+    "Lid"
+  ],
+  "materialDefaults": {},
+  "materialWrap": {
+    "brass01": {
+      "s": true,
+      "t": true
+    },
+    "iron05": {
+      "s": true,
+      "t": true
+    },
+    "engwal2": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "box": [
+      "brass01",
+      "iron05",
+      "engwal2"
+    ],
+    "Lid": [
+      "brass01",
+      "iron05",
+      "engwal2"
+    ]
+  }
+}

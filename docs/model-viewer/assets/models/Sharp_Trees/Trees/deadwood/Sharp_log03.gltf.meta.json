@@ -1,0 +1,24 @@
+{
+  "sourceShape": "base/data/shapes/Sharp_Trees/Trees/deadwood/Sharp_log03.dts",
+  "materials": [
+    "Stump&Logs"
+  ],
+  "objects": [
+    "Log"
+  ],
+  "materialDefaults": {
+    "Stump&Logs": "textures/Sharp_Trees__Trees__Stump&Logs.png"
+  },
+  "materialWrap": {
+    "Stump&Logs": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "Log": [
+      "Stump&Logs"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "sourceDif": "base/data/interiors/vectrexis/jail.dif",
+  "interior": true,
+  "materials": [
+    "CEM1"
+  ],
+  "objects": [],
+  "materialDefaults": {},
+  "iflSlots": {},
+  "textureFiles": {
+    "CEM1": "textures/base__data__interiors__vectrexis__cem1.jpg"
+  },
+  "missingTextures": [],
+  "lightmapped": true,
+  "lightmapSheets": 1
+}

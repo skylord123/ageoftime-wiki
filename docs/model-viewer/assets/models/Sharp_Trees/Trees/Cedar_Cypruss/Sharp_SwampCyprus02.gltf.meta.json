@@ -1,0 +1,41 @@
+{
+  "sourceShape": "base/data/shapes/Sharp_Trees/Trees/Cedar_Cypruss/Sharp_SwampCyprus02.dts",
+  "materials": [
+    "Cyprus_Cedar",
+    "Cyprus_Cedar"
+  ],
+  "objects": [
+    "Trunk",
+    "Afol",
+    "Bfol",
+    "Dfol",
+    "Cfol"
+  ],
+  "materialDefaults": {
+    "Cyprus_Cedar": "textures/Sharp_Trees__Trees__Cyprus_Cedar.png"
+  },
+  "materialWrap": {
+    "Cyprus_Cedar": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "Trunk": [
+      "Cyprus_Cedar"
+    ],
+    "Afol": [
+      "Cyprus_Cedar"
+    ],
+    "Bfol": [
+      "Cyprus_Cedar"
+    ],
+    "Dfol": [
+      "Cyprus_Cedar"
+    ],
+    "Cfol": [
+      "Cyprus_Cedar"
+    ]
+  }
+}

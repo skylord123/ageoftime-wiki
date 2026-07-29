@@ -1,0 +1,22 @@
+{
+  "sourceShape": "base/data/shapes/gems/granite.dts",
+  "materials": [
+    "skins\\gem1"
+  ],
+  "objects": [
+    "granite"
+  ],
+  "materialDefaults": {},
+  "materialWrap": {
+    "skins\\gem1": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {},
+  "objectMaterials": {
+    "granite": [
+      "skins\\gem1"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "sourceDif": "base/data/interiors/JLDavies/gallows.dif",
+  "interior": true,
+  "materials": [
+    "Beam",
+    "BlueSquares",
+    "GallowPlanks256",
+    "Rope32x16",
+    "RopeWrapped"
+  ],
+  "objects": [],
+  "materialDefaults": {},
+  "iflSlots": {},
+  "textureFiles": {
+    "Beam": "textures/base__data__interiors__JLDavies__Beam.jpg",
+    "BlueSquares": "textures/base__data__interiors__JLDavies__BlueSquares.jpg",
+    "GallowPlanks256": "textures/base__data__interiors__JLDavies__GallowPlanks256.jpg",
+    "Rope32x16": "textures/base__data__interiors__JLDavies__Rope32x16.jpg",
+    "RopeWrapped": "textures/base__data__interiors__JLDavies__RopeWrapped.jpg"
+  },
+  "missingTextures": [],
+  "lightmapped": true,
+  "lightmapSheets": 1
+}

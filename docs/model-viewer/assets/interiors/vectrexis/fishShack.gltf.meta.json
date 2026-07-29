@@ -1,0 +1,37 @@
+{
+  "sourceDif": "base/data/interiors/vectrexis/fishShack.dif",
+  "interior": true,
+  "materials": [
+    "BOARDS01.1",
+    "BOARDS03.0",
+    "BOARDS04.0",
+    "BOARDS04.1",
+    "FENCE01.1",
+    "OUTWALL02.0",
+    "OUTWALL02.1",
+    "ROOF1.1",
+    "SIGNFISHCO.1",
+    "WINDOW01.1",
+    "WINDOW02VERT.1",
+    "WOODGRAIN_DARK.0",
+    "WOODGRAIN_DARK.1"
+  ],
+  "objects": [],
+  "materialDefaults": {},
+  "iflSlots": {},
+  "textureFiles": {
+    "BOARDS01": "textures/base__data__interiors__vectrexis__boards01.jpg",
+    "BOARDS03": "textures/base__data__interiors__vectrexis__boards03.jpg",
+    "BOARDS04": "textures/base__data__interiors__vectrexis__boards04.jpg",
+    "FENCE01": "textures/base__data__interiors__vectrexis__Fence01.jpg",
+    "OUTWALL02": "textures/base__data__interiors__vectrexis__outwall02.jpg",
+    "ROOF1": "textures/base__data__interiors__vectrexis__roof1.jpg",
+    "SIGNFISHCO": "textures/base__data__interiors__vectrexis__signfishco.jpg",
+    "WINDOW01": "textures/base__data__interiors__vectrexis__window01.jpg",
+    "WINDOW02VERT": "textures/base__data__interiors__vectrexis__window02vert.jpg",
+    "WOODGRAIN_DARK": "textures/base__data__interiors__vectrexis__woodgrain_dark.jpg"
+  },
+  "missingTextures": [],
+  "lightmapped": true,
+  "lightmapSheets": 2
+}

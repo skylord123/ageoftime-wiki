@@ -1,0 +1,65 @@
+{
+  "sourceShape": "base/data/shapes/weapons/boltitem.dts",
+  "materials": [
+    "metal1",
+    "wood1"
+  ],
+  "objects": [
+    "boltC",
+    "boltA",
+    "boltB",
+    "Band"
+  ],
+  "materialDefaults": {
+    "metal1": "textures/weapons__brass.png",
+    "wood1": "textures/weapons__beech.png"
+  },
+  "materialWrap": {
+    "metal1": {
+      "s": true,
+      "t": true
+    },
+    "wood1": {
+      "s": true,
+      "t": true
+    }
+  },
+  "iflSlots": {
+    "metal1": [
+      "textures/weapons__brass.png",
+      "textures/weapons__copper.png",
+      "textures/weapons__gold.png",
+      "textures/weapons__iron.png",
+      "textures/weapons__lead.png",
+      "textures/weapons__plutonium.png",
+      "textures/weapons__rust.png",
+      "textures/weapons__steel.png",
+      "textures/weapons__zinc.png"
+    ],
+    "wood1": [
+      "textures/weapons__beech.png",
+      "textures/weapons__cherry.png",
+      "textures/weapons__flake.png",
+      "textures/weapons__kork.png",
+      "textures/weapons__maple.png",
+      "textures/weapons__oak.png",
+      "textures/weapons__pine.png",
+      "textures/weapons__teak.png",
+      "textures/weapons__walnut.png"
+    ]
+  },
+  "objectMaterials": {
+    "boltC": [
+      "metal1"
+    ],
+    "boltA": [
+      "metal1"
+    ],
+    "boltB": [
+      "metal1"
+    ],
+    "Band": [
+      "wood1"
+    ]
+  }
+}
