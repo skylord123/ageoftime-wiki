@@ -1,7 +1,25 @@
 # World Objects
 
-Breakable and damageable objects that exist in the world rather than in a
-player's inventory.
+Things that exist in the world rather than in a player's inventory — the
+breakable resource nodes and trees below, plus items players have dropped on
+the ground.
+
+## Dropped items
+
+When you drop an item from your inventory it stays on the ground as a world
+object. The world keeps at most **1001 dropped items** at any one time. This is
+a single **global** limit across the entire map — it is not counted per-area or
+per-zone, and distance plays no part.
+
+Dropping one more item than the cap (the 1002nd) deletes the **oldest** dropped
+item still on the ground, wherever it happens to be — first in, first out. In
+one test, a player dropped a single dye in the [Woods](world/locations/woods.md),
+then dropped 1001 dyes in [Port Town](world/locations/port-town.md); the moment
+the count went over the cap, that first dye in the Woods disappeared.
+
+Dropped items are also **never saved to the server** — they exist only in the
+running world. When the server shuts down or restarts, every item and pile of
+gold lying on the ground is lost.
 
 ## Resource nodes and breakables
 
