@@ -13,7 +13,7 @@ An underwater crater full of Sea Monsters and Blue Dye crates.
   tables.
 - Blue Hill holds **10 crates on 1-second individual respawns**. Crates drop
   Gold or Blue/Bright Blue Dye (no dynamite — that is exclusive to
-  [Auric Fields](auric-fields.md)). See [Crate Rates](../../crate-rates.md)
+  [Auric Fields](auric-fields.md)). See [Crate Rates](../../crate-rates.md#crate-rates)
   for the full measured drop table.
 
 ## Screenshots

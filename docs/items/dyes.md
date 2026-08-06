@@ -41,7 +41,7 @@ Colored dyes are obtained from **crates**, not from enemies. Crates do **not**
 spawn in every area; they appear in the specific dye-bearing locations listed
 below. Each standard zone drops both the normal dye and its **Bright**
 variant (at roughly a 2:1 normal-to-bright ratio). For the measured per-zone
-drop chances, see [Crate Rates](../crate-rates.md).
+drop chances, see [Crate Rates](../crate-rates.md#crate-rates).
 
 | Dye color | Source area |
 |---|---|

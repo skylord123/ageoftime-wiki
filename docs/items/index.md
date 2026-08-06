@@ -17,6 +17,10 @@ equipment, dyes, and utility items are easier to find.
 
     Cloth recipes, pattern textures, and how cloth is produced.
 
+- :material-sprout: **[Fiber & Fiber Plants](fiber.md)**
+
+    Plant, grow, and harvest Fiber for a renewable supply.
+
 - :material-anvil: **[Metals](metals.md)**
 
     Refined ingots, their recipes, and the ore each one comes from.
@@ -46,7 +50,10 @@ For shrubs and other resource nodes in the overworld, see
 
 <div class="grid cards" markdown>
 
-- ![Fiber](../assets/items/Fibers.png){ width=64 } **Fiber** — dropped by [Shrubs](../world-objects.md). Crafts into Cloth. Toss it on a surface to grow a new shrub (good for farming). Planted shrubs start small and slowly grow over about **30 minutes**. They are fully grown when they reach full size and their stalks turn brown.
+- ![Fiber](../assets/items/Fibers.png){ width=64 } **[Fiber](fiber.md)** —
+  dropped by [shrubs](../world-objects.md#resource-nodes-and-breakables) and
+  used to make Cloth. Throw it onto a surface to plant a Fiber plant, which
+  matures in about 30–31 minutes and yields 2–3 Fiber when fully grown.
 
 </div>
 

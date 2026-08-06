@@ -17,7 +17,7 @@ Zombies.
   respawn over them.
 - The Swamp holds **10 crates on 1-second individual respawns**. Crates drop
   Gold or Cyan/Bright Cyan Dye (no dynamite — that is exclusive to
-  [Auric Fields](auric-fields.md)). See [Crate Rates](../../crate-rates.md)
+  [Auric Fields](auric-fields.md)). See [Crate Rates](../../crate-rates.md#crate-rates)
   for the full measured drop table.
 
 ## Screenshots

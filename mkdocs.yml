@@ -104,6 +104,7 @@ nav:
           - Weapons: items/weapons.md
           - Clothing: items/clothing.md
           - Cloth: items/cloth.md
+          - Fiber & Fiber Plants: items/fiber.md
           - Metals: items/metals.md
           - Ores: items/ores.md
           - Wood Types: items/wood-types.md
@@ -121,7 +122,7 @@ nav:
       - 3D Map: https://skylord123.github.io/ageoftime-wiki/map/3d/
       - Areas: areas.md
       - World Objects: world-objects.md
-      - Crate Rates: crate-rates.md
+      - Crates: crate-rates.md
       - Locations:
           - Port Town: world/locations/port-town.md
           - Starboard Town: world/locations/starboard-town.md
@@ -143,6 +144,7 @@ nav:
           - Level 2: world/locations/level-2.md
           - Hook Swing: world/locations/hook-swing.md
       - Enemies: enemies.md
+      - Orc Spawn Triggers: world/orc-spawn-triggers.md
       - Friendly NPCs:
           - npcs/index.md
           - Sword Giver: npcs/sword-giver.md
@@ -162,6 +164,7 @@ nav:
       - Exploits:
           - reference/exploits/index.md
           - Crash Parchment: reference/exploits/crash-parchment.md
+          - Monster Spawn Break: reference/exploits/spawn-break.md
       - About the Game: about.md
       - Torque Script:
           - reference/torque-script/index.md
