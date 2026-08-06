@@ -17,7 +17,7 @@ Black, Magenta, and Pitch Black dye crates and is home to Fire Orcs.
   Despite older reports, **Orange Dye does not drop here** (never seen in
   26k+ logged breaks). No dynamite drops here either, and the Volcano is
   the only zone with **no 100-gold jackpot**. See
-  [Crate Rates](../../crate-rates.md) for the full measured drop table.
+  [Crate Rates](../../crate-rates.md#crate-rates) for the full measured drop table.
 - The Volcano starts with **5 crates** on 20-second respawns, but a bug can
   make broken crates **permanently disappear** — after enough farming, none
   may be left at all.

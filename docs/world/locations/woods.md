@@ -16,11 +16,11 @@ crates, [Level 1](level-1.md), and the Woods tunnels.
 
 ## Crates
 
-The Woods holds **26 crates on 1-second individual respawns** — the most
+The Woods holds **30 crates on 1-second individual respawns** — the most
 crates of any area, tied with [Auric Fields](auric-fields.md) for the best
 gold farming in the game. Crates drop Gold or Green/Bright Green Dye (no
 dynamite — that is exclusive to Auric Fields). See
-[Crate Rates](../../crate-rates.md) for the full measured drop table.
+[Crate Rates](../../crate-rates.md#crate-rates) for the full measured drop table.
 
 ## Woods tunnels
 

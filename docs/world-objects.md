@@ -10,8 +10,8 @@ player's inventory.
 - ![Crate](assets/items/Crate.png){ width=64 } **Crate** — found in
   dye-bearing locations rather than all areas. Drops Gold and the area's Dye
   colors; in [Auric Fields](world/locations/auric-fields.md) (only) about 1 in
-  111 crates spawns lit Dynamite instead. See [Crate Rates](crate-rates.md)
-  for measured counts, respawn times, and per-zone drop rates.
+  107 crates spawns lit Dynamite instead. See [Crates](crate-rates.md) for
+  spawn and respawn behavior, plus measured per-zone drop rates.
 
 - ![Dynamite Chest](assets/items/Dynamite_Chest.png){ width=64 } **Dynamite
   Chest** — very rare, found near Port Town. Drops about 5 active sticks of
@@ -20,8 +20,9 @@ player's inventory.
   too efficiently.
 
 - ![Shrub](assets/items/Shrub.png){ width=64 } **Shrub** — break to drop
-  [Fiber](items/index.md#raw-materials). Toss Fiber on a surface to plant a new
-  shrub for later harvesting.
+  [Fiber](items/fiber.md). Toss Fiber onto a surface to grow a new Fiber plant
+  for later harvesting; see [Fiber & Fiber Plants](items/fiber.md) for the
+  growth time and harvest rules.
 
 - ![Large Rock](assets/items/Large_Rock.png){ width=64 } **Large Rock** —
   break to drop [Ores](items/ores.md).

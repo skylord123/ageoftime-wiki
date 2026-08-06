@@ -41,7 +41,7 @@ to begin again.
 ## Crates
 
 Level 1 also contains loot crates. Their drop rates have **not** been logged
-yet — the [Crate Rates](../../crate-rates.md) page will be updated once data
+yet — the [Crate Rates](../../crate-rates.md#crate-rates) section will be updated once data
 is gathered here.
 
 ## Race timer

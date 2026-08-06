@@ -15,7 +15,7 @@ A crater full of red grass containing Red Dye crates.
 - Its **8 crates** respawn slowly (**30 seconds** each), but it is the only
   crate source of **Red and Bright Red Dye** — the dyes come in crates with
   *no* gold (~1.6% each). No dynamite drops here. See
-  [Crate Rates](../../crate-rates.md) for the full measured drop table.
+  [Crate Rates](../../crate-rates.md#crate-rates) for the full measured drop table.
 - Nearby challenge: [Log Challenge](log-challenge.md)
 
 ## Screenshots
