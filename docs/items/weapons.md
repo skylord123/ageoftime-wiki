@@ -39,13 +39,18 @@ The standard offensive item. All swords have the same damage output.
 
 The standard defensive item.
 
-- **Crafted from:** 10 Metal, 2 other Metal, 1 Wood, 500 Gold
+- **Crafted from:** 10 Metal, 2 Metal, 1 Metal, 500 Gold
 - Special shield effects trigger when a monster deals contact damage to the
   shield user, or when a player attacks the shield user with a sword.
-- Only the shield's body metal matters for these effects; the crest and trim
-  are cosmetic.
+- The base metal (the 10 Metal ingredient) determines the shield's main
+  effect. Using **Lead** as the secondary (2 Metal) ingredient adds knockback
+  on top of the base metal's effect — except on Iron and Steel shields, where
+  it breaks their sparks and leaves only the knockback. The remaining metal
+  slot is cosmetic.
 - See [Blacksmith § Shield metal effects](../npcs/blacksmith.md#shield-metal-effects)
   for the community-reported per-metal behavior.
+- Copper and Zinc shields can be used to perform the
+  [Monster Spawn Break](../reference/exploits/spawn-break.md) exploit.
 
 </div>
 </div>

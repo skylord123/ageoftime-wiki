@@ -11,6 +11,9 @@ Occasionally, meteors will fall from the sky carrying [Autunite](items/ores.md).
 This is the only way to obtain Autunite — and therefore the only way to
 ultimately produce Plutonium.
 
+If a meteor-shower meteor kills a player, the server reports it as a monster
+kill, for example: `<player name> was killed by a monster!`
+
 ### Boats
 
 ![Boat](assets/captures/items/vehicle_boat.png){ width=220 loading=lazy }

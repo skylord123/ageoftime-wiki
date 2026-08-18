@@ -16,6 +16,8 @@ be grown into more Fiber: throw a Fiber onto the ground to plant a Fiber plant.
 | Yield | **2–3 Fiber** |
 | Net result | **+1 to +2 Fiber** per successful crop |
 | Regrowth | None — harvest removes the plant; replant to start again |
+| Player-grown limit | **500** plants across the whole world |
+| World maximum | **510** plants (500 player-grown + 10 naturally spawned) |
 
 !!! warning "Do not harvest early"
     An immature Fiber plant drops **nothing** when destroyed, including the
@@ -32,6 +34,16 @@ be grown into more Fiber: throw a Fiber onto the ground to plant a Fiber plant.
 
 Each plant is single-use. Harvesting removes it completely; it will not grow
 back in the same spot on its own.
+
+!!! warning "Global Fiber-plant limit"
+    The server allows at most **500 player-grown Fiber plants** at once, shared
+    by everyone in the world. Once that limit is reached, throwing another
+    Fiber makes the thrown item despawn without placing a plant. The server
+    reports: `You can't plant any more fiber. (global limit)`
+
+    Separately, a `DestructableSpawner` keeps **10 randomly placed** Fiber
+    plants in the world. These do not count against the player-grown limit, so
+    the absolute maximum is **510 Fiber plants** at once.
 
 ## How to tell when it is ready
 
@@ -78,6 +90,17 @@ time needed to plant and harvest, rather than by a per-plant respawn timer.
 For example, reinvesting every harvested Fiber produces roughly 2–3 times as
 many plants per ~31-minute cycle. Once the farm is large enough, staggered
 planting makes regular harvests easier to manage.
+
+!!! warning "Harvest large farms in batches"
+    The world has a global limit of **1,001 [dropped items](../world-objects.md#dropped-items)**.
+    Each harvested Fiber plant creates 2–3 separate Fiber drops, so breaking
+    all 500 plants can create up to 1,500 items and evict the oldest items
+    already on the ground.
+
+    To stay below the cap from Fiber alone, break **no more than 333 plants at
+    once** (at most 999 drops), collect the Fiber, then continue. Use smaller
+    batches if other dropped items are already in the world, since the limit is
+    shared globally.
 
 ## Technical details
 

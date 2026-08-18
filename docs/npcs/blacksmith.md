@@ -83,10 +83,14 @@ Shield effects are community-reported and not officially documented.
 
 - They trigger from **monster contact damage** or from **a player hitting the
   shield user with a sword**.
-- Only the shield's **body** metal appears to matter. The crest and trim are
-  believed to be cosmetic only.
+- The shield's **base** metal (the **10 Metal** ingredient) determines its
+  main effect, per the table below.
+- The **secondary** metal (the **2 Metal** ingredient) can also matter — see
+  [Secondary metal: Lead](#secondary-metal-lead) below. No other secondary
+  metal has a confirmed effect.
+- The remaining metal slot is believed to be cosmetic only.
 
-| Metal | Reported shield effect |
+| Base metal | Reported shield effect |
 |---|---|
 | Copper | Freezes monsters for about 1 second and makes them lose their target. |
 | Zinc | Spins monsters around and makes them lose their target. |
@@ -97,6 +101,21 @@ Shield effects are community-reported and not officially documented.
 | Plutonium | No confirmed effect. |
 | Rust | No confirmed effect. |
 | Brass | No confirmed effect. |
+
+!!! tip "Copper and Zinc shields can break monster spawning"
+    The lose-target effect from Copper and Zinc shields can be exploited to
+    stop monsters spawning around you entirely — see
+    [Monster Spawn Break](../reference/exploits/spawn-break.md).
+
+### Secondary metal: Lead
+
+Supplying **Lead** as the secondary (**2 Metal**) ingredient adds Lead's
+knockback effect **on top of** the base metal's effect, so the shield
+triggers both at once.
+
+The exception is **Iron** and **Steel** bases: combining them with a Lead
+secondary breaks their sparks, leaving the shield with **only the
+knockback**.
 
 !!! note
     These reports only cover shield behavior. Sword damage/effects do not
