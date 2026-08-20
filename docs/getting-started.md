@@ -69,7 +69,7 @@ options menu (<kbd>Ctrl</kbd>+<kbd>O</kbd>).
 | <kbd>↑</kbd> / <kbd>↓</kbd> | Pan camera up / down |
 | <kbd>Alt</kbd>+<kbd>C</kbd> | Toggle detached camera |
 | <kbd>F7</kbd> | Drop player at camera (detached-camera mode) |
-| <kbd>F8</kbd> | Drop camera at player (detached-camera mode) |
+| <kbd>F8</kbd> | Drop camera at player (detached-camera mode). Enemy NPCs do not notice you while in this camera — see [Orbit camera stealth](tips.md#orbit-camera-stealth) |
 
 ### Chat & HUD
 

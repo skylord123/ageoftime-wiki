@@ -165,6 +165,8 @@ nav:
       - Exploits:
           - reference/exploits/index.md
           - Crash Parchment: reference/exploits/crash-parchment.md
+          - Drop Glitch: reference/exploits/drop-glitch.md
+          - Jail Escape: reference/exploits/jail-escape.md
           - Monster Spawn Break: reference/exploits/spawn-break.md
       - About the Game: about.md
       - Torque Script:

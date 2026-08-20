@@ -10,10 +10,10 @@ Confirmed exceptions:
 - **Corprolite** drops from **Orcs** and **Knights**, not rocks.
 
 !!! note "Common ore drops"
-    There does not appear to be any named-area correlation for the normal rock
-    ores. Breaking a **Large Rock** seems to give each common rock ore an
-    approximately equal chance, with **Autunite** and **Corprolite** excluded
-    because they come from different sources entirely.
+    Breaking a **Large Rock** gives an **equal chance** of each rock ore —
+    there is no area correlation, and no ore is rarer than another.
+    **Autunite** and **Corprolite** are excluded because they come from
+    different sources entirely.
 
 ## Ore list
 

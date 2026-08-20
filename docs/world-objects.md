@@ -43,7 +43,8 @@ gold lying on the ground is lost.
   growth time and harvest rules.
 
 - ![Large Rock](assets/items/Large_Rock.png){ width=64 } **Large Rock** —
-  break to drop [Ores](items/ores.md). The world maintains **50** Large Rocks;
+  break to drop [Ores](items/ores.md), with an **equal chance** of each rock
+  ore no matter where the rock is. The world maintains **50** Large Rocks;
   when one is broken, a replacement spawns about **one second** later.
 
 </div>

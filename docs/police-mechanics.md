@@ -248,7 +248,8 @@ recent fines.
 
 ## Jail and IP-based persistence
 
-Jail time must be served.
+Jail time must be served — although see the
+[Jail Escape](reference/exploits/jail-escape.md) exploits.
 
 !!! danger "Same-IP jailing"
     Jail enforcement keys off your **IP address**, not just your account. If

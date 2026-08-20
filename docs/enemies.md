@@ -83,3 +83,42 @@ Hostile creatures and other dangers found in *Age of Time*.
     Other players. Usually extremely hard to evade or kill.
 
 </div>
+
+## Spawning mechanics
+
+Most enemies appear through the game's normal **around-the-player spawning**:
+the server periodically spawns enemies near each player as they move through
+the world. This system has two caps:
+
+- **Per player:** up to **3** enemies spawned around each player at once.
+  Enemies spawned around a **dead** player do not count against that player's
+  cap.
+- **Global:** at most **50** spawned enemy NPCs can exist in the world at
+  once, shared by the whole server. Once the world holds 50, around-the-player
+  spawning stops for **everyone** until some are killed or despawn.
+
+Around-the-player enemies also **despawn** on their own: an enemy that loses
+track of any player wanders for a set time and is then removed. An enemy
+only persists as long as it has a player to track.
+
+[`RoomTrigger`](world/orc-spawn-triggers.md) spawns (the
+[Level 1](world/locations/level-1.md) and
+[Level 2](world/locations/level-2.md) rooms, the
+[Cave pit](world/orc-spawn-triggers.md#the-cave-pit), and the two
+SwampBotZones) are exempt from the global cap when spawning — they always
+spawn one Orc per player who enters, regardless of the world count — but the
+Orcs they spawn **do** count toward the 50.
+
+!!! note "How the caps were confirmed"
+    Tested **2026-08** by parking four dead players in a Level 1 room while
+    carry-teleport glitched to register as being in the Volcano, so Fire Orcs
+    spawned around them in Level 1. Four **living** players were positioned at
+    the top of the room as bait: each new Fire Orc focused one of them, and
+    having a player to track kept the Orcs from wandering off and despawning.
+    Because the players spawning the Orcs were dead, the Fire Orcs never
+    counted against the per-player cap of 3, so they accumulated until the
+    world hit exactly **50** — at which point spawning stopped for the entire
+    server, effectively a server-wide
+    [Monster Spawn Break](reference/exploits/spawn-break.md). A player then
+    entering a Level 1 room still spawned its Orc, confirming `RoomTrigger`s
+    ignore the cap.

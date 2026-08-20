@@ -22,6 +22,26 @@ Boats used to appear in the game, but only when **Badspot** spawned them
 manually. They were never a normal player-accessible feature, and it has been
 a very long time since anyone has reported seeing one live in-game.
 
+## Tricks
+
+### Orbit camera stealth
+
+While your player is in the orbit camera, [enemy NPCs](enemies.md) around
+your body will not notice you until you exit the camera. This makes it a safe
+way to go AFK or stop and type a long message out in the wilderness, where
+monsters would normally aggro onto you.
+
+Enter the orbit camera either way:
+
+- Press <kbd>F8</kbd> ([Camera & view controls](getting-started.md#camera-view)), or
+- Run `#!torquescript commandToServer('dropCameraAtPlayer');` from the console
+  ([Server commands](reference/server-commands.md)) — the same thing.
+
+Limitations:
+
+- It only prevents enemy NPCs from **noticing** you. If a monster is already
+  chasing you, entering the orbit camera will not shake it off.
+
 ## Easter eggs
 
 | Trigger | Effect |

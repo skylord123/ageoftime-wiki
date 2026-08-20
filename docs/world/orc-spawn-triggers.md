@@ -11,7 +11,11 @@ player walks into or out of it. This page covers three that spawn an
 [Level 1](locations/level-1.md) and [Level 2](locations/level-2.md) uses one
 for its room-specific encounters. They are distinct from the game's normal
 around-the-player monster spawning because they fire when the player crosses a
-box boundary, not merely from the player's position in the world.
+box boundary, not merely from the player's position in the world. They also
+ignore the world's
+[global cap of 50 spawned enemy NPCs](../enemies.md#spawning-mechanics) —
+a trigger spawns its Orc per entering player even when the world is full,
+though the Orcs it spawns still count toward that cap.
 
 ## At a glance — official v30
 
