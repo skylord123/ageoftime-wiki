@@ -91,8 +91,10 @@ the server periodically spawns enemies near each player as they move through
 the world. This system has two caps:
 
 - **Per player:** up to **3** enemies spawned around each player at once.
-  Enemies spawned around a **dead** player do not count against that player's
-  cap.
+  An enemy is believed to count against the player it is **currently
+  tracking** — it starts on the player it spawned around, and is reassigned
+  to another player if it switches to chasing them, freeing a slot for the
+  original player.
 - **Global:** at most **50** spawned enemy NPCs can exist in the world at
   once, shared by the whole server. Once the world holds 50, around-the-player
   spawning stops for **everyone** until some are killed or despawn.
@@ -115,10 +117,20 @@ Orcs they spawn **do** count toward the 50.
     spawned around them in Level 1. Four **living** players were positioned at
     the top of the room as bait: each new Fire Orc focused one of them, and
     having a player to track kept the Orcs from wandering off and despawning.
-    Because the players spawning the Orcs were dead, the Fire Orcs never
-    counted against the per-player cap of 3, so they accumulated until the
-    world hit exactly **50** — at which point spawning stopped for the entire
-    server, effectively a server-wide
+
+    Orcs kept spawning around the dead players well past three apiece, until
+    the world hit exactly **50** — at which point spawning stopped for the
+    entire server, effectively a server-wide
     [Monster Spawn Break](reference/exploits/spawn-break.md). A player then
     entering a Level 1 room still spawned its Orc, confirming `RoomTrigger`s
     ignore the cap.
+
+!!! question "Why the per-player cap never stopped the test"
+    Two explanations have been offered for the dead players spawning far more
+    than three Orcs each, and the difference has not been settled:
+
+    - Enemies spawned around a **dead** player never count against that
+      player's cap at all.
+    - Each Orc counted against its dead spawner only until it began chasing a
+      living bait player, at which point it was reassigned to that player and
+      freed the dead player's slot for another spawn.
