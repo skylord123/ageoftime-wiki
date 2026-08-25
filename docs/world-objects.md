@@ -17,6 +17,11 @@ one test, a player dropped a single dye in the [Woods](world/locations/woods.md)
 then dropped 1001 dyes in [Port Town](world/locations/port-town.md); the moment
 the count went over the cap, that first dye in the Woods disappeared.
 
+**[Gold](gold.md) piles are items too**, and they share this same limit — a
+pile on the ground counts toward the 1001 alongside dropped equipment, dyes and
+everything else, and is evicted oldest-first in exactly the same way. Dropping
+1001 gold piles will clear every other dropped item in the world.
+
 Dropped items are also **never saved to the server** — they exist only in the
 running world. When the server shuts down or restarts, every item and pile of
 gold lying on the ground is lost.

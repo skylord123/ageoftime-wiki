@@ -9,6 +9,10 @@ When gold is dropped on the ground — whether by you with
 [`/dropgold`](commands.md#actions), by a dying player, or by a slain monster —
 it appears as a **physical pile** that anyone can walk over to pick up.
 
+`/dropgold` is rate-limited to roughly **one drop per second**; issuing it
+faster than that simply does nothing until the next drop is allowed. Bank
+deposits and withdrawals have no such limit.
+
 !!! note "Coins vs. the Gold ingot"
     The currency described here is separate from the
     [Gold ingot](items/metals.md) crafting material, which is a normal
@@ -96,15 +100,52 @@ Walking over a gold pile adds it to the gold you are carrying. Carried gold is
 to keep it safe — see [Death & Respawning](death.md) and the
 [Banker](npcs/banker.md).
 
-!!! warning "Unconfirmed: very large drops may reset to 1 gold"
-    Players have reported that dropping **1,000,000 gold or more** in a single
-    pile causes it to convert to just **1 gold** when picked back up. This is
-    an unconfirmed community report and has not been verified. If you are
-    moving extremely large sums, consider splitting them into smaller piles or
-    using the [Banker](npcs/banker.md) to be safe.
+!!! note "Piles count as dropped items"
+    A gold pile is an item like any other, so it counts toward the world's
+    global limit of **1001 [dropped items](world-objects.md#dropped-items)**.
+    Piles are evicted oldest-first once the world goes over that cap, and
+    dropping enough gold will wipe out unrelated items lying elsewhere on the
+    map.
+
+## Large balances (1,000,000 and above)
+
+The server stores gold as text with only **six significant digits**. Below
+1,000,000 that is enough to hold an exact number, so gold behaves normally.
+At 1,000,000 and above it is not, and balances get silently rounded on
+**every** change.
+
+The size of that rounding step grows with your balance:
+
+| Balance | Gold is rounded to the nearest |
+|---|---:|
+| 1,000,000 – 9,999,999 | 10 |
+| 10,000,000 – 99,999,999 | 100 |
+| 100,000,000+ | 1,000 |
+
+Two consequences matter in practice.
+
+**Small amounts vanish or double.** Any gain or loss smaller than half the
+rounding step disappears into the rounding. Picking up 1 gold at a 3,000,000
+balance may add nothing at all — or 10. This cuts both ways and is the basis
+of the [Money Printer](reference/exploits/money-printer.md) exploit.
+
+**Dropping more gold than you have destroys it.** With 1,000,000 or more,
+[`/dropgold`](commands.md#actions) with an amount above your balance deducts
+your **whole balance** but only creates a pile worth the **leading digit** of
+it. Dropping 9,000,000 while holding 2,500,000 leaves a **2 gold** pile and
+takes the entire 2,500,000. The rest is gone for good — it is not sitting in
+another pile somewhere.
+
+!!! danger "Never over-drop a large balance"
+    This is the fastest way to lose a fortune in *Age of Time*. Below
+    1,000,000 the same command is harmless (it just clamps to what you have),
+    which is why the behavior catches people out. Bank large sums instead of
+    carrying them, and never type an amount you do not actually hold.
 
 ## See also
 
+- [Money Printer](reference/exploits/money-printer.md) — minting free gold
+  from the rounding on large balances.
 - [`/dropgold`](commands.md#actions) — drop a specific amount of gold.
 - [`/bankdeposit`](npcs/banker.md#depositing-with-bankdeposit) — deposit gold
   from chat, even through walls.

@@ -18,7 +18,7 @@ the command, and press <kbd>Enter</kbd>.
 | `/stopaction` | Drop a player you're carrying, or boot the passenger off if you're driving a horse. (Same as <kbd>Ctrl</kbd>+<kbd>E</kbd>.) |
 | `/respawn` | Respawn after death. See [Death & Respawning](death.md). |
 | `/sleep` | Sleep anywhere. Sleeping in a bed regenerates your health. |
-| `/dropgold <number>` | Drops `<number>` gold coins. Example: `/dropgold 12`. |
+| `/dropgold <number>` | Drops `<number>` gold coins. Example: `/dropgold 12`. **Never ask for more than you hold at balances over 1,000,000** — it [destroys nearly all of it](gold.md#large-balances-1000000-and-above). |
 | `/bankdeposit <number>` | Deposits `<number>` gold at the [bank](npcs/banker.md) without opening the menu. A 5 gold fee comes out of the amount (so `/bankdeposit 100` banks 95). Works through walls within 5 m of the Banker. |
 
 ## Casting spells
