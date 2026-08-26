@@ -118,9 +118,13 @@ The size of that rounding step grows with your balance:
 
 | Balance | Gold is rounded to the nearest |
 |---|---:|
-| 1,000,000 – 9,999,999 | 10 |
-| 10,000,000 – 99,999,999 | 100 |
-| 100,000,000+ | 1,000 |
+| 1,000,000 – 9,999,990 | 10 |
+| 10,000,000 – 99,999,900 | 100 |
+| 100,000,000 – 999,999,000 | 1,000 |
+
+The step keeps growing by a factor of ten with each digit added, and each
+bracket ends at the largest balance the server can actually store in it — one
+more gold rounds up into the next.
 
 Two consequences matter in practice.
 
@@ -135,6 +139,15 @@ your **whole balance** but only creates a pile worth the **leading digit** of
 it. Dropping 9,000,000 while holding 2,500,000 leaves a **2 gold** pile and
 takes the entire 2,500,000. The rest is gone for good — it is not sitting in
 another pile somewhere.
+
+It really is the leading digit and not a count of millions, so the loss gets
+proportionally worse the richer you are:
+
+| Balance | Pile you get | Gold destroyed |
+|---:|---:|---:|
+| 2,500,000 | 2 | 2,499,998 |
+| 8,500,000 | 8 | 8,499,992 |
+| 45,000,000 | 4 | 44,999,996 |
 
 !!! danger "Never over-drop a large balance"
     This is the fastest way to lose a fortune in *Age of Time*. Below
