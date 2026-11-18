@@ -212,12 +212,17 @@ a kind of community-service credit.
 
 ## Throwing knife theft
 
-Thrown knives are protected for their owner for roughly the first minute after
-they land or are dropped. During that window, the owner auto-collects them by
-touching them, and taking one yourself counts as **Throwing Knife Theft**.
+A thrown knife belongs to the player who threw it for **30 seconds** after it
+drops to the ground. During that window, picking it up yourself counts as
+**Throwing Knife Theft**. Knives are picked up with the action key
+(<kbd>E</kbd>), not collected automatically by touching them.
 
 Once the knife shows a **`V`** above it, that temporary ownership has expired
-and anyone can take it freely.
+and anyone can take it freely. A knife **dropped from someone's inventory**
+(rather than thrown) is never protected and shows the `V` straight away.
+Thrown knives left on the ground disappear after **2 minutes**; knives dropped
+from an inventory don't. See
+[Weapons § Throwing Knife](items/weapons.md#throwing-knife) for more.
 
 ## Paying fines
 

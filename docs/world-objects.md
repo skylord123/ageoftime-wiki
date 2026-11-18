@@ -56,8 +56,8 @@ gold lying on the ground is lost.
 
 ## Tree
 
-Trees are world objects that you blow up with [Dynamite](items/index.md#general-items)
-to get wood plank types. Only tree objects that show a visible **health bar**
+Trees are world objects that you blow up with [Dynamite](items/weapons.md#dynamite)
+to get wood plank types. Dynamite is the only thing that can fell a tree. Only tree objects that show a visible **health bar**
 when targeted are valid resource trees and will drop wood. Different tree
 models do **not** all share the same wood drop table. For the resulting wood
 items, see [Wood Types](items/wood-types.md).

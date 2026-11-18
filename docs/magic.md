@@ -61,8 +61,10 @@ commonly used spell because of its very low mana cost — you can fire roughly
 
 - Bounces off any surface it hits.
 - Disappears **5 seconds** after being cast.
-- On hit against an NPC, player, or horse, **pushes the target backward** while
-  also dealing damage.
+- On hit against an NPC, player, or horse, deals **15 damage** and **pushes
+  the target** about 10 m/s along the Ball's path, tilted slightly upward.
+- A raised [Shield](items/weapons.md#blocking) blocks the damage but **not**
+  the push.
 - Does **not** damage the player who cast it.
 
 **Tactics**
@@ -81,8 +83,13 @@ commonly used spell because of its very low mana cost — you can fire roughly
 
 A short, slow stream of fire emitted in front of the caster.
 
-Burn has poor damage and very limited range, so most players skip it. It is
-sometimes mentioned as an anti-[Imp](enemies.md) spell, but that only really
+The stream reaches about **11.5 m** and deals **2 damage** per hit many times
+a second — roughly **30 damage per second** for as long as you keep it on a
+target — with no knockback. Your own movement is added to the stream, and the
+flame you see sprays slightly off from where the fire actually lands, which
+makes it awkward to aim.
+
+Most players skip Burn. It is sometimes mentioned as an anti-[Imp](enemies.md) spell, but that only really
 works if the Imp is already trapped or pinned down; in most real situations,
 using a sword is better.
 
@@ -94,7 +101,10 @@ A large fiery projectile. With a high mana cost, you can typically fire only
 about **three** before your mana is depleted.
 
 Fireball deals **area-of-effect damage** where it lands, which makes it
-forgiving to aim — you don't need a direct hit. Aiming at the ground near a
+forgiving to aim — you don't need a direct hit. The blast does **22 damage**
+close in, fading to nothing about 3.5 m out, and gives a small push (about
+4.5 m/s). A **direct hit** does **44** (22 for the hit plus 22 from the
+blast). Walls block the blast. Aiming at the ground near a
 target will still inflict significant splash damage, and the AoE makes it
 effective against tightly-grouped enemies or players who are dodging.
 

@@ -31,7 +31,8 @@ Hostile creatures and other dangers found in *Age of Time*.
 
 - **Fire Orc**
 
-    A red Orc that uses Fire magic. Only spawns in the Volcano. Drops two or
+    A red Orc that uses Fire magic — the same [Burn](magic.md#burn) spell
+    players can cast, which reaches about 11.5 m. Only spawns in the Volcano. Drops two or
     three sticks of Dynamite and has a chance to drop lit Dynamite.
 
 - ![Sea Monster](assets/enemies/1SeaMonster.png){ width=96 }
@@ -83,6 +84,23 @@ Hostile creatures and other dangers found in *Age of Time*.
     Other players. Usually extremely hard to evade or kill.
 
 </div>
+
+## Fighting monsters
+
+- The standard **Orc** has **100 health**, the same as a player: it takes
+  four quick [sword](items/weapons.md#sword-combat) hits (30 damage each) to
+  kill. Other monsters' health has not been measured.
+- Monsters take [Dynamite](items/weapons.md#dynamite) damage and get pushed
+  by the blast **exactly like players** — a stick inside about 5 m kills an
+  Orc.
+- Monsters never take damage from being slammed into walls or from falling.
+- A raised [Shield](items/weapons.md#shield) blocks a monster's contact
+  damage, and the shield's metal has special effects against monsters:
+  Copper freezes them, Zinc spins them around, Gold makes them drop gold
+  (up to 10 piles per monster), Lead knocks them back, and Iron/Steel sparks
+  hurt them. See
+  [Blacksmith § Shield metal effects](npcs/blacksmith.md#shield-metal-effects)
+  for the details.
 
 ## Spawning mechanics
 

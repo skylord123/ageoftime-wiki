@@ -51,7 +51,7 @@ Material choice matters differently by item type:
 - [Swords](../items/weapons.md#sword) always deal the same damage and do not gain
   special metal effects.
 - [Shields](../items/weapons.md#shield) can trigger special effects based on their
-  body metal.
+  body metal — see [Shield metal effects](#shield-metal-effects).
 - [Crossbows](../items/weapons.md#crossbow) fire bolts faster or slower depending
   on a single metal slot — see
   [Crossbow metals and bolt speed](#crossbow-metals-and-bolt-speed).
@@ -79,28 +79,50 @@ page.
 
 ## Shield metal effects
 
-Shield effects are community-reported and not officially documented.
+Measured on the official server in **2026-11** by blocking sword hits from
+another player and from Orcs with shields crafted from every metal.
 
-- They trigger from **monster contact damage** or from **a player hitting the
-  shield user with a sword**.
-- The shield's **base** metal (the **10 Metal** ingredient) determines its
-  main effect, per the table below.
-- The **secondary** metal (the **2 Metal** ingredient) can also matter — see
-  [Secondary metal: Lead](#secondary-metal-lead) below. No other secondary
-  metal has a confirmed effect.
-- The remaining metal slot is believed to be cosmetic only.
+- Effects fire **only when the shield actually blocks a hit**: the shield
+  must be fully raised and the hit must land on the front half of your body
+  (see [Weapons § Blocking](../items/weapons.md#blocking)). Carrying or
+  equipping the shield without raising it does nothing.
+- They trigger from **a player hitting you with a sword** or from
+  **monster contact damage**. Crossbow bolts, thrown knives and spells are
+  blocked but never trigger an effect. A charged sword swing triggers the same
+  effect as a quick one.
+- The effect always lands on the **attacker**.
+- The shield's **base** metal (the **10 Metal** ingredient) decides the main
+  effect, per the table below. Iron, Steel and Gold only work in this slot.
+- The **secondary** metal (the **2 Metal** ingredient) only matters if it is
+  **Lead** — see [Secondary metal: Lead](#secondary-metal-lead) below.
+- The last metal (the **1 Metal** ingredient) does nothing.
 
-| Base metal | Reported shield effect |
-|---|---|
-| Copper | Freezes monsters for about 1 second and makes them lose their target. |
-| Zinc | Spins monsters around and makes them lose their target. |
-| Gold | Makes players drop 1 gold; makes monsters spawn 1 gold. |
-| Iron | Spawns a couple of low-damage sparks. |
-| Steel | Spawns more sparks. |
-| Lead | Knocks the attacker back a few feet. |
-| Plutonium | No confirmed effect. |
-| Rust | No confirmed effect. |
-| Brass | No confirmed effect. |
+| Base metal | Against players | Against monsters |
+|---|---|---|
+| Copper | Nothing. | Freezes the monster for about 1 second (it turns blue and stands still), then it comes straight back at you. Has a cooldown of about **4 seconds**: the first block after the cooldown always freezes, blocks during it do nothing. |
+| Zinc | Nothing. | Every blocked hit spins the monster to a random direction. If that leaves you out of its view (even a ~30° turn can), it loses you and stands still for about half a second to a second before turning back; if it can still see you it keeps coming. No cooldown. |
+| Gold | The attacker drops **0, 1 or 2** of **their own** gold, each equally likely — on average 1 gold per hit, and 2 hits in 3 drop something. Random, no cooldown. An attacker with no gold drops nothing. | The monster drops gold out of thin air (it still drops its normal gold when killed), but each monster gives at most **10** piles, ever. The limit is shared by everyone and never refills; a newly spawned monster starts fresh. |
+| Iron | **1** spark shoots out. | Same sparks; they hurt monsters too. |
+| Steel | **3** sparks shoot out. | Same sparks; they hurt and can kill monsters. |
+| Lead | The attacker is launched about **3.6 m** back and up into the air. | The monster pops about 1 m into the air and about 3 m back. |
+| Plutonium | Nothing. | Not tested. |
+| Rust | Nothing. | Not tested. |
+| Brass | Nothing. | Not tested. |
+
+**Sparks (Iron and Steel):** each spark that connects takes about **3%** of
+the target's health — on players and monsters alike — and there is no
+cooldown. Sparks spray out in a cone the way **your shield faces**, not
+straight at the attacker, so an attacker standing off to the side or at range
+mostly dodges them. An Orc died after about 34 spark hits.
+
+**Lead knockback:** pushes the attacker straight **away from you**, even if
+they attack from the side, and adds to their own movement (an attacker
+running in gets knocked back less). No cooldown.
+
+!!! tip "Walking into a monster while blocking"
+    Walking into a monster with your shield raised can register its hit
+    **twice**, so the effect fires twice at once: a Lead shield knocks it
+    about 9.5 m back, and an Iron or Steel shield fires two bursts of sparks.
 
 !!! tip "Copper and Zinc shields can break monster spawning"
     The lose-target effect from Copper and Zinc shields can be exploited to
@@ -109,22 +131,24 @@ Shield effects are community-reported and not officially documented.
 
 ### Secondary metal: Lead
 
-Supplying **Lead** as the secondary (**2 Metal**) ingredient adds Lead's
-knockback effect **on top of** the base metal's effect, so the shield
-triggers both at once.
+Supplying **Lead** as the secondary (**2 Metal**) ingredient adds a
+**smaller** knockback (about **2.1 m** instead of 3.6 m) **on top of** the
+base metal's effect, so the shield triggers both at once — for example a
+Gold/Lead shield drops the attacker's gold *and* knocks them back.
 
-The exception is **Iron** and **Steel** bases: combining them with a Lead
-secondary breaks their sparks, leaving the shield with **only the
-knockback**.
+This also works on **Iron** and **Steel** bases: they keep all their sparks
+and gain the knockback. Extra Lead does not stack — a shield with Lead in
+every slot knocks exactly as hard as one with Lead only as the base. Lead as
+the last (1 Metal) ingredient does nothing.
 
 !!! note
-    These reports only cover shield behavior. Sword damage/effects do not
-    appear to change with metal.
+    Sword damage does not change with metal; only shields and crossbows
+    are affected by the metals they are made from.
 
 ## Crossbow metals and bolt speed
 
-Unlike the shield effects above, this data was measured directly by logging
-bolt spawn velocities in-game for the same crossbow crafted from every metal
+This data was measured directly by logging bolt spawn velocities in-game
+for the same crossbow crafted from every metal
 (tested **2026-07**).
 
 - Only the metal supplied for the **2 Metal** ingredient matters. The
