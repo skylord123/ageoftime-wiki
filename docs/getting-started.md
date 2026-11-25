@@ -18,6 +18,25 @@ The current public release is **Version 30 (5/3/2024)**.
     Older builds shipped as `.rar` archives that required WinRAR or WinZIP to
     extract. The current installer handles this for you.
 
+## Creating a character
+
+The **Create Character** screen lists the rules for names and passwords:
+
+**Name**
+
+- At least 2 and at most 30 characters.
+- Letters only, plus `'` and `-` (no numbers or other symbols).
+- Must contain at least one letter.
+- No more than one space in a row.
+
+**Password**
+
+- At least 6 characters.
+- It also can't be the word `password` (the game refuses it with
+  *Your password cannot be "password"*).
+
+A name that breaks the rules is refused with *"Invalid Name"*.
+
 ## Controls
 
 These are the default bindings shipped with the game. The full list is
@@ -81,6 +100,35 @@ options menu (<kbd>Ctrl</kbd>+<kbd>O</kbd>).
 | <kbd>Page Up</kbd> / <kbd>Page Down</kbd> | Scroll chat history |
 | <kbd>F2</kbd> | Show player list |
 
+#### How chat works
+
+- **Global chat** (<kbd>T</kbd>) goes to everyone online. Messages are cut
+  to **120 characters**.
+- **Local chat** (<kbd>Y</kbd>) shows as *"Name says, "…""* to players within
+  about **15 m** of you. The server searches a 15 m radius and counts a player
+  as soon as the edge of their body is inside it, so the reach is a little more
+  than 15 m between the two players: about 15.3 m along the compass diagonals
+  (NE–SW, SE–NW) and up to about 15.6 m north–south or east–west. Walls
+  don't block it: people on the other side of a wall still hear you. Long local
+  lines are cut at about 255 characters, closing quote included.
+- The server removes `"` `~` and `` ` `` from both kinds of chat, along with
+  accented letters (é, ü, ñ …) and any hidden control characters, so colour
+  codes and line breaks can't be slipped into a message.
+- **Flood protection:** global and local chat share one limit. Each message
+  counts for 10 seconds, and a 5th message while 4 are counting blocks you for
+  10 seconds with *"FLOOD PROTECTION: You must wait another 10 seconds."*
+- **In jail** you can't use global chat (*"You cannot chat globally from
+  jail."*), but local chat still works.
+- **While stunned** by a police baton (also while being carried) you can't use
+  global chat either (*"You cannot chat globally while stunned."*). Local chat
+  still works, so you can still talk to the officer.
+- You can chat normally while dead or asleep, but not from the character
+  screen after `/logout`: anything you type there is silently thrown away.
+- Only global chat can get you [chat crimes](police-mechanics.md#chat-crimes-in-detail)
+  (cursing, all caps, spamming).
+- Anything starting with `/` is sent as a [slash command](commands.md). An
+  unknown command does nothing; there's no error message.
+
 ### System
 
 | Key | Action |
@@ -100,7 +148,8 @@ to stop.
 - **Rescuing players** — pick up a dead player. Drop them
   (<kbd>Ctrl</kbd>+<kbd>E</kbd>) on a bed to bring them back to life. The
   player can resist being rescued by pressing jump (default <kbd>Space</kbd>).
-- **Open doors** — look at a door and press <kbd>E</kbd>.
+- **Open doors** — look at a door and press <kbd>E</kbd>. You can reach a door
+  from up to about **3.5 m** away (measured from your eyes to the door).
 - **Buy things** — the price appears above an item. Look at it and press <kbd>E</kbd>
   to purchase.
 

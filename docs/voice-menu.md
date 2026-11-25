@@ -61,6 +61,24 @@ play on any row to preview the in-game audio.
     Clips are extracted from `base/data/sound/female/voiceA/` in the official
     game install (the only voice set shipped with v0030).
 
+## How often you can use them
+
+Voice lines and emotes (Love, Hate, WTF, Alarm) share a spam limit. When you
+hit it, nothing plays and you get no message. Sit, Lounge and chat don't count
+towards it.
+
+- Leave **at least about 1 second** between them and you can use them forever.
+- Use them faster than that and you get **6 in a row**. The next quick one
+  locks you out.
+- The lock lifts about **10 seconds after your last one that played**.
+  Trying again while locked doesn't make it last longer.
+- A pause of over a second lets one more through, but the counter stays full
+  until you've been quiet for those 10 seconds. One every 1.5 seconds keeps
+  it full indefinitely.
+- The limit is per player, it works the same while you're dead, and dying or
+  respawning doesn't lift a lock.
+- Voice lines and emotes don't work from the character screen after `/logout`.
+
 ## Animation
 
 Full-body character animations. Useful for taking a break, idling at a shop,

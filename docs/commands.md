@@ -7,7 +7,8 @@ the command, and press <kbd>Enter</kbd>.
 
 | Command | Effect |
 |---|---|
-| `/logout` | Switch characters without disconnecting from the server. |
+| `/playtime` | Shows your character's total play time, for example *"Total Play Time: 42:05:00"* (hours:minutes; under an hour it shows just minutes, like *"54:00"*). You need **1 hour** to [join the police](npcs/police.md#becoming-a-police-officer). It counts on the [server's clock](reference/server-clock.md#playtime-is-close-but-not-exact), which runs about 4% slow, so it's a little behind your real play time. |
+| `/logout` | Switch characters without disconnecting from the server, after a 5-second countdown. Logging out while stunned by a police baton [gets you arrested](police-mechanics.md#logging-out-while-stunned) if you are wanted. |
 
 ## Actions
 
