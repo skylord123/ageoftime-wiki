@@ -57,15 +57,25 @@ A small projectile that can be fired in rapid succession. Ball is the most
 commonly used spell because of its very low mana cost — you can fire roughly
 **35 consecutive shots** before draining a full mana bar.
 
+| Property | Value |
+|---|---|
+| Damage | **15** per hit (7 hits kill a full-health player or Orc) |
+| Speed | **30 m/s**, plus your own running or jumping speed |
+| Push | **10 m/s** per hit, whatever the Ball's speed |
+| Lasts | about **5 s** |
+
 **Behavior**
 
-- Bounces off any surface it hits.
+- Bounces off any surface it hits, and falls with normal gravity.
 - Disappears **5 seconds** after being cast.
 - On hit against an NPC, player, or horse, deals **15 damage** and **pushes
-  the target** about 10 m/s along the Ball's path, tilted slightly upward.
+  the target** 10 m/s along the Ball's path, tilted upward — a flat shot
+  also lifts the target by about 4 m/s.
+- Off a player or creature the Ball comes **straight back** the way it came,
+  at 90% of its speed, instead of glancing off.
 - A raised [Shield](items/weapons.md#blocking) blocks the damage but **not**
-  the push.
-- Does **not** damage the player who cast it.
+  the push, and the shield's metal effect does not trigger.
+- Does **not** damage the player who cast it, but does push them.
 
 **Tactics**
 
@@ -83,11 +93,19 @@ commonly used spell because of its very low mana cost — you can fire roughly
 
 A short, slow stream of fire emitted in front of the caster.
 
-The stream reaches about **11.5 m** and deals **2 damage** per hit many times
-a second — roughly **30 damage per second** for as long as you keep it on a
-target — with no knockback. Your own movement is added to the stream, and the
-flame you see sprays slightly off from where the fire actually lands, which
-makes it awkward to aim.
+| Property | Value |
+|---|---|
+| Damage | **2** per hit, about 15 hits a second (one every 0.064 s) |
+| Damage per second | about **30** while the stream stays on the target |
+| Reach | about **11.5 m** |
+| Stream speed | **12 m/s**, plus your own movement |
+| Knockback | None |
+| Mana | Drains steadily while you hold the button; stops when your mana runs out |
+
+The stream flies straight (it doesn't drop) and never burns the caster. The
+fire actually travels along **where you are looking**, but the flame you see
+comes out of your hand, so it sprays slightly off from where the fire really
+lands, which makes it awkward to aim.
 
 Most players skip Burn. It is sometimes mentioned as an anti-[Imp](enemies.md) spell, but that only really
 works if the Imp is already trapped or pinned down; in most real situations,
@@ -101,12 +119,24 @@ A large fiery projectile. With a high mana cost, you can typically fire only
 about **three** before your mana is depleted.
 
 Fireball deals **area-of-effect damage** where it lands, which makes it
-forgiving to aim — you don't need a direct hit. The blast does **22 damage**
-close in, fading to nothing about 3.5 m out, and gives a small push (about
-4.5 m/s). A **direct hit** does **44** (22 for the hit plus 22 from the
-blast). Walls block the blast. Aiming at the ground near a
+forgiving to aim — you don't need a direct hit. Aiming at the ground near a
 target will still inflict significant splash damage, and the AoE makes it
 effective against tightly-grouped enemies or players who are dodging.
+
+| Property | Value |
+|---|---|
+| Blast damage | **22** within about 1.75 m, fading to nothing at about **3.5 m** |
+| Direct hit | **44** (22 for the hit plus 22 from the blast) |
+| Push | about **4.5 m/s** at full strength, fading like the damage |
+| Speed | **20 m/s**, plus your own running or jumping speed |
+| Arc | a gentle arc (80% of normal gravity) |
+
+- The blast distances are measured to the edge of the target's body, not its
+  centre.
+- Walls block the blast.
+- A Fireball blast does no damage to players inside a safe zone.
+- Fireballs no longer fell trees — only [Dynamite](items/weapons.md#dynamite)
+  does — but they still break crates.
 
 Fireball is also one of the better PvP spells because the splash damage makes
 it hard to dodge cleanly.
