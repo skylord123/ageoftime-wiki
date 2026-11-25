@@ -29,7 +29,8 @@ be grown into more Fiber: throw a Fiber onto the ground to plant a Fiber plant.
 2. A small Fiber plant appears and starts growing immediately.
 3. Leave it for about **31 minutes**. Plants continue growing while no one is
    nearby.
-4. When the plant is fully grown, destroy it to receive **2–3 Fiber**.
+4. When the plant is fully grown, destroy it to receive **2–3 Fiber**. A
+   plant has 30 health: one sword hit or two Ball spells.
 5. Replant one of the harvested Fiber to begin the next crop.
 
 Each plant is single-use. Harvesting removes it completely; it will not grow
@@ -42,8 +43,39 @@ back in the same spot on its own.
     reports: `You can't plant any more fiber. (global limit)`
 
     Separately, a `DestructableSpawner` keeps **10 randomly placed** Fiber
-    plants in the world. These do not count against the player-grown limit, so
+    plants in the world. These wild plants are always fully grown: when you
+    harvest one, a new ripe one appears about a second later somewhere else
+    on the map. These do not count against the player-grown limit, so
     the absolute maximum is **510 Fiber plants** at once.
+
+## Throwing and where plants grow
+
+Hold the attack button to charge the throw and release it to throw. A quick
+tap throws the Fiber at about 6.4 m/s. Every bit of extra holding adds speed,
+up to the maximum of 40 m/s after about 3 seconds, so you can lob a seed a long
+way. It flies straight where you're looking and sticks to almost anything it
+hits. Your own movement is added to the throw: throwing while running forward
+sends it further, and throwing while backing up shortens it. Every throw uses up one Fiber, even if no plant grows.
+
+About 3 seconds after the throw, a plant grows **exactly where the Fiber
+stopped**, but only if it stuck to:
+
+- the ground, including steep slopes up to about **80°**, and even just
+  under water;
+- a building floor or other walkable building surface.
+
+Nothing grows, and the Fiber is lost, if it stuck to a **wall**, a **tree**,
+a **crate or other object**, or a **person or NPC**. Fiber thrown at a Large
+Rock flies straight through it. There's no message when a throw fails.
+
+What actually decides it: the server checks straight down from where the
+Fiber stopped, and the plant only grows if there's ground or a building
+floor within **30 cm** below it. A Fiber stuck to a slope steeper than about
+80° hangs too far above the ground beneath it, so it fails. Near a ledge or a
+dip it can go either way, because what counts is the ground directly below.
+
+Plants don't need any space: they can grow right next to each other, a few
+centimetres apart.
 
 ## How to tell when it is ready
 
@@ -60,7 +92,8 @@ only `1 1 1` is safe to harvest; do not rely on an almost-full appearance.
 
 Fiber plants grow one stage at a time on a shared server-wide growth tick. The
 tick is designed to run every server minute, which was measured as about
-**62.4 seconds of real time**. A plant becomes ripe on the 30th tick after it
+**62.4 seconds of real time** (the [server clock](../reference/server-clock.md)
+runs about 4% slow). A plant becomes ripe on the 30th tick after it
 is planted.
 
 Because planting can happen anywhere between ticks, a new plant takes about

@@ -28,6 +28,14 @@ gold lying on the ground is lost.
 
 ## Resource nodes and breakables
 
+Crates, Large Rocks, Shrubs, the Dynamite Chest and the breakable trees are all
+placed by the same kind of spawner. Each one picks random spots on a grid
+around its centre and gives up on an object after about **100 failed tries**.
+For crates this is measured in detail on [Crates](crate-rates.md#where-a-crate-can-appear):
+no perfectly flat ground, spots inside buildings pushed further out, and crates
+that can be lost until the next restart. The other objects most likely follow
+the same rules, but they haven't been checked one by one yet.
+
 <div class="grid cards" markdown>
 
 - ![Crate](assets/items/Crate.png){ width=64 } **Crate** — found in
@@ -37,8 +45,11 @@ gold lying on the ground is lost.
   spawn and respawn behavior, plus measured per-zone drop rates.
 
 - ![Dynamite Chest](assets/items/Dynamite_Chest.png){ width=64 } **Dynamite
-  Chest** — very rare, found near Port Town. Drops about 5 active sticks of
-  Dynamite. Historically these used to drop large amounts of Gold, but the
+  Chest** — very rare: there's only ever one in the world. Drops **6 lit
+  sticks** of Dynamite that blow up about **2 seconds** later (much faster
+  than a thrown stick), so break it from a distance. It has 30 health (one
+  sword hit or two Ball spells), and a new chest appears about 2 seconds
+  later somewhere else on the map. Historically these used to drop large amounts of Gold, but the
   reward was changed after players began using scripts to locate and farm them
   too efficiently.
 
@@ -61,6 +72,18 @@ to get wood plank types. Dynamite is the only thing that can fell a tree. Only t
 when targeted are valid resource trees and will drop wood. Different tree
 models do **not** all share the same wood drop table. For the resulting wood
 items, see [Wood Types](items/wood-types.md).
+
+A felled tree vanishes at once in a puff of dust with flying wood chips, and
+drops **one** wood, tossed out from its base like crate loot. Dynamite reaches
+trees from surprisingly far away, about 10 m from the stick, because a tree
+counts as one big object and the blast is measured to its outer edge. A
+replacement tree of the same kind grows back about a second later, but
+somewhere else on the map, not in the same spot.
+
+The world always holds **270** breakable trees: 30 Maple (`Sharp_Maple05`), 60
+Poplar, 30 White Pine, 30 Oak, 30 Maple (`Sharp_Maple01`), 60 Monkey Pod and
+30 Pear, spread over the whole map. They never grow on top of buildings, and they're
+never stacked on other objects.
 
 <div markdown="1" style="border: 1px solid var(--md-default-fg-color--lightest, #d0d7de); border-radius: 12px; padding: 1rem; margin: 1rem 0;">
 

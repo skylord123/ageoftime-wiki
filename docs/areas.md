@@ -72,5 +72,19 @@ in-game zone boundaries, or to fly straight to any location.
 
 ### Doors
 
-Doors appear on various buildings throughout the game. They can be destroyed,
-but have high HP and respawn a few seconds later.
+Doors appear on various buildings throughout the game. They can be destroyed
+anywhere, even in Port Town: a room door takes **10 quick sword swings**
+(each one takes off a tenth of its health). It bursts into wooden chunks with
+a bang, and a new door appears in the same spot about **5 seconds** later.
+
+If a door swings shut while you're standing in the doorway you can get
+**stuck** in it. Someone else opening the door frees you; otherwise open it
+yourself if you can, or use `/suicide`.
+
+Room doors (like the ones in the Driftwood Inn) open the moment you press
+<kbd>E</kbd> on them and swing shut on their own about **2 seconds** later.
+Pressing <kbd>E</kbd> again while a door is open doesn't keep it open longer;
+it still closes 2 seconds after it first opened, so walk through quickly. An
+open doorway also counts as part of the room for
+[public nudity](police-mechanics.md#public-nudity-in-detail); a closed door
+doesn't.

@@ -6,7 +6,8 @@ metals at the [Blacksmith](../npcs/blacksmith.md#metal).
 
 Confirmed exceptions:
 
-- **Autunite** comes from [meteor showers](../tips.md#meteor-showers), not rocks.
+- **Autunite** comes from [meteor showers](../tips.md#meteor-showers), not rocks: about 7% of
+  meteors leave one where they land, and it disappears after about 30 seconds.
 - **Corprolite** drops from **Orcs** and **Knights**, not rocks.
 
 !!! note "Common ore drops"

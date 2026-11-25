@@ -23,13 +23,16 @@ seconds apart.
 | [Swamp](world/locations/swamp.md) | 10 | 1 second |
 | [Blue Hill](world/locations/blue-hill.md) | 10 | 1 second |
 
-!!! bug "Woods and Volcano crates can permanently disappear"
-    In both the Woods and Volcano, a crate can fail to be placed when the
-    server starts or when a broken crate tries to respawn. The spawner makes up
-    to **100 placement attempts**, but gives up once those attempts are
-    exhausted; the crate is then lost and the area's active crate count can
-    permanently decrease. Treat the listed counts as starting/max counts rather
-    than a guarantee of how many crates are currently available.
+!!! bug "Crates can permanently disappear"
+    A crate can fail to be placed when the server starts or when a broken
+    crate tries to respawn. The spawner makes about **100 placement attempts**
+    and then gives up; that crate is gone until the next server restart, so an
+    area's crate count can only go down between restarts. Every spawner works
+    this way, but it only matters where most spots are unusable: the **Woods**,
+    the **Volcano** and the **Level 1** dungeon (about 0.7% of Level 1 respawns
+    fail, so after a couple of thousand breaks only one crate was left). Treat
+    the listed counts as starting/max counts rather than a guarantee of how
+    many crates are currently available.
 
 ### Where a crate can appear
 
@@ -55,6 +58,26 @@ one (up to 100 attempts). The grid spacing is always:
 spawn radius / 50
 ```
 
+Crates never spawn on perfectly flat ground. The spawner looks straight down
+from just above its own height and only accepts a surface that is at least a
+little sloped, so in the Volcano every crate sits on the steep faces at the edge
+of the plateau, and in Level 1 only on the sloped floor pieces of some rooms.
+The same goes for flattened terrain: the flat area in the middle of Auric Fields
+never gets a crate. Crates can still stack, because the top of a crate isn't
+perfectly flat.
+
+Whether crates can spawn under water depends on the farm. Blue Hill's crates are
+all under water and the Swamp's often are, but Auric Fields and Red Crater never
+put a crate under water.
+
+Crates can land **outside** the radius. When a picked spot is inside a
+building or wall (anything within 2 units above the spawner), the spawner
+doesn't start over from its centre: it adds another random offset to the
+spot it just rejected. In the open farms this almost never happens, so their
+crates stay inside the circle. In the Volcano about 4% of crates land outside
+it (up to 1.5 × the radius), in the Woods about 6%, and in Level 1 over a
+third (up to about twice the radius).
+
 Terrain and objects can make a grid cell unusable. This matters most in the
 Woods and Volcano. Volcano has a small, stable set of usable cells, so crates
 often pile up in the same footprints. The Woods maze changes every server
@@ -62,6 +85,18 @@ restart, so its usable cells—and therefore its repeated crate spots—are
 dynamic; a percentage of valid spawn points from a multi-restart log would not
 describe any one server. The flatter farms can use almost their entire grid, so
 their crates are distributed much more widely.
+
+## Breaking a crate
+
+Crates have **30 health**. A sword hit (30 damage) breaks one in a single
+swing, while a Ball spell (15 per hit) takes two hits, often from the same ball
+bouncing off it. A broken crate disappears at once, with a small burst of tan dust,
+six wooden chunks that bounce one to three times before vanishing, and a short
+explosion sound you can hear up to about 100 m away.
+
+Everything it drops starts exactly where the crate stood and is tossed up and
+out in a random direction. Each drop gets its own throw: it rises 0.4 to 2 m
+and lands up to about 2.6 m from the crate on flat ground. The throw has nothing to do with where you're standing.
 
 ## Crate Rates
 
@@ -71,8 +106,8 @@ exact gold piles, item drop, and dynamite, so the percentages are tight — the
 biggest zones have 528k+ samples.
 
 !!! warning "Data still being gathered"
-    - [Level 1](world/locations/level-1.md) also contains crates, but **no
-      drop data has been logged there yet**.
+    - [Level 1](world/locations/level-1.md) has only about 1,500 logged crates
+      so far, so its rare outcomes are still rough.
     - [Volcano](world/locations/volcano.md) and the
       [Woods](world/locations/woods.md) have smaller sample sizes (50k–57k
       crates) and need more data to fully hone their rates.
@@ -117,16 +152,18 @@ all (590,687 crates logged):
 |:--------|-------:|
 | 3 gold (1+1+1) | 52.6% |
 | 1 gold (single pile) | 42.1% |
-| 0 gold + **Red Dye** | 1.6% |
-| 0 gold + **Bright Red Dye** | 1.6% |
+| 0 gold + **Red Dye** | 2.1% |
+| 0 gold + **Bright Red Dye** | 2.1% |
 | 100 gold (jackpot) | 1.1% |
-| 0 gold, completely empty | 1.0% |
 
 - There is **no 7 or 11 gold tier** — mean is only **~3.1 gold/crate**, less
   than half of any other zone.
 - **Dyes come in gold-less crates** instead of riding a gold tier, and the
   Red/Bright Red split is ~50/50 rather than 2:1.
-- It's the only zone with truly **empty crates** (~1%).
+- Crates are **never empty**. The farmer's logs showed ~1% empty crates here,
+  but watching over 1,000 breaks directly showed every crate dropping
+  something: the "empty" ones were dye crates whose only drop, the dye, the
+  bot didn't pick up. They're counted as dye crates in the table above.
 
 ### Volcano — no jackpot, three dyes
 
@@ -135,16 +172,15 @@ all (590,687 crates logged):
 
 | Outcome | Chance |
 |:--------|-------:|
-| 3 gold (1+1+1) | 50.2% |
-| 7 gold (1+1+5) | 40.2% |
+| 3 gold (1+1+1) | 50.3% |
+| 7 gold (1+1+5) | 40.3% |
 | 11 gold + **Black Dye** | 5.1% |
 | 11 gold + **Magenta Dye** | 2.7% |
 | 0 gold + **Pitch Black Dye** | 0.8% |
 | 11 gold, no item | 0.8% |
-| 0 gold, empty | 0.3% |
 
 - **The 100-gold jackpot does not exist in Volcano** — zero in 50k+ breaks.
-  Mean is 5.26 gold/crate.
+  Mean is 5.27 gold/crate.
 - It's the only zone with **three dye types**: Black and Magenta on the
   11-gold crate, plus rare **Pitch Black Dye** in its own gold-less crate
   (~1 in 125 crates — the rarest dye per crate in the game).
@@ -152,9 +188,27 @@ all (590,687 crates logged):
 !!! note "What about Orange Dye?"
     **Orange Dye does not drop from Volcano crates**, despite being
     historically credited to them — it did not appear once in 50k+ logged
-    breaks. Where it actually comes from is unknown; the unlogged
-    [Level 1](world/locations/level-1.md) crates are one possibility, but
-    there is no data for that yet.
+    breaks. It comes from [Level 1](#level-1) crates instead.
+
+### Level 1
+
+[Level 1](world/locations/level-1.md) crates use the standard gold tiers but,
+like the Volcano, have **no 100-gold jackpot**, and its 11-gold crate carries a
+**Blue Vial** or **Brown Dye** instead of a dye pair. It is also where
+**Orange Dye** drops: a rare gold-less crate with two Blue Vials and an
+Orange Dye (the only crate source; you can also mix it from Bright Red and
+Bright Yellow Dye).
+
+| Outcome | Chance |
+|:--------|-------:|
+| 3 gold (1,1,1) | 50.1% |
+| 7 gold (1,1,5) | 39.0% |
+| 11 gold (1,10) + Blue Vial | 6.3% |
+| 11 gold (1,10) + Brown Dye | 3.2% |
+| 0 gold + 2 Blue Vials + Orange Dye | 1.2% |
+
+Based on 1,516 crates logged 2026-11-22 and 23. Mean is about 5.3 gold per
+crate.
 
 ### Per-zone sample sizes
 
@@ -165,7 +219,8 @@ all (590,687 crates logged):
 | [Swamp](world/locations/swamp.md) | 316,224 | 6.26 | 0.97% |
 | [Blue Hill](world/locations/blue-hill.md) | 311,864 | 6.25 | 1.00% |
 | [Woods](world/locations/woods.md) | 56,868 | 6.28 | 1.00% |
-| [Volcano](world/locations/volcano.md) | 50,062 | 5.26 | none |
+| [Volcano](world/locations/volcano.md) | 50,062 | 5.27 | none |
+| [Level 1](world/locations/level-1.md) | 1,516 | 5.29 | none |
 
 ### TL;DR for farmers
 

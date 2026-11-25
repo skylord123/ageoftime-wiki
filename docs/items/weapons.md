@@ -85,8 +85,11 @@ The standard defensive item.
 
 ### Blocking
 
-- Hold <kbd>Right Mouse</kbd> to raise the shield. It takes about **0.25 s**
-  to come up and lowers by itself after **2.5 s**, even if you keep holding.
+- Hold <kbd>Right Mouse</kbd> to raise the shield. It blocks as soon as it
+  is up (a freshly equipped shield needs about **0.25 s** before it can be
+  raised) and lowers by itself after **2.5 s**, even if you keep holding.
+  Once it starts lowering it takes about **0.75 s** before you can raise it
+  again.
 - A raised shield blocks the **whole hit** — no damage at all — for any hit
   that lands on the **front half of your body**. What counts is where the hit
   lands, not where the attacker is standing: a bolt from the side that clips
@@ -100,6 +103,8 @@ The standard defensive item.
   be blocked, but the shield's metal effect only fires against **sword hits**
   and **monster contact**. A fully charged sword swing triggers the same
   effect as a quick one.
+- A shield does **not** protect you from the [Police Baton](#police-baton):
+  you are stunned even with the shield raised.
 - You can't swing your sword while the shield is raised (see
   [Sword combat](#sword-combat)).
 
@@ -128,18 +133,30 @@ The standard ranged offensive item.
 
 ### Bolts
 
-| Ammo | Damage | Notes |
-|---|---:|---|
-| Steel Bolts | **20** | Only when the bolt sticks into its target; a bolt that bounces does no damage. |
-| Exploding Bolts | **18** | Small blast: full damage within about 1 m, fading to nothing at about 2 m. A direct hit does the same 18. No push. |
+| Ammo | Damage | Hits to kill | Lasts | Notes |
+|---|---:|---:|---|---|
+| Steel Bolts | **20** | 5 | about **15 s** | Damages only when the bolt sticks into its target; a bolt that bounces does no damage. |
+| Exploding Bolts | **18** | 6 | about **1 s** of flight | Bursts the moment it touches anything. Small blast: full damage within about 1 m, fading to nothing at about 2 m. A direct hit does the same 18. |
 
+- **Speed:** both bolt types leave at the speed set by your crossbow's metal
+  (from 5 m/s for Lead up to 200 m/s for Plutonium — see the
+  [Blacksmith table](../npcs/blacksmith.md#crossbow-metals-and-bolt-speed)),
+  plus your own running or jumping speed.
+- **No knockback:** neither bolt pushes the target.
 - **Stick or bounce:** steel bolts stick into whatever they hit unless the
   hit is a shallow, glancing one — bolts that meet a surface at less than
   about **17°** bounce off instead.
-- A bolt disappears about **15 seconds** after it is fired, whether it is
-  still flying or stuck in something.
+- A steel bolt disappears about **15 seconds** after it is fired, whether it
+  is still flying or stuck in something.
+- An exploding bolt only flies for about **1 second**, then **explodes in
+  mid-air** wherever it is. Its range is roughly your crossbow's speed × 1 s:
+  about 35 m with a Copper crossbow, about 190 m with a Plutonium one.
+- **Drop:** bolts fall at about 80% of normal gravity, so long shots arc
+  down. A steady 45° Plutonium shot is still climbing after 15 seconds,
+  about 2 km away.
 - **Exploding bolts hurt you too** if you are inside the blast, except while
   you are in a safe zone.
+- A raised [shield](#blocking) blocks both kinds of bolt.
 
 ## Throwing Knife
 
@@ -223,6 +240,71 @@ can't be used at all.
 - Dynamite is the only thing that can fell [trees](../world-objects.md#tree)
   for wood, and it also breaks crates.
 
+## Police Baton
+
+<div markdown="1" style="display: flex; align-items: flex-start; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
+
+![Police Baton](../assets/items/PoliceBaton.png){ width=100 loading=lazy }
+
+<div markdown="1" style="flex: 1; min-width: 240px;">
+
+Given to every officer who joins the [Police](../npcs/police.md). The baton
+does **no damage**: it **stuns** the player it hits, who falls flat on their
+back and can't move until the stun wears off, while their camera circles
+their body as if they were dead. Stuns are used to
+[arrest](../police-mechanics.md#arrest-mechanics) wanted players.
+
+</div>
+</div>
+
+Hold the attack button to charge, release to swing. The longer you charge,
+the longer the stun:
+
+| Charge | Stun on a wanted player |
+|---|---|
+| Quick tap | about **1.8 s** (the minimum) |
+| 0.5 s | about 9 s |
+| 1 s | about 18 s |
+| 1.5 s | about 27 s |
+| about 2.1 s or more | **36.5 s** (the most one hit can give) |
+
+| Property | Value |
+|---|---|
+| Stun per second of charge | about **17.6 s** |
+| Longest stun from one hit | about **36.5 s** (reached at about 2.1 s of charge) |
+| Longest stun from several hits | about **47 s** |
+| Longest stun on an innocent player or a monster | **10.4 s** |
+| Reach | about **4.7 m** from your eyes when standing still |
+| Time between swings | about **1 s** |
+| Damage | none |
+
+- **Hits add up:** hitting someone who is already stunned adds the new hit's
+  stun to the time they have left, up to a total of about 47 s.
+- **No full-charge signal:** nothing tells you when the charge is at its
+  maximum, so count about 2 seconds. On an innocent player a full-charge hit
+  is [Police Brutality](../police-mechanics.md#baton-hits-and-crimes)
+  instead of False Arrest.
+- **Charge never runs out:** unlike the sword and shield, the baton stays at
+  full charge for as long as you hold the button, so you can hold a full
+  charge and release it whenever a target comes into reach.
+- **Running adds reach:** the swing carries your full running speed, so
+  charging at someone reaches about 1 m further, while backing away
+  shortens it.
+- **Shields don't help:** a raised shield does not block the baton.
+- **Stars show the time left:** stars circle the stunned player's head —
+  lots of them with more than 10.4 s left, fewer between 10.4 and 5.2 s, and
+  only a few in the last 5.2 s. They vanish the moment the stun ends.
+- **While stunned:** pressing jump only brings up a *"You have been
+  stunned."* box (every press). A stunned player can be picked up and
+  carried with <kbd>E</kbd> like a body; the stun keeps counting down while
+  they are carried. See
+  [Police Mechanics](../police-mechanics.md#arrest-mechanics) for carrying,
+  arrests and what happens if a stunned player logs out.
+- **Monsters:** a hit puts stars over an Orc and makes it play a strange
+  falling-over animation, but it is **not** stunned or hurt: it doesn't
+  even notice the hit, and keeps chasing and attacking. Hitting a monster
+  is not a crime.
+
 ## Other weapon items
 
 <div class="grid cards" markdown>
@@ -231,6 +313,6 @@ can't be used at all.
 - ![Steel Bolts](../assets/items/Steel_Bolts.png){ width=64 } **Steel Bolts** — dropped by Imps and Sea Monsters or sold in the [Port Town Shop](../world/locations/port-town.md#shop). Standard crossbow ammunition. See [Bolts](#bolts).
 - ![Exploding Bolts](../assets/items/Exploding_Bolts.png){ width=64 } **Exploding Bolts** — dropped by Imps or sold in the [Port Town Shop](../world/locations/port-town.md#shop). Explosive crossbow ammunition. See [Bolts](#bolts).
 - ![Throwing Knives](../assets/items/Throwing_Knives.png){ width=64 } **Throwing Knives** — sold in the [Port Town Shop](../world/locations/port-town.md#shop). Projectile weapon. A thrown knife belongs to its thrower for 30 seconds; once it shows a `V` above it, anyone can take it without triggering [Throwing Knife Theft](../police-mechanics.md#throwing-knife-theft). See [Throwing Knife](#throwing-knife).
-- ![Police Baton](../assets/items/PoliceBaton.png){ width=64 } **Police Baton** — granted by joining the Police. It briefly stuns players. NPCs still show the stunned visual effect, but are not actually stunned by it.
+- ![Police Baton](../assets/items/PoliceBaton.png){ width=64 } **Police Baton** — granted by joining the Police. Stuns players for up to about 36 seconds per hit; monsters only show the stars. See [Police Baton](#police-baton).
 
 </div>

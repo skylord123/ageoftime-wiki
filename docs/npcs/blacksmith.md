@@ -158,9 +158,13 @@ for the same crossbow crafted from every metal
   materials.
 - Ammo type does not affect speed or range: Steel Bolts and Exploding Bolts
   fire at identical speeds for a given crossbow. The ammo only changes what
-  the bolt does on impact.
+  the bolt does on impact (and an exploding bolt only flies for about
+  1 second — see [Weapons § Bolts](../items/weapons.md#bolts)).
+- Your own running or jumping speed is added to the bolt.
+- The plutonium speed (200 m/s) was checked again on the official server in
+  **2026-11**.
 
-| Metal (2 Metal slot) | Bolt muzzle velocity |
+| Metal (2 Metal slot) | Bolt muzzle velocity (m/s) |
 |---|---:|
 | Plutonium | 200 |
 | Steel | 100 |

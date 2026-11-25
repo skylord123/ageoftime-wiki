@@ -64,6 +64,15 @@ differently:
 
     You'll always end up at Port Town this way.
 
+!!! note "Suicide cooldown"
+    You can't suicide while you're dead, or for **10 seconds after you
+    respawn** (after any death, not just a suicide). Trying gives
+    *"You can't suicide within 10 seconds of suiciding."*
+
+    You also can't suicide for **30 seconds after being hit by a police
+    baton** (*"You can't suicide within 30 seconds of being stunned."*), so
+    a stunned criminal can't just kill themselves to escape an officer.
+
 !!! note "Arena exception"
     Dying inside the [Arena](world/locations/arena.md) does **not** cause you to drop
     gold — it's a designated PvP zone designed for safe duels.

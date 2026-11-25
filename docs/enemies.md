@@ -93,7 +93,18 @@ Hostile creatures and other dangers found in *Age of Time*.
 - Monsters take [Dynamite](items/weapons.md#dynamite) damage and get pushed
   by the blast **exactly like players** — a stick inside about 5 m kills an
   Orc.
-- Monsters never take damage from being slammed into walls or from falling.
+- **Hitting a monster gets its attention:** a hit from a sword, bolt, knife,
+  spell or any other damaging attack makes it turn toward where the hit came
+  from and start chasing you, even if it hadn't seen you. The
+  [Police Baton](items/weapons.md#police-baton) is the exception (see below).
+- Monsters never take damage from being slammed into walls or from falling,
+  and surviving a Dynamite blast doesn't stun them.
+- The [Police Baton](items/weapons.md#police-baton) does nothing useful
+  against monsters. The hit puts stars over the Orc (for at most 10.4 s) and
+  makes it play a strange falling-over animation on top of its normal
+  movement, but it takes no damage, is not stunned, doesn't even notice the
+  hit, and keeps chasing and attacking you. Hitting a monster is not a
+  crime.
 - A raised [Shield](items/weapons.md#shield) blocks a monster's contact
   damage, and the shield's metal has special effects against monsters:
   Copper freezes them, Zinc spins them around, Gold makes them drop gold
@@ -120,6 +131,65 @@ the world. This system has two caps:
 Around-the-player enemies also **despawn** on their own: an enemy that loses
 track of any player wanders for a set time and is then removed. An enemy
 only persists as long as it has a player to track.
+
+### Timer, placement and loitering
+
+Measured **2026-11-24** with a dead player in the wilderness north of Port
+Town (13 spawns over 10 minutes):
+
+- **Timer:** every player gets a spawn check every **45 seconds** of server
+  time (about 46.8 s on a real clock, since the server clock runs slightly
+  slow). Every one of the 13 checks spawned an enemy — there was no random
+  chance to skip.
+- **Each player has their own timer:** with two players lying dead far
+  apart, both got an enemy every 45 seconds, but always about 17.5 seconds
+  apart — the timer runs separately for every player rather than once for
+  the whole server.
+- **Dead players count:** enemies keep spawning around a dead player's body.
+- **Distance:** each enemy appears **5–10 m east or west and 5–10 m north or
+  south** of the player (both at once), so never straight north, south, east
+  or west; 7–13 m in total.
+- **Which enemy:** north of Port Town the spawns were Orcs, Bunnies (an Orc
+  shrunk to a fifth of its size), Meat Cubes of different sizes, and a
+  Knight.
+- **Despawning:** an enemy that never finds a target disappears about
+  **30 seconds** after it spawns.
+- **Loitering:** a wandering enemy turns to a random direction, walks for up
+  to about **2.75 seconds** (at about 2.9 m/s), then stands still for a
+  moment — usually 0.25–3.5 s, now and then 6–11 s — before turning and
+  walking again. It does not head for the player or stay near where it
+  spawned.
+- **Coprolite:** full-size Orcs, Dynamite Orcs and Knights randomly drop
+  **Coprolite** ore exactly where they stand, at the moment they stop
+  walking (Bunnies and Meat Cubes never do). It works out to about one or
+  two per monster before it despawns, sometimes two at the same stop or one
+  right after spawning. The same full-size monsters also sometimes stand
+  still for a long time (5–11 seconds) between walks.
+
+### How each enemy fights
+
+Measured **2026-11-24** by letting monsters kill a 100-health player north
+of Port Town 25 times:
+
+| Enemy | Damage | How it attacks |
+|---|---|---|
+| Orc | 5 per hit (20 hits kill) | Charges straight at you at 6–8 m/s, hitting a quarter second apart. As soon as it stops getting any closer — touching you, or blocked by a wall — it plays **Hate** (after about 0.4 s), stands a moment, runs off in a **random direction** for about a second, then charges again. Behind a wall it keeps doing this every 3–4 s. |
+| Small Meat-Cube | 5 per hop | Hops at you — one hop about every half second, ~0.9 m each — and keeps hopping in place on top of you, one hit per hop. |
+| Medium Meat-Cube | 7 per hop (15 hits kill) | Same hopping attack. |
+| Bunny | not measured | Hops at you like a Meat Cube. |
+| Knight | 10 per shot (10 shots kill) | Walks in at ~4.3 m/s and starts shooting from about **3 m**, a shot every half second, closing until it touches you. Touching it does no damage. |
+| Dynamite Orc | one blast kills | Charges at ~7.6 m/s and drops a lit stick of Dynamite once it is within about **3.5 m**, and another 1.5 s later. The blast comes about 2.5 s after the first drop. Touching it does no damage, and its own blasts don't hurt it. |
+
+- Meat Cubes and Bunnies **walk** while loitering and only **hop** once they
+  are after you.
+- **Alarm** (the "!" emote) plays when an Orc, Dynamite Orc or Knight
+  notices you — Meat Cubes and Bunnies never play it. An Orc that notices
+  you when you are already right next to it plays **WTF** first, then Alarm.
+- Every monster that was after you plays **Love** just after you die.
+- Kill messages: "was killed by an Orc", "a Small Meat-Cube", "a Medium
+  Meat-Cube", "a Knight"; a Dynamite Orc's blast reads "a monster".
+- A monster that has fought you does not vanish after 30 seconds — it can
+  wait by your body and attack again when you come back.
 
 [`RoomTrigger`](world/orc-spawn-triggers.md) spawns (the
 [Level 1](world/locations/level-1.md) and

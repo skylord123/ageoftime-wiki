@@ -10,6 +10,11 @@ that must be cleared to reach the [Hook](../../items/movement-items.md).
 Level 1 is made up of rooms connected by short hallways. Rooms can have one,
 two, or three doors, and some routes lead to dead ends.
 
+The rooms always form the same shape: a 3 × 3 block of rooms with the entrance
+at its south-east corner, plus one extra room off the block's north-west corner
+that leads to the goal room. Which rooms connect to each other, and so the
+route through the maze, changes every time the server restarts.
+
 Most hallways sit between two room doors: one door for the room you just left,
 and one door for the next room. The start and end hallways are exceptions;
 only the side attached to the maze room has a door.
@@ -40,9 +45,12 @@ to begin again.
 
 ## Crates
 
-Level 1 also contains loot crates. Their drop rates have **not** been logged
-yet — the [Crate Rates](../../crate-rates.md#crate-rates) section will be updated once data
-is gathered here.
+Level 1 also contains loot crates. They drop the usual gold piles but never
+the 100-gold jackpot. About 1 in 10 drops a **Blue Vial** or **Brown Dye**
+with its gold, and about 1 in 85 is a gold-less crate with two Blue Vials and
+an **Orange Dye**, the only crate that drops Orange Dye (it can also be mixed
+from Bright Red and Bright Yellow Dye). See
+[Crate Rates](../../crate-rates.md#level-1) for the full table.
 
 ## Race timer
 

@@ -123,6 +123,7 @@ nav:
       - Areas: areas.md
       - World Objects: world-objects.md
       - Crates: crate-rates.md
+      - Weather: world/weather.md
       - Locations:
           - Port Town: world/locations/port-town.md
           - Starboard Town: world/locations/starboard-town.md
@@ -158,6 +159,8 @@ nav:
       - Tips & Secrets: tips.md
       - Inventory: reference/inventory.md
       - Server Commands: reference/server-commands.md
+      - Server Clock: reference/server-clock.md
+      - Object Scoping: reference/object-scoping.md
       - Tools:
           - Dye Calculator: dye-calculator.md
           - Dye Recipe Finder: dye-recipe-finder.md
