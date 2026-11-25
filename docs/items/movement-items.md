@@ -21,13 +21,14 @@ Measured on the official server (2026-11-23).
   It sticks to almost anything it hits, but a hook that only grazes a surface at a very shallow angle
   bounces off instead.
 - **The rare bounce:** now and then a hook bounces straight back toward you instead of sticking, at any
-  throwing angle. Tested on the official server (2026-11-25): it comes from flaws in the collision of some
-  floors and walls (seams or cracks between pieces). The hook flies at 40 m/s and checks its path in steps
-  of about 1.3 m. If one step slips through a seam and ends *inside* the floor, the next step can't tell
-  which surface it hit and treats the hit as perfectly head-on. A perfectly head-on hit is a coin flip
-  (decided by rounding) between sticking and bouncing. When it bounces it goes straight back the way it
-  came at a fifth of its speed, which is why a bounced hook lands near your feet. Throwing the same way
-  again at the same spot can bounce again, but not every time.
+  throwing angle. Tested on the official server (2026-11-25): the hook flies at 40 m/s and checks its path
+  in steps of about 1.3 m. The game counts the last few millimetres above a surface (about 5 mm) as already
+  inside it. So if one step happens to stop just above a floor or wall, the next step "starts inside" and the
+  game treats the hit as perfectly head-on. A perfectly head-on hit is then a coin flip (decided by tiny
+  rounding differences, about half the time each way) between sticking and bouncing. When it bounces it goes
+  straight back the way it came at a fifth of its speed, which is why a bounced hook lands near your feet.
+  Stopping within those few millimetres is rare (roughly 1 throw in a few hundred), and the same throw
+  repeated exactly the same way gives the same result.
 - **Rope length:** fixed when the hook sticks: the distance from your feet to the hook, rounded **down**
   to a whole metre. Standing still, the rope stays slack until you are further than that from the hook.
 - **Swinging:** while the rope is tight, you swing around the hook and your body tilts to hang from the
