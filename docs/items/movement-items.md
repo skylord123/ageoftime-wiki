@@ -20,12 +20,14 @@ Measured on the official server (2026-11-23).
 - **Sticking:** it sticks to whatever it hits first — ground, buildings, trees, rocks, even other players.
   It sticks to almost anything it hits, but a hook that only grazes a surface at a very shallow angle
   bounces off instead.
-- **The rare bounce:** now and then a hook bounces even when it wasn't thrown at a shallow angle. The
-  likely cause is a rounding quirk in the stick-or-bounce test. The game always means to stick, but a hit
-  almost exactly **head-on** (straight into a wall or floor) or almost exactly **grazing** can push the
-  test's maths just out of range, and then it counts as a bounce. Hits on edges and seams between
-  surfaces, where the surface direction comes out odd, can do the same. *(From reading the game's code;
-  not yet confirmed in game.)*
+- **The rare bounce:** now and then a hook bounces straight back toward you instead of sticking, at any
+  throwing angle. Tested on the official server (2026-11-25): it comes from flaws in the collision of some
+  floors and walls (seams or cracks between pieces). The hook flies at 40 m/s and checks its path in steps
+  of about 1.3 m. If one step slips through a seam and ends *inside* the floor, the next step can't tell
+  which surface it hit and treats the hit as perfectly head-on. A perfectly head-on hit is a coin flip
+  (decided by rounding) between sticking and bouncing. When it bounces it goes straight back the way it
+  came at a fifth of its speed, which is why a bounced hook lands near your feet. Throwing the same way
+  again at the same spot can bounce again, but not every time.
 - **Rope length:** fixed when the hook sticks: the distance from your feet to the hook, rounded **down**
   to a whole metre. Standing still, the rope stays slack until you are further than that from the hook.
 - **Swinging:** while the rope is tight, you swing around the hook and your body tilts to hang from the
