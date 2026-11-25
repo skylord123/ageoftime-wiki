@@ -158,6 +158,8 @@ nav:
       - Tips & Secrets: tips.md
       - Inventory: reference/inventory.md
       - Server Commands: reference/server-commands.md
+      - Server Clock: reference/server-clock.md
+      - Object Scoping: reference/object-scoping.md
       - Tools:
           - Dye Calculator: dye-calculator.md
           - Dye Recipe Finder: dye-recipe-finder.md

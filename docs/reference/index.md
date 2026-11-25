@@ -19,6 +19,16 @@ gameplay or world sections.
     The `commandToServer` commands behind every slash command — their
     arguments, and which ones chat can't reach.
 
+- :material-clock-outline: **[Server Clock](server-clock.md)**
+
+    Why the server's game time runs about 4% slower than real time, and what
+    that does to every timing in the game.
+
+- :material-radar: **[Object Scoping](object-scoping.md)**
+
+    Which objects the server sends your client, why players vanish around
+    buildings, and the free-camera trick that shows the whole world.
+
 - :material-calculator: **[Dye Calculator](../dye-calculator.md)**
 
     Test two-input dye mixes and share exact calculator states.
