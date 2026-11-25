@@ -20,12 +20,20 @@ Measured on the official server (2026-11-23).
 - **Sticking:** it sticks to whatever it hits first — ground, buildings, trees, rocks, even other players.
   It sticks to almost anything it hits, but a hook that only grazes a surface at a very shallow angle
   bounces off instead.
+- **The rare bounce:** now and then a hook bounces even when it wasn't thrown at a shallow angle. The
+  likely cause is a rounding quirk in the stick-or-bounce test. The game always means to stick, but a hit
+  almost exactly **head-on** (straight into a wall or floor) or almost exactly **grazing** can push the
+  test's maths just out of range, and then it counts as a bounce. Hits on edges and seams between
+  surfaces, where the surface direction comes out odd, can do the same. *(From reading the game's code;
+  not yet confirmed in game.)*
 - **Rope length:** fixed when the hook sticks: the distance from your feet to the hook, rounded **down**
   to a whole metre. Standing still, the rope stays slack until you are further than that from the hook.
 - **Swinging:** while the rope is tight, you swing around the hook and your body tilts to hang from the
   rope. Holding a movement key pushes you along the swing.
-- **The rope stretches:** while you swing, the rope slowly gets longer (a few centimetres per swing) and never
-  shortens again. At the end of a swing you can also creep slowly up and outward for several seconds
+- **The rope seems to stretch:** while you swing you drift a little further from the hook (a few centimetres
+  per swing). The rope's length never actually changes: the game stops you moving away from the hook but
+  never pulls you back in, so small rounding errors add up. Move closer to the hook and you are back within
+  the original length. At the end of a swing you can also creep slowly up and outward for several seconds
   instead of swinging straight back, for example when sliding along a wall.
 - **Letting go:** crouch to release the rope. Throwing again replaces your old hook, and the rope lets go
   by itself when the hook times out (about 15 s for the Hook, about 1 minute for the Golden Hook).

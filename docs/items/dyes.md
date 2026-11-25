@@ -53,7 +53,7 @@ drop chances, see [Crate Rates](../crate-rates.md#crate-rates).
 | Black Dye | [Volcano](../world/locations/volcano.md) |
 | Magenta Dye | [Volcano](../world/locations/volcano.md) |
 | Pitch Black Dye | [Volcano](../world/locations/volcano.md) — rare (~1 in 123 crates) |
-| Orange Dye | **Unknown** — does *not* drop from [Volcano](../world/locations/volcano.md) crates despite older reports (never seen in 26k+ logged breaks); possibly the unlogged [Level 1](../world/locations/level-1.md) crates |
+| Orange Dye | A rare [Level 1](../world/locations/level-1.md) crate (about 1 in 85, see [Crate Rates](../crate-rates.md#level-1)), or mix **Bright Red** + **Bright Yellow** (`255 0 0` + `255 255 0` = `255 127 0`). It does *not* drop from [Volcano](../world/locations/volcano.md) crates despite older reports. |
 
 !!! note
     **Bleach** acts as a white dye, but it is bought from the

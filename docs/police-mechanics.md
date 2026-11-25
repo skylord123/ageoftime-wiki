@@ -223,7 +223,8 @@ the target's demerits:
 - "REALLY HARD" in the Law Guide means a **fully charged** hit. There is no
   sound or animation when the charge is full, so you have to count about
   2 seconds.
-- Hitting monsters is never a crime.
+- Hitting monsters is never a crime. Whether hitting town NPCs (shopkeepers,
+  the Marshal and so on) is a crime hasn't been tested yet.
 
 ### Chat crimes in detail
 

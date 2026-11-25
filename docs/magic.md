@@ -102,7 +102,9 @@ A short, slow stream of fire emitted in front of the caster.
 | Knockback | None |
 | Mana | Drains steadily while you hold the button; stops when your mana runs out |
 
-The stream flies straight (it doesn't drop) and never burns the caster. The
+The stream flies straight (it doesn't drop) and didn't burn the caster in our
+tests. Each bit of fire ends in a small burst, though, and aiming straight down at
+your own feet may burn you (reported, not yet measured). The
 fire actually travels along **where you are looking**, but the flame you see
 comes out of your hand, so it sprays slightly off from where the fire really
 lands, which makes it awkward to aim.
@@ -135,8 +137,8 @@ effective against tightly-grouped enemies or players who are dodging.
   centre.
 - Walls block the blast.
 - A Fireball blast does no damage to players inside a safe zone.
-- Fireballs no longer fell trees — only [Dynamite](items/weapons.md#dynamite)
-  does — but they still break crates.
+- Fireballs don't fell trees — only [Dynamite](items/weapons.md#dynamite)
+  does — but they do break crates.
 
 Fireball is also one of the better PvP spells because the splash damage makes
 it hard to dodge cleanly.

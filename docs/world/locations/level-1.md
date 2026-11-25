@@ -48,7 +48,8 @@ to begin again.
 Level 1 also contains loot crates. They drop the usual gold piles but never
 the 100-gold jackpot. About 1 in 10 drops a **Blue Vial** or **Brown Dye**
 with its gold, and about 1 in 85 is a gold-less crate with two Blue Vials and
-an **Orange Dye**, the only known source of Orange Dye. See
+an **Orange Dye**, the only crate that drops Orange Dye (it can also be mixed
+from Bright Red and Bright Yellow Dye). See
 [Crate Rates](../../crate-rates.md#level-1) for the full table.
 
 ## Race timer

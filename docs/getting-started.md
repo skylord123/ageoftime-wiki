@@ -149,7 +149,11 @@ to stop.
   (<kbd>Ctrl</kbd>+<kbd>E</kbd>) on a bed to bring them back to life. The
   player can resist being rescued by pressing jump (default <kbd>Space</kbd>).
 - **Open doors** — look at a door and press <kbd>E</kbd>. You can reach a door
-  from up to about **3.5 m** away (measured from your eyes to the door).
+  from up to about **3.5 m** away (measured from your eyes to the door). Picking
+  up items and talking to NPCs use the same <kbd>E</kbd> action, so they most
+  likely have the same reach (only measured on doors so far). Picking up a dead
+  player works differently: it looks for a body around you rather than where
+  you are looking.
 - **Buy things** — the price appears above an item. Look at it and press <kbd>E</kbd>
   to purchase.
 

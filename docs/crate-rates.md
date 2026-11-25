@@ -195,8 +195,9 @@ all (590,687 crates logged):
 [Level 1](world/locations/level-1.md) crates use the standard gold tiers but,
 like the Volcano, have **no 100-gold jackpot**, and its 11-gold crate carries a
 **Blue Vial** or **Brown Dye** instead of a dye pair. It is also where
-**Orange Dye** comes from: a rare gold-less crate with two Blue Vials and an
-Orange Dye.
+**Orange Dye** drops: a rare gold-less crate with two Blue Vials and an
+Orange Dye (the only crate source; you can also mix it from Bright Red and
+Bright Yellow Dye).
 
 | Outcome | Chance |
 |:--------|-------:|
